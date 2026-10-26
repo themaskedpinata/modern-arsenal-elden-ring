@@ -1,0 +1,1 @@
+Standalone setup. Needs Elden Ring {{ER_EXE_VERSION}} and your own Steam copy of Call of Duty: Modern Warfare 2 (2009); co-op also needs Seamless Co-op {{SEAMLESS_VERSION}}. No game files included. Setup sha256 {{EXE_SHA256}}

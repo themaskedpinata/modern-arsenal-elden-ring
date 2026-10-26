@@ -1,0 +1,24 @@
+2026-10-18 13:00:00.000 I [boot] BOOT mw2er 0.3.0
+2026-10-18 13:00:00.000 I [task] BOOT mw2er 0.3.0 dll=D:\Mods\MW2inER\build\natives\mw2er.dll
+2026-10-18 13:00:00.100 I [task] MOVE cfg enabled=1 tp_anim=hybrid sprint=press crouch=toggle jump_slowdown=1 fall=mw2 lethal_fall=handback eye=1.600/1.067/0.293 hull=1.867/1.333/0.800 r=er rays_max=32 data=converted\movement.json sha=2f8c9cfda1b8 mantle=1 key=mw2 max_h=2.00m rise_max=60in angle=60 over=thin vm=drop rays=24 ladder_er_attacks=0
+2026-10-18 13:00:01.000 I [task] TASK world entered (player handle 0x1 owner_check=ok)
+2026-10-18 13:00:01.500 I [task] MOVE resync why=world_enter d=0.00m chunk_d=0.00m
+2026-10-18 13:00:01.500 I [task] MOVE on pos=(1.00,2.00,3.00) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.80 fp=1
+2026-10-18 13:00:05.000 I [task] MOVE resync why=rebase d=32.00m chunk_d=32.98m e=(32.00,8.00,0.00) c=(32.00,8.00,0.00) block=None sign=+ load_age=99.0s
+2026-10-18 13:00:10.000 I [task] PERF ticks_per_s=59.9 task_us p50=300 p95=500 max=900 fp_us avg=20 max=40 writes=100 ac130=0 move=1 move_us_p50=60 move_us_p95=120 move_us_max=300 rays_avg=13.0 rays_max=28 ray_us_max=8.0 move_writes=600 mantle_checks=6 mantle_rays_max=15 mantle_budget_max=24 mantle_deferred=0 mantle_us_max=90 mantles=1 mantle_refusals=2 ladder_trips=0
+2026-10-18 13:00:12.000 I [task] MOVE jump y0=3.000 v0=249.8 land_factor=1.00
+2026-10-18 13:00:15.000 I [task] PERF ticks_per_s=59.9 task_us p50=300 p95=500 max=900 fp_us avg=20 max=40 writes=100 ac130=0 move=1 move_us_p50=60 move_us_p95=120 move_us_max=300 rays_avg=13.0 rays_max=28 ray_us_max=8.0 move_writes=600 mantle_checks=7 mantle_rays_max=15 mantle_budget_max=24 mantle_deferred=0 mantle_us_max=90 mantles=1 mantle_refusals=2 ladder_trips=0
+2026-10-18 13:00:16.300 I [task] MOVE land fall_h=41.3in (1.05m) v_impact=257.0 slow=0.67*1.00 dmg_pct=0.0 hp=1000->1000 max_hp=1000 land_ms=0
+2026-10-18 13:00:20.000 I [task] PERF ticks_per_s=59.9 task_us p50=300 p95=500 max=900 fp_us avg=20 max=40 writes=100 ac130=0 move=1 move_us_p50=60 move_us_p95=120 move_us_max=300 rays_avg=13.0 rays_max=28 ray_us_max=8.0 move_writes=600 mantle_checks=8 mantle_rays_max=15 mantle_budget_max=24 mantle_deferred=0 mantle_us_max=90 mantles=1 mantle_refusals=2 ladder_trips=0
+2026-10-18 13:00:20.300 I [task] MOVE suspend reason=menu cursor ticks=1100 pos=(1.00,5.70,8.00)
+2026-10-18 13:00:20.300 I [task] MOVE restore field=gravity_multiplier addr=0x1000 old=0.000 new=1.000 ok=1
+2026-10-18 13:00:20.300 I [task] MOVE restore field=gravity_disabled addr=0x1009 old=1 new=0 ok=1
+2026-10-18 13:00:22.000 I [task] MOVE on pos=(1.00,4.80,8.00) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.80 fp=1
+2026-10-18 13:00:24.000 I [task] MOVE mantle check ok=0 why=too_high rise=1.70m rays=5 n=1 pos=(1.00,4.80,8.00)
+2026-10-18 13:00:24.600 I [task] MOVE mantle check ok=0 why=no_headroom rise=1.20m rays=12 n=2 pos=(1.00,4.80,8.00)
+2026-10-18 13:00:25.000 I [task] PERF ticks_per_s=59.9 task_us p50=300 p95=500 max=900 fp_us avg=20 max=40 writes=100 ac130=0 move=1 move_us_p50=60 move_us_p95=120 move_us_max=300 rays_avg=13.0 rays_max=28 ray_us_max=8.0 move_writes=600 mantle_checks=9 mantle_rays_max=15 mantle_budget_max=24 mantle_deferred=0 mantle_us_max=90 mantles=1 mantle_refusals=2 ladder_trips=0
+2026-10-18 13:00:26.000 I [task] MOVE mantle check ok=0 why=no_face rise=0.00m rays=2 n=3 pos=(1.00,4.80,8.00) fwd=(0.00,1.00)
+2026-10-18 13:00:30.000 I [task] TASK world left (loading / title)
+2026-10-18 13:00:31.000 I [task] MOVE mantle check ok=0 why=no_face rise=0.00m rays=2 n=4 pos=(1.00,4.80,8.00) fwd=(0.00,1.00)
+2026-10-18 13:00:36.000 I [task] MOVE mantle check ok=0 why=no_face rise=0.00m rays=2 n=5 pos=(1.00,4.80,8.00) fwd=(0.00,1.00)
+2026-10-18 13:00:41.000 I [task] MOVE mantle check ok=0 why=no_face rise=0.00m rays=2 n=6 pos=(1.00,4.80,8.00) fwd=(0.00,1.00)

@@ -1,0 +1,145 @@
+diff --git a/src/hooks/dx12.rs b/src/hooks/dx12.rs
+index a7639d6..9bfc714 100644
+--- a/src/hooks/dx12.rs
++++ b/src/hooks/dx12.rs
+@@ -99,12 +99,12 @@ type DXGISwapChainSetColorSpace1Type =
+ /// pipeline state it uses and must not leave the back buffer in another state; hudhook re-binds its render
+ /// target and restores its own state afterwards. A panic inside the callback is caught and counted.
+ pub mod pre_imgui {
+-    use std::sync::atomic::{AtomicI32, AtomicU64};
++    use std::sync::atomic::{AtomicI32, AtomicU32, AtomicU64};
+     use std::sync::OnceLock;
+ 
+     use windows::Win32::Graphics::Direct3D12::{
+-        ID3D12CommandQueue, ID3D12Device, ID3D12GraphicsCommandList, ID3D12Resource,
+-        D3D12_CPU_DESCRIPTOR_HANDLE,
++        ID3D12CommandList, ID3D12CommandQueue, ID3D12Device, ID3D12Fence, ID3D12GraphicsCommandList,
++        ID3D12Resource, D3D12_CPU_DESCRIPTOR_HANDLE,
+     };
+     use windows::Win32::Graphics::Dxgi::Common::DXGI_FORMAT;
+ 
+@@ -138,6 +138,38 @@ pub mod pre_imgui {
+     pub static PRE_IMGUI_PANICS: AtomicU64 = AtomicU64::new(0);
+     /// The last colour space passed to IDXGISwapChain3::SetColorSpace1 (-1 = never called).
+     pub static LAST_COLOR_SPACE: AtomicI32 = AtomicI32::new(-1);
++
++    /// mw2er patch 0002: one command list to execute right before `lists[at]` of an intercepted
++    /// ExecuteCommandLists call, followed by `Signal(fence, value)` on the same queue. hudhook then executes
++    /// `lists[..at]` (if any), `list`, the Signal and `lists[at..]` as separate calls on the game's thread.
++    pub struct Splice {
++        /// Index into the intercepted call's lists (`at < n`).
++        pub at: usize,
++        /// The list to execute first (closed).
++        pub list: ID3D12CommandList,
++        /// The fence signalled on the same queue right after `list`.
++        pub fence: ID3D12Fence,
++        /// The value it is signalled with.
++        pub value: u64,
++    }
++
++    /// mw2er patch 0002: called inside every ID3D12CommandQueue::ExecuteCommandLists before the trampoline with the
++    /// queue and the lists as raw COM pointers; `Some` = splice. It runs on the game's threads: it must not block,
++    /// allocate or log. A panic is caught and counted (the call then executes unchanged).
++    pub type EclHook = fn(usize, &[usize]) -> Option<Splice>;
++    /// The ECL callback (set once).
++    pub static ECL_HOOK: OnceLock<EclHook> = OnceLock::new();
++    /// Panics caught around the ECL callback.
++    pub static ECL_PANICS: AtomicU64 = AtomicU64::new(0);
++    /// Splices executed.
++    pub static SPLICES: AtomicU64 = AtomicU64::new(0);
++    /// Splices whose Signal failed.
++    pub static SPLICE_SIGNAL_FAILS: AtomicU64 = AtomicU64::new(0);
++    /// mw2er patch 0002: incremented after every Present / Present1 trampoline returned (a frame = everything
++    /// between two increments).
++    pub static PRESENT_SEQ: AtomicU64 = AtomicU64::new(0);
++    /// mw2er patch 0002: the thread of the last Present / Present1 call (0 = none yet).
++    pub static PRESENT_TID: AtomicU32 = AtomicU32::new(0);
+ }
+ 
+ struct Trampolines {
+@@ -741,6 +773,8 @@ unsafe extern "system" fn dxgi_swap_chain_present_impl(
+     flags: u32,
+ ) -> HRESULT {
+     let _hook_ejection_guard = HOOK_EJECTION_BARRIER.acquire_ejection_guard();
++    // mw2er patch 0002: the present thread for the ECL callback
++    pre_imgui::PRESENT_TID.store(windows::Win32::System::Threading::GetCurrentThreadId(), Ordering::Relaxed);
+     let swap_chain3 = swap_chain.cast::<IDXGISwapChain3>().ok();
+     if let Some(swap_chain3) = &swap_chain3 {
+         INIT_STATE.lock().insert_swap_chain(swap_chain3);
+@@ -758,6 +792,7 @@ unsafe extern "system" fn dxgi_swap_chain_present_impl(
+ 
+     trace!("Call IDXGISwapChain::Present trampoline");
+     let result = dxgi_swap_chain_present(swap_chain, sync_interval, flags);
++    pre_imgui::PRESENT_SEQ.fetch_add(1, Ordering::SeqCst);
+     handle_present_result("IDXGISwapChain::Present", result);
+ 
+     if EJECT_REQUESTED.load(Ordering::SeqCst) {
+@@ -774,6 +809,8 @@ unsafe extern "system" fn dxgi_swap_chain_present1_impl(
+     present_parameters: *const DXGI_PRESENT_PARAMETERS,
+ ) -> HRESULT {
+     let _hook_ejection_guard = HOOK_EJECTION_BARRIER.acquire_ejection_guard();
++    // mw2er patch 0002: the present thread for the ECL callback
++    pre_imgui::PRESENT_TID.store(windows::Win32::System::Threading::GetCurrentThreadId(), Ordering::Relaxed);
+     let swap_chain3 = swap_chain.cast::<IDXGISwapChain3>().ok();
+     if let Some(swap_chain3) = &swap_chain3 {
+         INIT_STATE.lock().insert_swap_chain(swap_chain3);
+@@ -792,6 +829,7 @@ unsafe extern "system" fn dxgi_swap_chain_present1_impl(
+     trace!("Call IDXGISwapChain::Present1 trampoline");
+     let result =
+         dxgi_swap_chain_present1(swap_chain, sync_interval, present_flags, present_parameters);
++    pre_imgui::PRESENT_SEQ.fetch_add(1, Ordering::SeqCst);
+     handle_present_result("IDXGISwapChain1::Present1", result);
+ 
+     if EJECT_REQUESTED.load(Ordering::SeqCst) {
+@@ -943,6 +981,51 @@ unsafe extern "system" fn d3d12_command_queue_execute_command_lists_impl(
+     let Trampolines { d3d12_command_queue_execute_command_lists, .. } =
+         TRAMPOLINES.get().expect("DirectX 12 trampolines uninitialized");
+ 
++    // mw2er patch 0002: the ECL callback; a splice executes the callback's list (and its Signal) right before
++    // lists[at], all inside this call on this thread, then the rest of the game's lists unchanged.
++    if let Some(hook) = pre_imgui::ECL_HOOK.get() {
++        let n = num_command_lists as usize;
++        let raw: &[usize] = if command_lists.is_null() || n == 0 {
++            &[]
++        } else {
++            std::slice::from_raw_parts(command_lists as *const usize, n)
++        };
++        let queue_raw = command_queue.as_raw() as usize;
++        match std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| hook(queue_raw, raw))) {
++            Ok(Some(pre_imgui::Splice { at, list, fence, value })) if at < n => {
++                // The trampoline takes the queue by value without releasing it: bitwise copies for the first calls,
++                // the original moves into the last one (the reference count is never touched).
++                if at > 0 {
++                    d3d12_command_queue_execute_command_lists(
++                        mem::transmute_copy(&command_queue),
++                        at as u32,
++                        command_lists,
++                    );
++                }
++                let mut ours = list;
++                d3d12_command_queue_execute_command_lists(
++                    mem::transmute_copy(&command_queue),
++                    1,
++                    &mut ours as *mut ID3D12CommandList,
++                );
++                if command_queue.Signal(&fence, value).is_err() {
++                    pre_imgui::SPLICE_SIGNAL_FAILS.fetch_add(1, Ordering::SeqCst);
++                }
++                pre_imgui::SPLICES.fetch_add(1, Ordering::Relaxed);
++                d3d12_command_queue_execute_command_lists(
++                    command_queue,
++                    (n - at) as u32,
++                    command_lists.add(at),
++                );
++                return;
++            },
++            Ok(_) => {},
++            Err(_) => {
++                pre_imgui::ECL_PANICS.fetch_add(1, Ordering::SeqCst);
++            },
++        }
++    }
++
+     d3d12_command_queue_execute_command_lists(command_queue, num_command_lists, command_lists);
+ }
+ 

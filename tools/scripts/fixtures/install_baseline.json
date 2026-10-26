@@ -1,0 +1,39 @@
+{
+  "_note": "Top-level listings of the ER Game folder and the MW2 folder, reviewed 2026-10-17 as vanilla (only the games own files: no dinput8.dll, mw2er*, regulation.bin.*, me3 or other loader files). check_m4 check 14 compares against THIS file (never a self-recorded baseline) and also scans both folders recursively for loader/mod file names.",
+  "D:\\SteamLibrary\\steamapps\\common\\ELDEN RING\\Game": [
+    "amd_ags_x64.dll",
+    "bink2w64.dll",
+    "Data0.bdt",
+    "Data0.bhd",
+    "Data1.bdt",
+    "Data1.bhd",
+    "Data2.bdt",
+    "Data2.bhd",
+    "Data3.bdt",
+    "Data3.bhd",
+    "EasyAntiCheat",
+    "eldenring.exe",
+    "eossdk-win64-shipping.dll",
+    "eossdk-win64-shipping.so",
+    "movie",
+    "oo2core_6_win64.dll",
+    "regulation.bin",
+    "sd",
+    "start_protected_game.exe",
+    "steam_api64.dll"
+  ],
+  "D:\\SteamLibrary\\steamapps\\common\\Call of Duty Modern Warfare 2": [
+    "bink2w64.dll",
+    "CoDCleaner.exe",
+    "installscript.vdf",
+    "iw4sp.exe",
+    "localization.txt",
+    "logo.bmp",
+    "main",
+    "splash.bmp",
+    "steam_api64.dll",
+    "SteamAPIUpdater.dll",
+    "UpdateDLLWrapper.dll",
+    "zone"
+  ]
+}

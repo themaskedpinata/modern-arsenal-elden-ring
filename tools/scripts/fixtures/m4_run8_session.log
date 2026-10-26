@@ -1,0 +1,677 @@
+2026-10-17 15:45:27.221 I [boot] BOOT mw2er 0.2.0 dll=D:\Mods\MW2inER\build\natives\mw2er.dll size=4489216 mtime=2026-10-17 22:39:09Z built=2026-10-17 22:39:06Z pid=22540 root=D:\Mods\MW2inER root_valid=true log_ok=true
+2026-10-17 15:45:27.221 I [boot] VERSION PASS file=2.7.1.0 product=2.7.1.0 lang=0x0409 timedatestamp=0x6a96b418 sizeofimage=0x5e0da00
+2026-10-17 15:45:27.221 I [boot] CONFIG loaded D:\Mods\MW2inER\mw2er.toml weapon=ump45_mp k=4 toggle=F5 reload=R camera=pers_cam_1
+2026-10-17 15:45:27.221 I [boot] DATA weapons.json ok (3 guns) weapon=ump45_mp mode=Full Auto damage=40/35 range=15.24/21.59m fireTime=0.09 clip=32 maxAmmo=192 reload=2.5/3.03 spread=2/5
+2026-10-17 15:45:27.221 I [boot] DATA rows.json ok k=4 bands=6 ids=79000100..79000105 marker=79000900 speed=999m/s life=0.15s built=20261017T224422Z
+2026-10-17 15:45:27.228 I [boot] DATA sounds.json ok 5 sounds for ump45_mp
+2026-10-17 15:45:27.228 I [boot] DATA ac130 ok dir=D:\Mods\MW2inER\converted\ac130 guns clip=1/4/20 fireTime=0.1/0.3/0.07 duration_s=40 rig=4566.2/4212.3in visions=5 hud_items=10 cues=11 rows k=4
+2026-10-17 15:45:27.228 I [boot] VM pre-ImGui callback registered; assets D:\Mods\MW2inER\converted\viewmodel (viewmodel=1 ac130 thermal=1)
+2026-10-17 15:45:27.228 D [boot] HUDHOOK hudhook::hooks: WNDCLASSEXW { cbSize: 80, style: WNDCLASS_STYLES(3), lpfnWndProc: Some(0x7ffc91893fc0), cbClsExtra: 0, cbWndExtra: 0, hInstance: HINSTANCE(0x7ff771540000), hIcon: HICON(0x0), hCursor: HCURSOR(0x0), hbrBackground: HBRUSH(0x0), lpszMenuName: PCWSTR(0x0), lpszClassName: PCWSTR(0x7ffc91a9d738), hIconSm: HICON(0x0) }
+2026-10-17 15:45:27.232 D [boot] HUDHOOK hudhook::hooks: HWND(0x630a0a)
+2026-10-17 15:45:27.784 I [boot] HUD applied (DX12 hooks enabled; waiting for the first Present)
+2026-10-17 15:45:27.966 I [boot] INPUT PASS hooked=2 addrs=[0x7ffcabdf75f0,0x7ffcabdfaaa0]
+2026-10-17 15:45:27.966 I [boot] AUDIO thread started
+2026-10-17 15:45:27.966 I [boot] BOOTGATE waiting for the game window, then reflection names [CSTask,WorldChrMan,CSBulletManager,CSCamera,CSMenuMan,CSHavokMan,SoloParamRepository]
+2026-10-17 15:45:28.060 I [audio] AUDIO ready: 5/5 sounds loaded (fire truncated to 600 ms); ac130 21 files in 11 cues
+2026-10-17 15:45:28.217 I [boot] BOOTGATE window hwnd=0xb0a5c after 250 ms
+2026-10-17 15:45:28.226 I [boot] BOOTGATE PASS after 9 ms names=[CSTask,WorldChrMan,CSBulletManager,CSCamera,CSMenuMan,CSHavokMan,SoloParamRepository] optional=[CSMouseMan:yes,FD4PadManager:yes] scanned=223
+2026-10-17 15:45:28.235 I [boot] TASK registered group=ChrIns_PostPhysics
+2026-10-17 15:45:28.268 I [task] TASK first tick on the game's main thread
+2026-10-17 15:45:28.268 I [task] AC130 cfg enabled=1 key=F7 cooldown_s=120 cooldown=1 duration_s=40 R=116.0 H=107.0 period_s=70 arc=35 base=center fov=45/20/5(v=34.5/15.1/3.75deg) vision=sp tiers=2 hook=0 thermal=1 data=1
+2026-10-17 15:45:28.268 I [task] FPCAM cfg enabled=1 mode=task (hook requested but not installed) eye_h=1.60 eye_fwd=0.10 eye_smooth_s=0.00 pitch_clamp=85.0 hide=render_flag yaw=1 world_fov=off arm_ticks=30 fade_alpha_max=0.50 signals fade=1 cam_mask=1 talk=1 key=F6 sync_chr_cam=1 wall_recovery_off=1 auto_rotation_off=1
+2026-10-17 15:45:28.281 I [boot] FPHOOK installed rva=0x3bc5f0 addr=0x7ff7718fc5f0 prologue=ok (camera_mode=hook; erfps2 RVA, see cam_hook.rs)
+2026-10-17 15:45:28.334 I [task] AC130 cfg enabled=1 key=F7 cooldown_s=120 cooldown=1 duration_s=40 R=116.0 H=107.0 period_s=70 arc=35 base=center fov=45/20/5(v=34.5/15.1/3.75deg) vision=sp tiers=2 hook=1 thermal=1 data=1
+2026-10-17 15:45:28.341 I [boot] FPHOOK follow installed rva=0x3b7570 addr=0x7ff7718f7570 prologue=ok (ChrExFollowCam update; erfps2 RVA)
+2026-10-17 15:45:28.341 W [boot] FPHOOK WARN CAM_WALL_RECOVERY not validated (0x7ff775059c80: state=0x1000 type=0x1000000 allocation_base=0x7ff771540000 protect=0x40 (want MEM_COMMIT, MEM_IMAGE of the exe 0x7ff771540000, PAGE_READWRITE/WRITECOPY)); it is never touched
+2026-10-17 15:45:28.341 I [boot] BOOT DONE in 1121 ms (hud=1 input=1 audio_thread=1 data=1 task=1)
+2026-10-17 15:45:28.468 I [present] HUD initialize display=3840x2160 font=built-in 26px
+2026-10-17 15:45:28.472 I [present] VM target fmt=R10G10B10A2_UNORM 3840x2160 colorspace=none frames=3
+2026-10-17 15:45:28.543 I [thload] AC130 thermal ready ms=70 overlays=4 bytes=1048576 fmt=R10G10B10A2_UNORM 3840x2160 ts_freq=1000000000 (shaders 2b12e57eda2f..)
+2026-10-17 15:45:28.573 I [vmload] VM assets ready ms=100 bytes=3254272 bones=91 verts=7489 clips=12 fmt=R10G10B10A2_UNORM ts_freq=1000000000
+2026-10-17 15:45:28.581 I [present] VM animation ready (12 clips)
+2026-10-17 15:45:28.582 I [present] VM output Srgb for fmt=R10G10B10A2_UNORM colorspace=-1 (viewmodel.output=Auto)
+2026-10-17 15:45:32.213 I [present] MENU cursor None -> Some(false)
+2026-10-17 15:45:32.585 I [present] MENU idx=5 0->1
+2026-10-17 15:45:34.086 I [present] PERF ticks_per_s=17.0 task_us p50=28 p95=61 max=398 fp_us avg=3 max=68 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:45:39.091 I [present] PERF ticks_per_s=52.8 task_us p50=28 p95=32 max=151 fp_us avg=2 max=4 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:45:44.091 I [present] PERF ticks_per_s=60.0 task_us p50=28 p95=31 max=239 fp_us avg=2 max=4 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:45:49.091 I [present] PERF ticks_per_s=60.0 task_us p50=27 p95=30 max=33 fp_us avg=2 max=3 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:45:50.425 I [present] MENU idx=0 0->1
+2026-10-17 15:45:54.092 I [present] PERF ticks_per_s=60.0 task_us p50=24 p95=30 max=174 fp_us avg=2 max=4 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:45:59.092 I [present] PERF ticks_per_s=60.0 task_us p50=26 p95=32 max=261 fp_us avg=2 max=5 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:04.094 I [present] PERF ticks_per_s=59.8 task_us p50=26 p95=32 max=145 fp_us avg=2 max=4 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:09.094 I [present] PERF ticks_per_s=60.0 task_us p50=26 p95=32 max=80 fp_us avg=2 max=11 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:14.094 I [present] PERF ticks_per_s=60.0 task_us p50=25 p95=30 max=39 fp_us avg=2 max=3 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:19.095 I [present] PERF ticks_per_s=60.0 task_us p50=25 p95=33 max=142 fp_us avg=2 max=120 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:24.094 I [present] PERF ticks_per_s=60.0 task_us p50=25 p95=30 max=60 fp_us avg=2 max=35 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:29.096 I [t(6)] PERF ticks_per_s=60.0 task_us p50=26 p95=31 max=103 fp_us avg=2 max=5 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:34.096 I [present] PERF ticks_per_s=60.0 task_us p50=24 p95=31 max=69 fp_us avg=2 max=45 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:39.097 I [present] PERF ticks_per_s=60.0 task_us p50=25 p95=38 max=122 fp_us avg=2 max=63 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:44.097 I [present] PERF ticks_per_s=60.0 task_us p50=24 p95=40 max=66 fp_us avg=2 max=26 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:46.197 I [present] MENU idx=0 1->0
+2026-10-17 15:46:46.197 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-17 15:46:46.915 I [present] MENU idx=6 0->1
+2026-10-17 15:46:47.205 I [present] MENU idx=25 0->1
+2026-10-17 15:46:47.205 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-17 15:46:47.235 I [present] MENU idx=4 0->1
+2026-10-17 15:46:47.235 I [present] MENU idx=8 0->1
+2026-10-17 15:46:47.235 I [present] MENU idx=9 0->1
+2026-10-17 15:46:47.235 I [present] MENU idx=19 0->1
+2026-10-17 15:46:47.235 I [present] MENU idx=23 0->1
+2026-10-17 15:46:47.235 I [present] MENU idx=26 0->1
+2026-10-17 15:46:47.235 I [present] MENU idx=27 0->1
+2026-10-17 15:46:47.372 I [present] MENU idx=9 1->0
+2026-10-17 15:46:47.372 I [present] MENU idx=19 1->0
+2026-10-17 15:46:47.372 I [present] MENU idx=25 1->0
+2026-10-17 15:46:47.372 I [present] MENU idx=26 1->0
+2026-10-17 15:46:47.372 I [present] MENU idx=27 1->0
+2026-10-17 15:46:49.099 I [present] PERF ticks_per_s=52.0 task_us p50=26 p95=49 max=78 fp_us avg=2 max=5 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:49.172 I [present] TASK world entered (player handle 0xffffffff16f00000 owner_check=ok)
+2026-10-17 15:46:49.172 I [present] AC130 rows ok bullet=7 atk=7 speffect=1 protect_id=79000950
+2026-10-17 15:46:49.172 I [present] PARAMS OK n=13
+2026-10-17 15:46:49.172 I [present] CAMERA probe tick=1 pers_cam_1[pos=(0.00,0.00,0.00) row2=(0.000,0.000,1.000) fov=0.75049156] chr_cam[pos=(81.70,98.80,80.27) row2=(0.210,0.000,-0.978) fov=0.83775806] player=(82.44,97.35,76.85)
+2026-10-17 15:46:49.172 I [present] CAMFRAME tick=1 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=149.71m
+2026-10-17 15:46:49.172 I [present] CAMERA sign=+1 cam_player_dist=149.71m fov_raw=0.75049156 source=pers_cam_1
+2026-10-17 15:46:49.172 W [present] CAMERA odd cam_player_dist=149.71m (camera and player may be in different spaces); shots are skipped while it lasts
+2026-10-17 15:46:49.172 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(false) fade_max=1.0
+2026-10-17 15:46:49.194 I [present] CAMERA probe tick=2 pers_cam_1[pos=(0.00,0.00,0.00) row2=(0.000,0.000,1.000) fov=0.75049156] chr_cam[pos=(81.70,98.80,80.27) row2=(0.210,0.000,-0.978) fov=0.83775806] player=(82.44,97.35,76.85)
+2026-10-17 15:46:49.194 I [present] CAMFRAME tick=2 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=149.71m
+2026-10-17 15:46:49.194 I [present] MENU idx=7 0->1
+2026-10-17 15:46:49.209 I [present] CAMERA probe tick=3 pers_cam_1[pos=(0.00,0.00,0.00) row2=(0.000,0.000,1.000) fov=0.75049156] chr_cam[pos=(81.70,98.80,80.27) row2=(0.210,0.000,-0.978) fov=0.83775806] player=(82.44,97.35,76.85)
+2026-10-17 15:46:49.209 I [present] CAMFRAME tick=3 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=149.71m
+2026-10-17 15:46:49.227 I [present] CAMFRAME tick=4 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=149.71m
+2026-10-17 15:46:49.242 I [t(7)] CAMFRAME tick=5 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=149.71m
+2026-10-17 15:46:49.258 I [present] CAMFRAME tick=6 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=149.71m
+2026-10-17 15:46:49.276 I [present] CAMFRAME tick=7 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=149.71m
+2026-10-17 15:46:49.292 I [present] CAMFRAME tick=8 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=149.71m
+2026-10-17 15:46:49.310 I [present] CAMFRAME tick=9 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=149.71m
+2026-10-17 15:46:49.326 I [present] CAMFRAME tick=10 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=149.71m
+2026-10-17 15:46:49.375 I [boot] STATE mode=off mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=0 shots=0 hits=0 gds_mouse=5ms gds_kbd=5ms
+2026-10-17 15:46:49.425 I [present] MENU idx=23 1->0
+2026-10-17 15:46:51.207 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(true) fade_max=1.0
+2026-10-17 15:46:52.553 I [present] MENU idx=6 1->0
+2026-10-17 15:46:52.596 I [t(8)] CAMFRAME tick=191 src=pers_cam_1 valid=1 why=ok pos=(1.70,2.80,8.28) fwd=(0.210,0.000,-0.978) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.50m
+2026-10-17 15:46:52.597 I [t(8)] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(true) fade_max=0.9
+2026-10-17 15:46:53.064 I [present] MENU idx=4 1->0
+2026-10-17 15:46:53.113 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(true) fade_max=0.0
+2026-10-17 15:46:54.111 I [present] PERF ticks_per_s=56.9 task_us p50=61 p95=210 max=310 fp_us avg=20 max=55 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:54.377 I [boot] STATE mode=off mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=5ms gds_kbd=5ms
+2026-10-17 15:46:57.611 I [present] CAMFRAME tick=492 src=pers_cam_1 valid=1 why=ok pos=(2.31,3.12,2.84) fwd=(-0.123,-0.067,0.990) det=+1.000 ortho_err=7.5e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.50m
+2026-10-17 15:46:59.112 I [present] PERF ticks_per_s=60.0 task_us p50=190 p95=226 max=395 fp_us avg=21 max=164 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:46:59.379 I [boot] STATE mode=off mag=32/192 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=7ms gds_kbd=7ms
+2026-10-17 15:47:02.614 I [present] CAMFRAME tick=792 src=pers_cam_1 valid=1 why=ok pos=(0.65,3.79,18.67) fwd=(-0.374,-0.058,-0.926) det=+1.000 ortho_err=1.9e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=2.39m
+2026-10-17 15:47:04.063 I [present] MODE on weapon=ump45_mp mag=32/192 menu_baseline=[5, 7, 8] show_cursor=0
+2026-10-17 15:47:04.064 I [present] AC130 ready
+2026-10-17 15:47:04.064 I [present] VM state hidden->raise clip=pullout rate=1.096 ads=0.00 seq=1
+2026-10-17 15:47:04.066 I [present] VM first frame drawn 3840x2160 slot=1 out=Srgb
+2026-10-17 15:47:04.114 I [present] PERF ticks_per_s=60.0 task_us p50=191 p95=246 max=427 fp_us avg=21 max=157 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0
+2026-10-17 15:47:04.382 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=6ms gds_kbd=6ms
+2026-10-17 15:47:04.547 I [present] FP on eye=(1.36,3.91,18.83) cam_gate=ok er_cam_dist=3.57m eye_to_chest=0.41m hp=152 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff237d4c800
+2026-10-17 15:47:04.563 I [present] FP hide write player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff237d4c9c5 old=0x08 new=0x00
+2026-10-17 15:47:04.621 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 old=(-0.30,4.47,21.93) new=(1.36,3.91,18.83) (camera-step hook; erfps2: eye in both cameras)
+2026-10-17 15:47:04.621 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-17 15:47:04.621 I [present] FPCAM write field=CSCamera.pers_cam_1+0x40 addr=0x7ff1e5110ee0 old=(-0.30,4.47,21.93) new=(1.36,3.91,18.83) (camera-step hook)
+2026-10-17 15:47:04.838 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=2
+2026-10-17 15:47:07.621 I [present] CAMFRAME tick=1089 src=pers_cam_1 valid=1 why=ok pos=(4.40,5.23,28.84) fwd=(0.454,-0.173,-0.874) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=2.64m
+2026-10-17 15:47:08.003 I [present] MENU idx=19 0->1
+2026-10-17 15:47:09.121 I [present] PERF ticks_per_s=59.3 task_us p50=194 p95=227 max=16801 fp_us avg=80 max=16620 writes=814 write_us_max=3.6 slow_writes=0 page_checks=4 page_check_ms_max=21.35 page_check_ms_total=63.0 cached_pages=4 ac130=0
+2026-10-17 15:47:09.154 I [present] FP yaw probe conv=-z dot_med=-1.000 n=60
+2026-10-17 15:47:09.187 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff239dffa50 old=[0.0, -0.9130798, 0.0, 0.4077808] new=[0.0, -0.91885656, 0.0, 0.39459166] conv=-z
+2026-10-17 15:47:09.187 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff239dffa60 old=[-0.0, -0.9130798, -0.0, 0.4077808] new=[0.0, -0.91885656, 0.0, 0.39459166]
+2026-10-17 15:47:09.383 I [boot] STATE mode=on mag=32/192 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=7ms gds_kbd=6ms
+2026-10-17 15:47:09.431 I [present] MENU idx=19 1->0
+2026-10-17 15:47:09.549 I [present] FP yaw drift p50=1.95deg p95=2.60deg n=22 writes=23 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0)
+2026-10-17 15:47:09.598 I [present] FPCAM tick=300 eye_to_er_cam=4.40m eye_to_chest=0.41m pitch=-8.2deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=299 hook_skips=0 hide_reasserts=0 chr_cam_writes=299 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=299 follow_skips=0 autorot_clears=299 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-17 15:47:10.072 I [present] CAMFRAME tick=1235 src=pers_cam_1 valid=0 why=settling pos=(5.25,4.91,0.22) fwd=(0.257,-0.081,0.963) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.40m
+2026-10-17 15:47:10.073 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 skipped: current=(5.25,4.91,0.22) -> nothing (ER already rebuilt it, or the chr cam changed)
+2026-10-17 15:47:10.073 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=0 new=1 ok=1 (hook)
+2026-10-17 15:47:10.073 I [present] FP hide restore player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-17 15:47:10.073 I [present] FP yaw drift p50=2.20deg p95=2.95deg n=30 writes=53 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-17 15:47:10.073 I [present] FP off reason=cam_gate why=settling ticks_on=327 cam_writes=0 (re-arms when clear)
+2026-10-17 15:47:10.100 I [present] CAMFRAME tick=1237 src=pers_cam_1 valid=1 why=ok pos=(4.08,5.00,-3.81) fwd=(0.253,-0.076,0.964) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.32m
+2026-10-17 15:47:10.100 I [present] AC130 ready
+2026-10-17 15:47:10.583 I [present] FP on eye=(5.79,5.10,2.25) cam_gate=ok er_cam_dist=4.52m eye_to_chest=0.41m hp=152 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff237d4c800
+2026-10-17 15:47:10.583 I [present] FP hide write player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff237d4c9c5 old=0x08 new=0x00
+2026-10-17 15:47:10.583 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff239dffa50 old=[0.0, -0.9916437, 0.0, 0.12900662] new=[0.0, -0.9916411, 0.0, 0.12902686] conv=-z
+2026-10-17 15:47:10.583 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff239dffa60 old=[-0.0, -0.9916437, -0.0, 0.12900662] new=[0.0, -0.9916411, 0.0, 0.12902686]
+2026-10-17 15:47:10.600 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 old=(4.66,5.11,-1.97) new=(5.79,5.10,2.25) (camera-step hook; erfps2: eye in both cameras)
+2026-10-17 15:47:10.600 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-17 15:47:14.069 I [present] VM gpu_ms p50=0.0164 p95=0.0184 max=0.0196 n=594
+2026-10-17 15:47:14.133 I [present] PERF ticks_per_s=59.9 task_us p50=198 p95=249 max=16474 fp_us avg=81 max=16304 writes=1891 write_us_max=2.9 slow_writes=0 page_checks=5 page_check_ms_max=16.24 page_check_ms_total=79.2 cached_pages=5 ac130=0
+2026-10-17 15:47:14.385 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=6ms gds_kbd=6ms
+2026-10-17 15:47:15.116 I [present] CAMFRAME tick=1538 src=pers_cam_1 valid=1 why=ok pos=(5.34,6.64,12.52) fwd=(0.897,-0.180,-0.403) det=+1.000 ortho_err=5.6e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.55m
+2026-10-17 15:47:15.217 I [present] AC130 PROTECT apply id=79000950 chr=0x7ff237d4c800 present_before=0 present=1 ok=1 call=1
+2026-10-17 15:47:15.217 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(8.58,6.16,11.07) new=(5.34,6.64,12.52) ok=1 (hook)
+2026-10-17 15:47:15.217 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 old=(8.58,6.16,11.07) new=(5.34,6.64,12.52) ok=1 (hook)
+2026-10-17 15:47:15.217 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=0 new=1 ok=1 (hook)
+2026-10-17 15:47:15.217 I [present] FP hide restore player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=ac130
+2026-10-17 15:47:15.217 I [present] FP yaw drift p50=0.00deg p95=0.50deg n=277 writes=278 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-17 15:47:15.217 I [present] FP off reason=ac130  ticks_on=278 cam_writes=0 (re-arms when clear)
+2026-10-17 15:47:15.248 I [t(8)] AC130 write field=CSFeManImp.hud_state(+0x78) addr=0x7ff2576a4078 old=3 new=0 ok=1
+2026-10-17 15:47:15.248 I [t(8)] AC130 on center=(8.49,4.56,11.11) theta0_deg=155.8 gun=105 fp_was_on=1 camtype=Some(0) er_fov=48.0deg gun_fov=34.52deg R=116.0 H=107.0 slant=157.8 listener=render_cam(inferred) hp=152
+2026-10-17 15:47:15.286 E [present] PANIC thread=present at C:\Users\Player\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\imgui-0.12.0\src\draw_list.rs:120: The DrawListMut instance for the background draw list is already loaded! You can only load one instance of it!
+   0: std::backtrace_rs::backtrace::win64::trace
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\..\..\backtrace\src\backtrace\win64.rs:85
+   1: std::backtrace_rs::backtrace::trace_unsynchronized
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\..\..\backtrace\src\backtrace\mod.rs:66
+   2: std::backtrace::Backtrace::create
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\backtrace.rs:331
+   3: std::backtrace::Backtrace::force_capture
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\backtrace.rs:312
+   4: mw2er::log::install_panic_hook::closure$0
+             at D:\Mods\MW2inER\mod\mw2er\src\log.rs:123
+   5: std::panicking::panic_with_hook
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:823
+   6: std::panicking::panic_handler::closure$0
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:688
+   7: std::sys::backtrace::__rust_end_short_backtrace<std::panicking::panic_handler::closure_env$0,never$>
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\sys\backtrace.rs:182
+   8: std::panicking::panic_handler
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:679
+   9: core::panicking::panic_fmt
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\core\src\panicking.rs:80
+  10: imgui::draw_list::DrawListMut::lock_draw_list
+             at C:\Users\Player\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\imgui-0.12.0\src\draw_list.rs:120
+  11: imgui::draw_list::DrawListMut::background
+             at C:\Users\Player\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\imgui-0.12.0\src\draw_list.rs:137
+  12: imgui::Ui::get_background_draw_list
+             at C:\Users\Player\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\imgui-0.12.0\src\lib.rs:895
+  13: mw2er::hud::Mw2Hud::draw
+             at D:\Mods\MW2inER\mod\mw2er\src\hud.rs:111
+  14: mw2er::hud::impl$1::render::closure$0
+             at D:\Mods\MW2inER\mod\mw2er\src\hud.rs:265
+  15: core::panic::unwind_safe::impl$25::call_once
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\core\src\panic\unwind_safe.rs:275
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:576
+  17: std::panicking::catch_unwind
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:544
+  18: std::panic::catch_unwind
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panic.rs:359
+  19: mw2er::guard::guard<tuple$<>,mw2er::hud::impl$1::render::closure_env$0>
+             at D:\Mods\MW2inER\mod\mw2er\src\guard.rs:14
+  20: mw2er::hud::impl$1::render
+             at D:\Mods\MW2inER\mod\mw2er\src\hud.rs:265
+  21: hudhook::renderer::pipeline::Pipeline::render<hudhook::renderer::backend::dx12::D3D12RenderEngine>
+             at D:\Mods\MW2inER\vendor\hudhook-0.9.3\src\renderer\pipeline.rs:153
+  22: hudhook::hooks::dx12::render
+             at D:\Mods\MW2inER\vendor\hudhook-0.9.3\src\hooks\dx12.rs:732
+  23: hudhook::hooks::dx12::dxgi_swap_chain_present_impl
+             at D:\Mods\MW2inER\vendor\hudhook-0.9.3\src\hooks\dx12.rs:753
+  24: <unknown>
+  25: Scaleform::Render::Matrix2x4<float>::GetMaxScale
+  26: Scaleform::Render::Matrix2x4<float>::GetMaxScale
+  27: Scaleform::Render::Matrix2x4<float>::GetMaxScale
+  28: Scaleform::Render::Matrix2x4<float>::GetMaxScale
+  29: Scaleform::Render::Matrix2x4<float>::GetMaxScale
+  30: Scaleform::Render::Matrix4x4<float>::SetIdentity
+  31: Scaleform::Render::Matrix4x4<float>::SetIdentity
+  32: AK::WriteBytesCount::WriteBytes
+  33: AK::WriteBytesCount::WriteBytes
+  34: AK::WriteBytesCount::WriteBytes
+  35: AK::WriteBytesCount::WriteBytes
+  36: Scaleform::Render::Matrix2x4<float>::TransformByInverse
+  37: Scaleform::Render::Matrix2x4<float>::TransformByInverse
+  38: Scaleform::Render::Matrix4x4<float>::SetIdentity
+  39: Scaleform::Render::Matrix4x4<float>::SetIdentity
+  40: AK::WriteBytesCount::WriteBytes
+  41: BaseThreadInitThunk
+  42: RtlUserThreadStart
+
+2026-10-17 15:47:15.286 E [present] ERROR hud.render panicked: The DrawListMut instance for the background draw list is already loaded! You can only load one instance of it!
+2026-10-17 15:47:15.286 E [present] ERROR hud disabled (render panicked)
+2026-10-17 15:47:15.287 I [present] AC130 thermal first frame 3840x2160 fmt=R10G10B10A2_UNORM gun=0
+2026-10-17 15:47:15.296 I [present] MENU idx=7 1->0
+2026-10-17 15:47:15.296 I [present] AC130CAM write field=CSCamera.pers_cam_1+0x10..0x54 addr=0x7ff1e5110eb0 old_pos=(5.34,6.64,12.52) new_pos=(-97.39,111.55,58.47) old_fov=0.8378 new_fov=0.6024 (camera-step hook mode 2, one 68-byte write per frame)
+2026-10-17 15:47:19.145 I [present] PERF ticks_per_s=59.5 task_us p50=194 p95=221 max=14540 fp_us avg=22 max=52 writes=2387 write_us_max=2.7 slow_writes=0 page_checks=6 page_check_ms_max=14.25 page_check_ms_total=93.5 cached_pages=6 ac130=1
+2026-10-17 15:47:19.386 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=12ms gds_kbd=12ms
+2026-10-17 15:47:20.128 I [present] CAMFRAME tick=1836 src=pers_cam_1 valid=1 why=ok pos=(5.34,6.64,12.52) fwd=(0.897,-0.180,-0.403) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.55m
+2026-10-17 15:47:20.261 I [present] AC130CAM t=5.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=4.0 writes=299 skips=0 persisted=0 fov_persisted=0 fov_deg=34.52 gun=105 aim_yaw=23.8 aim_pitch=0.8 mouse_counts=12983 er_yaw=114.2 last_reject=0
+2026-10-17 15:47:20.795 I [present] AC130 SHOT gun=105 n=1 clip=0/1 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=2.20
+2026-10-17 15:47:20.795 I [present] AC130 RELOAD gun=105 s=4.98
+2026-10-17 15:47:22.996 I [present] AC130 EXPLODE gun=105 ids=79000201+79000202 pos=(13.05,-0.50,-29.32) dist_m=167.4 late_ms=4
+2026-10-17 15:47:23.014 I [present] AC130 EXPLODE seen id=79000201 pos=(12.83,-0.30,-29.27) alive=0.000s
+2026-10-17 15:47:23.014 I [present] AC130 EXPLODE seen id=79000202 pos=(12.83,-0.30,-29.27) alive=0.000s
+2026-10-17 15:47:23.029 I [present] MENU idx=23 0->1
+2026-10-17 15:47:23.129 I [present] HIT chr=c4311 hp 219->175 dmg=44 band=79000202 mw2=525 d=10.7m via=ac130 n=1 kill=0 src=ac130 gun=105 tier=ring
+2026-10-17 15:47:23.796 I [present] AC130 SWITCH gun=40 via=wheel fov=15.07deg
+2026-10-17 15:47:24.146 I [present] PERF ticks_per_s=60.0 task_us p50=194 p95=221 max=339 fp_us avg=21 max=111 writes=2687 write_us_max=1.4 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=1
+2026-10-17 15:47:24.195 I [present] AC130 SHOT gun=40 n=1 clip=3/4 o=(-99.18,111.55,-32.02) dir=(0.711,-0.702,0.052) impact=(14.02,-0.23,-23.73) dist_m=159.3 via=map flight_s=1.25
+2026-10-17 15:47:24.389 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=1 gds_mouse=15ms gds_kbd=15ms
+2026-10-17 15:47:24.478 I [present] AC130 SHOT gun=40 n=2 clip=2/4 o=(-98.04,111.55,-34.75) dir=(0.705,-0.705,0.085) impact=(13.36,0.14,-21.32) dist_m=158.1 via=map flight_s=1.25
+2026-10-17 15:47:24.779 I [present] AC130 SHOT gun=40 n=3 clip=1/4 o=(-96.77,111.55,-37.60) dir=(0.715,-0.683,0.150) impact=(18.66,1.33,-13.36) dist_m=161.4 via=map flight_s=1.27
+2026-10-17 15:47:25.095 I [present] AC130 SHOT gun=40 n=4 clip=0/4 o=(-95.35,111.55,-40.57) dir=(0.711,-0.672,0.205) impact=(20.71,1.79,-7.06) dist_m=163.2 via=map flight_s=1.29
+2026-10-17 15:47:25.095 I [present] AC130 RELOAD gun=40 s=2.98
+2026-10-17 15:47:25.129 I [present] CAMFRAME tick=2136 src=pers_cam_1 valid=1 why=ok pos=(5.34,6.64,12.52) fwd=(0.897,-0.180,-0.403) det=+1.000 ortho_err=7.5e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.55m
+2026-10-17 15:47:25.262 I [present] AC130CAM t=10.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=4.0 writes=599 skips=0 persisted=0 fov_persisted=0 fov_deg=15.07 gun=40 aim_yaw=8.6 aim_pitch=-0.0 mouse_counts=14700 er_yaw=114.2 last_reject=0
+2026-10-17 15:47:25.298 I [present] AC130 gpu_ms p50=0.0464 p95=0.0487 max=0.0788 n=599
+2026-10-17 15:47:25.462 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(14.02,-0.23,-23.73) dist_m=159.3 late_ms=12
+2026-10-17 15:47:25.479 I [present] AC130 EXPLODE seen id=79000301 pos=(13.81,-0.02,-23.74) alive=0.000s
+2026-10-17 15:47:25.479 I [present] AC130 EXPLODE seen id=79000302 pos=(13.81,-0.02,-23.74) alive=0.000s
+2026-10-17 15:47:25.729 I [t(6)] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(13.36,0.14,-21.32) dist_m=158.1 late_ms=5
+2026-10-17 15:47:25.780 I [present] AC130 RELOAD done gun=105 clip=1
+2026-10-17 15:47:26.062 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(18.66,1.33,-13.36) dist_m=161.4 late_ms=12
+2026-10-17 15:47:26.395 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(20.71,1.79,-7.06) dist_m=163.2 late_ms=16
+2026-10-17 15:47:28.078 I [present] AC130 RELOAD done gun=40 clip=4
+2026-10-17 15:47:28.079 I [present] AC130 SHOT gun=40 n=5 clip=3/4 o=(-77.96,111.55,-66.21) dir=(0.617,-0.765,0.186) impact=(12.03,0.05,-39.10) dist_m=145.8 via=map flight_s=1.15
+2026-10-17 15:47:28.379 I [present] AC130 SHOT gun=40 n=6 clip=2/4 o=(-75.85,111.55,-68.51) dir=(0.610,-0.768,0.194) impact=(12.79,0.05,-40.33) dist_m=145.2 via=map flight_s=1.14
+2026-10-17 15:47:28.680 I [present] AC130 SHOT gun=40 n=7 clip=1/4 o=(-73.68,111.55,-70.75) dir=(0.604,-0.768,0.213) impact=(11.55,3.03,-40.68) dist_m=141.2 via=chr flight_s=1.11
+2026-10-17 15:47:28.979 I [present] AC130 SHOT gun=40 n=8 clip=0/4 o=(-71.45,111.55,-72.93) dir=(0.582,-0.774,0.249) impact=(12.68,-0.33,-36.98) dist_m=144.5 via=map flight_s=1.14
+2026-10-17 15:47:28.979 I [present] AC130 RELOAD gun=40 s=3.00
+2026-10-17 15:47:29.146 I [present] PERF ticks_per_s=60.0 task_us p50=195 p95=248 max=340 fp_us avg=20 max=46 writes=2987 write_us_max=1.3 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=1
+2026-10-17 15:47:29.231 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(12.03,0.05,-39.10) dist_m=145.8 late_ms=4
+2026-10-17 15:47:29.363 I [present] HIT chr=c4311 hp 175->171 dmg=4 band=79000301 mw2=225 d=1.0m via=ac130 n=1 kill=0 src=ac130 gun=40 tier=core
+2026-10-17 15:47:29.391 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=2 gds_mouse=16ms gds_kbd=16ms
+2026-10-17 15:47:29.529 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(12.79,0.05,-40.33) dist_m=145.2 late_ms=7
+2026-10-17 15:47:29.647 I [present] HIT chr=c4311 hp 171->169 dmg=2 band=79000302 mw2=163 d=2.5m via=ac130 n=1 kill=0 src=ac130 gun=40 tier=ring
+2026-10-17 15:47:29.796 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(11.55,3.03,-40.68) dist_m=141.2 late_ms=4
+2026-10-17 15:47:29.813 I [present] AC130 SWITCH gun=25 via=wheel fov=3.75deg
+2026-10-17 15:47:29.913 I [present] HIT chr=c4311 hp 169->167 dmg=2 band=79000302 mw2=163 d=2.5m via=ac130 n=1 kill=0 src=ac130 gun=40 tier=ring
+2026-10-17 15:47:30.129 I [present] CAMFRAME tick=2436 src=pers_cam_1 valid=1 why=ok pos=(5.34,6.64,12.52) fwd=(0.897,-0.180,-0.403) det=+1.000 ortho_err=1.3e-4 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.55m
+2026-10-17 15:47:30.129 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(12.68,-0.33,-36.98) dist_m=144.5 late_ms=12
+2026-10-17 15:47:30.263 I [present] AC130CAM t=15.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=4.0 writes=899 skips=0 persisted=0 fov_persisted=0 fov_deg=3.75 gun=25 aim_yaw=19.9 aim_pitch=-7.9 mouse_counts=18651 er_yaw=114.2 last_reject=0
+2026-10-17 15:47:30.263 I [present] HIT chr=c4311 hp 167->163 dmg=4 band=79000301 mw2=225 d=1.9m via=ac130 n=1 kill=0 src=ac130 gun=40 tier=core
+2026-10-17 15:47:31.979 I [present] AC130 RELOAD done gun=40 clip=4
+2026-10-17 15:47:32.213 I [present] AC130 SHOT gun=25 n=1 clip=19/20 o=(-44.05,111.55,-92.29) dir=(0.481,-0.749,0.455) impact=(27.98,-0.55,-24.14) dist_m=149.7 via=map flight_s=0.59
+2026-10-17 15:47:32.279 I [present] AC130 SHOT gun=25 n=2 clip=18/20 o=(-43.44,111.55,-92.60) dir=(0.478,-0.749,0.458) impact=(27.96,-0.46,-24.11) dist_m=149.4 via=map flight_s=0.59
+2026-10-17 15:47:32.346 I [present] AC130 SHOT gun=25 n=3 clip=17/20 o=(-42.81,111.55,-92.91) dir=(0.474,-0.751,0.460) impact=(27.96,-0.60,-24.15) dist_m=149.4 via=map flight_s=0.59
+2026-10-17 15:47:32.413 I [present] AC130 SHOT gun=25 n=4 clip=16/20 o=(-42.18,111.55,-93.22) dir=(0.468,-0.754,0.460) impact=(27.79,-1.14,-24.41) dist_m=149.4 via=map flight_s=0.59
+2026-10-17 15:47:32.479 I [present] AC130 SHOT gun=25 n=5 clip=15/20 o=(-41.56,111.55,-93.52) dir=(0.462,-0.758,0.460) impact=(27.20,-1.34,-25.07) dist_m=148.9 via=map flight_s=0.59
+2026-10-17 15:47:32.563 I [present] AC130 SHOT gun=25 n=6 clip=14/20 o=(-40.78,111.55,-93.89) dir=(0.455,-0.762,0.460) impact=(26.68,-1.41,-25.68) dist_m=148.2 via=map flight_s=0.58
+2026-10-17 15:47:32.629 I [present] AC130 SHOT gun=25 n=7 clip=13/20 o=(-40.15,111.55,-94.18) dir=(0.450,-0.765,0.461) impact=(26.28,-1.45,-26.04) dist_m=147.7 via=map flight_s=0.58
+2026-10-17 15:47:32.696 I [present] AC130 SHOT gun=25 n=8 clip=12/20 o=(-39.52,111.55,-94.47) dir=(0.442,-0.769,0.462) impact=(25.40,-1.44,-26.61) dist_m=146.9 via=map flight_s=0.58
+2026-10-17 15:47:32.762 I [present] AC130 SHOT gun=25 n=9 clip=11/20 o=(-38.89,111.55,-94.75) dir=(0.434,-0.773,0.462) impact=(24.57,-1.44,-27.19) dist_m=146.1 via=map flight_s=0.58
+2026-10-17 15:47:32.811 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(27.98,-0.55,-24.14) dist_m=149.7 late_ms=10
+2026-10-17 15:47:32.829 I [present] AC130 SHOT gun=25 n=10 clip=10/20 o=(-38.25,111.55,-95.04) dir=(0.426,-0.778,0.462) impact=(23.68,-1.43,-27.90) dist_m=145.3 via=map flight_s=0.57
+2026-10-17 15:47:32.829 I [present] AC130 EXPLODE seen id=79000401 pos=(27.83,-0.32,-24.27) alive=0.000s
+2026-10-17 15:47:32.879 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(27.96,-0.46,-24.11) dist_m=149.4 late_ms=11
+2026-10-17 15:47:32.913 I [present] AC130 SHOT gun=25 n=11 clip=9/20 o=(-37.46,111.55,-95.38) dir=(0.416,-0.784,0.461) impact=(22.42,-1.37,-28.96) dist_m=144.0 via=map flight_s=0.57
+2026-10-17 15:47:32.947 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(27.96,-0.60,-24.15) dist_m=149.4 late_ms=12
+2026-10-17 15:47:32.979 I [present] AC130 SHOT gun=25 n=12 clip=8/20 o=(-36.82,111.55,-95.65) dir=(0.407,-0.789,0.460) impact=(21.41,-1.33,-29.77) dist_m=143.1 via=map flight_s=0.56
+2026-10-17 15:47:33.011 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(27.79,-1.14,-24.41) dist_m=149.4 late_ms=11
+2026-10-17 15:47:33.046 I [present] AC130 SHOT gun=25 n=13 clip=7/20 o=(-36.18,111.55,-95.92) dir=(0.398,-0.794,0.460) impact=(20.38,-1.24,-30.60) dist_m=142.1 via=map flight_s=0.56
+2026-10-17 15:47:33.079 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(27.20,-1.34,-25.07) dist_m=148.9 late_ms=14
+2026-10-17 15:47:33.113 I [t(6)] AC130 SHOT gun=25 n=14 clip=6/20 o=(-35.54,111.55,-96.19) dir=(0.391,-0.797,0.460) impact=(19.75,-1.20,-31.22) dist_m=141.4 via=map flight_s=0.56
+2026-10-17 15:47:33.162 I [t(8)] AC130 EXPLODE gun=25 ids=79000401 pos=(26.68,-1.41,-25.68) dist_m=148.2 late_ms=16
+2026-10-17 15:47:33.179 I [present] AC130 SHOT gun=25 n=15 clip=5/20 o=(-34.90,111.55,-96.45) dir=(0.385,-0.800,0.459) impact=(19.36,-1.13,-31.79) dist_m=140.8 via=map flight_s=0.55
+2026-10-17 15:47:33.213 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(26.28,-1.45,-26.04) dist_m=147.7 late_ms=2
+2026-10-17 15:47:33.262 I [present] AC130 SHOT gun=25 n=16 clip=4/20 o=(-34.09,111.55,-96.77) dir=(0.380,-0.802,0.461) impact=(19.34,-1.17,-32.05) dist_m=140.5 via=map flight_s=0.55
+2026-10-17 15:47:33.279 I [t(6)] AC130 EXPLODE gun=25 ids=79000401 pos=(25.40,-1.44,-26.61) dist_m=146.9 late_ms=5
+2026-10-17 15:47:33.347 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(24.57,-1.44,-27.19) dist_m=146.1 late_ms=9
+2026-10-17 15:47:33.413 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(23.68,-1.43,-27.90) dist_m=145.3 late_ms=12
+2026-10-17 15:47:33.496 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(22.42,-1.37,-28.96) dist_m=144.0 late_ms=16
+2026-10-17 15:47:33.546 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(21.41,-1.33,-29.77) dist_m=143.1 late_ms=3
+2026-10-17 15:47:33.613 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(20.38,-1.24,-30.60) dist_m=142.1 late_ms=7
+2026-10-17 15:47:33.679 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(19.75,-1.20,-31.22) dist_m=141.4 late_ms=10
+2026-10-17 15:47:33.747 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(19.36,-1.13,-31.79) dist_m=140.8 late_ms=12
+2026-10-17 15:47:33.829 I [present] AC130 EXPLODE gun=25 ids=79000401 pos=(19.34,-1.17,-32.05) dist_m=140.5 late_ms=13
+2026-10-17 15:47:33.996 I [present] AC130 SWITCH gun=40 via=wheel fov=15.07deg
+2026-10-17 15:47:34.096 I [present] AC130 SWITCH gun=105 via=wheel fov=34.52deg
+2026-10-17 15:47:34.146 I [present] PERF ticks_per_s=60.0 task_us p50=197 p95=257 max=427 fp_us avg=21 max=186 writes=3287 write_us_max=1.3 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=1
+2026-10-17 15:47:34.229 I [present] AC130 SWITCH gun=25 via=wheel fov=3.75deg
+2026-10-17 15:47:34.393 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=5 gds_mouse=2ms gds_kbd=2ms
+2026-10-17 15:47:34.697 I [present] AC130 SWITCH gun=105 via=wheel fov=34.52deg
+2026-10-17 15:47:35.146 I [present] CAMFRAME tick=2737 src=pers_cam_1 valid=1 why=ok pos=(5.34,6.64,12.52) fwd=(0.898,-0.180,-0.401) det=+1.000 ortho_err=4.2e-7 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.55m
+2026-10-17 15:47:35.263 I [present] AC130 SHOT gun=105 n=2 clip=0/1 o=(-14.13,111.55,-102.64) dir=(0.174,-0.821,0.544) impact=(9.61,-0.18,-28.54) dist_m=136.2 via=map flight_s=1.79
+2026-10-17 15:47:35.263 I [present] AC130 RELOAD gun=105 s=4.98
+2026-10-17 15:47:35.263 I [present] AC130CAM t=20.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=4.0 writes=1199 skips=0 persisted=0 fov_persisted=0 fov_deg=34.52 gun=105 aim_yaw=6.5 aim_pitch=-12.5 mouse_counts=25959 er_yaw=114.2 last_reject=0
+2026-10-17 15:47:35.298 I [present] AC130 gpu_ms p50=0.0458 p95=0.0486 max=0.2898 n=600
+2026-10-17 15:47:37.062 I [present] AC130 EXPLODE gun=105 ids=79000201+79000202 pos=(9.61,-0.18,-28.54) dist_m=136.2 late_ms=13
+2026-10-17 15:47:37.197 I [present] HIT chr=c4311 hp 163->159 dmg=4 band=79000201 mw2=450 d=4.0m via=ac130 n=1 kill=0 src=ac130 gun=105 tier=core
+2026-10-17 15:47:39.163 I [present] PERF ticks_per_s=60.0 task_us p50=194 p95=250 max=427 fp_us avg=21 max=54 writes=3588 write_us_max=1.2 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=1
+2026-10-17 15:47:39.395 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=6 gds_mouse=4ms gds_kbd=3ms
+2026-10-17 15:47:40.147 I [present] CAMFRAME tick=3037 src=pers_cam_1 valid=1 why=ok pos=(5.34,6.64,12.52) fwd=(0.897,-0.180,-0.403) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.55m
+2026-10-17 15:47:40.262 I [present] AC130 RELOAD done gun=105 clip=1
+2026-10-17 15:47:40.263 I [present] AC130CAM t=25.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=4.0 writes=1499 skips=0 persisted=0 fov_persisted=0 fov_deg=34.52 gun=105 aim_yaw=-35.0 aim_pitch=-10.8 mouse_counts=32819 er_yaw=114.2 last_reject=0
+2026-10-17 15:47:42.713 I [present] AC130 SHOT gun=105 n=3 clip=0/1 o=(61.26,111.55,-92.17) dir=(-0.495,-0.815,0.303) impact=(-5.71,1.27,-51.17) dist_m=135.4 via=map flight_s=1.78
+2026-10-17 15:47:42.713 I [present] AC130 RELOAD gun=105 s=4.98
+2026-10-17 15:47:43.513 I [present] AC130 SWITCH gun=40 via=wheel fov=15.07deg
+2026-10-17 15:47:43.898 I [present] AC130 SHOT gun=40 n=9 clip=3/4 o=(71.92,111.55,-85.98) dir=(-0.549,-0.796,0.257) impact=(-4.25,1.14,-50.36) dist_m=138.8 via=map flight_s=1.09
+2026-10-17 15:47:44.163 I [present] PERF ticks_per_s=60.0 task_us p50=194 p95=252 max=362 fp_us avg=21 max=75 writes=3888 write_us_max=1.2 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=1
+2026-10-17 15:47:44.196 I [present] AC130 SHOT gun=40 n=10 clip=2/4 o=(74.50,111.55,-84.25) dir=(-0.556,-0.793,0.249) impact=(-3.00,1.04,-49.51) dist_m=139.4 via=map flight_s=1.10
+2026-10-17 15:47:44.397 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=6 gds_mouse=5ms gds_kbd=5ms
+2026-10-17 15:47:44.496 I [present] AC130 SHOT gun=40 n=11 clip=1/4 o=(77.05,111.55,-82.43) dir=(-0.563,-0.790,0.244) impact=(-0.21,3.27,-49.03) dist_m=137.1 via=chr flight_s=1.08
+2026-10-17 15:47:44.496 I [present] AC130 EXPLODE gun=105 ids=79000201+79000202 pos=(-5.71,1.27,-51.17) dist_m=135.4 late_ms=6
+2026-10-17 15:47:44.630 I [present] HIT chr=c4070 hp 88->0 dmg=88 band=0 mw2=0 d=0.0m via=last_hit_by n=0 kill=1
+2026-10-17 15:47:44.630 I [present] KILL chr=c4070
+2026-10-17 15:47:44.630 I [present] HIT chr=c4311 hp 219->131 dmg=88 band=79000201 mw2=450 d=5.2m via=ac130 n=1 kill=0 src=ac130 gun=105 tier=core
+2026-10-17 15:47:44.797 I [present] AC130 SHOT gun=40 n=12 clip=0/4 o=(79.55,111.55,-80.55) dir=(-0.565,-0.791,0.235) impact=(0.44,0.71,-47.60) dist_m=140.1 via=map flight_s=1.10
+2026-10-17 15:47:44.797 I [present] AC130 RELOAD gun=40 s=2.98
+2026-10-17 15:47:44.996 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(-4.25,1.14,-50.36) dist_m=138.8 late_ms=6
+2026-10-17 15:47:45.114 I [present] HIT chr=c4311 hp 131->103 dmg=28 band=79000201 mw2=450 d=7.5m via=ac130 n=1 kill=0 src=ac130 gun=105 tier=core
+2026-10-17 15:47:45.147 I [present] CAMFRAME tick=3337 src=pers_cam_1 valid=1 why=ok pos=(5.34,6.64,12.52) fwd=(0.897,-0.180,-0.403) det=+1.000 ortho_err=1.1e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.55m
+2026-10-17 15:47:45.264 I [present] AC130CAM t=30.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=4.0 writes=1799 skips=0 persisted=0 fov_persisted=0 fov_deg=15.07 gun=40 aim_yaw=-28.9 aim_pitch=-9.1 mouse_counts=34169 er_yaw=114.2 last_reject=0
+2026-10-17 15:47:45.296 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(-3.00,1.04,-49.51) dist_m=139.4 late_ms=2
+2026-10-17 15:47:45.299 I [present] AC130 gpu_ms p50=0.0461 p95=0.0488 max=0.2856 n=600
+2026-10-17 15:47:45.430 I [present] HPDROP chr=c4311 hp 103->75 last_hit_by=0xffffffffffffffff (not attributed)
+2026-10-17 15:47:45.580 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(-0.21,3.27,-49.03) dist_m=137.1 late_ms=4
+2026-10-17 15:47:45.696 I [present] HIT chr=c4311 hp 75->47 dmg=28 band=79000302 mw2=163 d=3.6m via=ac130 n=1 kill=0 src=ac130 gun=40 tier=ring
+2026-10-17 15:47:45.914 I [present] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(0.44,0.71,-47.60) dist_m=140.1 late_ms=13
+2026-10-17 15:47:46.046 I [present] HIT chr=c4311 hp 47->0 dmg=47 band=0 mw2=0 d=0.0m via=last_hit_by n=0 kill=1
+2026-10-17 15:47:46.046 I [present] KILL chr=c4311
+2026-10-17 15:47:46.179 I [present] AC130 SWITCH gun=105 via=wheel fov=34.52deg
+2026-10-17 15:47:46.446 I [present] AC130 restore field=CSCamera.pers_cam_1+0x10..0x54 addr=0x7ff1e5110eb0 old=<pos=(92.29,111.55,-69.06) fov=0.6024> new=<pos=(5.34,6.64,12.52) fov=0.8378> floats=13 fov_restored=1 fov_persisted_frames=0 ok=1
+2026-10-17 15:47:46.446 I [present] AC130 restore field=CSFeManImp.hud_state old=0 new=3 ok=1
+2026-10-17 15:47:46.446 I [present] AC130 off reason=exit_key t_s=31.2 shots=105:3/40:12/25:16 explosions=31 hits=9 kills=0 shells_dropped=0 player_hp_start=152 player_hp_min=152 moved_m=0.0 fp_resume=1 cooldown_s=120
+2026-10-17 15:47:46.451 I [present] VM gpu_ms p50=0.0162 p95=0.0175 max=0.0177 n=70
+2026-10-17 15:47:46.465 I [present] MENU idx=7 0->1
+2026-10-17 15:47:46.465 I [present] MENU idx=17 0->1
+2026-10-17 15:47:46.481 I [present] AC130 PROTECT restore id=79000950 chr=0x7ff237d4c800 present=0 ok=1 reason=exit_key
+2026-10-17 15:47:46.498 I [present] AC130 cooldown remaining_s=119.9
+2026-10-17 15:47:46.930 I [present] FP on eye=(8.58,6.16,11.07) cam_gate=ok er_cam_dist=3.58m eye_to_chest=0.41m hp=152 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff237d4c800
+2026-10-17 15:47:46.931 I [present] FP hide write player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff237d4c9c5 old=0x08 new=0x00
+2026-10-17 15:47:46.931 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff239dffa50 old=[0.0, -0.54334426, 0.0, 0.83950996] new=[0.0, -0.5433448, 0.0, 0.83950967] conv=-z
+2026-10-17 15:47:46.931 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff239dffa60 old=[-0.0, -0.54334426, -0.0, 0.83950996] new=[0.0, -0.5433448, 0.0, 0.83950967]
+2026-10-17 15:47:46.947 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 old=(5.34,6.64,12.52) new=(8.58,6.16,11.07) (camera-step hook; erfps2: eye in both cameras)
+2026-10-17 15:47:46.947 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-17 15:47:47.414 I [present] MENU idx=17 1->0
+2026-10-17 15:47:47.481 I [present] SPAWN try id=79000100 owner=0xffffffff16f00000 origin=(9.65,5.97,10.88) w=1 dir=(0.968,-0.166,-0.189) (first spawn of the session)
+2026-10-17 15:47:47.481 I [present] SPAWN ok (first spawn)
+2026-10-17 15:47:47.481 I [present] SHOT n=1 mag=31/192 id=79000100 mw2=40 d=0.4m src=map spread=2.00 origin=(9.65,5.97,10.88) dir=(0.968,-0.166,-0.189)
+2026-10-17 15:47:47.481 I [present] VM state idle->fire clip=fire rate=1.000 ads=0.00 seq=3
+2026-10-17 15:47:47.497 I [present] BULLET id=79000100 pos=(9.65,5.97,10.88) origin=(9.65,5.97,10.88) speed=999.0 m/s alive=0.000s
+2026-10-17 15:47:47.514 I [present] MENU idx=17 0->1
+2026-10-17 15:47:47.530 I [present] IMPACT pos=(10.07,5.89,10.79) dist_from_origin=0.4m t=0.049s kind=hit
+2026-10-17 15:47:47.579 I [present] SHOT n=2 mag=30/192 id=79000100 mw2=40 d=0.5m src=map spread=2.37 origin=(9.65,5.97,10.88) dir=(0.963,-0.174,-0.204)
+2026-10-17 15:47:47.579 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=4
+2026-10-17 15:47:47.615 I [present] HIT chr=c4311 hp 219->170 dmg=49 band=79000100 mw2=40 d=0.4m via=impact n=1 kill=0
+2026-10-17 15:47:47.630 I [present] IMPACT pos=(10.20,5.86,10.76) dist_from_origin=0.6m t=0.050s kind=hit
+2026-10-17 15:47:47.664 I [present] SHOT n=3 mag=29/192 id=79000100 mw2=40 d=0.5m src=map spread=2.93 origin=(9.65,5.97,10.88) dir=(0.965,-0.176,-0.192)
+2026-10-17 15:47:47.664 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=5
+2026-10-17 15:47:47.714 I [present] IMPACT pos=(10.09,5.90,10.78) dist_from_origin=0.5m t=0.050s kind=hit
+2026-10-17 15:47:47.730 I [present] HIT chr=c4311 hp 170->121 dmg=49 band=79000100 mw2=40 d=0.5m via=impact n=1 kill=0
+2026-10-17 15:47:47.763 I [present] SHOT n=4 mag=28/192 id=79000100 mw2=40 d=0.7m src=map spread=3.29 origin=(9.64,5.98,10.86) dir=(0.955,-0.158,-0.251)
+2026-10-17 15:47:47.763 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=6
+2026-10-17 15:47:47.813 I [present] IMPACT pos=(10.38,5.88,10.66) dist_from_origin=0.8m t=0.050s kind=hit
+2026-10-17 15:47:47.813 I [present] HIT chr=c4311 hp 121->72 dmg=49 band=79000100 mw2=40 d=0.5m via=impact n=1 kill=0
+2026-10-17 15:47:47.846 I [present] SHOT n=5 mag=27/192 id=79000100 mw2=40 d=0.7m src=map spread=3.85 origin=(9.64,6.00,10.82) dir=(0.972,-0.148,-0.184)
+2026-10-17 15:47:47.846 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=7
+2026-10-17 15:47:47.897 I [present] IMPACT pos=(10.39,5.89,10.67) dist_from_origin=0.8m t=0.051s kind=hit
+2026-10-17 15:47:47.897 I [present] HIT chr=c4311 hp 72->23 dmg=49 band=79000100 mw2=40 d=0.7m via=impact n=1 kill=0
+2026-10-17 15:47:47.947 I [present] SHOT n=6 mag=26/192 id=79000100 mw2=40 d=0.9m src=map spread=3.80 origin=(9.64,6.00,10.82) dir=(0.953,-0.166,-0.255)
+2026-10-17 15:47:47.947 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=8
+2026-10-17 15:47:47.980 I [present] HIT chr=c4311 hp 23->0 dmg=23 band=79000100 mw2=40 d=0.7m via=last_hit_by n=1 kill=1
+2026-10-17 15:47:47.980 I [present] KILL chr=c4311
+2026-10-17 15:47:47.996 I [present] IMPACT pos=(10.44,5.88,10.60) dist_from_origin=0.8m t=0.050s kind=hit
+2026-10-17 15:47:48.030 I [present] SHOT n=7 mag=25/192 id=79000100 mw2=40 d=0.9m src=map spread=4.01 origin=(9.63,5.99,10.81) dir=(0.942,-0.131,-0.309)
+2026-10-17 15:47:48.030 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=9
+2026-10-17 15:47:48.080 I [present] IMPACT pos=(10.58,5.87,10.51) dist_from_origin=1.0m t=0.050s kind=hit
+2026-10-17 15:47:48.114 I [present] SHOT n=8 mag=24/192 id=79000100 mw2=40 d=1.3m src=map spread=4.00 origin=(9.63,5.98,10.81) dir=(0.947,-0.175,-0.269)
+2026-10-17 15:47:48.114 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=10
+2026-10-17 15:47:48.163 I [present] IMPACT pos=(10.90,5.75,10.46) dist_from_origin=1.3m t=0.050s kind=hit
+2026-10-17 15:47:48.213 I [present] SHOT n=9 mag=23/192 id=79000100 mw2=40 d=1.5m src=map spread=3.80 origin=(9.63,5.97,10.81) dir=(0.937,-0.189,-0.293)
+2026-10-17 15:47:48.213 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=11
+2026-10-17 15:47:48.263 I [present] IMPACT pos=(10.99,5.69,10.39) dist_from_origin=1.5m t=0.050s kind=hit
+2026-10-17 15:47:48.297 I [present] SHOT n=10 mag=22/192 id=79000100 mw2=40 d=1.4m src=map spread=4.00 origin=(9.63,5.96,10.81) dir=(0.952,-0.146,-0.268)
+2026-10-17 15:47:48.297 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=12
+2026-10-17 15:47:48.347 I [present] IMPACT pos=(10.99,5.75,10.43) dist_from_origin=1.4m t=0.050s kind=hit
+2026-10-17 15:47:48.397 I [present] SHOT n=11 mag=21/192 id=79000100 mw2=40 d=1.3m src=map spread=3.79 origin=(9.63,5.96,10.81) dir=(0.949,-0.215,-0.233)
+2026-10-17 15:47:48.397 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=13
+2026-10-17 15:47:48.447 I [present] IMPACT pos=(10.87,5.66,10.50) dist_from_origin=1.3m t=0.050s kind=hit
+2026-10-17 15:47:48.480 I [present] SHOT n=12 mag=20/192 id=79000100 mw2=40 d=1.3m src=map spread=4.00 origin=(9.63,5.96,10.81) dir=(0.942,-0.187,-0.278)
+2026-10-17 15:47:48.480 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=14
+2026-10-17 15:47:48.530 I [present] IMPACT pos=(10.83,5.70,10.45) dist_from_origin=1.3m t=0.049s kind=hit
+2026-10-17 15:47:48.630 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=15
+2026-10-17 15:47:49.163 I [present] PERF ticks_per_s=60.0 task_us p50=201 p95=279 max=426 fp_us avg=24 max=79 writes=4565 write_us_max=1.5 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=1
+2026-10-17 15:47:49.363 I [present] MENU idx=17 1->0
+2026-10-17 15:47:49.400 I [boot] STATE mode=on mag=20/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=8ms gds_kbd=8ms
+2026-10-17 15:47:49.530 I [present] RELOAD start empty=0 dur=2.5 mag=20
+2026-10-17 15:47:49.530 I [present] VM state idle->reload clip=reload rate=1.000 ads=0.00 seq=16
+2026-10-17 15:47:50.163 I [present] CAMFRAME tick=3638 src=pers_cam_1 valid=1 why=ok pos=(5.18,6.78,11.98) fwd=(0.946,-0.219,-0.237) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.56m
+2026-10-17 15:47:51.914 I [present] FPCAM tick=300 eye_to_er_cam=3.94m eye_to_chest=0.41m pitch=-9.0deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=904 hook_skips=0 hide_reasserts=0 chr_cam_writes=904 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=904 follow_skips=0 autorot_clears=904 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-17 15:47:51.947 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=188 writes=190 paused=112 (lateral=112 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0)
+2026-10-17 15:47:52.030 I [present] RELOAD done mag=32 reserve=180 added=12
+2026-10-17 15:47:52.030 I [present] VM state reload->idle clip=idle rate=1.000 ads=0.00 seq=17
+2026-10-17 15:47:53.247 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=18
+2026-10-17 15:47:53.565 I [present] VM state sprint_in->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=20
+2026-10-17 15:47:53.880 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=21
+2026-10-17 15:47:54.113 I [present] MENU idx=23 1->0
+2026-10-17 15:47:54.163 I [present] PERF ticks_per_s=60.0 task_us p50=199 p95=243 max=343 fp_us avg=27 max=73 writes=5582 write_us_max=1.8 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=0
+2026-10-17 15:47:54.402 I [boot] STATE mode=on mag=32/180 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=10ms gds_kbd=10ms
+2026-10-17 15:47:55.047 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=22
+2026-10-17 15:47:55.163 I [present] CAMFRAME tick=3938 src=pers_cam_1 valid=1 why=ok pos=(-0.84,10.10,7.73) fwd=(-0.480,-0.188,-0.857) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.63m
+2026-10-17 15:47:55.216 I [present] VM state sprint_in->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=23
+2026-10-17 15:47:55.531 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=24
+2026-10-17 15:47:55.731 I [t(8)] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=25
+2026-10-17 15:47:56.031 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=26
+2026-10-17 15:47:56.047 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=27
+2026-10-17 15:47:56.348 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=28
+2026-10-17 15:47:56.466 I [present] VM gpu_ms p50=0.0159 p95=0.0176 max=0.0203 n=601
+2026-10-17 15:47:56.915 I [present] FPCAM tick=600 eye_to_er_cam=4.35m eye_to_chest=0.41m pitch=-6.4deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=1204 hook_skips=0 hide_reasserts=0 chr_cam_writes=1204 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=1204 follow_skips=0 autorot_clears=1204 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-17 15:47:56.948 I [present] FP yaw drift p50=0.75deg p95=1.90deg n=224 writes=417 paused=73 (lateral=31 dodge=0 turn_lock=14 lockon=0 throw=0 off_heading=28)
+2026-10-17 15:47:59.081 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=29
+2026-10-17 15:47:59.165 I [present] PERF ticks_per_s=60.0 task_us p50=198 p95=224 max=339 fp_us avg=28 max=95 writes=6775 write_us_max=1.5 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=0
+2026-10-17 15:47:59.265 I [present] VM state sprint_in->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=30
+2026-10-17 15:47:59.404 I [boot] STATE mode=on mag=32/180 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=11ms gds_kbd=11ms
+2026-10-17 15:47:59.565 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=31
+2026-10-17 15:47:59.782 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=32
+2026-10-17 15:48:00.048 I [present] VM state sprint_in->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=33
+2026-10-17 15:48:00.165 I [present] CAMFRAME tick=4238 src=pers_cam_1 valid=1 why=ok pos=(-18.34,8.19,2.61) fwd=(-0.923,0.018,-0.385) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.39m
+2026-10-17 15:48:00.364 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=34
+2026-10-17 15:48:01.882 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=35
+2026-10-17 15:48:01.914 I [present] FPCAM tick=900 eye_to_er_cam=4.40m eye_to_chest=0.41m pitch=-7.0deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=1504 hook_skips=0 hide_reasserts=0 chr_cam_writes=1504 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=1504 follow_skips=0 autorot_clears=1504 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-17 15:48:01.947 I [present] FP yaw drift p50=1.55deg p95=2.80deg n=164 writes=584 paused=133 (lateral=127 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=6)
+2026-10-17 15:48:02.181 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=36
+2026-10-17 15:48:02.423 I [present] CAMFRAME tick=4373 src=pers_cam_1 valid=0 why=settling pos=(-0.16,8.65,-2.02) fwd=(-0.484,-0.115,-0.867) det=+1.000 ortho_err=7.5e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.40m
+2026-10-17 15:48:02.423 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 skipped: current=(-0.16,8.65,-2.02) -> nothing (ER already rebuilt it, or the chr cam changed)
+2026-10-17 15:48:02.423 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=0 new=1 ok=1 (hook)
+2026-10-17 15:48:02.423 I [present] FP hide restore player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-17 15:48:02.423 I [present] FP yaw drift n=0 writes=584 paused=27 (lateral=27 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-17 15:48:02.423 I [present] FP off reason=cam_gate why=settling ticks_on=929 cam_writes=0 (re-arms when clear)
+2026-10-17 15:48:02.423 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=37
+2026-10-17 15:48:02.450 I [present] CAMFRAME tick=4375 src=pers_cam_1 valid=1 why=ok pos=(2.82,8.82,1.26) fwd=(-0.587,-0.101,-0.803) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.60m
+2026-10-17 15:48:02.733 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=38
+2026-10-17 15:48:02.933 I [present] FP on eye=(-0.87,8.57,-3.13) cam_gate=ok er_cam_dist=4.46m eye_to_chest=0.41m hp=152 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff237d4c800
+2026-10-17 15:48:02.933 I [present] FP hide write player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff237d4c9c5 old=0x08 new=0x00
+2026-10-17 15:48:02.950 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 old=(2.14,8.76,-0.02) new=(-0.87,8.57,-3.13) (camera-step hook; erfps2: eye in both cameras)
+2026-10-17 15:48:02.950 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-17 15:48:03.017 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=39
+2026-10-17 15:48:03.333 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=40
+2026-10-17 15:48:03.650 I [present] MENU idx=19 0->1
+2026-10-17 15:48:04.167 I [present] PERF ticks_per_s=60.0 task_us p50=195 p95=228 max=326 fp_us avg=25 max=64 writes=7624 write_us_max=26.3 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=0
+2026-10-17 15:48:04.406 I [boot] STATE mode=on mag=32/180 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=10ms gds_kbd=10ms
+2026-10-17 15:48:04.416 I [present] MENU idx=19 1->0
+2026-10-17 15:48:05.033 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff239dffa50 old=[0.0, 0.7639059, 0.0, 0.6453277] new=[0.0, 0.7678336, 0.0, 0.6406494] conv=-z
+2026-10-17 15:48:05.033 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff239dffa60 old=[0.0, 0.7639059, 0.0, 0.6453277] new=[0.0, 0.7678336, 0.0, 0.6406494]
+2026-10-17 15:48:06.117 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=41
+2026-10-17 15:48:06.435 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=42
+2026-10-17 15:48:06.469 I [present] VM gpu_ms p50=0.0156 p95=0.0176 max=0.0201 n=600
+2026-10-17 15:48:06.651 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=43
+2026-10-17 15:48:06.966 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=44
+2026-10-17 15:48:07.451 I [present] CAMFRAME tick=4675 src=pers_cam_1 valid=1 why=ok pos=(-20.20,9.79,-7.25) fwd=(-0.852,0.355,0.386) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.66m
+2026-10-17 15:48:07.917 I [present] FPCAM tick=300 eye_to_er_cam=4.93m eye_to_chest=0.41m pitch=21.0deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=1833 hook_skips=0 hide_reasserts=0 chr_cam_writes=1833 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=1833 follow_skips=0 autorot_clears=1833 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-17 15:48:07.934 I [present] FP yaw drift p50=0.25deg p95=0.70deg n=174 writes=175 paused=126 (lateral=125 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=1)
+2026-10-17 15:48:08.876 I [t(6)] CAMFRAME tick=4760 src=pers_cam_1 valid=0 why=settling pos=(-0.19,5.29,-2.70) fwd=(-0.886,0.358,0.294) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.38m
+2026-10-17 15:48:08.876 I [t(6)] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 skipped: current=(-0.19,5.29,-2.70) -> nothing (ER already rebuilt it, or the chr cam changed)
+2026-10-17 15:48:08.876 I [t(6)] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=0 new=1 ok=1 (hook)
+2026-10-17 15:48:08.876 I [t(6)] FP hide restore player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-17 15:48:08.876 I [t(6)] FP yaw drift p50=0.25deg p95=0.25deg n=55 writes=230 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-17 15:48:08.876 I [t(6)] FP off reason=cam_gate why=settling ticks_on=356 cam_writes=0 (re-arms when clear)
+2026-10-17 15:48:08.876 I [t(6)] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=45
+2026-10-17 15:48:08.903 I [present] CAMFRAME tick=4762 src=pers_cam_1 valid=1 why=ok pos=(3.95,3.65,-4.07) fwd=(-0.886,0.358,0.294) det=+1.000 ortho_err=2.6e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.73m
+2026-10-17 15:48:09.170 I [present] PERF ticks_per_s=60.0 task_us p50=197 p95=229 max=358 fp_us avg=28 max=144 writes=8702 write_us_max=0.9 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=0
+2026-10-17 15:48:09.186 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=46
+2026-10-17 15:48:09.387 I [present] FP on eye=(-3.21,5.98,-1.70) cam_gate=ok er_cam_dist=5.13m eye_to_chest=0.41m hp=152 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff237d4c800
+2026-10-17 15:48:09.387 I [present] FP hide write player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff237d4c9c5 old=0x08 new=0x00
+2026-10-17 15:48:09.387 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff239dffa50 old=[0.0, 0.8109187, 0.0, 0.5851589] new=[0.0, 0.8109186, 0.0, 0.5851589] conv=-z
+2026-10-17 15:48:09.387 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff239dffa60 old=[0.0, 0.81091875, 0.0, 0.5851588] new=[0.0, 0.8109186, 0.0, 0.5851589]
+2026-10-17 15:48:09.387 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=47
+2026-10-17 15:48:09.403 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 old=(1.16,4.31,-3.15) new=(-3.21,5.98,-1.70) (camera-step hook; erfps2: eye in both cameras)
+2026-10-17 15:48:09.403 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-17 15:48:09.409 I [boot] STATE mode=on mag=32/180 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=10ms gds_kbd=10ms
+2026-10-17 15:48:09.704 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=48
+2026-10-17 15:48:13.920 I [present] CAMFRAME tick=5063 src=pers_cam_1 valid=1 why=ok pos=(-23.93,10.59,6.03) fwd=(-0.884,0.264,0.386) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.67m
+2026-10-17 15:48:14.173 I [present] PERF ticks_per_s=60.0 task_us p50=197 p95=231 max=514 fp_us avg=28 max=73 writes=9852 write_us_max=6.6 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=0
+2026-10-17 15:48:14.373 I [present] FPCAM tick=300 eye_to_er_cam=4.87m eye_to_chest=0.41m pitch=19.4deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=2189 hook_skips=0 hide_reasserts=0 chr_cam_writes=2189 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=2189 follow_skips=0 autorot_clears=2189 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-17 15:48:14.389 I [present] FP yaw drift p50=0.10deg p95=0.30deg n=300 writes=301 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0)
+2026-10-17 15:48:14.411 I [boot] STATE mode=on mag=32/180 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=10ms gds_kbd=10ms
+2026-10-17 15:48:14.676 I [present] CAMFRAME tick=5108 src=pers_cam_1 valid=0 why=settling pos=(-0.21,4.88,1.56) fwd=(-0.861,0.359,0.360) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.40m
+2026-10-17 15:48:14.676 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 skipped: current=(-0.21,4.88,1.56) -> nothing (ER already rebuilt it, or the chr cam changed)
+2026-10-17 15:48:14.676 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=0 new=1 ok=1 (hook)
+2026-10-17 15:48:14.676 I [present] FP hide restore player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-17 15:48:14.676 I [present] FP yaw drift p50=0.25deg p95=0.25deg n=16 writes=317 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-17 15:48:14.676 I [present] FP off reason=cam_gate why=settling ticks_on=317 cam_writes=0 (re-arms when clear)
+2026-10-17 15:48:14.676 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=49
+2026-10-17 15:48:14.706 I [present] CAMFRAME tick=5110 src=pers_cam_1 valid=1 why=ok pos=(3.81,3.24,-0.11) fwd=(-0.861,0.359,0.361) det=+1.000 ortho_err=3.7e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.72m
+2026-10-17 15:48:14.989 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=50
+2026-10-17 15:48:15.189 I [present] FP on eye=(-3.14,5.52,2.79) cam_gate=ok er_cam_dist=5.12m eye_to_chest=0.41m hp=152 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff237d4c800
+2026-10-17 15:48:15.189 I [present] FP hide write player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff237d4c9c5 old=0x08 new=0x00
+2026-10-17 15:48:15.189 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff239dffa50 old=[0.0, 0.832877, 0.0, 0.5534583] new=[0.0, 0.83287585, 0.0, 0.5534599] conv=-z
+2026-10-17 15:48:15.189 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff239dffa60 old=[0.0, 0.832877, 0.0, 0.5534583] new=[0.0, 0.83287585, 0.0, 0.5534599]
+2026-10-17 15:48:15.206 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 old=(1.11,3.87,1.01) new=(-3.14,5.52,2.79) (camera-step hook; erfps2: eye in both cameras)
+2026-10-17 15:48:15.206 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-17 15:48:15.206 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=51
+2026-10-17 15:48:15.522 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=52
+2026-10-17 15:48:16.474 I [present] VM gpu_ms p50=0.0086 p95=0.0169 max=0.0188 n=600
+2026-10-17 15:48:17.489 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=53
+2026-10-17 15:48:17.574 I [present] MENU idx=23 0->1
+2026-10-17 15:48:17.806 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=54
+2026-10-17 15:48:19.190 I [present] PERF ticks_per_s=60.0 task_us p50=196 p95=228 max=339 fp_us avg=27 max=96 writes=10847 write_us_max=1.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=0
+2026-10-17 15:48:19.413 I [boot] STATE mode=on mag=32/180 reloading=0 spread=3.20 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=12ms gds_kbd=12ms
+2026-10-17 15:48:19.706 I [present] CAMFRAME tick=5410 src=pers_cam_1 valid=1 why=ok pos=(-7.73,5.54,4.86) fwd=(-0.826,0.459,0.328) det=+1.000 ortho_err=6.0e-7 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.35m
+2026-10-17 15:48:20.173 I [present] FPCAM tick=300 eye_to_er_cam=3.64m eye_to_chest=0.41m pitch=19.9deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=2506 hook_skips=0 hide_reasserts=0 chr_cam_writes=2506 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=2506 follow_skips=0 autorot_clears=2506 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-17 15:48:20.189 I [present] FP yaw drift p50=0.05deg p95=0.05deg n=207 writes=209 paused=92 (lateral=92 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0)
+2026-10-17 15:48:20.506 I [present] AC130 blocked reason=cooldown remaining_s=85.9
+2026-10-17 15:48:21.123 I [present] AC130 blocked reason=cooldown remaining_s=85.3
+2026-10-17 15:48:21.773 I [present] AC130 blocked reason=cooldown remaining_s=84.7
+2026-10-17 15:48:21.973 I [present] FP toggle F6 wanted=0
+2026-10-17 15:48:21.973 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(-10.69,7.23,6.02) new=(-7.41,6.61,4.62) ok=1 (hook)
+2026-10-17 15:48:21.973 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff258510040 old=(-10.69,7.23,6.02) new=(-7.41,6.61,4.62) ok=1 (hook)
+2026-10-17 15:48:21.973 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff258520240 old=0 new=1 ok=1 (hook)
+2026-10-17 15:48:21.973 I [present] FP hide restore player=0x7ff237d4c800 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=f6
+2026-10-17 15:48:21.973 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=106 writes=315 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-17 15:48:21.973 I [present] FP off reason=f6  ticks_on=407 cam_writes=0 (waits for the user)
+2026-10-17 15:48:22.373 I [present] MODE off
+2026-10-17 15:48:22.373 I [present] VM state idle->drop clip=putaway rate=0.958 ads=0.00 seq=55
+2026-10-17 15:48:22.656 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=1 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(true) fade_max=0.0
+2026-10-17 15:48:23.189 I [present] VM state drop->hidden clip=idle rate=1.000 ads=0.00 seq=56
+2026-10-17 15:48:24.206 I [present] PERF ticks_per_s=60.0 task_us p50=193 p95=227 max=347 fp_us avg=24 max=84 writes=11514 write_us_max=1.1 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=0
+2026-10-17 15:48:24.415 I [boot] STATE mode=off mag=32/180 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=14ms gds_kbd=14ms
+2026-10-17 15:48:24.706 I [present] CAMFRAME tick=5710 src=pers_cam_1 valid=1 why=ok pos=(-7.10,7.07,5.91) fwd=(-1.000,0.005,0.021) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.51m
+2026-10-17 15:48:28.656 I [present] MENU idx=15 0->1
+2026-10-17 15:48:29.206 I [present] PERF ticks_per_s=60.0 task_us p50=188 p95=214 max=431 fp_us avg=21 max=177 writes=11514 write_us_max=0.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=0
+2026-10-17 15:48:29.418 I [boot] STATE mode=off mag=32/180 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=16ms gds_kbd=16ms
+2026-10-17 15:48:29.706 I [present] CAMFRAME tick=6010 src=pers_cam_1 valid=1 why=ok pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.50m
+2026-10-17 15:48:31.423 I [present] MENU idx=15 1->0
+2026-10-17 15:48:33.954 I [present] MENU idx=4 0->1
+2026-10-17 15:48:33.954 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=1 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(true) fade_max=0.1
+2026-10-17 15:48:34.221 I [present] PERF ticks_per_s=60.0 task_us p50=189 p95=221 max=350 fp_us avg=20 max=38 writes=11514 write_us_max=0.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=6 ac130=0
+2026-10-17 15:48:34.419 I [boot] STATE mode=off mag=32/180 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=1ms gds_kbd=1ms
+2026-10-17 15:48:34.438 I [present] MENU idx=6 0->1
+2026-10-17 15:48:34.470 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=1 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(2) pause_bit=Some(true) fade_max=1.0
+2026-10-17 15:48:34.697 I [present] TASK world left (loading / title)
+2026-10-17 15:48:34.697 I [present] MENU idx=4 1->0
+2026-10-17 15:48:34.697 I [present] MENU idx=7 1->0
+2026-10-17 15:48:34.697 I [present] MENU idx=8 1->0
+2026-10-17 15:48:34.697 I [present] MENU idx=23 1->0
+2026-10-17 15:48:34.697 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-17 15:48:35.138 I [present] MENU idx=25 0->1
+2026-10-17 15:48:35.138 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-17 15:48:35.155 I [present] MENU idx=4 0->1
+2026-10-17 15:48:35.155 I [present] MENU idx=8 0->1
+2026-10-17 15:48:35.155 I [present] MENU idx=9 0->1
+2026-10-17 15:48:35.155 I [present] MENU idx=19 0->1
+2026-10-17 15:48:35.155 I [present] MENU idx=23 0->1
+2026-10-17 15:48:35.155 I [present] MENU idx=26 0->1
+2026-10-17 15:48:35.155 I [present] MENU idx=27 0->1
+2026-10-17 15:48:35.286 I [present] MENU idx=9 1->0
+2026-10-17 15:48:35.286 I [present] MENU idx=19 1->0
+2026-10-17 15:48:35.286 I [present] MENU idx=25 1->0
+2026-10-17 15:48:35.286 I [present] MENU idx=26 1->0
+2026-10-17 15:48:35.286 I [present] MENU idx=27 1->0
+2026-10-17 15:48:36.700 I [present] TASK world entered (player handle 0xffffffff16f00000 owner_check=ok)
+2026-10-17 15:48:36.700 I [present] AC130 rows ok bullet=7 atk=7 speffect=1 protect_id=79000950
+2026-10-17 15:48:36.700 I [present] PARAMS OK n=13
+2026-10-17 15:48:36.700 I [present] CAMERA probe tick=1 pers_cam_1[pos=(-7.10,6.91,6.04) row2=(-0.999,0.051,-0.018) fov=0.83775806] chr_cam[pos=(19.02,111.57,108.35) row2=(-0.986,0.000,0.167) fov=0.83775806] player=(15.57,110.12,108.93)
+2026-10-17 15:48:36.700 I [present] CAMFRAME tick=1 src=pers_cam_1 valid=0 why=dist pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=148.33m
+2026-10-17 15:48:36.700 I [present] CAMERA sign=-1 cam_player_dist=148.33m fov_raw=0.83775806 source=pers_cam_1
+2026-10-17 15:48:36.700 W [present] CAMERA odd cam_player_dist=148.33m (camera and player may be in different spaces); shots are skipped while it lasts
+2026-10-17 15:48:36.700 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(2) pause_bit=Some(true) fade_max=1.0
+2026-10-17 15:48:36.801 I [present] CAMERA probe tick=2 pers_cam_1[pos=(-7.10,6.91,6.04) row2=(-0.999,0.051,-0.018) fov=0.83775806] chr_cam[pos=(19.02,111.57,108.35) row2=(-0.986,0.000,0.167) fov=0.83775806] player=(15.57,110.12,108.93)
+2026-10-17 15:48:36.801 I [present] CAMFRAME tick=2 src=pers_cam_1 valid=0 why=dist pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=148.33m
+2026-10-17 15:48:36.801 I [present] MENU idx=7 0->1
+2026-10-17 15:48:36.843 I [present] CAMERA probe tick=3 pers_cam_1[pos=(-7.10,6.91,6.04) row2=(-0.999,0.051,-0.018) fov=0.83775806] chr_cam[pos=(19.02,111.57,108.35) row2=(-0.986,0.000,0.167) fov=0.83775806] player=(15.57,110.12,108.93)
+2026-10-17 15:48:36.843 I [present] CAMFRAME tick=3 src=pers_cam_1 valid=0 why=dist pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=148.33m
+2026-10-17 15:48:37.171 I [present] CAMFRAME tick=4 src=pers_cam_1 valid=0 why=dist pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=148.33m
+2026-10-17 15:48:37.226 I [present] CAMFRAME tick=5 src=pers_cam_1 valid=0 why=dist pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=148.33m
+2026-10-17 15:48:37.261 I [present] CAMFRAME tick=6 src=pers_cam_1 valid=0 why=dist pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=148.33m
+2026-10-17 15:48:37.280 I [present] CAMFRAME tick=7 src=pers_cam_1 valid=0 why=dist pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=148.33m
+2026-10-17 15:48:37.294 I [present] CAMFRAME tick=8 src=pers_cam_1 valid=0 why=dist pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=148.33m
+2026-10-17 15:48:37.311 I [present] CAMFRAME tick=9 src=pers_cam_1 valid=0 why=dist pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=148.33m
+2026-10-17 15:48:37.311 I [present] MENU idx=23 1->0
+2026-10-17 15:48:37.330 I [present] CAMFRAME tick=10 src=pers_cam_1 valid=0 why=dist pos=(-7.10,6.91,6.04) fwd=(-0.999,0.051,-0.018) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=148.33m
+2026-10-17 15:48:38.898 I [present] CAMERA sign=+1 cam_player_dist=3.50m fov_raw=0.83775806 source=pers_cam_1
+2026-10-17 15:48:38.898 I [present] MENU idx=6 1->0
+2026-10-17 15:48:38.944 I [present] CAMFRAME tick=104 src=pers_cam_1 valid=1 why=ok pos=(11.02,7.88,4.34) fwd=(-0.986,0.003,0.167) det=+1.000 ortho_err=1.3e-10 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.50m
+2026-10-17 15:48:38.944 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(2) pause_bit=Some(true) fade_max=0.9
+2026-10-17 15:48:39.227 I [present] PERF ticks_per_s=47.3 task_us p50=52 p95=206 max=307 fp_us avg=13 max=48 writes=11514 write_us_max=0.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=0 ac130=0
+2026-10-17 15:48:39.409 I [present] MENU idx=4 1->0
+2026-10-17 15:48:39.422 I [boot] STATE mode=off mag=32/180 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=1ms gds_kbd=1ms
+2026-10-17 15:48:39.460 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(2) pause_bit=Some(true) fade_max=0.0
+2026-10-17 15:48:41.192 I [present] MENU idx=19 0->1
+2026-10-17 15:48:41.842 I [present] MENU idx=19 1->0
+2026-10-17 15:48:42.342 I [present] MODE on weapon=ump45_mp mag=32/192 menu_baseline=[5, 7, 8] show_cursor=0
+2026-10-17 15:48:42.342 I [present] AC130 cooldown remaining_s=64.1
+2026-10-17 15:48:42.342 I [present] FP blocked reason=f6 
+2026-10-17 15:48:42.342 I [present] VM state hidden->raise clip=pullout rate=1.096 ads=0.00 seq=57
+2026-10-17 15:48:42.344 I [present] VM gpu_ms p50=0.0160 p95=0.0178 max=0.0195 n=403
+2026-10-17 15:48:43.109 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=58
+2026-10-17 15:48:43.958 I [present] CAMFRAME tick=405 src=pers_cam_1 valid=1 why=ok pos=(-0.43,9.33,5.03) fwd=(-0.948,0.161,0.275) det=+1.000 ortho_err=9.3e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.84m
+2026-10-17 15:48:44.242 I [present] PERF ticks_per_s=60.0 task_us p50=192 p95=214 max=339 fp_us avg=21 max=164 writes=11514 write_us_max=0.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=0 ac130=0
+2026-10-17 15:48:44.423 I [boot] STATE mode=on mag=32/192 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=3ms gds_kbd=3ms
+2026-10-17 15:48:45.642 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=59
+2026-10-17 15:48:45.894 I [present] VM state sprint_in->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=60
+2026-10-17 15:48:46.210 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=61
+2026-10-17 15:48:48.960 I [present] CAMFRAME tick=705 src=pers_cam_1 valid=1 why=ok pos=(-20.04,14.76,14.27) fwd=(-0.996,-0.059,-0.062) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.83m
+2026-10-17 15:48:49.094 I [t(8)] MENU idx=19 0->1
+2026-10-17 15:48:49.244 I [present] PERF ticks_per_s=60.0 task_us p50=193 p95=220 max=340 fp_us avg=21 max=108 writes=11514 write_us_max=0.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=0 ac130=0
+2026-10-17 15:48:49.361 I [present] MENU idx=23 0->1
+2026-10-17 15:48:49.425 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.60 menu=0 fg=1 chars=64 shots=12 hits=16 gds_mouse=3ms gds_kbd=3ms
+2026-10-17 15:48:49.577 I [present] MENU idx=19 1->0
+2026-10-17 15:48:50.510 I [present] AC130 blocked reason=cooldown remaining_s=55.9
+2026-10-17 15:48:50.943 I [present] AC130 blocked reason=cooldown remaining_s=55.5
+2026-10-17 15:48:51.177 I [present] AC130 blocked reason=cooldown remaining_s=55.3
+2026-10-17 15:48:51.394 I [present] AC130 blocked reason=cooldown remaining_s=55.1
+2026-10-17 15:48:51.593 I [present] AC130 blocked reason=cooldown remaining_s=54.9
+2026-10-17 15:48:51.810 I [present] AC130 blocked reason=cooldown remaining_s=54.6
+2026-10-17 15:48:52.346 I [present] VM gpu_ms p50=0.0168 p95=0.0194 max=0.2734 n=600
+2026-10-17 15:48:53.564 I [present] MENU idx=28 0->1
+2026-10-17 15:48:53.564 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-17 15:48:53.564 I [present] FP blocked reason=menu 
+2026-10-17 15:48:53.963 I [present] CAMFRAME tick=1005 src=pers_cam_1 valid=1 why=ok pos=(-29.92,15.57,16.58) fwd=(0.996,-0.064,-0.054) det=+1.000 ortho_err=1.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.45m
+2026-10-17 15:48:54.247 I [present] PERF ticks_per_s=60.0 task_us p50=193 p95=220 max=341 fp_us avg=20 max=25 writes=11514 write_us_max=0.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=0 ac130=0
+2026-10-17 15:48:54.427 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=1 fg=1 chars=64 shots=12 hits=16 gds_mouse=3ms gds_kbd=3ms
+2026-10-17 15:48:55.030 I [present] MENU idx=28 1->0
+2026-10-17 15:48:55.047 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-17 15:48:55.047 I [present] FP blocked reason=f6 
+2026-10-17 15:48:55.529 I [present] MENU idx=28 0->1
+2026-10-17 15:48:55.529 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-17 15:48:55.529 I [present] FP blocked reason=menu 
+2026-10-17 15:48:56.448 I [present] MENU idx=28 1->0
+2026-10-17 15:48:56.448 I [present] MENU idx=37 0->1
+2026-10-17 15:48:56.464 I [present] MENU idx=7 1->0
+2026-10-17 15:48:58.049 I [present] MENU idx=43 0->1
+2026-10-17 15:48:58.681 I [t(6)] MENU idx=43 1->0
+2026-10-17 15:48:58.946 I [present] MENU idx=4 0->1
+2026-10-17 15:48:58.946 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(2) pause_bit=Some(true) fade_max=0.1
+2026-10-17 15:48:58.979 I [present] CAMFRAME tick=1304 src=pers_cam_1 valid=1 why=ok pos=(-27.65,14.43,17.61) fwd=(0.730,0.271,-0.627) det=+1.000 ortho_err=2.2e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=2.98m
+2026-10-17 15:48:59.263 I [present] PERF ticks_per_s=59.6 task_us p50=194 p95=231 max=436 fp_us avg=21 max=180 writes=11514 write_us_max=0.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=0 ac130=0
+2026-10-17 15:48:59.429 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=1 fg=1 chars=64 shots=12 hits=16 gds_mouse=3ms gds_kbd=3ms
+2026-10-17 15:48:59.446 I [present] MENU idx=6 0->1
+2026-10-17 15:48:59.462 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(3) pause_bit=Some(true) fade_max=1.0
+2026-10-17 15:48:59.707 I [present] TASK world left (loading / title)
+2026-10-17 15:48:59.707 I [present] MENU idx=4 1->0
+2026-10-17 15:48:59.707 I [present] MENU idx=8 1->0
+2026-10-17 15:48:59.707 I [present] MENU idx=23 1->0
+2026-10-17 15:48:59.707 I [present] MENU idx=37 1->0
+2026-10-17 15:48:59.707 I [present] FP blocked reason=loading world left
+2026-10-17 15:48:59.936 I [present] MENU idx=6 1->0
+2026-10-17 15:49:04.267 I [present] PERF ticks_per_s=55.5 task_us p50=24 p95=55 max=313 fp_us avg=3 max=42 writes=11514 write_us_max=0.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=0 ac130=0
+2026-10-17 15:49:04.567 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-17 15:49:05.350 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-17 15:49:07.568 I [present] MENU idx=0 0->1
+2026-10-17 15:49:08.816 I [present] MENU idx=0 1->0
+2026-10-17 15:49:09.104 I [present] MENU idx=5 1->0
+2026-10-17 15:49:09.104 I [present] MENU cursor Some(true) -> None
+2026-10-17 15:49:09.276 I [t(8)] PERF ticks_per_s=55.5 task_us p50=25 p95=32 max=95 fp_us avg=2 max=23 writes=11514 write_us_max=0.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=0 ac130=0
+2026-10-17 15:49:20.768 I [present] PERF ticks_per_s=1.2 task_us p50=22 p95=91 max=91 fp_us avg=7 max=70 writes=11514 write_us_max=0.0 slow_writes=0 page_checks=6 page_check_ms_max=0.00 page_check_ms_total=93.5 cached_pages=0 ac130=0

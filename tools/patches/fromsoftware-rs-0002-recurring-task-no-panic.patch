@@ -1,0 +1,24 @@
+diff --git a/crates/shared/src/task.rs b/crates/shared/src/task.rs
+index 76567cc..51d8f39 100644
+--- a/crates/shared/src/task.rs
++++ b/crates/shared/src/task.rs
+@@ -92,13 +92,15 @@ impl<TTaskData: Send + 'static> RecurringTask<TTaskData> {
+ }
+ 
+ impl<TTaskData: Send + 'static> SharedTaskBaseVmt for RecurringTask<TTaskData> {
++    // mw2er patch 0002: these are called by the game through the vtable. A panic inside an
++    // `extern "C"` fn cannot unwind and aborts the whole game process, so they must not panic.
++    // No runtime class is provided (0 = none); the Rust side owns the memory, so the engine's
++    // destructor call has nothing to free.
+     extern "C" fn get_runtime_class(&self) -> usize {
+-        unimplemented!();
++        0
+     }
+ 
+-    extern "C" fn destructor(&mut self) {
+-        unimplemented!();
+-    }
++    extern "C" fn destructor(&mut self) {}
+ 
+     extern "C" fn execute(&mut self, data: *const c_void) {
+         // Run the task if cancellation wasn't requested.

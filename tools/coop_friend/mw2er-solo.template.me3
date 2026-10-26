@@ -1,0 +1,18 @@
+profileVersion = "v1"
+# MW2 in Elden Ring - solo profile (written by setup.ps1 from profiles\mw2er-solo.template.me3).
+# Launch with: me3 launch -g eldenring -p <this file>   (or launch_solo.ps1 / "Play solo.cmd")
+# Separate save: the first launch starts a new character. Never your normal ER0000.sl2.
+savefile = "ER0000.mw2er.sl2"
+# start_online and disable_arxan are deliberately absent (offline only; Arxan left alone). No Seamless in solo.
+
+[[supports]]
+game = "eldenring"
+
+[[natives]]
+path = '@@DLL@@'
+
+[[packages]]
+enabled = true
+path = '@@PACKAGE@@'
+load_after = []
+load_before = []

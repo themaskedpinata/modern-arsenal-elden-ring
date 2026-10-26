@@ -1,0 +1,131 @@
+2026-10-14 12:00:00.000 I [boot] BOOT mw2er 0.2.0 dll=x
+2026-10-14 12:00:00.000 I [boot] VERSION PASS file=2.7.1.0 product=2.7.1.0 lang=0x0409
+2026-10-14 12:00:00.000 I [boot] INPUT PASS hooked=2 addrs=[0x1,0x2]
+2026-10-14 12:00:01.000 I [present] HUD initialize display=1920x1080 font=built-in 26px
+2026-10-14 12:00:01.000 I [present] VM target fmt=R8G8B8A8_UNORM 1920x1080 colorspace=none frames=3
+2026-10-14 12:00:01.000 I [vmload] VM assets ready ms=120 bytes=3500000 bones=91 verts=7489 clips=12 fmt=R8G8B8A8_UNORM
+2026-10-14 12:00:01.000 I [boot] BOOTGATE PASS after 900 ms names=[CSTask]
+2026-10-14 12:00:01.000 I [boot] TASK registered group=ChrIns_PostPhysics
+2026-10-14 12:00:06.000 I [task] PARAMS OK n=13
+2026-10-14 12:00:06.000 I [task] CAMERA sign=+1 cam_player_dist=3.80m fov_raw=0.84 source=pers_cam_1
+2026-10-14 12:00:06.000 I [task] CAMFRAME tick=4 src=pers_cam_1 valid=1 why=ok pos=(1,2,3) fwd=(0,0,1) det=+1.000 ortho_err=1e-6 fov=0.8378(48.0deg) aspect=1.7778 near=0.1000 far=5000.0 cam_chest=3.50m
+2026-10-14 12:00:06.000 I [task] MODE on weapon=ump45_mp mag=32/192 menu_baseline=[1] show_cursor=0
+2026-10-14 12:00:06.016 I [task] FPCAM cfg enabled=1 mode=task eye_h=1.60 eye_fwd=0.10 eye_smooth_s=0.00 pitch_clamp=85.0 hide=render_flag yaw=1 world_fov=off arm_ticks=30 fade_alpha_max=0.50 signals fade=1 cam_mask=1 talk=1 key=F6
+2026-10-14 12:00:06.032 I [task] FP on eye=(1.00,2.60,3.10) cam_gate=ok er_cam_dist=3.45m eye_to_chest=0.41m hp=500 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=task hide=render_flag player=0x7ff000010000
+2026-10-14 12:00:06.048 I [task] FP hide write player=0x7ff000010000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff0000101c5 old=0x08 new=0x00
+2026-10-14 12:00:06.064 I [task] FPCAM write field=CSCamera.pers_cam_1+0x40 addr=0x7ff000020050 old=(1.00,4.00,0.00) new=(1.00,2.60,3.10)
+2026-10-14 12:00:06.080 I [task] FPCAM er_rewrite=1: ER rebuilt pers_cam_1 row 3 between two ticks ((1.00,2.60,3.10) -> (1.02,4.00,0.01)); handback restore is free
+2026-10-14 12:00:06.096 I [task] FP yaw probe conv=+z dot_med=0.981 n=60
+2026-10-14 12:00:06.112 I [task] FP hide restore player=0x7ff000010000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=menu
+2026-10-14 12:00:06.128 I [task] FP off reason=menu  ticks_on=120 cam_writes=120 (re-arms when clear)
+2026-10-14 12:00:06.144 I [task] FP on eye=(1.00,2.60,3.10) cam_gate=ok er_cam_dist=3.45m eye_to_chest=0.41m hp=500 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=task hide=render_flag player=0x7ff000010000
+2026-10-14 12:00:06.160 I [task] TASK world left (loading / title)
+2026-10-14 12:00:06.176 I [task] FP off reason=loading world left ticks_on=300 cam_writes=300 (re-arms when clear)
+2026-10-14 12:00:06.192 I [task] VM state hidden->raise clip=pullout rate=1.096 ads=0.00 seq=1
+2026-10-14 12:00:06.208 I [present] VM first frame drawn 1920x1080 slot=0 out=Srgb
+2026-10-14 12:00:07.208 I [task] SHOT n=1 mag=31/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.224 I [task] BULLET id=79000100 pos=(1,2,3) origin=(1,2,2) speed=999.0 m/s alive=0.016s
+2026-10-14 12:00:07.234 I [task] IMPACT pos=(1,2,14) dist_from_origin=8.0m t=0.030s kind=hit
+2026-10-14 12:00:07.244 I [task] HIT chr=c4311 hp 219->150 dmg=69 band=79000105 mw2=35 d=36.0m via=impact n=1 kill=0
+2026-10-14 12:00:07.334 I [task] SHOT n=2 mag=30/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.344 I [task] IMPACT pos=(1,2,14) dist_from_origin=8.0m t=0.030s kind=hit
+2026-10-14 12:00:07.354 I [task] HIT chr=c4311 hp 150->101 dmg=49 band=79000105 mw2=35 d=36.0m via=impact n=1 kill=0
+2026-10-14 12:00:07.444 I [task] SHOT n=3 mag=29/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.454 I [task] IMPACT pos=(1,2,14) dist_from_origin=8.0m t=0.030s kind=hit
+2026-10-14 12:00:07.464 I [task] HIT chr=c4311 hp 101->52 dmg=49 band=79000105 mw2=35 d=36.0m via=impact n=1 kill=0
+2026-10-14 12:00:07.554 I [task] SHOT n=4 mag=28/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.564 I [task] IMPACT pos=(1,2,14) dist_from_origin=8.0m t=0.030s kind=hit
+2026-10-14 12:00:07.574 I [task] HIT chr=c4311 hp 52->3 dmg=49 band=79000105 mw2=35 d=36.0m via=impact n=1 kill=0
+2026-10-14 12:00:07.664 I [task] SHOT n=5 mag=27/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.674 I [task] IMPACT pos=(1,2,14) dist_from_origin=8.0m t=0.030s kind=hit
+2026-10-14 12:00:07.684 I [task] HIT chr=c4311 hp 3->0 dmg=3 band=79000105 mw2=35 d=36.0m via=impact n=1 kill=1
+2026-10-14 12:00:07.774 I [task] SHOT n=6 mag=26/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.864 I [task] SHOT n=7 mag=25/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.954 I [task] SHOT n=8 mag=24/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.044 I [task] SHOT n=9 mag=23/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.134 I [task] SHOT n=10 mag=22/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.224 I [task] SHOT n=11 mag=21/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.314 I [task] SHOT n=12 mag=20/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.404 I [task] SHOT n=13 mag=19/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.494 I [task] SHOT n=14 mag=18/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.584 I [task] SHOT n=15 mag=17/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.674 I [task] SHOT n=16 mag=16/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.764 I [task] SHOT n=17 mag=15/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.854 I [task] SHOT n=18 mag=14/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.944 I [task] SHOT n=19 mag=13/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.034 I [task] SHOT n=20 mag=12/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.124 I [task] SHOT n=21 mag=11/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.214 I [task] SHOT n=22 mag=10/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.304 I [task] SHOT n=23 mag=9/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.394 I [task] SHOT n=24 mag=8/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.484 I [task] SHOT n=25 mag=7/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:10.484 I [task] RELOAD start empty=0 dur=2.5 mag=7
+2026-10-14 12:00:10.500 I [task] VM state idle->reload clip=reload rate=1.000 ads=0.00 seq=9
+2026-10-14 12:00:13.000 I [task] RELOAD done mag=32 reserve=167 added=25
+2026-10-14 12:00:13.500 I [task] AC130 rows ok bullet=7 atk=7 speffect=1 protect_id=79000950 obj=201:200b,202:100b,203:200b,301:100b,302:60,303:100b,401:40 sfx=201:524028,202:530123,203:524028,301:300602,302:530133,303:300602,401:530133
+2026-10-14 12:00:14.000 I [task] AC130 ready
+2026-10-14 12:00:14.500 I [task] FP on eye=(1.00,2.60,3.10) cam_gate=ok er_cam_dist=3.45m eye_to_chest=0.41m hp=500 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=task hide=render_flag player=0x7ff000010000
+2026-10-14 12:00:15.500 I [task] AC130 PROTECT apply id=79000950 chr=0x7ff000010000 present_before=0 present=1 ok=1 call=1
+2026-10-14 12:00:15.516 I [task] FP off reason=ac130  ticks_on=200 cam_writes=200 (re-arms when clear)
+2026-10-14 12:00:15.616 I [task] AC130 on center=(10.0,2.0,3.0) theta0_deg=12.0 gun=105 fp_was_on=1 camtype=Some(0) er_fov=48.0deg gun_fov=29.86deg R=116.0 H=107.0 slant=157.8 listener=render_cam(inferred) hp=500
+2026-10-14 12:00:15.616 I [task] AC130 effects shake=1 scale=1.00 rot_deg=2.00 roll_deg=0.60 pos_m=1.50 freq_hz=11.0 mw2_falloff=0 flash_105=14.0m/0.50s gain=1.60 bloom_105=32.0m
+2026-10-14 12:00:15.632 I [task] AC130CAM write field=CSCamera.pers_cam_1+0x10..0x54 addr=0x7ff000020010 old_pos=(1.00,4.00,0.00) new_pos=(100.0,110.0,3.0) old_fov=0.8378 new_fov=0.5212 (camera-step hook mode 2, one 68-byte write per frame)
+2026-10-14 12:00:15.632 I [task] AC130 write field=CSFeManImp.hud_state(+0x78) addr=0x7ff000030078 old=3 new=0 ok=1
+2026-10-14 12:00:15.632 I [thload] AC130 thermal ready ms=40 overlays=4 bytes=1048576 fmt=R8G8B8A8_UNORM 1920x1080 ts_freq=10000000 (shaders 0123456789ab..)
+2026-10-14 12:00:15.648 I [present] AC130 thermal first frame 1920x1080 fmt=R8G8B8A8_UNORM gun=0
+2026-10-14 12:00:16.148 I [present] AC130 SHAKE src=fire gun=105 mw2_scale=0.20 dur_s=1.00 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.200 on=1
+2026-10-14 12:00:16.148 I [present] AC130 SHOT gun=105 n=1 clip=0/1 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=1.97
+2026-10-14 12:00:16.148 I [task] AC130 RELOAD gun=105 s=5.00
+2026-10-14 12:00:18.118 I [task] AC130 EXPLODE gun=105 ids=79000201+79000202 pos=(10.0,2.0,3.0) dist_m=150.0 late_ms=8
+2026-10-14 12:00:18.118 I [task] AC130 SHAKE src=impact gun=105 mw2_scale=0.40 dur_s=1.00 radius_m=88.9 dist_m=157.8 gain=1.00 amp=0.400 on=1
+2026-10-14 12:00:18.134 I [task] AC130 EXPLODE seen id=79000201 pos=(10.0,2.0,3.0) alive=0.016s
+2026-10-14 12:00:18.134 I [task] AC130 EXPLODE seen id=79000202 pos=(10.0,2.0,3.0) alive=0.016s
+2026-10-14 12:00:18.184 I [task] HIT chr=c4311 hp 219->0 dmg=219 band=79000201 mw2=450 d=3.0m via=ac130 n=1 kill=1 src=ac130 gun=105 tier=core
+2026-10-14 12:00:18.184 I [task] AC130 KILL gun=105 cid=c4311 d_m=3.0 tier=core
+2026-10-14 12:00:21.148 I [task] AC130 RELOAD done gun=105 clip=1
+2026-10-14 12:00:21.148 I [present] AC130 SHAKE src=fire gun=105 mw2_scale=0.20 dur_s=1.00 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.200 on=1
+2026-10-14 12:00:21.148 I [present] AC130 SHOT gun=105 n=2 clip=0/1 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=1.97
+2026-10-14 12:00:21.148 I [task] AC130 RELOAD gun=105 s=5.00
+2026-10-14 12:00:21.648 I [task] AC130 SWITCH gun=40 via=key fov=12.69deg
+2026-10-14 12:00:21.948 I [present] AC130 SHAKE src=fire gun=40 mw2_scale=0.10 dur_s=0.50 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.100 on=1
+2026-10-14 12:00:21.948 I [present] AC130 SHOT gun=40 n=1 clip=3/4 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=1.18
+2026-10-14 12:00:22.248 I [present] AC130 SHAKE src=fire gun=40 mw2_scale=0.10 dur_s=0.50 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.100 on=1
+2026-10-14 12:00:22.248 I [present] AC130 SHOT gun=40 n=2 clip=2/4 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=1.18
+2026-10-14 12:00:22.548 I [present] AC130 SHAKE src=fire gun=40 mw2_scale=0.10 dur_s=0.50 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.100 on=1
+2026-10-14 12:00:22.548 I [present] AC130 SHOT gun=40 n=3 clip=1/4 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=1.18
+2026-10-14 12:00:22.848 I [present] AC130 SHAKE src=fire gun=40 mw2_scale=0.10 dur_s=0.50 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.100 on=1
+2026-10-14 12:00:22.848 I [present] AC130 SHOT gun=40 n=4 clip=0/4 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=1.18
+2026-10-14 12:00:22.848 I [task] AC130 RELOAD gun=40 s=3.00
+2026-10-14 12:00:24.028 I [task] AC130 EXPLODE gun=40 ids=79000301+79000302 pos=(10.0,2.0,3.0) dist_m=150.0 late_ms=5
+2026-10-14 12:00:24.028 I [task] AC130 SHAKE src=impact gun=40 mw2_scale=0.20 dur_s=0.50 radius_m=50.8 dist_m=157.8 gain=1.00 amp=0.200 on=1
+2026-10-14 12:00:24.044 I [task] AC130 EXPLODE seen id=79000301 pos=(10.0,2.0,3.0) alive=0.016s
+2026-10-14 12:00:24.044 I [task] AC130 EXPLODE seen id=79000302 pos=(10.0,2.0,3.0) alive=0.016s
+2026-10-14 12:00:24.144 I [present] HIT chr=c4070 hp 88->0 dmg=88 band=0 mw2=0 d=0.0m via=last_hit_by n=0 kill=1
+2026-10-14 12:00:24.144 I [present] KILL chr=c4070
+2026-10-14 12:00:25.848 I [task] AC130 RELOAD done gun=40 clip=4
+2026-10-14 12:00:25.848 I [present] AC130 SHAKE src=fire gun=40 mw2_scale=0.10 dur_s=0.50 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.100 on=1
+2026-10-14 12:00:25.848 I [present] AC130 SHOT gun=40 n=5 clip=3/4 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=1.18
+2026-10-14 12:00:26.348 I [task] AC130 SWITCH gun=25 via=wheel fov=3.16deg
+2026-10-14 12:00:26.648 I [present] AC130 SHOT gun=25 n=1 clip=19/20 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=0.59
+2026-10-14 12:00:26.718 I [present] AC130 SHOT gun=25 n=2 clip=18/20 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=0.59
+2026-10-14 12:00:26.788 I [present] AC130 SHOT gun=25 n=3 clip=17/20 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=0.59
+2026-10-14 12:00:26.858 I [present] AC130 SHOT gun=25 n=4 clip=16/20 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=0.59
+2026-10-14 12:00:26.928 I [present] AC130 SHOT gun=25 n=5 clip=15/20 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=0.59
+2026-10-14 12:00:26.998 I [present] AC130 SHOT gun=25 n=6 clip=14/20 o=(-107.16,111.55,2.32) dir=(0.718,-0.670,-0.189) impact=(13.05,-0.50,-29.32) dist_m=167.4 via=map flight_s=0.59
+2026-10-14 12:00:27.588 I [task] AC130 EXPLODE gun=25 ids=79000401 pos=(10.0,2.0,3.0) dist_m=150.0 late_ms=3
+2026-10-14 12:00:27.604 I [task] AC130 EXPLODE seen id=79000401 pos=(10.0,2.0,3.0) alive=0.016s
+2026-10-14 12:00:28.604 I [task] AC130CAM t=10.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=3.5 writes=600 skips=0 persisted=0 fov_persisted=0 fov_deg=3.16 gun=25 aim_yaw=3.0 aim_pitch=-2.0 mouse_counts=1200 er_yaw=45.0 last_reject=none
+2026-10-14 12:00:28.604 I [present] AC130 gpu_ms p50=0.0400 p95=0.0450 max=0.0600 n=600
+2026-10-14 12:00:28.604 I [task] PERF ticks_per_s=59.8 task_us p50=300 p95=600 max=900 fp_us avg=40 max=90 writes=600 write_us_max=8.0 slow_writes=0 page_checks=2 page_check_ms_max=0.05 page_check_ms_total=0.1 cached_pages=2 ac130=1
+2026-10-14 12:00:38.604 I [task] AC130CAM t=20.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=3.5 writes=1200 skips=0 persisted=0 fov_persisted=0 fov_deg=3.16 gun=25 aim_yaw=8.0 aim_pitch=-4.0 mouse_counts=2400 er_yaw=45.2 last_reject=none
+2026-10-14 12:00:56.604 I [task] AC130 restore field=CSCamera.pers_cam_1+0x10..0x54 addr=0x7ff000020010 old=<ours> new=<er> floats=17 fov_restored=1 fov_persisted_frames=0 ok=1
+2026-10-14 12:00:56.604 I [task] AC130 restore field=CSFeManImp.hud_state old=0 new=3 ok=1
+2026-10-14 12:00:56.604 I [task] AC130 off reason=timeout t_s=40.0 shots=105:2/40:5/25:6 explosions=5 hits=1 kills=1 shells_dropped=0 player_hp_start=500 player_hp_min=500 moved_m=0.2 fp_resume=1 cooldown_s=120
+2026-10-14 12:00:57.204 I [task] AC130 PROTECT restore id=79000950 chr=0x7ff000010000 present=0 ok=1 reason=timeout
+2026-10-14 12:00:57.304 I [task] AC130 cooldown remaining_s=119.4
+2026-10-14 12:00:57.404 I [task] FP on eye=(1.00,2.60,3.10) cam_gate=ok er_cam_dist=3.45m eye_to_chest=0.41m hp=500 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=task hide=render_flag player=0x7ff000010000
+2026-10-14 12:00:58.404 I [task] MENU idx=12 0->1
+2026-10-14 12:00:59.404 I [task] MENU idx=12 1->0
+2026-10-14 12:00:59.404 I [present] VM gpu_ms p50=0.0130 p95=0.0150 max=0.0200 n=600
+2026-10-14 12:01:00.404 I [task] MODE off
+2026-10-14 12:01:00.420 I [task] VM state idle->drop clip=putaway rate=0.958 ads=0.00 seq=12

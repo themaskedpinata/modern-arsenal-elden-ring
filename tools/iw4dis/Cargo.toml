@@ -1,0 +1,14 @@
+# Static x86-64 disassembler of the user's iw4sp.exe (docs/M5_DESIGN.md section 12): it only reads the file's bytes
+# and prints instructions. It never starts, loads or attaches to the exe. Its own project (not in the mod workspace,
+# never linked into mw2er.dll); build with a short CARGO_TARGET_DIR (check_m5.ps1 uses work\m5\iw4dis_target).
+[package]
+name = "iw4dis"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+iced-x86 = { version = "=1.21.0", default-features = false, features = ["std", "decoder", "intel"] }
+
+[workspace]

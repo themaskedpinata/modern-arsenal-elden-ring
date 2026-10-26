@@ -1,0 +1,687 @@
+# mw2er.toml - configuration of the MW2-in-Elden-Ring DLL (milestones M2, M3, M3b, M4, M5 and M6).
+# Contains no MW2 data. The DLL re-reads this file once a second (hot reload) except where noted.
+# Unknown keys are an error (CONFIG ERROR line:col in logs\mw2er.log) so typos are not ignored.
+schema = 1
+
+[paths]                       # relative to the project root (<dll_dir>\..\..); not hot
+log_dir      = 'logs'
+weapons_json = 'converted\weapons.json'
+sounds_json  = 'converted\sounds\sounds.json'
+rows_json    = 'build\rows.json'
+
+[log]
+hudhook_level    = "debug"    # error | warn | info | debug (never "trace": it logs every frame)
+shots            = "all"      # all | none
+state_interval_s = 5.0
+
+[keys]
+toggle            = "F5"      # F1-F12, A-Z, 0-9
+reload            = "R"
+fire_mouse_button = 0         # DIMOUSESTATE rgbButtons index; 0 = LMB
+blank_toggle_key  = true      # hide the toggle key from the game
+ads_mouse_button  = 1         # M3 ADS (aim down sights) button; 1 = RMB (blanked from the game like LMB); 255 = none
+fp_toggle         = "F6"      # M3b first person on/off while MW2 mode is on (hidden from the game like the toggle key)
+ac130             = "F7"      # M4 call in the AC-130 while MW2 mode is on (hidden from the game like the toggle key)
+ac130_exit        = "Back"    # leave the gunship early (Backspace; Esc stays with ER's menu)
+ac130_next        = "Q"       # next gun (the mouse wheel also cycles)
+ac130_gun1        = "1"       # 105 mm
+ac130_gun2        = "2"       # 40 mm
+ac130_gun3        = "3"       # 25 mm
+ac130_thermal     = "F"       # white hot / black hot
+# M5 movement (docs\M5_DESIGN.md section 6.1): the MW2 PC binds of default_mp_controls.cfg. Also SPACE, LSHIFT, RSHIFT,
+# LCTRL, RCTRL, LALT, RALT, TAB, CAPSLOCK. E stays ER's (interact) and may not be a movement key.
+move_forward      = "W"
+move_back         = "S"
+move_left         = "A"
+move_right        = "D"
+move_sprint       = "LSHIFT"  # MW2 +breath_sprint: tap to sprint, releasing keeps it, tap again to stop
+move_jump         = "SPACE"   # MW2 +gostand: jump; stand up from crouch / prone
+move_crouch       = "C"       # MW2 togglecrouch
+move_prone        = "LCTRL"   # MW2 toggleprone
+move_stance_hold  = ""        # optional console-style key: tap = crouch, hold 300 ms = prone ("" = none)
+# M6 weapon switching (docs\M6_DESIGN.md section 5); 1 / 2 act as the AC-130 gun keys only while in the gunship
+weapon_next       = "1"       # next gun of [arsenal] guns (the mouse wheel also cycles; hidden from the game)
+weapon_prev       = "2"       # previous gun
+nuke              = "4"       # M7: call the Tactical Nuke (MW2 +actionslot 4; hidden from the game while MW2 mode drives)
+heal              = "Q"       # 2026-10-21: drink the selected quick item (flask) in MW2 mode: presses ER's er_use_item once ("" = none; Q stays the AC-130 next gun in the gunship)
+er_use_item       = "R"       # ER's own "use item" key (as bound in ER's key config); MW2 mode otherwise takes R for reload
+
+[gameplay]
+weapon                  = "ump45_mp"
+spawn_bullets           = true    # false = everything except spawn_bullet (triage)
+refill_on_mode_enable   = true
+auto_reload_on_empty    = true
+max_shots_per_tick      = 2
+apply_spread_to_bullets = true
+use_move_spread         = true
+camera_source           = "pers_cam_1"   # or "chr_cam"
+
+[aim]
+max_range_m     = 150.0
+char_radius_m   = 0.75
+chest_height_m  = 1.2
+origin_ahead_m  = 0.6
+camera_det_sign = 0     # M3 camera gate: expected sign of det(camera rows); 0 = either (set 1/-1 from CAMFRAME det=)
+camera_gate     = true  # M3: shots wait for a valid camera (3 good ticks); false = the M2 behaviour
+
+[damage]
+# ER atkPhys = round(mw2_damage * k). Baked into the regulation rows by
+# tools\scripts\build_regulation.py, so changing k needs a rebuild (not hot).
+# Why 4.0: see docs\M2_DESIGN.md section 10.6 (3 hits on a Limgrave Godrick Soldier at both
+# ends of the UMP45 falloff, like MW2's 3 hits on a 100 HP player). Calibrate from the first HIT line.
+k = 4.0                 # M6: the legacy UMP45 rows 79000100-105 only
+# M6 (docs\M6_DESIGN.md section 9): every arsenal row is FLAT damage, atkPhys = inv_er(s * mw2_damage, d_ref), so a
+# target with effective defence d_ref takes s ER damage per MW2 point (UMP45 close 40 -> 49 on the c4311 soldier).
+mode  = "flat_inv"      # flat_inv | linear (A/B only; the arsenal rows need flat_inv)
+s     = 1.225
+d_ref = 85.0
+
+[regulation]  # read by build_regulation.py only
+id_base           = 79000000
+marker_id         = 79000900
+clone_bullet_from = 10170000   # Throwing Dagger
+clone_atk_from    = 10170000
+bullet_speed_mps  = 999.0
+bullet_life_s     = 0.15
+marker_life_s     = 0.1
+[regulation.weapons]
+ump45_mp = 1          # slot -> ids 79000000 + slot*100 + band
+
+[regulation.arsenal]  # M6, read by build_regulation.py only: ids 79100000 + g*1000 + kind*100 + idx
+id_base              = 79100000
+bullet_sfx           = "none"     # none = sfxId_Hit / sfxId_Flick -1 (run 13 bug 2 fix) | dagger = the clone effects
+legacy_ump45         = false      # true = the DLL fires the legacy UMP45 rows 79000100-105 (A/B)
+clone_explosion_from = 10030001
+
+[regulation.ac130]   # M4, read by build_regulation.py only (rebuild needed): rows 79000201-203 / 301-303 / 401 + SpEffect 79000950
+# atkPhys = round(mw2_damage * k * scale_<gun>), FLAT damage (isAddBaseAtk 1, corrections 0; run 8 fix: with the
+# Fire Pot clone's isAddBaseAtk 0 ER used the player's weapon AR and ignored atkPhys: 2..88 per hit).
+# Targets on a Limgrave Godrick Soldier (219 HP, community defence curve, [I] until the next run's HIT lines):
+# 105 one-shot inside the core (~460), 40 mm 2 direct hits (~115), 25 mm ~5 hits (~49).
+k                   = 0.65
+scale_105           = 1.0
+scale_40            = 1.0
+scale_25            = 0.7
+clone_bullet_from   = 10030001
+clone_atk_from      = 10030001
+clone_speffect_from = 1540
+protect_speffect_id = 79000950   # the player's protection while riding (fire/blast immunity, no damage)
+protect_endurance_s = 90.0       # finite: a copy the DLL could not remove expires on its own (DLL re-applies it while riding)
+# Impact visuals (after run 9; ER SFX ids from vanilla player Bullet rows, -1 = none): the core/single row shows the
+# burst, the ring row the dust/debris layer (both spawn on every impact with explosion_tiers = 2).
+sfx_105             = 524028     # Giantsflame Take Thee [Charged] burst (Bullet 10610051); was 524023 (uncharged)
+sfx_105_ring        = 530123     # Meteorite impact: rock + dust (Bullet 10470003)
+sfx_40              = 300602     # Explosive Stone burst (Bullet 10183001)
+sfx_40_ring         = 530133     # Rock Sling rock impact: dirt (Bullet 10471009 sfxId_Hit)
+sfx_25              = 530133     # small dirt/sparks per 25 mm hit; was -1 (MW2's 25 mm has no projExplosionEffect)
+# Object destruction (atkObj 200/100/40 + the bush flag) is fixed in build_regulation.py AC130_OBJECT (section 20).
+
+[regulation.nuke]    # M7, read by build_regulation.py only (rebuild needed): the Tactical Nuke rows (docs\M7_DESIGN.md 3.13)
+lethal_speffect_id  = 79000960   # one-shot 100 % max-HP damage (clone of vanilla 17039), applied through the engine
+clone_speffect_from = 17039
+lethal_bullet_id    = 79000961   # Bullet + AtkParam_Pc of kill_mode = "bullet" / "both" (atkPhys 9999 flat + the SpEffect)
+horizon_bullet_id   = 79000962   # visual-only horizon explosion (atkId_Bullet -1)
+horizon_sfx         = 524028     # the 105 mm core burst
+
+[arsenal]                  # M6: the 34 MW2 multiplayer guns (docs\M6_DESIGN.md); hot except dir, guns, preload
+enabled            = true
+dir                = 'converted\guns'   # written by tools\scripts\convert_arsenal.py; not hot
+guns = [                   # cycle order (keys.weapon_next / weapon_prev, the wheel); not hot; [] = index.json order
+    "m4_mp", "famas_mp", "scar_mp", "tavor_mp", "fal_mp", "m16_mp",
+    "masada_mp", "fn2000_mp", "ak47_mp", "mp5k_mp", "ump45_mp", "kriss_mp",
+    "p90_mp", "uzi_mp", "sa80_mp", "rpd_mp", "mg4_mp", "aug_mp",
+    "m240_mp", "cheytac_mp", "barrett_mp", "wa2000_mp", "m21_mp", "spas12_mp",
+    "aa12_mp", "striker_mp", "ranger_mp", "m1014_mp", "model1887_mp", "at4_mp",
+    "m79_mp", "rpg_mp", "stinger_mp", "javelin_mp",
+]
+start              = "ump45_mp"   # the gun in hand at the first MODE on
+reserve_source     = "max"        # refill reserve: max (maxAmmo, verified on the UMP45) | start (startAmmo - clip) [I]
+wheel              = true         # the mouse wheel switches guns (down = next)
+wheel_invert       = false
+preload            = "all"        # every gun is on the GPU after boot (switching never uploads)
+rechamber_mode     = "after_fire" # after_fire | overlap [I]
+both_barrels       = false        # Ranger: true = one press fires both barrels [I]
+pellet_bands       = "shot"       # shot = one damage band for all pellets of a shot | pellet [I]
+shotgun_range_cap  = true         # pellets past minDamageRange are not spawned [I]
+pellet_pool_gate   = true         # pellets spawn only while the bullet pool has room (run 13 bug 2)
+ads_fov            = true         # the world FOV follows adsZoomFov while aiming
+ads_sens_scale     = true         # mouse sensitivity x tan(fov/2) / tan(hip/2) while aiming [I]
+hold_breath        = true         # snipers: hold the sprint key while scoped
+sway_deg_per_unit  = 0.0166667    # ADS sway degrees per adsIdleAmount unit [I]
+owner_retry        = true         # run 13 bug 2: re-read the owner and retry once on an owner failure
+pool_log_every     = 50           # SPAWN pool line every N spawns
+
+[launchers]                # M6: AT4 / M79 / RPG / Stinger / Javelin (section 6.6)
+flight             = "dll"        # dll = simulated projectiles (engine is reserved)
+lock               = true         # Stinger / Javelin lock onto ER characters (MW2: air targets; a deviation)
+max_live           = 2
+rocket_speed_up    = "ignore"     # ignore | add [I]
+rocket_impact      = false        # a direct hit also spawns the impact row [I]
+explosion_tiers    = 2            # 2 = core + ring, 1 = single sphere (rebuild the regulation after a change)
+max_ray_m          = 300.0
+self_guard         = true         # a blast whose sphere (+ margin) reaches the player is a dud (selfTarget 0 not verified)
+self_guard_margin_m = 0.5
+javelin_cruise_mps = 60.0         # the Javelin boosts after ignition to this speed [I] (launch speed 15.2 m/s)
+javelin_accel_mps2 = 40.0
+
+[kick]                     # M6: view kick, gun kick and ADS sway (section 8)
+enabled            = true
+scale              = 1.0
+camera_tp          = true         # third person: the camera is kicked too
+gun_kick           = true
+gun_scale          = 1.0
+sway               = true
+
+[hit]
+window_s              = 0.6
+max_chars             = 64
+exclude_character_ids = [8000]   # Torrent
+# M3: an HP drop is ours when one of our impact markers landed this recently and this close to the
+# character's vertical axis (ChrIns.last_hit_by stays empty for our bullets: M2 run 2).
+impact_window_s       = 0.25   # impact up to this long BEFORE the drop
+impact_lag_s          = 0.1    # ... or up to this long AFTER it (run 2: impact seen +16..18 ms after the drop)
+impact_radius_m       = 1.0
+capsule_height_m      = 2.2
+
+[menu]
+hud_indices      = []     # ui_states indices visible in normal gameplay (fill from MENU logs); empty = baseline at F5
+# Run 1 (2026-10-14): ui_states indices flip during normal play (prompts, pickups), which read as
+# "menu open" and let R through to the game (flask). Until hud_indices is calibrated, the cursor alone
+# decides; MENU cursor lines in the log show whether it tracks menus.
+use_ui_states    = false  # ui_states visible bits as a "menu open" signal (needs calibrated hud_indices)
+use_show_cursor  = true   # CSMouseMan.show_cursor as the "menu open" signal
+# While hud_indices is empty, F5 is refused when the mouse cursor is shown (a menu is probably open and
+# would otherwise be taken as HUD). Unverified signal: set false if F5 says "cursor visible" with no menu open.
+cursor_gate_at_enable = true
+menu_indices     = [28]   # 2026-10-20: ui_states indices that always mean a menu (28 = ER's pause menu, which shows no cursor on a pad)
+hud_off_indices  = [7]    # 2026-10-21: ER HUD indices; one hidden (and visible at F5) = a full-screen menu (a site of grace shows no
+                          # cursor on a pad and hides idx 7). The AC-130's own HUD hide is excluded. [] = off (needed if ER's HUD is "Auto")
+
+[hud]
+enabled                 = true
+font_px                 = 26.0
+font_path               = ''     # optional .ttf/.otf (not .ttc/.woff); checked at load, else the built-in font
+crosshair_color         = [1.0, 1.0, 1.0, 0.85]
+crosshair_line_scale    = 1.0
+min_gap_px              = 4.0
+fallback_vfov_deg       = 48.0
+hitmarker_s             = 0.2
+show_boot_toast         = true
+stance_icon             = true   # M5: a small stand / crouch / prone figure next to the ammo counter
+weapon_name             = true   # M6: gun name + fire mode tag next to the ammo counter
+switch_list             = true   # M6: the previous / next guns while switching
+lock_ui                 = true   # M6: Stinger / Javelin lock brackets and text
+damage_numbers          = true   # C3: floating damage numbers at our hits (white, yellow = head guess, red x = kill)
+damage_numbers_s        = 0.9    # life (s)
+damage_numbers_merge_s  = 0.25   # hits on one target within this merge (bursts, pellets)
+damage_numbers_value    = "er"   # er (ER HP lost) | mw2 (the shot's MW2 damage)
+damage_numbers_head_guess = true
+damage_numbers_max      = 24
+damage_numbers_scale    = 1.0    # size vs the HUD font (read at boot)
+damage_numbers_suppress_with_er_tag = false   # hide ours while ER's own enemy tag shows the target
+
+[audio]
+enabled     = true
+master_gain = 0.5
+fire_gain   = 0.6
+foley_gain  = 0.8
+fire_max_ms = 600
+fire_fade_ms = 80
+[audio.reload_cues]   # fraction of reload duration
+lift = 0.0
+clipout = 0.15
+clipin = 0.55
+chamber = 0.80        # empty reload only
+
+[viewmodel]                # M3: the MW2 gun + arms drawn in ER's frame (docs\M3_DESIGN.md)
+enabled              = true                   # not hot (the loader runs once)
+assets_dir           = 'converted\viewmodel'  # not hot; written by tools\scripts\convert_viewmodel.py
+output               = "auto"                 # auto | srgb | pq | scrgb (auto refuses unknown formats)
+paper_white_nits     = 200.0                  # HDR outputs only
+hip_fov              = 65.0                   # MW2 cg_fov (4:3 Hor+), not ER's camera FOV
+ads_fov              = 55.0                   # adsZoomFov
+near_in              = 0.1
+far_in               = 1000.0
+offset_in            = [0.0, 0.0, 0.0]        # cg_gun_x/y/z (fwd, left, up), inches
+light_dir_view       = [0.35, -0.80, 0.50]    # view space (x right, y up, z forward): from upper left, behind
+diffuse              = 0.85
+ambient_sky          = [0.42, 0.42, 0.45]
+ambient_ground       = [0.20, 0.19, 0.18]
+exposure             = 1.0
+crossfade_s          = 0.05
+sprint_speed_mps     = 5.0    # 0 = no sprint anims; ER sprint speed is unverified (tune from STATE speed logs)
+gpu_timing           = true
+draw_in_third_person = false  # run 15: the first-person gun only draws while first person is on
+log_interval_s       = 10.0
+runtime_shader_compile = false
+
+[first_person]             # M3b: a real first-person view while MW2 mode is on (docs\M3B_DESIGN.md)
+reset_on_respawn    = true          # run 15: first person comes back after a respawn / reload even if F6 turned it off
+cam_gate_grace_ticks = 8            # run 16: camera-gate failures must last this many ticks before first person hands back (chunk re-base = 1 tick)
+cam_gate_close_ok   = true          # run 18: while first person drives, ER's own camera pulled next to the chest by its collision (< 0.3 m) does not fail the gate
+enabled             = true          # master switch; F6 toggles first person while MW2 mode stays on
+# Run 4 (2026-10-14): task mode logged er_rewrite=1 and the view stayed third person (ER rebuilds pers_cam_1
+# after our task), so the camera-step hook is used.
+camera_mode         = "hook"        # task = write pers_cam_1 from our task | hook = camera-step hook (not hot)
+eye_height_m        = 1.60          # eye above the feet (physics position), 1.2..2.0
+eye_forward_m       = 0.10          # eye ahead along the horizontal view direction, 0..0.5
+eye_smooth_s        = 0.0           # 0 = off; smooths the eye height (stairs)
+pitch_clamp_deg     = 85.0          # FPS pitch limit (a no-op while ER's own camera limit is narrower)
+hide_method         = "render_flag" # render_flag (ChrIns enable_render bit) | fade (engine fade) | none
+yaw_follow          = true          # turn the hidden body to the aim when no A/S/D key is held (run 5: the ~70 ms/tick spike was the write helper, fixed)
+yaw_probe_samples   = 60            # samples (W held, running) that decide the character's forward axis
+world_fov_deg       = 0.0           # 0 = keep ER's world FOV (48 deg); e.g. 65.0 to match MW2 (viewmodel keeps 65/55)
+arm_ticks           = 30            # clear ticks (~0.5 s) before first person turns (back) on
+fade_alpha_max      = 0.5           # cutscene handback: a fade plate rising above this alpha
+use_fade_signal     = true          # inferred signals: set false if the log shows them misfiring
+use_cam_mask_signal = true
+use_talk_signal     = true          # sites of grace and NPC talk (CSPopupMenu.current_talk_id changes)
+use_ride_state_signal = true        # Torrent via ride_state != 0 (inferred); false = is_mounting only (if FP stays blocked reason=torrent on foot)
+latch_holdoff_s     = 2.0           # after a cutscene/talk/load handback: seconds the value must be back to normal before FP re-arms
+latch_stale_s       = 20.0          # ...or, if it never returns: seconds stable with the cursor closed (0 = wait for the return only)
+log_every_ticks     = 300
+# erfps2's camera handling (Dasaav-dsv/erfps2, MIT OR Apache-2.0), hook mode only; each one is restored on handback.
+sync_chr_cam          = true        # also write the eye into ChrCam.pers_cam row 3 (ER's player camera), not only the render camera
+disable_wall_recovery = true        # keep the exe's CAM_WALL_RECOVERY bool at 0 while first person is on
+disable_auto_rotation = true        # keep ChrExFollowCam.camera_auto_rotation at 0 while first person is on
+yaw_forward_axis      = "-z"        # M5: the character's forward axis for the yaw write: -z (run 4) | +z | auto (the M3b probe, only while ER moves the player)
+talk_stale_s          = 2.0         # C3: the talk latch releases 2 s after the dialog closed (the talk id keeps its last value)
+talk_menu_idx         = 3           # C3: ui_states index of the NPC dialog (C2 logs); held while visible; -1 = off
+fade_stale_s          = 3.0         # C3: a fade plate stuck high releases after 3 s (cursor closed)
+f6_overrides_latches  = true        # C3: F6 while first person is off for a talk / cutscene / menu / load brings it back (never turns it off)
+talk_interact_window_s = 8.0        # a talk id change hands back only this long after E / the pad X hold (boss voice lines change it too); 0 = every change
+tp_scope_peek         = true        # C6 (in-game test): in third person, ADS with a scoped gun (sniper) scopes in like first person and returns to third person on release; false = third-person zoom only
+scope_peek_arm_ticks  = 1           # ticks before a scope peek turns first person on (1..30)
+
+[third_person]             # C6 part 18: the over-the-shoulder camera of MW2 mode in third person (docs\C6_HOLD_DESIGN.md part 18); hot; needs the camera-step hook (first_person camera_mode = "hook" or [ac130] enabled)
+# 2026-10-22 in-game test values (user: the crosshair sits on the head); code default [0,0,0] / [0,0,0] = off
+shoulder_offset_m     = [0.55, 0.25, 0.0]   # [right, up, back] metres from ER's camera (right = horizontal, up = world up, back = along -view; negative = closer)
+shoulder_ads_offset_m = [0.45, 0.15, -0.6]  # the same while the MW2 ADS / the guard is held (lerped by the ADS fraction)
+shoulder_side         = "right"             # right | left
+shoulder_blend_s      = 0.15                # blend in / out / hip<->ADS and the spring arm letting out (s, ~95 %)
+shoulder_margin_m     = 0.20                # the spring arm stops this far before a wall / object hit
+shoulder_mounted      = false               # also on Torrent
+
+[ac130]                    # M4: the MW2 AC-130 killstreak (docs\M4_DESIGN.md); hot except where noted
+enabled             = true          # not hot for the camera hook (installed at boot)
+assets_dir          = 'converted\ac130'   # not hot
+cooldown_s          = 120.0
+cooldown_enabled    = false
+duration_s          = 0.0           # 0 = MW2 (40 s)
+scale               = 1.0           # multiplies radius and altitude
+radius_m            = 0.0           # 0 = MW2 rig (116 m)
+altitude_m          = 0.0           # 0 = MW2 rig (107 m above the call-in feet)
+orbit_period_s      = 0.0           # 0 = MW2 (70 s per turn)
+orbit_dir           = 1             # 1 = MW2 direction, -1 = reverse
+base_view           = "center"      # center = look at the call-in point | mw2_tag = MW2's fixed 64.5 deg tag pitch
+aim_arc_deg         = 0.0           # 0 = MW2 (35 deg each side)
+fov_105             = 0.0           # 0 = MW2 data (weapons_ac130.json ads_zoom_fov: 45)
+fov_40              = 0.0           # 0 = MW2 data (20)
+fov_25              = 0.0           # 0 = MW2 data (5)
+fov_is_vertical     = true
+mouse_deg_per_count = 0.022
+mouse_sens          = 1.0
+zoom_sens_scale     = true
+invert_y            = false
+vision              = "sp"          # sp = ac130 / ac130_inverted | mp = thermal_mp / missilecam
+thermal             = true          # false = no thermal pass (ImGui HUD only)
+start_black_hot     = false
+grain               = true
+luma_weights        = [0.2126, 0.7152, 0.0722]
+exposure            = 0.52          # [I] pre-exposure of the thermal film input (1 = MW2 as is); hot, tune in game
+gamma               = 0.75          # [I] mid-tone lift after the exposure (g^gamma; 1 = MW2 as is). Run 8 "a little too dark" at 0.6/1.0:
+                                    # 0.52/0.75 = +40% mid-tones at the same white clip as 0.65/1.0 (vmtest --thermal-image sweep)
+hide_er_hud         = true
+require_open_sky    = true
+max_player_move_m   = 25.0          # the ride ends if the (protected) body is moved further than this
+explosion_tiers     = 2             # 2 = core + ring, 1 = single sphere
+shells_after_exit   = true
+max_ray_m           = 600.0
+debug_markers       = false
+sync_chr_cam        = false         # not implemented in M4 (a WARN line when set)
+shake_scale         = 1.0           # legacy multiplier of [ac130.shake] scale (kept for old files; leave 1.0)
+start_backoff_s     = 1.0           # M6 (run 13 bug 1): after an aborted start, F7 is refused this long (retry_backoff)
+log_every_ticks     = 300
+
+[ac130.tracers]              # run 8: MW2-style round tracers, drawn before the thermal film (white hot / black hot like a hot round); hot
+enabled         = true
+flash           = true        # short impact flash after a round lands
+flash_s         = 0.25
+min_half_px     = 1.0         # thinnest half width at 1080p (scaled with the height)
+tail            = 0.15        # streak brightness at its tail (head = 1)
+muzzle_offset_m = [-1.5, -2.5, 0.0]   # right, up, forward from the gunship camera at fire time
+width_105 = 1.2               # core width (m), streak length (m), brightness, impact flash radius (m)
+length_105 = 14.0
+brightness_105 = 1.0
+flash_105 = 14.0              # after run 9: a bigger 105 flash (was 6.0)
+width_40 = 0.6
+length_40 = 10.0
+brightness_40 = 0.9
+flash_40 = 2.5
+width_25 = 0.25
+length_25 = 22.0
+brightness_25 = 0.8
+flash_25 = 0.8
+# per-gun impact flash length (s; 0 = flash_s), peak gain, and a wide soft thermal bloom around it (radius m; 0 = none)
+flash_s_105 = 0.5
+flash_s_40 = 0.3
+flash_s_25 = 0.0
+flash_gain_105 = 1.6
+flash_gain_40 = 1.0
+flash_gain_25 = 1.0
+bloom_105 = 32.0
+bloom_40 = 7.0
+bloom_25 = 0.0
+
+[ac130.shake]                # gunship camera shake from MW2's earthquake() calls (converted/ac130/timing.json); hot
+enabled     = true
+scale       = 1.0             # multiplies MW2's earthquake scale (105 fire 0.2 / 1 s, impact 0.4 / 1 s; 40 fire 0.1 / 0.5 s, impact 0.2 / 0.5 s)
+rot_deg     = 2.0             # [I] view jitter in degrees per unit of MW2 scale (yaw and pitch)
+roll_deg    = 0.6             # [I] roll per unit
+pos_m       = 1.5             # [I] camera offset in metres per unit
+freq_hz     = 11.0            # [I] jitter frequency
+mw2_falloff = false           # true = MW2's radius falloff from the quake origin (the impact quakes then barely reach the gunship)
+
+[ac130.audio]
+gain                 = 0.8
+ambient_gain         = 1.0
+explosion_gain       = 1.0
+explosion_floor_gain = 0.35
+announce_ready       = true
+
+[movement]                     # M5: MW2 movement while MW2 mode is on (docs\M5_DESIGN.md); hot unless noted
+enabled             = true
+data                = 'converted\movement.json'   # not hot; written by tools\scripts\convert_movement.py
+fp_only             = false    # true = only while first person is On
+tp_anim             = "hybrid" # hybrid = ER animates, we move | er = third person uses ER movement
+sprint_mode         = "press"  # press = MW2 (tap to start, tap again to stop) | hold
+crouch_mode         = "toggle" # toggle = MW2 C | hold
+gostand_from_prone  = "stand"  # stand | crouch
+jump_slowdown       = true     # MW2 MP jump_slowdownEnable (inferred on)
+marathon            = false    # unlimited sprint
+lightweight         = false    # x1.07
+weapon_move_class   = "auto"   # M6 auto = the gun in hand (moveSpeedScale) | smg 1.0 | rifle 0.95 | mg 0.875 | launcher 0.8
+speed_scale         = 1.0      # 0.5..2.0; the only non-MW2 tuning knob
+stance_eye          = "ratio"  # ratio = [first_person] eye_height_m x 60/40/11 | mw2 = inches x 0.0254
+fall_damage         = "mw2"    # mw2 | off
+fall_damage_scale   = 1.0      # 0..2, fraction of ER max HP per MW2 100 %
+lethal_fall         = "handback" # handback = ER resolves a fall >= 350 in (8.9 m) | zero = write HP 0 (only once ER death + ray coverage are verified)
+freefall_handback_m = 30.0
+hull_radius_m       = 0.0      # 0 = ER physics.hit_radius (clamped 0.2..0.6)
+skin_m              = 0.03
+max_substep_s       = 0.0167
+max_bumps           = 3
+max_rays_per_tick   = 48       # 8..128 (run 18: 48 for the waist ray and the body column; was 32)
+ground_normal       = "rays"   # rays | er
+walkable_normal_y   = 0.7
+er_pushout          = true
+er_pushout_max_m    = 0.30
+er_move_handback_m  = 0.30
+er_move_hold_s      = 0.5
+interact_hold_s     = 1.5      # E: ER drives this long (extended while ER's action flags show an interaction)
+char_push_radius_m  = 0.45     # radius of other characters for the push-out (the aim's char_radius_m is larger)
+use_movement_limit_signal = false
+rearm_ticks         = 10
+publish_max_m       = 1.0
+strafe_sign         = 1        # 1 | -1 override (section 1.4): set -1 if D moves you to the screen's left
+proxy_sync_flag     = false    # fallback: also set ChrCtrl.chr_proxy_flags bit0
+write_last_update    = false    # friend package: probe off
+blank_er            = ["SPACE", "LSHIFT", "C", "LCTRL", "F", "X", "Q", "LALT"]
+view_bob            = true
+land_dip            = true
+vm_stance_pose      = true
+keyprobe            = true
+log_every_ticks     = 60
+ladder_er_attacks   = false    # M8 B2: on a ladder LMB stays hidden from ER (no MW2 shot, no ER ladder punch); true = ER's
+fp_anim             = "hybrid" # C3 PASS C: hybrid = ER sees W/A/S/D in first person too (walk / run animations, peers see them; our write discards its root motion) | blank = C2
+fp_anim_speed_scale  = false    # friend package: not built; must stay false
+fp_anim_rm_mps      = 4.1      # ER's run root motion removed from its displacement before it counts as a push (m/s)
+
+[movement.mantle]              # M8: MW2 mantling onto rocks and ledges (docs\M8_DESIGN.md section 8); hot except max_rays
+enabled            = true
+key_mode           = "mw2"     # mw2 = jump held/pressed (MW2 SP) | press | auto (MP automantle perk)
+require_forward    = false     # MW2 SP has no forward condition
+max_height_m       = 2.0       # 1.0..2.5, top above the ground you left (user choice, I)
+max_rise_in        = 60        # 40..80, top above the CURRENT feet (MW2 60, V); >60 scales the rise time (I)
+check_angle_deg    = 60        # 0..90 (MW2 60, V)
+check_range_in     = 20        # 4..40 (MW2 20, V)
+time_scale         = 1.0       # 0.5..2.0 (1.0 = MW2 SP timing: 500 ms up; over 833 ms + the drop)
+over               = "thin"    # thin = cross thin walls with a floor behind | off
+over_max_drop_m    = 2.0       # 0.5..3.0, the far-side floor must be within this
+crouch_fallback    = true      # end crouched when only crouch headroom (MW2 clearance = crouch hull)
+low_keeps_weapon   = true      # rows 27/21 in keep the gun up (MW2, V)
+vm                 = "drop"    # drop (MW2 quick drop/raise) | sprint (sprint pose)
+sound              = true      # reserved: the gear-rattle foley is not converted yet (nothing plays)
+max_rays           = 24        # 24..40, cold (detection <= 24 + re-validation, + 4 per extra substep; separate from max_rays_per_tick)
+refuse_cache_ms    = 150       # 0..1000
+log_refusals       = true
+depenetrate_m      = 0.30      # run 18: 0..0.4, back the start off a face the capsule already reaches into by up to this (0 = refuse path_blocked)
+
+[movement.rays]                # run 18: the Havok collision filters of the controller's rays (docs\M8_DESIGN.md section 18); hot
+map_filter    = 0x2000058      # the map filter (the only cast_ray caller in eldenring.exe passes it; M5-M8 used only this)
+object_filter = 0x5b           # ER's follow-camera filter (it collides with wagons / crates); 0 = off
+mode          = "union"        # 2026-10-20 rollback (player mode stalled terrain movement 73% vs 22%): player = one cast with the player's own proxy layer (live CSChrPhysicsModule+0x338, layer only) | rollbacks: union = both, the nearer hit | map = M8 behaviour | object = object_filter only
+body_probes   = true           # waist ray + front body column (cart beds, tables between the knee and chest rays)
+player_fallback = 0x3          # C3: the cast filter while the live word is unreadable / its layer not accepted (layer 0x1..0x7f)
+player_layers = [2, 3, 4]      # C3: accepted layers of the live word (players are 2 / 3 / 4)
+log_live_table = true          # C3: one-shot dump of the live filter-table rows at the first MOVE on (read-only)
+
+[movement.unstick]             # run 18: hand back to ER for a moment when stuck (W/A/S/D held, no progress, ER pushing out); hot
+enabled          = true
+window_s         = 2.5         # 0.5..10, the observation window
+progress_m       = 0.5         # 0.05..3, less than this moved in the window = no progress
+wish_frac        = 0.8         # 0..1, W/A/S/D held for this fraction of the window
+evidence_frac    = 0.1         # 0.01..1, ER push-out applied / a probe inside geometry on this fraction of its ticks
+hold_s           = 1.0         # 0.2..10, the first handback (gravity back to ER), doubled per repeat
+max_hold_s       = 8.0         # hold_s..30
+max_per_window   = 4           # 1..20 unsticks per backoff window, then the detector rests (never an endless loop)
+backoff_window_s = 60.0        # 5..600
+
+[movement.assist]              # C3: ER's own movement for a moment when ours stalls (slopes, roots, small rocks); hot
+enabled        = true
+stall_speed    = 0.15          # m/s: a direction held and slower than this in ER's world = stalled
+stall_s        = 0.4           # stalled this long -> assist
+hold_s         = 0.8           # 0.3..2.0 s ER drives (repeats within 3 s double it, up to 2.0 s)
+max_per_min    = 8             # then WARN assist capped until the minute frees
+after_refusal  = true          # a mantle refusal while stalled skips the stall_s wait
+
+[spawn]                        # M7 A1: the bullet-emitter watchdog (docs\M7_DESIGN.md 2.1.3); hot
+emitter_warn     = 192         # SPAWN WARN emitters once this many emitters are live (the pool holds 64 + 192)
+emitter_throttle = 224         # extra shotgun pellets and launcher rings are dropped from here on (each drop logged)
+emitter_reserve  = 32          # slots kept for the AC-130 and the nuke (normal spawns stop at 256 - reserve)
+
+[nuke]                         # M7: the MW2 Tactical Nuke (docs\M7_DESIGN.md section 3); hot except assets_dir
+enabled              = true
+always_available     = false    # friend package: the nuke needs the 25-kill streak (the host may test with true)
+allow_in_coop        = true    # co-op C2: the local nuke also works with a Seamless peer in the world (caller's enemies + caller dies; peers untouched); false = refused in sessions
+streak_cost          = 25      # kills in one life (MW2 killstreaktable.csv)
+keep_earned_on_death = true    # an earned nuke stays until used, also across death [I MW2 behaviour]
+radius_m             = 200.0   # kill radius (MW2: the whole map)
+spare_friendly       = true    # merchants / friendly NPCs live (false = MW2: everyone dies; Torrent / spirits always live)
+spare_teams          = [0, 2, 8, 10, 12, 20, 26, 28, 30, 47]   # runtime team types spared with spare_friendly
+dry_run              = false   # run 15: dry run showed only enemy models (c4311/c4070/c4430/c4191/c4600/c2270...) on teams 48/6/7; real kills on. run-15 safety: NPCs are only logged (NUKE kill would-apply ...), never killed; set false after
+                               # the log shows Kale / merchants on a spared team (the team offset is [I]); you still die
+kill_mode            = "speffect"   # speffect | bullet | both (bullet only if SpEffect kills give no runes)
+kills_per_tick       = 16
+bullets_per_tick     = 8
+retry_s              = [0.5, 1.5, 3.0, 5.0]   # survivors re-applied this long after the first kill pass
+player_dies          = true    # like MW2: the player dies too (normal YOU DIED / grace respawn)
+player_delay_s       = 3.0     # the player's lethal effect this long after the enemy kills
+flash                = true    # the flash at T (MW2's nuke_flash fx; drawn full-screen here)
+aftermath_hold_s     = 8.0     # the aftermath tint is held this long, then fades over 2 s
+shake                = true    # MW2 has none (its earthquake line is commented out); that line's values, from T+1.5
+shake_scale          = 0.6
+shake_s              = 10.0
+horizon_count        = 3       # ER explosions 127 m ahead (MW2 nukeDistance), only while the emitter pool is quiet
+horizon_max_live     = 160
+announcer            = "US"    # US | UK | none
+hud_icon             = true
+gain                 = 1.0
+assets_dir           = "converted\\nuke"   # not hot
+stuck_s              = 30.0
+coop_mode            = "owned" # C3 PASS C: owned = the caller's synced marker starts the nuke in every peer's game; the host's game kills every enemy first, a client kills what is still alive after coop_client_fallback_s, then each game its own player | local = C2 (this game only)
+coop_everyone        = true    # in a session with coop_mode = owned: no radius (MW2: everyone dies)
+coop_window_s        = 6.0     # census passes every 0.25 s from the first kill pass for this long (ownership may move)
+coop_client_fallback_s = 1.0   # the host's game kills first; a client holds its kills this long after its first kill pass, then kills every enemy still alive
+probe_forward        = false    # friend package: not built; must stay false
+
+[ui_yield]                     # C3: ER's messages above the gun (docs\C3_DESIGN.md 2.3); hot; render-only, firing is never blocked
+enabled       = true
+mode          = "cutout"       # C5: the gun stays put and is not drawn inside the message's screen region (cutout_*) | lower (slides down) | hide | off
+drop_in       = [-2.0, 0.0, -9.0]   # inches at full yield, renderer axes (x forward, y left, z up)
+hud_dim_alpha = 0.35           # our switch list / lock text / nuke hints / toast dim to this
+indices       = [15, 17, 19, 24, 65, 66]   # ui_states indices that count as a message [I]; review C3: + the C2 toast candidates 17/19/65 (learn = true confirms; the 20 s stuck guard covers a wrong one)
+use_popup     = true
+use_announce  = true
+use_status    = true
+use_summon    = true
+use_blink     = false          # review C5: off; 17:10 session blink stayed on 20 s twice mid-fight (stuck WARN 17:12:51 / 17:14:50), its centre-band cutout would eat the hip gun. Back on once `UI cutout on signal=blink` matches real banners
+learn         = true           # 60 s per-index statistics (UI learn idx=.. lines); review C3: on for the C3 two-player test (both PCs)
+toast_anchor  = [0.012, 0.30]  # our toast, as a fraction of the screen (was the top-left corner, over ER's gauges)
+stuck_s       = 20.0           # a signal on longer than this is ignored until it clears
+# C5 cutout regions per signal: [x0, y0, x1, y1] as fractions of the screen (0,0 = top-left), at most 4 per signal and
+# 4 drawn at once. All defaults [I] (ER's 16:9 layout, not measured): tune from a screenshot; `UI cutout on` lines name them.
+cutout_feather  = 0.012                          # soft edge outside each region, fraction of the screen height
+cutout_popup    = [[0.28, 0.30, 0.72, 0.70]]     # dialogs / yes-no / tutorial popups: centre
+cutout_announce = [[0.20, 0.06, 0.80, 0.26]]     # system / network announcements: top-centre band
+cutout_status   = [[0.30, 0.60, 0.70, 0.74]]     # status messages (cannot use, item acquired): lower centre
+cutout_summon   = [[0.20, 0.06, 0.80, 0.26]]     # summon / phantom messages: top-centre band
+cutout_blink    = [[0.08, 0.36, 0.92, 0.64]]     # LOST GRACE DISCOVERED / area names / GREAT ENEMY FELLED: centre band
+cutout_idx      = [[0.305, 0.82, 0.695, 0.885], [0.20, 0.89, 0.80, 0.96]]   # 2026-10-20 measured from a 2000x1137 screenshot: prompt box x 0.31-0.68 y 0.83-0.875 [V]; subtitles band [I]
+
+[ui]                           # C3: cold (read at boot)
+probe_scaleform      = false    # friend package: test probe off
+inject_viewmodel = true        # C4 (docs\C4_UI_DESIGN.md): draw the gun before ER's UI so messages show on top; cold on, hot off; with the probe on it goes live only on a probe verdict ready=1
+inject_ui_layer  = false       # C4: also on the HDR UI-layer path (needs inject_viewmodel); cold on, hot off
+probe_layer_sample   = false    # friend package: test probe off
+inject_ui_thread = true        # C4.1 PASS I41 (docs\C4_1_DESIGN.md 3): draw the gun on ER's render thread into ER's UI layer so ER's UI composites over it; needs inject_viewmodel and the layer's alpha convention (pinned per build, or a probe41 verdict ready=1 with probe_layer_sample); cold on, hot off with inject_viewmodel
+
+[gamepad]                      # C3 PASS B: Xbox / XInput pads (PlayStation through Steam Input) (docs\C3_DESIGN.md part 4); hot (the hook is installed at boot only when enabled)
+enabled            = true
+pad_index          = -1        # XInput slot 0..3; -1 = the first connected slot that shows input
+look_route         = "mouse"   # mouse (the stick turns ER's camera through the mouse path, MW2 rates) | er (ER keeps the stick, MW2 graph)
+look_sensitivity   = 1.0
+invert_y           = false
+input_graph        = 3         # MW2 view_input_3.graph
+turnrate_yaw       = 260.0     # MW2 console (deg/s)
+turnrate_pitch     = 90.0
+turnrate_yaw_ads   = 90.0
+turnrate_pitch_ads = 55.0
+accel              = true
+accel_lerp         = 1200.0    # MW2 (deg/s^2)
+accel_max_yaw      = 400.0     # our choice, not MW2
+rs_deadzone        = 0.18
+rs_outer           = 0.98
+ls_deadzone        = 0.20
+ls_outer           = 0.98
+trigger_threshold  = 30        # 0..255
+hold_ms            = 300       # X tap = reload, hold = ER interact; B tap = crouch, hold = prone
+mouse_deg_per_count = 0.0      # 0 = auto-calibrated in game (PAD calib line)
+gunship_counts_per_deg = 0.0   # 0 = from [ac130] mouse_deg_per_count x mouse_sens
+rumble             = false     # not implemented
+log_every_s        = 10
+blank_er           = ["a", "b", "x", "y", "lb", "rb", "lt", "rt", "l3", "r3", "dpad_up", "dpad_down", "dpad_left", "dpad_right", "rs", "ls_fp"]   # review C3: + dpad_right (ER's right-hand swap under the MW2 gun)
+er_interact        = "y"       # the ER pad button pressed for ER when X is held, or pressed at ER's prompt (ER's event action) [I]
+prompt_indices     = [19]      # 2026-10-21: ui_states of ER's action prompt ("Rest at site of grace", "Open", "Pick up"); while one shows, an X press = ER interact at once (no reload); [] = X tap always reloads
+er_melee           = "rb"      # review C3: R3 (bind.melee) pulses this ER button once = ER's light attack as the MW2 melee [I]; "" = melee off
+er_use_item        = "x"       # 2026-10-21: D-pad right (bind.heal) pulses this ER button once = ER's use item (the flask) [I]; "" = heal off
+
+[gamepad.bind]                 # "" = unbound; chords of two buttons as "l3+r3"; start is never bound
+toggle        = "l3+r3"        # MW2 / ER mode (F5)
+fp_toggle     = "dpad_left"    # first person (F6)
+fire          = "rt"
+ads           = "lt"
+reload        = "x"            # tap
+interact_hold = "x"            # hold (hold_ms): ER interacts (talk, graces, doors, pickups)
+weapon_next   = "y"
+weapon_prev   = "lb"
+jump          = "a"            # jump / mantle
+stance        = "b"            # tap crouch, hold prone
+sprint        = "l3"
+melee         = "r3"           # one ER light attack (er_melee, RB pulsed 120 ms) with the invisible ER weapon [I]
+ac130         = "dpad_up"
+nuke          = "dpad_down"
+heal          = "dpad_right"   # drink the selected quick item (er_use_item, X pulsed 150 ms); D-pad right itself stays hidden (no weapon swap)
+
+[gamepad.gunship]              # during an AC-130 ride every button but Start is hidden from ER
+fire    = "rt"
+next    = "y"
+thermal = "x"
+exit    = "back"
+
+[coop]                         # C3 PASS C: seeing each other in co-op (docs\C3_DESIGN.md part 3); hot; cosmetic for the peers, never a damage path
+visual_twins         = true    # a no-attack synced twin beside every damaging spawn while a peer is in the session (tracers, gun sounds, explosions on the peer's PC)
+twin_min_interval_ms = 40      # at most one twin per gun per 40 ms (an SMG: 25 per second)
+peer_effects         = true    # the peers' twins become tracers / sounds / flashes here
+peer_sounds          = true
+peer_tracers         = true
+peer_flashes         = false   # review C3: our HUD flash at a peer's explosion; off = ER's own twin SFX is the explosion (turn on if the friend's explosions are invisible on your PC)
+tracer_occlusion     = true    # review 2026-10-24: the peers' tracers / flashes and our launcher streaks stop at the first wall and are hidden where map rays from the camera are blocked (CPU map rays; false = drawn as before)
+tracer_occlusion_rays = 32     # 0..512: map rays per tick for that (an uncast point draws, as before)
+sound_min_m          = 10.0    # a peer's gun at full volume up to this distance, silent at sound_max_m
+sound_max_m          = 150.0
+explosion_floor      = 0.15    # far explosions keep this much
+peer_gain            = 0.8
+world_guns           = true    # the MW2 world model in every player's hands (peers; ourselves in third person with world_gun_self_tp)
+world_gun_self_tp    = true
+world_gun_offset_m   = [0.45, 0.20, 1.15]   # stage A anchor of the MW2 model origin (~10 in ahead of the grip): forward, right, up from the feet [I: tune in game]
+world_gun_lod1_m     = 10.0    # lod1 beyond this distance
+world_gun_occlusion  = true    # hide a world gun when 3 map rays from the camera to it are blocked
+world_gun_max_m      = 80.0
+hand_bone            = -1      # -1 = offset mode: stage A (feet + world_gun_offset_m) / hand mode: the name lookup below, else FLVER 57 (the 2026-10-21 probe's right hand); 0..1023 = the right-hand FLVER bone (COOP bone probe / HOLD bone lines; implausible -> stage A)
+bone_probe           = true    # log ER's bone array for 10 s after MW2 mode turns on (once per session; read-only; C6: + the HOLD axes lines in hand mode)
+markers              = true    # synced marker SpEffects: MW2 mode (hides ER's weapon), the gun in hand, the AC-130 ride, the nuke
+marker_refresh_s     = 5.0
+hide_er_weapon       = true
+twin_gun_fallback_s  = 3.0     # a peer's gun known from its last twin for this long when no gun marker is seen
+peer_drop_guard      = true    # in a session an HP drop above peer_drop_factor x the row's attack x pellets is a peer's (no kill credit / streak / number)
+peer_drop_factor     = 1.5
+log_every_s          = 5.0
+# C6 (docs\C6_HOLD_DESIGN.md): the ER character holds the MW2 gun in third person. Everything below defaults to today's behaviour; hot.
+hold_mode            = "hand"    # offset = the gun at world_gun_offset_m (today) | hand = on the right-hand bone every frame (a failed read / check draws the offset for that player and frame: HOLD fallback)
+hand_bone_auto       = true      # hand mode with hand_bone = -1: find R_Weapon (else R_Hand) by name and match it to the FLVER bone (HOLD bone ...)
+hand_axes            = "+x,+z,+y"  # MW2 model X (forward), Y (left), Z (up) -> hand-local axes; must mirror (det -1). analyze_c6.py --axes suggests one [I: tune in game]
+grip_offset_m        = [0.0, 0.0, 0.0]   # the gun origin in hand-local metres (-0.5..0.5)
+grip_rot_deg         = [0.0, 0.0, 0.0]   # grip rotation in degrees about the hand's X, then Y, then Z (-180..180)
+hand_smooth          = 0.0       # 0 = none; 0..0.9 = 1-frame lerp of the hand anchor (only if the gun jitters)
+hold_mounted         = "hand"    # on Torrent in hand mode: hand | hide (no world gun while mounted)
+tp_ads_hold          = "aim"     # C6 round 7 test 2026-10-21 (code default "hand"): MW2 ADS in third person: hand (the gun stays on the hand) | aim (blends to the camera-aimed pose in 0.12 s; round 7: also inside an er_aim episode when ER kept the carry, HOLD aim hold_fallback)
+tp_ads_er_aim        = false    # friend package: old probe alias of tp_ads_pose = "er_aim"
+tp_ads_pose          = "guard"   # C6 part 17 test 2026-10-22 (code default "off"; hot): off | er_aim (needs er_stance = "crossbow") = third-person MW2 ADS (non-scoped guns, stance two-handed) raises ER's own crossbow aim: the stanced row gets the crossbow type for the ADS (restored at release) and ER's aim input is held (pad LB / keyboard RMB); the camera / reticle follow tp_aim_cam below; HOLD aim lines | guard (needs er_stance = "polearm") = third-person MW2 ADS holds ER's block input (pad LB / keyboard RMB) so the body raises the hidden weapon into ER's two-handed polearm guard; nothing written on the row, our normal camera + the MW2 crosshair, the gun aligned to the aim line (tp_ads_hold = "aim" raises it if the guard is not detected); guarding blocks hits (damage cut, stamina); HOLD guard lines
+tp_guard_yaw         = true      # C6 part 17 test 2026-10-22 (code default false; hot; only with tp_ads_pose = "guard"): while the guard ADS is held standing still the body faces the camera (the first-person yaw write; ER's own facing, no restore); HOLD guard yaw line
+tp_guard_align_max_deg = 45.0    # C6 part 17 test 2026-10-22 (code default 20; hot): the guard turns the gun about its grip onto the aim line by at most this; above it the gun raises along the camera (HOLD guard align_clamped)
+guard_axes           = "auto"    # C6 part 17 addendum 2026-10-22 (code default "auto"; hot; acts only with tp_ads_pose = "guard"): the gun's frame in a DETECTED guard. auto = the barrel along the body's forward from the right fist (built in from the 11:46 guards, 80-96 deg -> 2-8 deg off the aim line) until this session learns the weapon's guard (HOLD guard frame auto ... prints axes / rot to pin) | off = part 17 (ER's weapon frame with the carry grip) | a det -1 map such as "-z,-y,+x" turned by guard_rot_deg
+guard_rot_deg        = [0.0, 0.0, 0.0]  # C6 part 17 addendum: the turn after an explicit guard_axes map (deg, X then Y then Z; -180..180)
+polearm_grip         = true      # C6 part 17 addendum 2026-10-22 (code default true; hot; acts only with er_stance = "polearm"): the polearm carry grips: long guns along the shaft (pistol grip in the right fist, barrel toward the left hand), short guns level ahead from the right fist (HOLD grip ... src=polearm_long|polearm_short); false = the sword grip table; [coop.grip.<gun>.polearm] offset_m / rot_deg override
+polearm_long_min_m   = 0.50      # C6 part 17 addendum: a gun whose muzzle reaches at least this far ahead of its pistol grip is "long" (0..2 m; the left hand sits 0.54 m along the shaft)
+tp_ads_patch         = "ads"     # er_aim: ads = the type only during each ADS | stance = from the stance enter to its exit (fallback if the log shows "aim fail reason=no_state")
+probe_er_aim         = false    # friend package: test probe off
+tp_aim_cam           = "keep"   # friend package: acts only with tp_ads_pose = "er_aim"; keep = our normal camera
+er_stance            = "polearm" # C6 part 17 test 2026-10-22 (code default "off"; hot): off | crossbow = in third person the hidden ER weapon uses ER's two-handed crossbow motions (a runtime patch of 5 motion fields of its EquipParamWeapon row, restored exactly; no regulation change) | polearm = the same patch with the vanilla Spear's motions (two-handed polearm carry + guard; for tp_ads_pose = "guard"). R3 melee does nothing in third person while it is on
+stance_refresh       = "chord"   # chord = ER's two-hand chord picks the motions up (pad: Y held + RB; no pad: E held + LMB) | arm_style (probe: write the grip) | none
+er_carrier           = "off"    # friend package: crossbow carrier experiment stopped (2026-10-22)
+carrier_give         = false    # friend package: never give an item into the save
+carrier_load         = false    # friend package: carrier experiment off
+weapon_axes_xbow     = "-y,+z,+x"  # C6 part 16.7 (code default = the sword's rig map): the carrier crossbow's weapon-frame map; derive it from HOLD xbow frame (P-X5); [coop.grip.<gun>.xbow] keys override the grip on the crossbow
+stance_min_switch_s  = 1.5       # at most one stance enter / exit per this many seconds
+stance_peers         = true      # with er_stance on: also patch a peer's weapon row while it is in MW2 mode, so its body shows the crossbow stance here
+stance_peer_delay_s  = 1.5       # with a peer present our enter chord waits this long after mode on (the peer patches our row first)
+hold_source          = "weapon"  # hand mode: weapon = the gun on ER's own right-hand weapon model (where ER draws the sword), else the hand bone with the learned grip | bone = the hand bone only
+weapon_axes          = "-y,+z,+x"  # MW2 X (forward), Y (left), Z (up) -> the ER weapon model's axes (det -1). -y,+z,+x = ER's weapon frame (a rig constant, work\c6\grip3.md); auto = diagnostic vote, only the rig map is ever accepted
+weapon_rake_deg      = -18.0     # grip rake about the weapon's Z (cancels ER's ~19 deg muzzle-up hold); the built-in per-gun grips (pistol grip in the fist) use it (-45..45)
+stance_exit_defer_s  = 3.0       # C6 test (code default 0 = chords at once): F6 into first person: the row is restored at once, the grip chords wait this long (then not while firing / aiming / moving); back within it on the same weapon = no chords (HOLD stance resume). F5 never deferred
+world_gun_body_occlusion = true  # C6 test (code default false): depth-only capsules on the bodies hide a world gun behind a character / its back shield (our depth only; third person only)
+probe_er_depth       = false    # friend package: test probe off
+probe_er_depth_state = false    # friend package: test probe off
+probe_er_depth_sample = false    # friend package: test probe off
+world_gun_er_depth   = false    # friend package: ER-depth occlusion is a test; body capsules + map rays stay on
+er_depth_bias_m      = 0.03      # hot, 0..0.5: the ER occluder is pushed back by bias_m + bias_rel * z (no false cuts from TAA jitter / camera mismatch)
+er_depth_bias_rel    = 0.004     # hot, 0..0.05
+er_depth_max_turn_deg = 3.0      # hot, 0.5..30: frames turning faster than this (deg per frame) skip the ER-depth prime (capsules only)
+hide_state_patch     = true      # with hand mode / the stance: the MW2-mode marker row is patched in memory into an Unseen Blade-style hide (stateInfo 184) so ER's weapon really disappears; restored when off
+# Per-gun grip (optional). Weapon frame (hold_source = weapon): the built-in table puts each gun's pistol grip in the fist
+# (HOLD grip who=self ... lines); a key here overrides it (offset_m in weapon-local metres, -1..1: +x up the hilt, -y forward,
+# +z left; rot_deg about x, y, z). Hand-bone path: missing keys = grip_offset_m / grip_rot_deg above. [coop.grip.m4] or [coop.grip.m4_mp]:
+# [coop.grip.m4]
+# offset_m = [0.0, 0.02, -0.03]
+# rot_deg  = [0.0, 0.0, 0.0]

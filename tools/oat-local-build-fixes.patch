@@ -1,0 +1,26 @@
+diff --git a/src/ObjCommon/InfoString/InfoString.h b/src/ObjCommon/InfoString/InfoString.h
+index 9d45d08c..8642ee4a 100644
+--- a/src/ObjCommon/InfoString/InfoString.h
++++ b/src/ObjCommon/InfoString/InfoString.h
+@@ -43,7 +43,7 @@ private:
+     class EqualValue
+     {
+     public:
+-        constexpr bool operator()(const std::string& lhs, const std::string& rhs) const
++        bool operator()(const std::string& lhs, const std::string& rhs) const
+         {
+             return utils::StringEqualsIgnoreCase(lhs, rhs);
+         }
+diff --git a/src/ObjLoading/Game/IW4MS/FX/EfxReader.cpp b/src/ObjLoading/Game/IW4MS/FX/EfxReader.cpp
+index b73d6301..56f6755a 100644
+--- a/src/ObjLoading/Game/IW4MS/FX/EfxReader.cpp
++++ b/src/ObjLoading/Game/IW4MS/FX/EfxReader.cpp
+@@ -52,7 +52,7 @@ namespace fx
+ 
+                 m_words.emplace_back(text, i + 1u, end - i - 1u);
+                 m_word_was_quoted.push_back(true);
+-                i = end + 1u;
++                i = static_cast<unsigned>(end + 1u);
+                 continue;
+             }
+ 

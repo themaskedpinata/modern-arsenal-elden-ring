@@ -1,0 +1,25 @@
+# Never commit game files or anything converted from them
+/extracted/
+/converted/
+/dumps/
+/work/
+/zones/
+*.ff
+*.iwd
+*.iwi
+regulation.bin
+*.dcx
+*.bdt
+*.bhd
+*.sl2
+
+# Build output and fetched sources
+/mod/target/
+/tools/*/target/
+/vendor/fromsoftware-rs/
+/vendor/*/target/
+/build/
+/dist/
+/logs/
+*.pdb
+__pycache__/

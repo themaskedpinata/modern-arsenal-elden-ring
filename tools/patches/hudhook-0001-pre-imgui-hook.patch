@@ -1,0 +1,197 @@
+diff --git a/src/hooks/dx12.rs b/src/hooks/dx12.rs
+index abdf1d8..a7639d6 100644
+--- a/src/hooks/dx12.rs
++++ b/src/hooks/dx12.rs
+@@ -90,6 +90,56 @@ type D3D12CommandQueueExecuteCommandListsType = unsafe extern "system" fn(
+     command_lists: *mut ID3D12CommandList,
+ );
+ 
++// mw2er patch 0001: IDXGISwapChain3::SetColorSpace1 is recorded for the pre-ImGui callback's output transform.
++type DXGISwapChainSetColorSpace1Type =
++    unsafe extern "system" fn(this: IDXGISwapChain3, color_space: i32) -> HRESULT;
++
++/// mw2er patch 0001: a callback that records draws into hudhook's own DX12 command list right after the back
++/// buffer is bound (RENDER_TARGET state) and before ImGui's draw data. The callback must set every piece of
++/// pipeline state it uses and must not leave the back buffer in another state; hudhook re-binds its render
++/// target and restores its own state afterwards. A panic inside the callback is caught and counted.
++pub mod pre_imgui {
++    use std::sync::atomic::{AtomicI32, AtomicU64};
++    use std::sync::OnceLock;
++
++    use windows::Win32::Graphics::Direct3D12::{
++        ID3D12CommandQueue, ID3D12Device, ID3D12GraphicsCommandList, ID3D12Resource,
++        D3D12_CPU_DESCRIPTOR_HANDLE,
++    };
++    use windows::Win32::Graphics::Dxgi::Common::DXGI_FORMAT;
++
++    /// Everything the callback gets, valid only during the call.
++    pub struct PreImguiCtx<'a> {
++        /// The device of the game's present queue.
++        pub device: &'a ID3D12Device,
++        /// hudhook's command list, open, with the back buffer in RENDER_TARGET state.
++        pub command_list: &'a ID3D12GraphicsCommandList,
++        /// The game's present queue (the list is executed on it after ImGui).
++        pub command_queue: &'a ID3D12CommandQueue,
++        /// The current back buffer.
++        pub render_target: &'a ID3D12Resource,
++        /// hudhook's RTV of the back buffer.
++        pub rtv: D3D12_CPU_DESCRIPTOR_HANDLE,
++        /// The RTV format (sRGB swap-chain formats are viewed as UNORM).
++        pub rtv_format: DXGI_FORMAT,
++        /// Back-buffer width.
++        pub width: u32,
++        /// Back-buffer height.
++        pub height: u32,
++        /// hudhook's frame slot; its fence was waited on before this frame was recorded.
++        pub frame_index: usize,
++        /// Number of frame slots.
++        pub num_frames: usize,
++    }
++
++    /// The callback (set once, before hudhook is applied).
++    pub static PRE_IMGUI: OnceLock<Box<dyn Fn(&PreImguiCtx) + Send + Sync>> = OnceLock::new();
++    /// Panics caught around the callback.
++    pub static PRE_IMGUI_PANICS: AtomicU64 = AtomicU64::new(0);
++    /// The last colour space passed to IDXGISwapChain3::SetColorSpace1 (-1 = never called).
++    pub static LAST_COLOR_SPACE: AtomicI32 = AtomicI32::new(-1);
++}
++
+ struct Trampolines {
+     dxgi_swap_chain_present: DXGISwapChainPresentType,
+     dxgi_swap_chain_present1: DXGISwapChainPresent1Type,
+@@ -99,6 +149,7 @@ struct Trampolines {
+     dxgi_factory_create_swap_chain: DXGIFactoryCreateSwapChainType,
+     dxgi_factory_create_swap_chain_for_hwnd: DXGIFactoryCreateSwapChainForHwndType,
+     d3d12_command_queue_execute_command_lists: D3D12CommandQueueExecuteCommandListsType,
++    dxgi_swap_chain_set_color_space1: DXGISwapChainSetColorSpace1Type,
+ }
+ 
+ static mut TRAMPOLINES: OnceLock<Trampolines> = OnceLock::new();
+@@ -895,6 +946,22 @@ unsafe extern "system" fn d3d12_command_queue_execute_command_lists_impl(
+     d3d12_command_queue_execute_command_lists(command_queue, num_command_lists, command_lists);
+ }
+ 
++unsafe extern "system" fn dxgi_swap_chain_set_color_space1_impl(
++    swap_chain: IDXGISwapChain3,
++    color_space: i32,
++) -> HRESULT {
++    let _hook_ejection_guard = HOOK_EJECTION_BARRIER.acquire_ejection_guard();
++    let Trampolines { dxgi_swap_chain_set_color_space1, .. } =
++        TRAMPOLINES.get().expect("DirectX 12 trampolines uninitialized");
++
++    trace!("Call IDXGISwapChain3::SetColorSpace1 trampoline");
++    let result = dxgi_swap_chain_set_color_space1(swap_chain, color_space);
++    if result.is_ok() {
++        pre_imgui::LAST_COLOR_SPACE.store(color_space, Ordering::SeqCst);
++    }
++    result
++}
++
+ unsafe extern "system" fn dxgi_factory_create_swap_chain_impl(
+     factory: IDXGIFactory,
+     device: IUnknown,
+@@ -962,6 +1029,7 @@ fn get_target_addrs() -> (
+     DXGISwapChainSetSourceSizeType,
+     DXGISwapChainResizeBuffers1Type,
+     D3D12CommandQueueExecuteCommandListsType,
++    DXGISwapChainSetColorSpace1Type,
+ ) {
+     let dummy_hwnd = DummyHwnd::new();
+ 
+@@ -1034,6 +1102,8 @@ fn get_target_addrs() -> (
+         unsafe { mem::transmute(swap_chain3.vtable().ResizeBuffers1) };
+     let cqecl_ptr: D3D12CommandQueueExecuteCommandListsType =
+         unsafe { mem::transmute(command_queue.vtable().ExecuteCommandLists) };
++    let set_color_space1_ptr: DXGISwapChainSetColorSpace1Type =
++        unsafe { mem::transmute(swap_chain3.vtable().SetColorSpace1) };
+ 
+     (
+         create_swap_chain_ptr,
+@@ -1044,11 +1114,12 @@ fn get_target_addrs() -> (
+         set_source_size_ptr,
+         resize_buffers1_ptr,
+         cqecl_ptr,
++        set_color_space1_ptr,
+     )
+ }
+ 
+ /// Hooks for DirectX 12.
+-pub struct ImguiDx12Hooks([MhHook; 8]);
++pub struct ImguiDx12Hooks([MhHook; 9]);
+ 
+ impl ImguiDx12Hooks {
+     /// Construct a set of [`MhHook`]s that will render UI via the
+@@ -1080,6 +1151,7 @@ impl ImguiDx12Hooks {
+             dxgi_swap_chain_set_source_size_addr,
+             dxgi_swap_chain_resize_buffers1_addr,
+             d3d12_command_queue_execute_command_lists_addr,
++            dxgi_swap_chain_set_color_space1_addr,
+         ) = get_target_addrs();
+ 
+         trace!(
+@@ -1132,6 +1204,11 @@ impl ImguiDx12Hooks {
+             d3d12_command_queue_execute_command_lists_impl as *mut _,
+         )
+         .expect("couldn't create ID3D12CommandQueue::ExecuteCommandLists hook");
++        let hook_set_color_space1 = MhHook::new(
++            dxgi_swap_chain_set_color_space1_addr as *mut _,
++            dxgi_swap_chain_set_color_space1_impl as *mut _,
++        )
++        .expect("couldn't create IDXGISwapChain3::SetColorSpace1 hook");
+ 
+         RENDER_LOOP.get_or_init(|| Box::new(t));
+ 
+@@ -1168,6 +1245,10 @@ impl ImguiDx12Hooks {
+                 *mut c_void,
+                 D3D12CommandQueueExecuteCommandListsType,
+             >(hook_cqecl.trampoline()),
++            dxgi_swap_chain_set_color_space1: mem::transmute::<
++                *mut c_void,
++                DXGISwapChainSetColorSpace1Type,
++            >(hook_set_color_space1.trampoline()),
+         });
+ 
+         Self([
+@@ -1179,6 +1260,7 @@ impl ImguiDx12Hooks {
+             hook_set_source_size,
+             hook_resize_buffers1,
+             hook_cqecl,
++            hook_set_color_space1,
+         ])
+     }
+ }
+diff --git a/src/renderer/backend/dx12.rs b/src/renderer/backend/dx12.rs
+index 34e0f68..9231e13 100644
+--- a/src/renderer/backend/dx12.rs
++++ b/src/renderer/backend/dx12.rs
+@@ -216,6 +216,30 @@ impl RenderEngine for D3D12RenderEngine {
+ 
+             self.command_list.ResourceBarrier(&present_to_rtv_barriers);
+             self.command_list.OMSetRenderTargets(1, Some(&self.rtv_heap_start), false, None);
++
++            // mw2er patch 0001: pre-ImGui callback (draws under the HUD), then hudhook's own state again.
++            if let Some(cb) = crate::hooks::dx12::pre_imgui::PRE_IMGUI.get() {
++                let desc = render_target.GetDesc();
++                let ctx = crate::hooks::dx12::pre_imgui::PreImguiCtx {
++                    device: &self.device,
++                    command_list: &self.command_list,
++                    command_queue: &self.command_queue,
++                    render_target: &render_target,
++                    rtv: self.rtv_heap_start,
++                    rtv_format: self.rtv_format,
++                    width: desc.Width as u32,
++                    height: desc.Height,
++                    frame_index: self.frame_index,
++                    num_frames: NUM_FRAMES,
++                };
++                let r = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| cb(&ctx)));
++                if r.is_err() {
++                    crate::hooks::dx12::pre_imgui::PRE_IMGUI_PANICS
++                        .fetch_add(1, std::sync::atomic::Ordering::SeqCst);
++                }
++                self.command_list.OMSetRenderTargets(1, Some(&self.rtv_heap_start), false, None);
++            }
++
+             self.command_list.SetDescriptorHeaps(&[Some(self.texture_heap.srv_heap.clone())]);
+ 
+             self.render_draw_data(draw_data)?;

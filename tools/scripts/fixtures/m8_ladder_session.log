@@ -1,0 +1,84 @@
+2026-10-18 13:00:00.000 I [boot] BOOT mw2er 0.3.0
+2026-10-18 13:00:00.000 I [task] BOOT mw2er 0.3.0 dll=D:\Mods\MW2inER\build\natives\mw2er.dll
+2026-10-18 13:00:00.100 I [task] MOVE cfg enabled=1 tp_anim=hybrid sprint=press crouch=toggle jump_slowdown=1 fall=mw2 lethal_fall=handback eye=1.600/1.067/0.293 hull=1.867/1.333/0.800 r=er rays_max=32 data=converted\movement.json sha=2f8c9cfda1b8 mantle=1 key=mw2 max_h=2.00m rise_max=60in angle=60 over=thin vm=drop rays=24 ladder_er_attacks=0
+2026-10-18 13:00:01.000 I [task] TASK world entered (player handle 0x1 owner_check=ok)
+2026-10-18 13:00:01.500 I [task] MOVE resync why=world_enter d=0.00m chunk_d=0.00m
+2026-10-18 13:00:01.500 I [task] MOVE on pos=(1.00,2.00,3.00) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.80 fp=1
+2026-10-18 13:00:02.000 I [task] FP on eye=(1.00,3.60,3.00) cam_gate=ok er_cam_dist=3.5m eye_to_chest=0.4m hp=500 ride=Some(0) mounted=0 ladder=-1
+2026-10-18 13:00:10.000 I [task] MOVE suspend reason=interact E pressed (hold 1.5 s) ticks=500 pos=(1.00,2.00,3.00)
+2026-10-18 13:00:10.000 I [task] MOVE restore field=gravity_multiplier addr=0x1000 old=0.000 new=1.000 ok=1
+2026-10-18 13:00:10.000 I [task] MOVE restore field=gravity_disabled addr=0x1009 old=1 new=0 ok=1
+2026-10-18 13:00:10.400 I [task] MOVE blocked reason=ladder state=0
+2026-10-18 13:00:10.400 I [task] FP off reason=ladder state=0 ticks_on=480 cam_writes=0 (re-arms when clear)
+2026-10-18 13:00:10.400 I [task] LADDER state from=-1(None) to=0(StartBottom) pos=(1.00,2.00,3.00) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=1 move=suspended fp=1
+2026-10-18 13:00:10.400 I [task] ARSENAL lowered why=ladder gun=ump45_mp quick_drop_s=0.25
+2026-10-18 13:00:10.450 I [task] MOVE interact cleared why=ladder state=0
+2026-10-18 13:00:11.000 I [task] LADDER state from=0(StartBottom) to=2(UpRight) pos=(1.00,2.40,3.20) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=0 move=suspended fp=0
+2026-10-18 13:00:13.000 I [task] AC130 blocked reason=ladder (ER drives the climb; F7 again on the ground)
+2026-10-18 13:00:15.000 I [task] LADDER state from=3(UpLeft) to=6(EndTop) pos=(1.00,8.80,3.20) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=0 move=suspended fp=0
+2026-10-18 13:00:16.000 I [task] LADDER state from=6(EndTop) to=-1(None) pos=(1.00,9.00,3.80) top=? bottom=? er_ground=1 move=arming fp=0
+2026-10-18 13:00:16.000 I [task] LADDER end state=6(EndTop) dur=5.60s dy=7.00m ups=12 downs=0 attacks=0 coast=0 pos=(1.00,9.00,3.80)
+2026-10-18 13:00:16.000 I [task] ARSENAL raise why=ladder gun=ump45_mp quick_raise_s=0.55
+2026-10-18 13:00:16.250 I [task] MOVE resync why=handback d=0.00m chunk_d=0.00m
+2026-10-18 13:00:16.250 I [task] MOVE on pos=(1.00,9.00,3.80) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.80 fp=0
+2026-10-18 13:00:16.250 I [task] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x1000 old=1.000 new=0.000 ok=1
+2026-10-18 13:00:16.550 I [task] ARSENAL raised why=ladder gun=ump45_mp
+2026-10-18 13:00:16.750 I [task] FP on eye=(1.00,10.60,3.80) cam_gate=ok er_cam_dist=3.5m eye_to_chest=0.4m hp=500 ride=Some(0) mounted=0 ladder=-1
+2026-10-18 13:00:40.000 I [task] MOVE suspend reason=interact E pressed (hold 1.5 s) ticks=500 pos=(1.00,2.00,3.00)
+2026-10-18 13:00:40.000 I [task] MOVE restore field=gravity_multiplier addr=0x1000 old=0.000 new=1.000 ok=1
+2026-10-18 13:00:40.000 I [task] MOVE restore field=gravity_disabled addr=0x1009 old=1 new=0 ok=1
+2026-10-18 13:00:40.400 I [task] MOVE blocked reason=ladder state=0
+2026-10-18 13:00:40.400 I [task] FP off reason=ladder state=0 ticks_on=480 cam_writes=0 (re-arms when clear)
+2026-10-18 13:00:40.400 I [task] LADDER state from=-1(None) to=0(StartBottom) pos=(1.00,2.00,3.00) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=1 move=suspended fp=1
+2026-10-18 13:00:40.400 I [task] ARSENAL lowered why=ladder gun=ump45_mp quick_drop_s=0.25
+2026-10-18 13:00:40.450 I [task] MOVE interact cleared why=ladder state=0
+2026-10-18 13:00:41.000 I [task] LADDER state from=0(StartBottom) to=2(UpRight) pos=(1.00,2.40,3.20) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=0 move=suspended fp=0
+2026-10-18 13:00:43.000 I [task] AC130 blocked reason=ladder (ER drives the climb; F7 again on the ground)
+2026-10-18 13:00:45.000 I [task] LADDER state from=3(UpLeft) to=6(EndTop) pos=(1.00,8.80,3.20) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=0 move=suspended fp=0
+2026-10-18 13:00:46.000 I [task] LADDER state from=6(EndTop) to=-1(None) pos=(1.00,9.00,3.80) top=? bottom=? er_ground=1 move=arming fp=0
+2026-10-18 13:00:46.000 I [task] LADDER end state=6(EndTop) dur=5.60s dy=7.00m ups=12 downs=0 attacks=0 coast=0 pos=(1.00,9.00,3.80)
+2026-10-18 13:00:46.000 I [task] ARSENAL raise why=ladder gun=ump45_mp quick_raise_s=0.55
+2026-10-18 13:00:46.250 I [task] MOVE resync why=handback d=0.00m chunk_d=0.00m
+2026-10-18 13:00:46.250 I [task] MOVE on pos=(1.00,9.00,3.80) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.80 fp=0
+2026-10-18 13:00:46.250 I [task] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x1000 old=1.000 new=0.000 ok=1
+2026-10-18 13:00:46.550 I [task] ARSENAL raised why=ladder gun=ump45_mp
+2026-10-18 13:00:46.750 I [task] FP on eye=(1.00,10.60,3.80) cam_gate=ok er_cam_dist=3.5m eye_to_chest=0.4m hp=500 ride=Some(0) mounted=0 ladder=-1
+2026-10-18 13:01:10.000 I [task] MOVE suspend reason=interact E pressed (hold 1.5 s) ticks=500 pos=(1.00,2.00,3.00)
+2026-10-18 13:01:10.000 I [task] MOVE restore field=gravity_multiplier addr=0x1000 old=0.000 new=1.000 ok=1
+2026-10-18 13:01:10.000 I [task] MOVE restore field=gravity_disabled addr=0x1009 old=1 new=0 ok=1
+2026-10-18 13:01:10.400 I [task] MOVE blocked reason=ladder state=0
+2026-10-18 13:01:10.400 I [task] FP off reason=ladder state=0 ticks_on=480 cam_writes=0 (re-arms when clear)
+2026-10-18 13:01:10.400 I [task] LADDER state from=-1(None) to=0(StartBottom) pos=(1.00,2.00,3.00) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=1 move=suspended fp=1
+2026-10-18 13:01:10.400 I [task] ARSENAL lowered why=ladder gun=ump45_mp quick_drop_s=0.25
+2026-10-18 13:01:10.450 I [task] MOVE interact cleared why=ladder state=0
+2026-10-18 13:01:11.000 I [task] LADDER state from=0(StartBottom) to=2(UpRight) pos=(1.00,2.40,3.20) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=0 move=suspended fp=0
+2026-10-18 13:01:13.000 I [task] AC130 blocked reason=ladder (ER drives the climb; F7 again on the ground)
+2026-10-18 13:01:15.000 I [task] LADDER state from=3(UpLeft) to=6(EndTop) pos=(1.00,8.80,3.20) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=0 move=suspended fp=0
+2026-10-18 13:01:16.000 I [task] LADDER state from=6(EndTop) to=-1(None) pos=(1.00,9.00,3.80) top=? bottom=? er_ground=1 move=arming fp=0
+2026-10-18 13:01:16.000 I [task] LADDER end state=6(EndTop) dur=5.60s dy=7.00m ups=12 downs=0 attacks=0 coast=0 pos=(1.00,9.00,3.80)
+2026-10-18 13:01:16.000 I [task] ARSENAL raise why=ladder gun=ump45_mp quick_raise_s=0.55
+2026-10-18 13:01:16.250 I [task] MOVE resync why=handback d=0.00m chunk_d=0.00m
+2026-10-18 13:01:16.250 I [task] MOVE on pos=(1.00,9.00,3.80) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.80 fp=0
+2026-10-18 13:01:16.250 I [task] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x1000 old=1.000 new=0.000 ok=1
+2026-10-18 13:01:16.550 I [task] ARSENAL raised why=ladder gun=ump45_mp
+2026-10-18 13:01:16.750 I [task] FP on eye=(1.00,10.60,3.80) cam_gate=ok er_cam_dist=3.5m eye_to_chest=0.4m hp=500 ride=Some(0) mounted=0 ladder=-1
+2026-10-18 13:01:40.000 I [task] MOVE suspend reason=interact E pressed (hold 1.5 s) ticks=500 pos=(1.00,2.00,3.00)
+2026-10-18 13:01:40.000 I [task] MOVE restore field=gravity_multiplier addr=0x1000 old=0.000 new=1.000 ok=1
+2026-10-18 13:01:40.000 I [task] MOVE restore field=gravity_disabled addr=0x1009 old=1 new=0 ok=1
+2026-10-18 13:01:40.400 I [task] MOVE blocked reason=ladder state=0
+2026-10-18 13:01:40.400 I [task] FP off reason=ladder state=0 ticks_on=480 cam_writes=0 (re-arms when clear)
+2026-10-18 13:01:40.400 I [task] LADDER state from=-1(None) to=0(StartBottom) pos=(1.00,2.00,3.00) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=1 move=suspended fp=1
+2026-10-18 13:01:40.400 I [task] ARSENAL lowered why=ladder gun=ump45_mp quick_drop_s=0.25
+2026-10-18 13:01:40.450 I [task] MOVE interact cleared why=ladder state=0
+2026-10-18 13:01:41.000 I [task] LADDER state from=0(StartBottom) to=2(UpRight) pos=(1.00,2.40,3.20) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=0 move=suspended fp=0
+2026-10-18 13:01:43.000 I [task] AC130 blocked reason=ladder (ER drives the climb; F7 again on the ground)
+2026-10-18 13:01:45.000 I [task] LADDER state from=3(UpLeft) to=6(EndTop) pos=(1.00,8.80,3.20) top=(1.00,9.00,3.50) bottom=(1.00,2.00,3.50) er_ground=0 move=suspended fp=0
+2026-10-18 13:01:46.000 I [task] LADDER state from=6(EndTop) to=-1(None) pos=(1.00,9.00,3.80) top=? bottom=? er_ground=1 move=arming fp=0
+2026-10-18 13:01:46.000 I [task] LADDER end state=6(EndTop) dur=5.60s dy=7.00m ups=12 downs=0 attacks=0 coast=0 pos=(1.00,9.00,3.80)
+2026-10-18 13:01:46.000 I [task] ARSENAL raise why=ladder gun=ump45_mp quick_raise_s=0.55
+2026-10-18 13:01:46.250 I [task] MOVE resync why=handback d=0.00m chunk_d=0.00m
+2026-10-18 13:01:46.250 I [task] MOVE on pos=(1.00,9.00,3.80) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.80 fp=0
+2026-10-18 13:01:46.250 I [task] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x1000 old=1.000 new=0.000 ok=1
+2026-10-18 13:01:46.550 I [task] ARSENAL raised why=ladder gun=ump45_mp
+2026-10-18 13:01:46.750 I [task] FP on eye=(1.00,10.60,3.80) cam_gate=ok er_cam_dist=3.5m eye_to_chest=0.4m hp=500 ride=Some(0) mounted=0 ladder=-1
+2026-10-18 13:02:30.000 I [task] TASK world left (loading / title)

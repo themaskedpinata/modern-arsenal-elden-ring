@@ -1,0 +1,81 @@
+diff --git a/crates/eldenring/src/cs/bullet_manager.rs b/crates/eldenring/src/cs/bullet_manager.rs
+index a38fa65..e682147 100644
+--- a/crates/eldenring/src/cs/bullet_manager.rs
++++ b/crates/eldenring/src/cs/bullet_manager.rs
+@@ -125,13 +125,14 @@ impl CSBulletManager {
+         None
+     }
+ 
+-    /// Spawns a single bullet from supplied spawn data.
++    /// Spawns a single bullet from supplied spawn data. `Ok` carries the id of the bullet emitter the call created
++    /// (never -1).
+     ///
+     /// Error codes seem to be:
+     /// - 0: Unknown
+     /// - 3: Invalid bullet ID
+-    /// - 4: Construction failed
+-    pub fn spawn_bullet(&mut self, spawn_data: &BulletSpawnData) -> Result<(), i32> {
++    /// - 4: Construction failed (no free emitter slot: 64 preallocated + 192 heap)
++    pub fn spawn_bullet(&mut self, spawn_data: &BulletSpawnData) -> Result<i32, i32> {
+         let target = unsafe {
+             std::mem::transmute::<u64, FnSpawnBullet>(
+                 Program::current()
+@@ -148,7 +149,7 @@ impl CSBulletManager {
+             return Err(*error_out);
+         }
+ 
+-        Ok(())
++        Ok(*unk_out)
+     }
+ }
+ 
+@@ -182,7 +183,9 @@ pub struct BulletSpawnData {
+     unk2c: u32,
+     unk30: F32Vector4,
+     unk40: u32,
+-    unk44: u32,
++    /// Emitter flags. Bit 0: auto-finish (the emitter stops emitting after its first bullet and is freed once its
++    /// bullets are gone; the engine's own fire-and-forget spawns use 1). Bit 3: network sync - never set.
++    pub unk44: u32,
+     pad48: [u8; 8],
+     /// Forward vector, only applies if angle vec is 0?
+     pub acceleration_angle: F32Vector4,
+@@ -202,7 +205,9 @@ pub struct BulletSpawnData {
+ impl BulletSpawnData {
+     /// Spawn data for one bullet: `owner` fires `bullet_id` from `position` along the forward
+     /// vector `angle`. Behavior/magic/goods/dummy-poly ids are -1, the target override is the
+-    /// empty handle and every unknown field is zero.
++    /// empty handle, the emitter auto-finishes (`unk44` = 1, bit 0 only) and every other unknown
++    /// field is zero. Without the auto-finish bit every call keeps one emitter alive until a
++    /// world reload, and the 257th call fails with code 4.
+     pub fn new(
+         owner: FieldInsHandle,
+         bullet_id: i32,
+@@ -218,6 +223,7 @@ impl BulletSpawnData {
+         d.magic_id = -1;
+         d.goods_id = -1;
+         d.dummy_poly_id = -1;
++        d.unk44 = 1;
+         d.target = FieldInsHandle::none();
+         d.position = position;
+         d.angle = angle;
+@@ -234,4 +240,19 @@ mod test {
+         assert_eq!(0x280, size_of::<CSBulletManager>());
+         assert_eq!(0x110, size_of::<BulletSpawnData>());
+     }
++
++    #[test]
++    fn spawn_data_auto_finish_bit_only() {
++        use crate::cs::FieldInsHandle;
++        use shared::F32Vector4;
++        let d = BulletSpawnData::new(
++            FieldInsHandle::none(),
++            79000201,
++            F32Vector4(1.0, 2.0, 3.0, 1.0),
++            F32Vector4(0.0, 0.0, 1.0, 0.0),
++        );
++        let b = unsafe { std::mem::transmute::<BulletSpawnData, [u8; 0x110]>(d) };
++        assert_eq!(b[0x44], 0x01);
++        assert_eq!(&b[0x45..0x48], &[0, 0, 0]);
++    }
+ }

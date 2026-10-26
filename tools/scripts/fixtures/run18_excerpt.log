@@ -1,0 +1,1073 @@
+2026-10-18 14:10:36.415 I [boot] BOOT mw2er 0.2.0 dll=D:\Mods\MW2inER\build\natives\mw2er.dll size=6469120 mtime=2026-10-18 20:58:04Z built=2026-10-18 20:51:25Z pid=40364 root=D:\Mods\MW2inER root_valid=true log_ok=true
+2026-10-18 14:10:36.416 I [boot] VERSION PASS file=2.7.1.0 product=2.7.1.0 lang=0x0409 timedatestamp=0x6a96b418 sizeofimage=0x5e0da00
+2026-10-18 14:10:36.416 I [boot] CONFIG loaded D:\Mods\MW2inER\mw2er.toml weapon=ump45_mp k=4 toggle=F5 reload=R camera=pers_cam_1
+2026-10-18 14:10:36.416 I [boot] DATA weapons.json ok (3 guns) weapon=ump45_mp mode=Full Auto damage=40/35 range=15.24/21.59m fireTime=0.09 clip=32 maxAmmo=192 reload=2.5/3.03 spread=2/5
+2026-10-18 14:10:36.416 I [boot] DATA rows.json ok k=4 bands=6 ids=79000100..79000105 marker=79000900 speed=999m/s life=0.15s built=20261018T210914Z
+2026-10-18 14:10:36.417 I [boot] DATA sounds.json ok 5 sounds for ump45_mp
+2026-10-18 14:10:36.421 I [boot] ARSENAL data n=34 ok=34 disabled=0 sound_aliases=196 sound_files=224 rows mode=flat_inv s=1.225 d_ref=85 ms=4
+2026-10-18 14:10:36.422 I [boot] MOVE data g_speed=190 sprint=1.5x4.0s min=1.0 jump=39in grav=800 accel=9/12/19 air=1 fric=5.5/100 step=18/10 fall=200/350 ump45 move=1 ads=2 dur=1 src_exe_sha=2f8c9cfda1b8 mantle dvars=V rows=7 up=500ms rise=333ms over=667ms range=20in angle=60 rise=18..60in curves_sha=3fba4c1744f7
+2026-10-18 14:10:36.422 I [boot] DATA ac130 ok dir=D:\Mods\MW2inER\converted\ac130 guns clip=1/4/20 fireTime=0.1/0.3/0.07 duration_s=40 rig=4566.2/4212.3in visions=5 hud_items=10 cues=11 rows k=0.65 k_gun=0.650/0.650/0.455 atk_mode=flat
+2026-10-18 14:10:36.422 I [boot] DATA nuke ok dir=D:\Mods\MW2inER\converted\nuke cost=25 timer=10s incoming=T-3.3s vision=T+0.25s/3s death=T+1.5s aftermath=5s beep=1s quake=0.6x10s(commented=1) aliases=14 icon=384x192 rows speffect=79000960 bullet=79000961 horizon=79000962
+2026-10-18 14:10:36.422 I [boot] VM pre-ImGui callback registered; assets D:\Mods\MW2inER\converted\viewmodel (viewmodel=1 ac130 thermal=1)
+2026-10-18 14:10:36.422 D [boot] HUDHOOK hudhook::hooks: WNDCLASSEXW { cbSize: 80, style: WNDCLASS_STYLES(3), lpfnWndProc: Some(0x7ffca9b537d0), cbClsExtra: 0, cbWndExtra: 0, hInstance: HINSTANCE(0x7ff6de170000), hIcon: HICON(0x0), hCursor: HCURSOR(0x0), hbrBackground: HBRUSH(0x0), lpszMenuName: PCWSTR(0x0), lpszClassName: PCWSTR(0x7ffca9e89808), hIconSm: HICON(0x0) }
+2026-10-18 14:10:36.425 D [boot] HUDHOOK hudhook::hooks: HWND(0x450490)
+2026-10-18 14:10:36.852 I [boot] HUD applied (DX12 hooks enabled; waiting for the first Present)
+2026-10-18 14:10:36.965 I [boot] INPUT PASS hooked=2 addrs=[0x7ffd54cb75f0,0x7ffd54cbaaa0]
+2026-10-18 14:10:36.965 I [boot] AUDIO thread started
+2026-10-18 14:10:36.965 I [boot] BOOTGATE waiting for the game window, then reflection names [CSTask,WorldChrMan,CSBulletManager,CSCamera,CSMenuMan,CSHavokMan,SoloParamRepository]
+2026-10-18 14:10:37.171 I [audio] AUDIO nuke 26 files in 14 aliases
+2026-10-18 14:10:37.171 I [audio] AUDIO ready: 5/5 sounds loaded (fire truncated to 600 ms); ac130 21 files in 11 cues; arsenal 196 aliases 195 files (0 failed) ms=124
+2026-10-18 14:10:37.217 I [boot] BOOTGATE window hwnd=0x3c0728 after 251 ms
+2026-10-18 14:10:37.227 I [boot] BOOTGATE PASS after 9 ms names=[CSTask,WorldChrMan,CSBulletManager,CSCamera,CSMenuMan,CSHavokMan,SoloParamRepository] optional=[CSMouseMan:yes,FD4PadManager:yes] scanned=223
+2026-10-18 14:10:37.235 I [boot] ARSENAL cfg guns=34 start=ump45_mp reserve_source=Max flight=dll lock=1 pellet_bands=shot wheel=1 keys=1/2 rechamber_mode=after_fire both_barrels=0
+2026-10-18 14:10:37.235 I [boot] MOVE class gun=ump45_mp class=smg scale=1
+2026-10-18 14:10:37.235 I [boot] TASK registered group=ChrIns_PostPhysics
+2026-10-18 14:10:37.237 I [task] TASK first tick on the game's main thread
+2026-10-18 14:10:37.237 I [task] AC130 cfg enabled=1 key=F7 cooldown_s=120 cooldown=0 duration_s=40 R=116.0 H=107.0 period_s=70 arc=35 base=center fov=45/20/5(v=34.5/15.1/3.75deg) vision=sp tiers=2 hook=0 thermal=1 data=1
+2026-10-18 14:10:37.237 I [task] NUKE cfg enabled=1 always_available=1 cost=25 radius_m=200 spare_friendly=1 spare_teams=[0, 2, 8, 10, 12, 20, 26, 28, 30, 47] dry_run=0 kill_mode=speffect kills_per_tick=16 retry_s=[0.5, 1.5, 3.0, 5.0] player_dies=1 player_delay_s=3 flash=1 shake=0.6x10s horizon=3 key=4 data=1
+2026-10-18 14:10:37.237 I [task] MOVE cfg enabled=1 tp_anim=hybrid sprint=press crouch=toggle jump_slowdown=1 fall=mw2 lethal_fall=handback eye=1.600/1.067/0.293 hull=1.867/1.333/0.800 r=er rays_max=32 data=converted\movement.json sha=2f8c9cfda1b8 mantle=1 key=mw2 max_h=2.00m rise_max=60in angle=60 over=thin vm=drop rays=24 ladder_er_attacks=0
+2026-10-18 14:10:37.237 I [task] MOVE keys blank=none wasd=none (tp) latched=0 blanked_reads=0 n=0
+2026-10-18 14:10:37.237 I [task] FPCAM cfg enabled=1 mode=task (hook requested but not installed) eye_h=1.60 eye_fwd=0.10 eye_smooth_s=0.00 pitch_clamp=85.0 hide=render_flag yaw=1 world_fov=off arm_ticks=30 fade_alpha_max=0.50 signals fade=1 cam_mask=1 talk=1 key=F6 sync_chr_cam=1 wall_recovery_off=1 auto_rotation_off=1
+2026-10-18 14:10:37.287 I [boot] FPHOOK installed rva=0x3bc5f0 addr=0x7ff6de52c5f0 prologue=ok (camera_mode=hook; erfps2 RVA, see cam_hook.rs)
+2026-10-18 14:10:37.334 I [task] AC130 cfg enabled=1 key=F7 cooldown_s=120 cooldown=0 duration_s=40 R=116.0 H=107.0 period_s=70 arc=35 base=center fov=45/20/5(v=34.5/15.1/3.75deg) vision=sp tiers=2 hook=1 thermal=1 data=1
+2026-10-18 14:10:37.334 I [task] FPCAM cfg enabled=1 mode=hook eye_h=1.60 eye_fwd=0.10 eye_smooth_s=0.00 pitch_clamp=85.0 hide=render_flag yaw=1 world_fov=off arm_ticks=30 fade_alpha_max=0.50 signals fade=1 cam_mask=1 talk=1 key=F6 sync_chr_cam=1 wall_recovery_off=1 auto_rotation_off=1
+2026-10-18 14:10:37.383 I [boot] FPHOOK follow installed rva=0x3b7570 addr=0x7ff6de527570 prologue=ok (ChrExFollowCam update; erfps2 RVA)
+2026-10-18 14:10:37.383 W [boot] FPHOOK WARN CAM_WALL_RECOVERY not validated (0x7ff6e1c89c80: state=0x1000 type=0x1000000 allocation_base=0x7ff6de170000 protect=0x40 (want MEM_COMMIT, MEM_IMAGE of the exe 0x7ff6de170000, PAGE_READWRITE/WRITECOPY)); it is never touched
+2026-10-18 14:10:37.383 I [boot] BOOT DONE in 968 ms (hud=1 input=1 audio_thread=1 data=1 task=1)
+2026-10-18 14:10:37.543 I [present] HUD initialize display=3840x2160 font=built-in 26px
+2026-10-18 14:10:37.547 I [present] HUD nuke icon loaded 384x192
+2026-10-18 14:10:37.547 I [present] VM target fmt=R10G10B10A2_UNORM 3840x2160 colorspace=none frames=3
+2026-10-18 14:10:37.550 I [thload] AC130 tracers ready ms=2 max_instances=64 fmt=R10G10B10A2_UNORM frames=3 (shaders d0eeb8d18d6f..)
+2026-10-18 14:10:37.554 I [nukeload] NUKE post ready ms=6 fmt=R10G10B10A2_UNORM 3840x2160 ts_freq=1000000000 (shaders 5a9a235461d4..)
+2026-10-18 14:10:37.663 I [thload] AC130 thermal ready ms=113 overlays=4 bytes=1048576 fmt=R10G10B10A2_UNORM 3840x2160 ts_freq=1000000000 (shaders 39e0dbc9820d..)
+2026-10-18 14:10:39.417 I [vmload] ARSENAL scope overlay ready srv=60 file=D:\Mods\MW2inER\converted\guns\_overlay\scope_overlay_m40a3.vmtex
+2026-10-18 14:10:39.417 I [vmload] ARSENAL loaded n=34 ok=34 ms=1869 vram_mb=61.5 gun_bytes=63468032 textures_shared=60 uploads=34 fmt=R10G10B10A2_UNORM
+2026-10-18 14:10:39.417 I [present] VM animation ready gun=ump45_mp (arsenal slot 10)
+2026-10-18 14:10:39.418 I [present] VM output Srgb for fmt=R10G10B10A2_UNORM colorspace=-1 (viewmodel.output=Auto)
+2026-10-18 14:10:41.049 I [present] MENU cursor None -> Some(true)
+2026-10-18 14:10:41.420 I [present] MENU idx=5 0->1
+2026-10-18 14:10:42.761 I [present] PERF ticks_per_s=15.0 task_us p50=44 p95=78 max=162 fp_us avg=2 max=14 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=3 move_us_p95=4 move_us_max=25 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:10:47.775 I [present] PERF ticks_per_s=54.4 task_us p50=38 p95=47 max=146 fp_us avg=2 max=4 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=3 move_us_max=4 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:10:52.776 I [present] PERF ticks_per_s=60.0 task_us p50=42 p95=52 max=127 fp_us avg=2 max=4 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=3 move_us_max=4 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:10:57.776 I [present] PERF ticks_per_s=60.0 task_us p50=30 p95=43 max=170 fp_us avg=1 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=1 move_us_p95=2 move_us_max=24 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:02.776 I [present] PERF ticks_per_s=60.0 task_us p50=29 p95=40 max=57 fp_us avg=1 max=3 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=1 move_us_p95=2 move_us_max=4 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:07.793 I [present] PERF ticks_per_s=60.0 task_us p50=28 p95=38 max=52 fp_us avg=1 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=1 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:12.795 I [present] PERF ticks_per_s=59.8 task_us p50=34 p95=45 max=59 fp_us avg=2 max=25 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:17.796 I [present] PERF ticks_per_s=60.0 task_us p50=33 p95=47 max=69 fp_us avg=2 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:22.796 I [present] PERF ticks_per_s=60.0 task_us p50=33 p95=43 max=66 fp_us avg=2 max=3 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:27.814 I [present] PERF ticks_per_s=60.0 task_us p50=33 p95=42 max=60 fp_us avg=2 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=2 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:32.829 I [present] PERF ticks_per_s=60.0 task_us p50=33 p95=41 max=173 fp_us avg=2 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:37.831 I [present] PERF ticks_per_s=60.0 task_us p50=35 p95=44 max=54 fp_us avg=2 max=10 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=9 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:42.831 I [present] PERF ticks_per_s=60.0 task_us p50=33 p95=43 max=179 fp_us avg=2 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=139 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:47.847 I [present] PERF ticks_per_s=60.0 task_us p50=30 p95=46 max=187 fp_us avg=2 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:52.848 I [present] PERF ticks_per_s=60.0 task_us p50=29 p95=39 max=52 fp_us avg=1 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=1 move_us_p95=2 move_us_max=2 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:11:57.848 I [present] PERF ticks_per_s=60.0 task_us p50=29 p95=40 max=55 fp_us avg=1 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=1 move_us_p95=2 move_us_max=2 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:02.848 I [present] PERF ticks_per_s=60.0 task_us p50=30 p95=40 max=90 fp_us avg=2 max=53 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=1 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:07.865 I [present] PERF ticks_per_s=60.0 task_us p50=29 p95=40 max=59 fp_us avg=1 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=1 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:12.865 I [present] PERF ticks_per_s=60.0 task_us p50=30 p95=42 max=60 fp_us avg=1 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=1 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:17.866 I [present] PERF ticks_per_s=60.0 task_us p50=32 p95=46 max=190 fp_us avg=2 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:19.467 I [present] MENU idx=0 0->1
+2026-10-18 14:12:22.882 I [present] PERF ticks_per_s=60.0 task_us p50=31 p95=45 max=102 fp_us avg=2 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=66 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:27.883 I [present] PERF ticks_per_s=60.0 task_us p50=32 p95=43 max=48 fp_us avg=1 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:32.884 I [present] PERF ticks_per_s=60.0 task_us p50=34 p95=44 max=55 fp_us avg=2 max=2 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=2 move_us_max=3 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:34.700 I [present] MENU idx=0 1->0
+2026-10-18 14:12:35.417 I [present] MENU idx=6 0->1
+2026-10-18 14:12:35.720 I [present] MENU idx=25 0->1
+2026-10-18 14:12:35.720 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-18 14:12:35.738 I [present] MENU idx=4 0->1
+2026-10-18 14:12:35.738 I [present] MENU idx=8 0->1
+2026-10-18 14:12:35.738 I [present] MENU idx=9 0->1
+2026-10-18 14:12:35.738 I [present] MENU idx=19 0->1
+2026-10-18 14:12:35.738 I [present] MENU idx=23 0->1
+2026-10-18 14:12:35.738 I [present] MENU idx=26 0->1
+2026-10-18 14:12:35.738 I [present] MENU idx=27 0->1
+2026-10-18 14:12:35.898 I [present] MENU idx=9 1->0
+2026-10-18 14:12:35.898 I [present] MENU idx=19 1->0
+2026-10-18 14:12:35.898 I [present] MENU idx=25 1->0
+2026-10-18 14:12:35.898 I [present] MENU idx=26 1->0
+2026-10-18 14:12:35.898 I [present] MENU idx=27 1->0
+2026-10-18 14:12:37.224 I [present] TASK world entered (player handle 0xffffffff16f00000 owner_check=ok)
+2026-10-18 14:12:37.224 I [present] AC130 rows ok bullet=7 atk=7 speffect=1 protect_id=79000950 obj=201:200b,202:100b,203:200b,401:40,301:100b,302:60,303:100b sfx=201:524028,202:530123,203:524028,401:530133,301:300602,302:530133,303:300602
+2026-10-18 14:12:37.224 I [present] PARAMS OK guns=34 rows=533 mode=flat_inv s=1.225 d_ref=85 bullet_sfx=none
+2026-10-18 14:12:37.224 I [present] CAMERA probe tick=1 pers_cam_1[pos=(0.00,0.00,0.00) row2=(0.000,0.000,1.000) fov=0.75049156] chr_cam[pos=(38.60,105.03,94.57) row2=(0.979,0.000,-0.204) fov=0.83775806] player=(42.02,103.58,93.86)
+2026-10-18 14:12:37.224 I [present] CAMFRAME tick=1 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=146.82m
+2026-10-18 14:12:37.224 I [present] CAMERA sign=+1 cam_player_dist=146.82m fov_raw=0.75049156 source=pers_cam_1
+2026-10-18 14:12:37.224 W [present] CAMERA odd cam_player_dist=146.82m (camera and player may be in different spaces); shots are skipped while it lasts
+2026-10-18 14:12:37.224 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x0 mod_flags=0x0 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:37.224 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(false) fade_max=1.0
+2026-10-18 14:12:37.224 I [present] SPAWN pool bullets=0/128 sfx=0/192 sfx_empty_spot=1 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=0
+2026-10-18 14:12:37.224 I [present] SPAWN emitters live=0 ours=0 persistent=0 max=0 cap=256
+2026-10-18 14:12:37.246 I [present] CAMERA probe tick=2 pers_cam_1[pos=(0.00,0.00,0.00) row2=(0.000,0.000,1.000) fov=0.75049156] chr_cam[pos=(38.60,105.03,94.57) row2=(0.979,0.000,-0.204) fov=0.83775806] player=(42.02,103.58,93.86)
+2026-10-18 14:12:37.246 I [present] CAMFRAME tick=2 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=146.82m
+2026-10-18 14:12:37.246 I [present] MENU idx=7 0->1
+2026-10-18 14:12:37.246 I [present] NUKE rows ok speffect=79000960 endurance=0 hp_rate=100 no_dead=0 bullet=79000961 horizon=79000962 sfx=524028
+2026-10-18 14:12:37.264 I [present] CAMERA probe tick=3 pers_cam_1[pos=(0.00,0.00,0.00) row2=(0.000,0.000,1.000) fov=0.75049156] chr_cam[pos=(38.60,105.03,94.57) row2=(0.979,0.000,-0.204) fov=0.83775806] player=(42.02,103.58,93.86)
+2026-10-18 14:12:37.264 I [present] CAMFRAME tick=3 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=146.82m
+2026-10-18 14:12:37.281 I [present] CAMFRAME tick=4 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=146.82m
+2026-10-18 14:12:37.295 I [present] CAMFRAME tick=5 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=146.82m
+2026-10-18 14:12:37.315 I [present] CAMFRAME tick=6 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=146.82m
+2026-10-18 14:12:37.329 I [present] CAMFRAME tick=7 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=146.82m
+2026-10-18 14:12:37.347 I [present] CAMFRAME tick=8 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=146.82m
+2026-10-18 14:12:37.363 I [present] CAMFRAME tick=9 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=146.82m
+2026-10-18 14:12:37.380 I [present] CAMFRAME tick=10 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=146.82m
+2026-10-18 14:12:37.436 I [boot] STATE mode=off mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=0 shots=0 hits=0 gds_mouse=11ms gds_kbd=11ms
+2026-10-18 14:12:37.450 I [present] MENU idx=23 1->0
+2026-10-18 14:12:37.900 I [present] PERF ticks_per_s=53.0 task_us p50=40 p95=77 max=412 fp_us avg=3 max=26 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=2 move_us_p95=10 move_us_max=16 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:39.105 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:39.105 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(true) fade_max=1.0
+2026-10-18 14:12:40.281 I [present] MENU idx=6 1->0
+2026-10-18 14:12:40.281 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x12 mod_flags=0x8002 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:40.326 I [present] CAMFRAME tick=163 src=pers_cam_1 valid=1 why=ok pos=(-1.41,9.03,6.57) fwd=(0.979,0.000,-0.204) det=+1.000 ortho_err=0.0e0 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.50m
+2026-10-18 14:12:40.326 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(true) fade_max=0.9
+2026-10-18 14:12:40.792 I [present] MENU idx=4 1->0
+2026-10-18 14:12:40.841 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(true) fade_max=0.0
+2026-10-18 14:12:42.257 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x13 mod_flags=0x8002 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:42.438 I [boot] STATE mode=off mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=2ms gds_kbd=2ms
+2026-10-18 14:12:42.774 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:42.908 I [present] PERF ticks_per_s=58.9 task_us p50=212 p95=231 max=587 fp_us avg=19 max=82 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=9 move_us_p95=10 move_us_max=149 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:44.741 I [present] MENU idx=23 0->1
+2026-10-18 14:12:44.741 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x10 mod_flags=0x48000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:45.327 I [present] CAMFRAME tick=463 src=pers_cam_1 valid=1 why=ok pos=(-0.45,10.79,7.56) fwd=(0.610,-0.506,-0.610) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.80m
+2026-10-18 14:12:45.978 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x48000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:46.478 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:12:46.993 I [present] MOVE keyprobe key=LSHIFT er_bits=sp_move
+2026-10-18 14:12:47.094 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:12:47.440 I [boot] STATE mode=off mag=32/192 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=1ms gds_kbd=1ms
+2026-10-18 14:12:47.610 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.10) ladder=-1
+2026-10-18 14:12:47.910 I [present] PERF ticks_per_s=60.0 task_us p50=214 p95=261 max=373 fp_us avg=19 max=43 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=9 move_us_p95=10 move_us_max=37 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:48.127 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.09) ladder=-1
+2026-10-18 14:12:48.643 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.10) ladder=-1
+2026-10-18 14:12:49.143 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.11) ladder=-1
+2026-10-18 14:12:49.644 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.10) ladder=-1
+2026-10-18 14:12:50.311 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.09) ladder=-1
+2026-10-18 14:12:50.343 I [present] CAMFRAME tick=764 src=pers_cam_1 valid=1 why=ok pos=(-11.32,12.42,10.19) fwd=(-0.854,0.073,0.515) det=+1.000 ortho_err=1.9e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=5.48m
+2026-10-18 14:12:50.811 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.10) ladder=-1
+2026-10-18 14:12:51.577 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.09) ladder=-1
+2026-10-18 14:12:52.093 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.10) ladder=-1
+2026-10-18 14:12:52.442 I [boot] STATE mode=off mag=32/192 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=3ms gds_kbd=3ms
+2026-10-18 14:12:52.777 I [present] MENU idx=19 0->1
+2026-10-18 14:12:52.844 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x2011 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.09) ladder=-1
+2026-10-18 14:12:52.927 I [present] PERF ticks_per_s=60.0 task_us p50=214 p95=282 max=468 fp_us avg=19 max=62 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=9 move_us_p95=10 move_us_max=207 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:53.360 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000000000 motion_mult=1.00 root_motion=(0.00,0.00,-0.02) ladder=-1
+2026-10-18 14:12:53.643 I [present] MENU idx=19 1->0
+2026-10-18 14:12:53.877 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x16 mod_flags=0x8002 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:54.027 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(false) fade_max=0.0
+2026-10-18 14:12:54.060 I [present] MENU idx=4 0->1
+2026-10-18 14:12:54.393 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x12 mod_flags=0x8101 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:54.544 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(false) fade_max=0.7
+2026-10-18 14:12:55.010 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x10 mod_flags=0x8101 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:55.044 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(-1) load=Some(1) pause_bit=Some(false) fade_max=1.0
+2026-10-18 14:12:55.347 I [present] CAMFRAME tick=1064 src=pers_cam_1 valid=1 why=ok pos=(-26.10,16.08,19.20) fwd=(0.132,-0.296,0.946) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=2.45m
+2026-10-18 14:12:55.516 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x10 mod_flags=0x40000008100 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:56.150 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(1000) load=Some(1) pause_bit=Some(false) fade_max=1.0
+2026-10-18 14:12:56.166 I [present] MENU idx=7 1->0
+2026-10-18 14:12:56.166 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-18 14:12:56.651 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(1000) load=Some(1) pause_bit=Some(false) fade_max=0.2
+2026-10-18 14:12:56.718 I [present] MENU idx=4 1->0
+2026-10-18 14:12:57.100 I [present] MOVE keyprobe key=SPACE er_bits=none
+2026-10-18 14:12:57.167 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(1000) load=Some(1) pause_bit=Some(false) fade_max=0.0
+2026-10-18 14:12:57.444 I [boot] STATE mode=off mag=32/192 reloading=0 spread=2.00 menu=1 fg=1 chars=64 shots=0 hits=0 gds_mouse=14ms gds_kbd=14ms
+2026-10-18 14:12:57.867 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-18 14:12:57.867 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x12 mod_flags=0x8000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:57.883 I [present] MENU idx=7 0->1
+2026-10-18 14:12:57.934 I [present] PERF ticks_per_s=59.9 task_us p50=212 p95=269 max=521 fp_us avg=18 max=128 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=9 move_us_p95=10 move_us_max=41 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:12:58.233 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(1000) load=Some(1) pause_bit=Some(true) fade_max=0.0
+2026-10-18 14:12:59.601 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x13 mod_flags=0x8000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:12:59.668 I [present] MENU idx=19 0->1
+2026-10-18 14:13:00.018 I [present] MENU idx=19 1->0
+2026-10-18 14:13:00.101 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:00.351 I [present] CAMFRAME tick=1364 src=pers_cam_1 valid=1 why=ok pos=(-21.54,16.57,20.48) fwd=(-0.982,-0.171,0.084) det=+1.000 ortho_err=3.5e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.40m
+2026-10-18 14:13:01.435 I [present] MENU idx=13 0->1
+2026-10-18 14:13:01.435 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(1) mask=0x0 talk=Some(1000) load=Some(1) pause_bit=Some(true) fade_max=0.0
+2026-10-18 14:13:01.451 I [present] MENU idx=23 1->0
+2026-10-18 14:13:01.635 I [present] MENU idx=13 1->0
+2026-10-18 14:13:01.935 I [present] FP probe ride=Some(0) mounting=0 mounted=0 ladder=-1 throw=Some(0) lockon=0 hp_le0=0 death_flag=0 camtype=Some(0) mask=0x0 talk=Some(1000) load=Some(1) pause_bit=Some(true) fade_max=0.0
+2026-10-18 14:13:01.968 I [present] MENU idx=13 0->1
+2026-10-18 14:13:02.185 I [present] MENU idx=13 1->0
+2026-10-18 14:13:02.446 I [boot] STATE mode=off mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=16ms gds_kbd=16ms
+2026-10-18 14:13:02.936 I [present] PERF ticks_per_s=60.0 task_us p50=212 p95=242 max=352 fp_us avg=18 max=63 writes=0 write_us_max=0.0 slow_writes=0 page_checks=0 page_check_ms_max=0.00 page_check_ms_total=0.0 cached_pages=0 ac130=0 move=0 move_us_p50=9 move_us_p95=10 move_us_max=40 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:13:03.969 I [present] MODE on weapon=ump45_mp mag=32/192 menu_baseline=[5, 7, 8] show_cursor=0
+2026-10-18 14:13:03.969 I [present] VM state hidden->raise clip=pullout rate=1.096 ads=0.00 seq=1
+2026-10-18 14:13:04.119 I [present] MOVE resync why=world_enter d=0.00m chunk_d=0.00m
+2026-10-18 14:13:04.119 I [present] MOVE on pos=(-24.83,14.53,20.61) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.50 fp=0
+2026-10-18 14:13:04.134 I [present] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x7ff223db74cc old=1.000 new=0.000 ok=1
+2026-10-18 14:13:04.134 I [present] MOVE write field=CSChrPhysicsModule.gravity_disabled(+0x1d5) addr=0x7ff223db74d5 old=0 new=1 ok=1
+2026-10-18 14:13:04.134 I [present] MOVE write field=CSChrPhysicsModule.position(+0x70) addr=0x7ff223db7370 old=(-24.83,14.53,20.61) new=(-24.83,14.51,20.61)
+2026-10-18 14:13:04.134 I [present] MOVE write field=CSChrPhysicsModule.chr_proxy_pos_update_requested(+0x91) addr=0x7ff223db7391 old=? new=1
+2026-10-18 14:13:04.134 I [present] MOVE gravity reasserted count=1 (first; ER set gravity_disabled=0 ok=1)
+2026-10-18 14:13:04.134 I [present] MOVE state t=147.70 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=3.8deg slope_er=5.0deg rays=5 er_delta=0.000m pushout=0
+2026-10-18 14:13:04.134 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=0 blanked_reads=0 n=8
+2026-10-18 14:13:04.462 I [present] FP on eye=(-24.77,16.13,20.53) cam_gate=ok er_cam_dist=3.54m eye_to_chest=0.43m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:04.479 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:04.479 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, -0.32248777, 0.0, 0.9465736] new=[0.0, -0.32537693, 0.0, 0.9455844] conv=-z
+2026-10-18 14:13:04.479 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[-0.0, -0.32248777, -0.0, 0.9465736] new=[0.0, -0.32537693, 0.0, 0.9455844]
+2026-10-18 14:13:04.536 I [present] VM first frame drawn 3840x2160 slot=2 out=Srgb
+2026-10-18 14:13:04.545 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=21 n=12
+2026-10-18 14:13:04.545 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(-26.84,17.21,23.19) new=(-24.77,16.11,20.53) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:04.545 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:04.545 I [present] FPCAM write field=CSCamera.pers_cam_1+0x40 addr=0x7ff1ce130fa0 old=(-26.84,17.21,23.19) new=(-24.77,16.11,20.53) (camera-step hook)
+2026-10-18 14:13:04.693 I [present] MODE off
+2026-10-18 14:13:04.693 I [present] MOVE restore field=gravity_multiplier addr=0x7ff223db74cc skipped=changed (ER set 1.000; saved 1.000)
+2026-10-18 14:13:04.693 I [present] MOVE restore field=gravity_disabled addr=0x7ff223db74d5 skipped=changed (ER set 0; saved 0)
+2026-10-18 14:13:04.693 I [present] MOVE off reason=f5 MW2 mode off ticks=30 pos=(-24.83,14.53,20.61)
+2026-10-18 14:13:04.693 I [present] MOVE keys blank=none wasd=none (fp) latched=8 blanked_reads=30 n=0
+2026-10-18 14:13:04.693 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(-24.77,16.11,20.53) new=(-26.84,17.21,23.19) ok=1 (hook)
+2026-10-18 14:13:04.693 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(-24.77,16.11,20.53) new=(-26.84,17.21,23.19) ok=1 (hook)
+2026-10-18 14:13:04.693 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:04.693 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=f5
+2026-10-18 14:13:04.693 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=9 writes=10 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:04.693 I [present] FP off reason=f5  ticks_on=10 cam_writes=0 (waits for the user)
+2026-10-18 14:13:04.693 I [present] VM state raise->drop clip=putaway rate=0.958 ads=0.00 seq=2
+2026-10-18 14:13:05.360 I [present] CAMFRAME tick=1660 src=pers_cam_1 valid=1 why=ok pos=(-26.85,17.22,23.18) fwd=(0.577,-0.355,-0.736) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.60m
+2026-10-18 14:13:05.360 I [present] MODE on weapon=ump45_mp mag=32/192 menu_baseline=[5, 7, 8] show_cursor=0
+2026-10-18 14:13:05.361 I [present] VM state drop->raise clip=pullout rate=1.096 ads=0.00 seq=3
+2026-10-18 14:13:05.511 I [present] MOVE resync why=handback d=0.00m chunk_d=0.00m
+2026-10-18 14:13:05.511 I [present] MOVE on pos=(-24.83,14.53,20.61) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.50 fp=0
+2026-10-18 14:13:05.511 I [present] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x7ff223db74cc old=1.000 new=0.000 ok=1
+2026-10-18 14:13:05.511 I [present] MOVE write field=CSChrPhysicsModule.gravity_disabled(+0x1d5) addr=0x7ff223db74d5 old=0 new=1 ok=1
+2026-10-18 14:13:05.511 I [present] MOVE write field=CSChrPhysicsModule.position(+0x70) addr=0x7ff223db7370 old=(-24.83,14.53,20.61) new=(-24.83,14.51,20.61)
+2026-10-18 14:13:05.511 I [present] MOVE write field=CSChrPhysicsModule.chr_proxy_pos_update_requested(+0x91) addr=0x7ff223db7391 old=? new=1
+2026-10-18 14:13:05.511 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=0 blanked_reads=30 n=8
+2026-10-18 14:13:05.845 I [present] FP on eye=(-24.77,16.13,20.53) cam_gate=ok er_cam_dist=3.54m eye_to_chest=0.43m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:05.845 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:05.845 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, -0.32537794, 0.0, 0.94558406] new=[0.0, -0.32620195, 0.0, 0.9453001] conv=-z
+2026-10-18 14:13:05.845 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[-0.0, -0.32537794, -0.0, 0.94558406] new=[0.0, -0.32620195, 0.0, 0.9453001]
+2026-10-18 14:13:05.860 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=51 n=12
+2026-10-18 14:13:05.860 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(-26.85,17.21,23.18) new=(-24.77,16.11,20.53) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:05.860 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:06.128 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=4
+2026-10-18 14:13:07.449 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=9ms gds_kbd=9ms
+2026-10-18 14:13:07.944 I [present] PERF ticks_per_s=59.1 task_us p50=232 p95=301 max=16913 fp_us avg=78 max=16695 writes=1263 write_us_max=3.9 slow_writes=0 page_checks=5 page_check_ms_max=20.65 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=25 move_us_p95=28 move_us_max=15293 rays_avg=1.5 rays_max=6 ray_us_max=11.6 move_writes=712 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:13:09.128 I [present] MOVE er_delta p50=0.000 p95=0.000 max=0.000 applied=0 handbacks=1 budget_hits=0 gravity_reasserts=248 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:13:09.861 I [present] MOVE state t=153.44 stance=stand frac=1.00 speed_sim=22.4in/s speed_world=0.00m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=4.3deg slope_er=5.0deg rays=14 er_delta=0.000m pushout=0
+2026-10-18 14:13:10.377 I [present] CAMFRAME tick=1961 src=pers_cam_1 valid=1 why=ok pos=(-24.95,17.80,23.47) fwd=(0.333,-0.553,-0.764) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.16m
+2026-10-18 14:13:10.494 I [present] MOVE state t=154.07 stance=stand frac=1.00 speed_sim=207.6in/s speed_world=5.30m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=11.1deg slope_er=11.0deg rays=14 er_delta=0.000m pushout=0
+2026-10-18 14:13:10.744 I [present] MOVE mantle check ok=0 why=edge rise=0.51m rays=8 n=1 pos=(-22.15,14.02,19.26) fwd=(-0.24,-0.97)
+2026-10-18 14:13:10.744 I [present] MOVE jump y0=13.924 v0=249.8 land_factor=1.00
+2026-10-18 14:13:10.744 I [present] MOVE state t=154.32 stance=stand frac=1.00 speed_sim=102.2in/s speed_world=2.75m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=17.1deg slope_er=16.8deg rays=11 er_delta=0.000m pushout=0
+2026-10-18 14:13:10.761 I [present] MOVE mantle check ok=0 why=no_face rise=0.00m rays=2 n=1 pos=(-22.11,14.12,19.24) fwd=(-0.24,-0.97)
+2026-10-18 14:13:10.827 I [present] FPCAM tick=300 eye_to_er_cam=3.62m eye_to_chest=0.41m pitch=-40.0deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=309 hook_skips=0 hide_reasserts=0 chr_cam_writes=309 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=309 follow_skips=0 autorot_clears=309 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-18 14:13:10.861 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=301 writes=302 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0)
+2026-10-18 14:13:11.044 I [present] MOVE apex h=0.991m t=0.312s
+2026-10-18 14:13:11.144 I [present] MOVE state t=154.72 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.79m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=17.1deg slope_er=55.0deg rays=21 er_delta=0.000m pushout=0
+2026-10-18 14:13:11.394 I [present] MOVE land fall_h=46.1in (1.17m) v_impact=271.6 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:11.394 I [present] MOVE state t=154.97 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.04m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=19.9deg slope_er=0.0deg rays=27 er_delta=0.007m pushout=0
+2026-10-18 14:13:11.644 I [present] MOVE state t=155.22 stance=stand frac=1.00 speed_sim=34.5in/s speed_world=0.64m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=19.9deg slope_er=19.9deg rays=29 er_delta=0.000m pushout=0
+2026-10-18 14:13:12.244 I [present] MOVE mantle check ok=0 why=edge rise=0.64m rays=8 n=1 pos=(-21.77,13.87,19.17) fwd=(-0.84,-0.54)
+2026-10-18 14:13:12.244 I [present] MOVE jump y0=13.791 v0=184.2 land_factor=1.84
+2026-10-18 14:13:12.244 I [present] MOVE state t=155.82 stance=stand frac=1.00 speed_sim=1.6in/s speed_world=0.38m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=19.9deg slope_er=19.9deg rays=31 er_delta=0.002m pushout=0
+2026-10-18 14:13:12.450 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.17 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=10ms gds_kbd=10ms
+2026-10-18 14:13:12.461 I [present] MOVE apex h=0.539m t=0.230s
+2026-10-18 14:13:12.494 I [present] MOVE state t=156.07 stance=stand frac=1.00 speed_sim=23.6in/s speed_world=0.81m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=0/1/0 slope_rays=19.9deg slope_er=19.9deg rays=11 er_delta=0.001m pushout=0
+2026-10-18 14:13:12.677 I [present] MOVE land fall_h=18.5in (0.47m) v_impact=171.9 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:12.761 I [present] MOVE state t=156.34 stance=stand frac=1.00 speed_sim=3.1in/s speed_world=0.06m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=0.0deg slope_er=19.9deg rays=31 er_delta=0.000m pushout=0
+2026-10-18 14:13:12.944 I [present] MOVE mantle check ok=0 why=edge rise=0.62m rays=8 n=4 pos=(-22.01,13.93,19.19) fwd=(-0.89,-0.46)
+2026-10-18 14:13:12.944 I [present] MOVE jump y0=13.864 v0=162.6 land_factor=2.36
+2026-10-18 14:13:12.944 I [present] PERF ticks_per_s=60.0 task_us p50=245 p95=295 max=446 fp_us avg=24 max=147 writes=3663 write_us_max=49.8 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=35 move_us_p95=65 move_us_max=95 rays_avg=14.3 rays_max=31 ray_us_max=60.8 move_writes=1200 mantle_checks=19 mantle_rays_max=8 mantle_budget_max=28 mantle_deferred=0 mantle_us_max=45 mantles=0 mantle_refusals=19 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:13:13.027 I [present] MOVE state t=156.61 stance=stand frac=1.00 speed_sim=11.3in/s speed_world=0.22m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=0.0deg slope_er=19.9deg rays=22 er_delta=0.000m pushout=0
+2026-10-18 14:13:13.144 I [present] MOVE apex h=0.420m t=0.203s
+2026-10-18 14:13:13.327 I [present] MOVE land fall_h=13.7in (0.35m) v_impact=147.9 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:13.327 I [present] MOVE state t=156.91 stance=stand frac=1.00 speed_sim=5.1in/s speed_world=1.38m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=16.8deg slope_er=16.8deg rays=31 er_delta=0.000m pushout=0
+2026-10-18 14:13:13.494 I [present] MOVE state t=157.07 stance=stand frac=1.00 speed_sim=5.1in/s speed_world=0.11m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=16.8deg slope_er=16.8deg rays=31 er_delta=0.000m pushout=0
+2026-10-18 14:13:14.144 I [present] MOVE er_delta p50=0.000 p95=0.004 max=0.007 applied=0 handbacks=1 budget_hits=39 gravity_reasserts=549 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:13:14.494 I [present] MOVE state t=158.07 stance=stand frac=1.00 speed_sim=139.4in/s speed_world=3.55m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=15.8deg slope_er=15.5deg rays=15 er_delta=0.000m pushout=0
+2026-10-18 14:13:14.546 I [present] VM gpu_ms p50=0.0163 p95=0.0176 max=0.0223 n=530
+2026-10-18 14:13:14.828 I [present] MOVE sprint start meter=4.00s stance_from=stand
+2026-10-18 14:13:14.828 I [present] MOVE state t=158.41 stance=stand frac=1.00 speed_sim=17.9in/s speed_world=0.82m/s wish=285.0 sprint=1 meter=3.98s ground=1 er_ground=1/1/0 slope_rays=15.8deg slope_er=14.9deg rays=30 er_delta=0.000m pushout=0
+2026-10-18 14:13:14.828 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=5
+2026-10-18 14:13:15.011 I [present] MOVE order detour_before_task=600/600 (camera-step detour calls between task ticks; feet used=560 rejected=0)
+2026-10-18 14:13:15.145 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=6
+2026-10-18 14:13:15.345 I [present] MOVE sprint end why=jump dur=0.52s meter=3.48s
+2026-10-18 14:13:15.345 I [present] MOVE mantle check ok=0 why=edge rise=0.67m rays=9 n=5 pos=(-22.45,14.11,19.42) fwd=(-0.99,-0.12)
+2026-10-18 14:13:15.345 I [present] MOVE jump y0=14.009 v0=249.8 land_factor=1.00
+2026-10-18 14:13:15.345 I [present] MOVE state t=158.93 stance=stand frac=1.00 speed_sim=1.6in/s speed_world=0.42m/s wish=190.0 sprint=0 meter=3.50s ground=0 er_ground=1/1/0 slope_rays=16.8deg slope_er=16.8deg rays=31 er_delta=0.000m pushout=0
+2026-10-18 14:13:15.345 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=7
+2026-10-18 14:13:15.378 I [present] CAMFRAME tick=2261 src=pers_cam_1 valid=1 why=ok pos=(-18.50,16.05,20.19) fwd=(-0.977,-0.178,-0.120) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.08m
+2026-10-18 14:13:15.494 I [present] MOVE state t=159.07 stance=stand frac=1.00 speed_sim=26.2in/s speed_world=0.59m/s wish=190.0 sprint=0 meter=3.65s ground=0 er_ground=0/1/0 slope_rays=16.8deg slope_er=16.8deg rays=10 er_delta=0.000m pushout=0
+2026-10-18 14:13:15.644 I [present] MOVE apex h=0.991m t=0.312s
+2026-10-18 14:13:15.661 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=8
+2026-10-18 14:13:15.827 I [present] FPCAM tick=600 eye_to_er_cam=3.94m eye_to_chest=0.41m pitch=-10.3deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=609 hook_skips=0 hide_reasserts=0 chr_cam_writes=609 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=609 follow_skips=0 autorot_clears=609 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-18 14:13:15.844 I [present] MOVE state t=159.42 stance=stand frac=1.00 speed_sim=0.1in/s speed_world=2.16m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=16.8deg slope_er=0.0deg rays=23 er_delta=0.000m pushout=0
+2026-10-18 14:13:15.861 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=300 writes=602 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0)
+2026-10-18 14:13:15.944 I [present] MOVE land fall_h=34.9in (0.89m) v_impact=236.2 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:16.111 I [present] MOVE state t=159.69 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=16.8deg slope_er=0.0deg rays=6 er_delta=0.011m pushout=0
+2026-10-18 14:13:16.378 I [present] MOVE state t=159.96 stance=stand frac=1.00 speed_sim=56.1in/s speed_world=1.21m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=16.8deg slope_er=0.0deg rays=20 er_delta=0.009m pushout=0
+2026-10-18 14:13:16.494 I [present] MOVE state t=160.07 stance=stand frac=1.00 speed_sim=115.5in/s speed_world=2.76m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=16.8deg slope_er=16.8deg rays=14 er_delta=0.000m pushout=0
+2026-10-18 14:13:17.452 I [boot] STATE mode=on mag=32/192 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=12ms gds_kbd=12ms
+2026-10-18 14:13:17.494 I [present] MOVE state t=161.07 stance=stand frac=1.00 speed_sim=199.4in/s speed_world=5.23m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=11.7deg slope_er=11.7deg rays=14 er_delta=0.000m pushout=0
+2026-10-18 14:13:17.628 I [present] MOVE sprint start meter=4.00s stance_from=stand
+2026-10-18 14:13:17.628 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=9
+2026-10-18 14:13:17.746 I [present] MOVE state t=161.33 stance=stand frac=1.00 speed_sim=290.1in/s speed_world=8.21m/s wish=285.0 sprint=1 meter=3.86s ground=1 er_ground=1/1/0 slope_rays=14.6deg slope_er=14.8deg rays=14 er_delta=0.000m pushout=0
+2026-10-18 14:13:17.928 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=10
+2026-10-18 14:13:17.944 I [present] PERF ticks_per_s=60.0 task_us p50=250 p95=299 max=409 fp_us avg=23 max=66 writes=6063 write_us_max=28.6 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=39 move_us_p95=69 move_us_max=198 rays_avg=19.6 rays_max=32 ray_us_max=117.3 move_writes=1200 mantle_checks=15 mantle_rays_max=9 mantle_budget_max=28 mantle_deferred=0 mantle_us_max=37 mantles=0 mantle_refusals=15 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:13:18.494 I [present] MOVE state t=162.07 stance=stand frac=1.00 speed_sim=286.8in/s speed_world=7.53m/s wish=285.0 sprint=1 meter=3.12s ground=1 er_ground=1/1/0 slope_rays=15.4deg slope_er=15.5deg rays=14 er_delta=0.000m pushout=0
+2026-10-18 14:13:19.144 I [present] MOVE er_delta p50=0.000 p95=0.011 max=0.011 applied=0 handbacks=1 budget_hits=41 gravity_reasserts=849 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:13:19.495 I [present] MOVE state t=163.07 stance=stand frac=1.00 speed_sim=285.0in/s speed_world=7.72m/s wish=285.0 sprint=1 meter=2.12s ground=1 er_ground=1/1/0 slope_rays=19.4deg slope_er=18.9deg rays=14 er_delta=0.000m pushout=0
+2026-10-18 14:13:20.378 I [present] CAMFRAME tick=2561 src=pers_cam_1 valid=1 why=ok pos=(-5.90,11.98,27.84) fwd=(0.980,-0.189,-0.067) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.96m
+2026-10-18 14:13:20.495 I [present] MOVE state t=164.07 stance=stand frac=1.00 speed_sim=285.3in/s speed_world=7.53m/s wish=285.0 sprint=1 meter=1.12s ground=1 er_ground=1/1/0 slope_rays=18.0deg slope_er=18.4deg rays=14 er_delta=0.000m pushout=0
+2026-10-18 14:13:20.828 I [present] FPCAM tick=900 eye_to_er_cam=5.09m eye_to_chest=0.41m pitch=-9.3deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=909 hook_skips=0 hide_reasserts=0 chr_cam_writes=909 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=909 follow_skips=0 autorot_clears=909 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-18 14:13:20.861 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=300 writes=902 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0)
+2026-10-18 14:13:21.111 I [present] MOVE sprint end why=forward dur=3.48s meter=0.52s
+2026-10-18 14:13:21.111 I [present] MOVE state t=164.69 stance=stand frac=1.00 speed_sim=268.3in/s speed_world=7.21m/s wish=0.0 sprint=0 meter=0.53s ground=1 er_ground=1/1/0 slope_rays=11.3deg slope_er=11.8deg rays=28 er_delta=0.000m pushout=0
+2026-10-18 14:13:21.111 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=11
+2026-10-18 14:13:21.362 I [present] MOVE mantle check ok=0 why=no_face rise=0.00m rays=2 n=22 pos=(5.17,8.46,28.02) fwd=(0.88,-0.48)
+2026-10-18 14:13:21.362 I [present] MOVE jump y0=8.355 v0=249.8 land_factor=1.00
+2026-10-18 14:13:21.362 I [present] MOVE state t=164.94 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=0.0 sprint=0 meter=0.78s ground=0 er_ground=1/1/0 slope_rays=11.3deg slope_er=11.8deg rays=2 er_delta=0.005m pushout=0
+2026-10-18 14:13:21.379 I [present] MOVE mantle check ok=0 why=too_high rise=0.00m rays=5 n=1 pos=(5.17,8.55,28.02) fwd=(0.88,-0.48)
+2026-10-18 14:13:21.428 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=12
+2026-10-18 14:13:21.445 I [present] MOVE mantle check ok=0 why=edge rise=1.39m rays=9 n=2 pos=(5.17,8.89,28.02) fwd=(0.88,-0.48)
+2026-10-18 14:13:21.661 I [present] MOVE apex h=0.991m t=0.312s
+2026-10-18 14:13:21.828 I [present] MOVE state t=165.41 stance=stand frac=1.00 speed_sim=3.1in/s speed_world=0.00m/s wish=190.0 sprint=0 meter=1.25s ground=0 er_ground=0/1/0 slope_rays=11.3deg slope_er=11.8deg rays=13 er_delta=0.002m pushout=0
+2026-10-18 14:13:21.878 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.89m rays=10 n=1 pos=(5.18,8.85,28.01) fwd=(0.88,-0.48)
+2026-10-18 14:13:21.912 I [present] MOVE mantle check ok=0 why=too_high rise=0.00m rays=5 n=2 pos=(5.19,8.69,28.01) fwd=(0.88,-0.47)
+2026-10-18 14:13:21.979 I [present] MOVE land fall_h=39.1in (0.99m) v_impact=250.1 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:22.095 I [present] MOVE state t=165.68 stance=stand frac=1.00 speed_sim=3.3in/s speed_world=0.16m/s wish=190.0 sprint=0 meter=1.52s ground=1 er_ground=1/1/0 slope_rays=10.1deg slope_er=11.8deg rays=28 er_delta=0.002m pushout=0
+2026-10-18 14:13:22.229 I [present] MOVE jump y0=8.349 v0=162.3 land_factor=2.37
+2026-10-18 14:13:22.345 I [present] MOVE state t=165.93 stance=stand frac=1.00 speed_sim=10.7in/s speed_world=0.25m/s wish=190.0 sprint=0 meter=1.77s ground=0 er_ground=1/1/0 slope_rays=9.8deg slope_er=11.8deg rays=11 er_delta=0.001m pushout=0
+2026-10-18 14:13:22.428 I [present] MOVE apex h=0.418m t=0.203s
+2026-10-18 14:13:22.454 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.10 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=13ms gds_kbd=13ms
+2026-10-18 14:13:22.494 I [present] MOVE state t=166.08 stance=stand frac=1.00 speed_sim=34.8in/s speed_world=0.71m/s wish=190.0 sprint=0 meter=1.92s ground=0 er_ground=1/1/0 slope_rays=9.8deg slope_er=0.0deg rays=10 er_delta=0.006m pushout=0
+2026-10-18 14:13:22.512 I [t(7)] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=1 pos=(5.22,8.67,27.87) fwd=(0.88,-0.47)
+2026-10-18 14:13:22.628 I [present] MOVE land fall_h=17.5in (0.44m) v_impact=167.3 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:22.762 I [present] MOVE state t=166.34 stance=stand frac=1.00 speed_sim=3.3in/s speed_world=0.15m/s wish=190.0 sprint=0 meter=2.18s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=30 er_delta=0.010m pushout=0
+2026-10-18 14:13:22.947 I [present] PERF ticks_per_s=60.0 task_us p50=254 p95=353 max=521 fp_us avg=24 max=108 writes=8463 write_us_max=19.3 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=40 move_us_p95=74 move_us_max=248 rays_avg=18.2 rays_max=31 ray_us_max=150.2 move_writes=1200 mantle_checks=22 mantle_rays_max=10 mantle_budget_max=28 mantle_deferred=0 mantle_us_max=41 mantles=0 mantle_refusals=22 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:13:22.962 I [present] MOVE jump y0=8.318 v0=164.9 land_factor=2.29
+2026-10-18 14:13:23.012 I [present] MOVE state t=166.59 stance=stand frac=1.00 speed_sim=6.0in/s speed_world=0.13m/s wish=190.0 sprint=0 meter=2.43s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=22 er_delta=0.009m pushout=0
+2026-10-18 14:13:23.029 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=4 pos=(5.19,8.59,27.76) fwd=(0.89,-0.45)
+2026-10-18 14:13:23.162 I [present] MOVE apex h=0.432m t=0.206s
+2026-10-18 14:13:23.262 I [present] MOVE state t=166.84 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.86m/s wish=190.0 sprint=0 meter=2.68s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=31 er_delta=0.014m pushout=0
+2026-10-18 14:13:23.378 I [t(8)] MOVE land fall_h=17.8in (0.45m) v_impact=168.9 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:23.528 I [present] MOVE state t=167.11 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=1.32m/s wish=190.0 sprint=0 meter=2.95s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=15 er_delta=0.019m pushout=0
+2026-10-18 14:13:23.878 I [present] CAMFRAME tick=2771 src=pers_cam_1 valid=0 why=dist pos=(5.35,9.71,27.34) fwd=(0.985,-0.092,-0.145) det=+1.000 ortho_err=5.2e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.29m
+2026-10-18 14:13:23.995 I [t(8)] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.50,9.83,27.16) new=(5.38,9.69,27.24) ok=1 (hook)
+2026-10-18 14:13:23.995 I [t(8)] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.50,9.83,27.16) new=(5.38,9.69,27.24) ok=1 (hook)
+2026-10-18 14:13:23.995 I [t(8)] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:23.995 I [t(8)] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:23.995 I [t(8)] FP yaw drift p50=0.00deg p95=0.00deg n=187 writes=1089 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:23.995 I [t(8)] FP off reason=cam_gate why=dist ticks_on=1089 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:24.011 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1140 n=8
+2026-10-18 14:13:24.062 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:24.145 I [present] MOVE er_delta p50=0.001 p95=0.022 max=0.033 applied=1 handbacks=1 budget_hits=47 gravity_reasserts=1149 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:13:24.212 I [present] MOVE state t=167.79 stance=stand frac=1.00 speed_sim=4.1in/s speed_world=0.00m/s wish=152.0 sprint=0 meter=3.63s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=86.1deg rays=31 er_delta=0.000m pushout=0
+2026-10-18 14:13:24.462 I [present] MOVE state t=168.04 stance=stand frac=1.00 speed_sim=0.1in/s speed_world=0.00m/s wish=152.0 sprint=0 meter=3.88s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=86.1deg rays=11 er_delta=0.000m pushout=0
+2026-10-18 14:13:24.779 I [present] MOVE state t=168.36 stance=stand frac=1.00 speed_sim=11.5in/s speed_world=1.51m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=86.1deg rays=31 er_delta=0.000m pushout=0
+2026-10-18 14:13:25.046 I [present] MOVE state t=168.63 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=2.11m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=86.1deg rays=23 er_delta=0.000m pushout=0
+2026-10-18 14:13:25.095 I [present] MOVE jump y0=8.250 v0=241.1 land_factor=1.07
+2026-10-18 14:13:25.112 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=5 pos=(5.41,8.44,27.35) fwd=(0.71,-0.70)
+2026-10-18 14:13:25.129 I [present] MOVE apex h=0.225m t=0.033s ceiling=1
+2026-10-18 14:13:25.279 I [present] MOVE land fall_h=8.6in (0.22m) v_impact=117.3 slow=1.00*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:25.312 I [present] CAMFRAME tick=2857 src=pers_cam_1 valid=1 why=ok pos=(5.41,9.77,27.37) fwd=(0.687,-0.371,-0.625) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.31m
+2026-10-18 14:13:25.312 I [present] MOVE state t=168.89 stance=stand frac=1.00 speed_sim=10.2in/s speed_world=0.42m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=86.1deg rays=27 er_delta=0.000m pushout=0
+2026-10-18 14:13:25.362 I [present] CAMFRAME tick=2860 src=pers_cam_1 valid=0 why=dist pos=(5.42,9.75,27.39) fwd=(0.688,-0.371,-0.623) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.30m
+2026-10-18 14:13:25.578 I [present] MOVE state t=169.16 stance=stand frac=1.00 speed_sim=0.6in/s speed_world=0.03m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=86.1deg rays=24 er_delta=0.000m pushout=0
+2026-10-18 14:13:25.746 I [present] MOVE jump y0=8.258 v0=169.3 land_factor=2.18
+2026-10-18 14:13:25.812 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=1 pos=(5.41,8.55,27.41) fwd=(0.85,-0.53)
+2026-10-18 14:13:25.846 I [present] MOVE state t=169.43 stance=stand frac=1.00 speed_sim=0.1in/s speed_world=0.76m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=7 er_delta=0.000m pushout=0
+2026-10-18 14:13:25.896 I [present] CAMFRAME tick=2892 src=pers_cam_1 valid=1 why=ok pos=(2.35,10.25,29.06) fwd=(0.877,-0.086,-0.473) det=+1.000 ortho_err=3.7e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.51m
+2026-10-18 14:13:25.912 I [present] CAMFRAME tick=2893 src=pers_cam_1 valid=0 why=dist pos=(5.41,9.97,27.41) fwd=(0.886,-0.076,-0.457) det=+1.000 ortho_err=5.6e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.08m
+2026-10-18 14:13:25.946 I [present] MOVE apex h=0.455m t=0.212s
+2026-10-18 14:13:26.112 I [present] CAMFRAME tick=2905 src=pers_cam_1 valid=1 why=ok pos=(5.48,10.03,27.38) fwd=(0.999,0.032,0.007) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.36m
+2026-10-18 14:13:26.112 I [present] MOVE state t=169.69 stance=stand frac=1.00 speed_sim=42.7in/s speed_world=1.00m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=86.1deg rays=20 er_delta=0.000m pushout=0
+2026-10-18 14:13:26.162 I [present] MOVE land fall_h=18.8in (0.48m) v_impact=173.4 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:26.379 I [present] MOVE state t=169.96 stance=stand frac=1.00 speed_sim=13.1in/s speed_world=0.33m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=16 er_delta=0.065m pushout=1
+2026-10-18 14:13:26.494 I [present] MOVE state t=170.07 stance=stand frac=1.00 speed_sim=16.1in/s speed_world=0.46m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.0deg slope_er=0.0deg rays=16 er_delta=0.065m pushout=1
+2026-10-18 14:13:26.595 I [present] FP on eye=(5.99,9.83,27.34) cam_gate=ok er_cam_dist=0.42m eye_to_chest=0.44m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:26.595 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:26.595 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, -0.8991256, 0.0, 0.4376908] new=[0.0, -0.66225773, 0.0, 0.7492761] conv=-z
+2026-10-18 14:13:26.595 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[-0.0, -0.8991256, -0.0, 0.4376908] new=[0.0, -0.66225773, 0.0, 0.7492761]
+2026-10-18 14:13:26.597 I [present] VM gpu_ms p50=0.0152 p95=0.0177 max=0.0195 n=567
+2026-10-18 14:13:26.611 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1296 n=12
+2026-10-18 14:13:26.612 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.57,9.75,27.36) new=(5.94,9.82,27.31) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:26.612 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:26.628 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:26.712 I [present] MOVE mantle check ok=0 why=no_face rise=0.00m rays=2 n=10 pos=(5.89,8.28,27.31) fwd=(0.99,-0.15)
+2026-10-18 14:13:26.712 I [present] MOVE jump y0=8.212 v0=171.9 land_factor=2.11
+2026-10-18 14:13:26.745 I [present] CAMFRAME tick=2943 src=pers_cam_1 valid=0 why=dist pos=(5.69,9.75,27.35) fwd=(0.941,-0.307,-0.140) det=+1.000 ortho_err=9.3e-10 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.29m
+2026-10-18 14:13:26.762 I [present] MOVE state t=170.34 stance=stand frac=1.00 speed_sim=26.4in/s speed_world=0.54m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.6deg slope_er=8.2deg rays=22 er_delta=0.001m pushout=0
+2026-10-18 14:13:26.862 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(6.09,10.24,27.31) new=(5.89,9.85,27.32) ok=1 (hook)
+2026-10-18 14:13:26.862 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.09,10.24,27.31) new=(5.89,9.85,27.32) ok=1 (hook)
+2026-10-18 14:13:26.862 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:26.862 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:26.862 I [present] FP yaw drift p50=0.00deg p95=44.94deg n=15 writes=16 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:26.862 I [present] FP off reason=cam_gate why=dist ticks_on=16 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:26.878 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1312 n=8
+2026-10-18 14:13:26.911 I [present] CAMFRAME tick=2953 src=pers_cam_1 valid=1 why=ok pos=(5.65,9.99,27.36) fwd=(0.961,-0.245,-0.130) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.41m
+2026-10-18 14:13:26.911 I [present] MOVE apex h=0.469m t=0.215s
+2026-10-18 14:13:27.128 I [present] MOVE land fall_h=18.5in (0.47m) v_impact=172.0 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:27.128 I [present] MOVE state t=170.71 stance=stand frac=1.00 speed_sim=5.1in/s speed_world=0.26m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=15 er_delta=0.033m pushout=1
+2026-10-18 14:13:27.128 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:27.378 I [present] MOVE jump y0=8.207 v0=162.3 land_factor=2.37
+2026-10-18 14:13:27.394 I [present] CAMFRAME tick=2982 src=pers_cam_1 valid=0 why=dist pos=(6.19,9.74,27.37) fwd=(0.986,-0.163,-0.038) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.28m
+2026-10-18 14:13:27.394 I [present] MOVE state t=170.97 stance=stand frac=1.00 speed_sim=11.2in/s speed_world=0.23m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=22 er_delta=0.033m pushout=1
+2026-10-18 14:13:27.394 I [present] FP on eye=(6.39,9.87,27.35) cam_gate=ok er_cam_dist=0.24m eye_to_chest=0.36m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:27.394 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:27.394 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, -0.9162595, 0.0, 0.40058526] new=[0.0, -0.69321066, 0.0, 0.7207351] conv=-z
+2026-10-18 14:13:27.394 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[-0.0, -0.9162595, -0.0, 0.40058526] new=[0.0, -0.69321066, 0.0, 0.7207351]
+2026-10-18 14:13:27.412 I [present] MOVE mantle check ok=0 why=path_blocked rise=1.40m rays=13 n=3 pos=(6.27,8.39,27.36) fwd=(1.00,-0.04)
+2026-10-18 14:13:27.412 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1344 n=12
+2026-10-18 14:13:27.412 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.20,9.75,27.37) new=(6.36,9.93,27.36) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:27.412 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:27.456 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.80 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=16ms gds_kbd=16ms
+2026-10-18 14:13:27.495 I [present] MOVE state t=171.08 stance=stand frac=1.00 speed_sim=21.2in/s speed_world=0.48m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.2deg slope_er=4.0deg rays=11 er_delta=0.002m pushout=0
+2026-10-18 14:13:27.512 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(6.41,10.18,27.35) new=(6.23,9.83,27.36) ok=1 (hook)
+2026-10-18 14:13:27.512 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.41,10.18,27.35) new=(6.23,9.83,27.36) ok=1 (hook)
+2026-10-18 14:13:27.512 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:27.512 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:27.512 I [present] FP yaw drift p50=0.00deg p95=45.05deg n=6 writes=7 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:27.512 I [present] FP off reason=cam_gate why=dist ticks_on=7 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:27.528 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1351 n=8
+2026-10-18 14:13:27.578 I [present] CAMFRAME tick=2993 src=pers_cam_1 valid=1 why=ok pos=(5.69,9.98,27.38) fwd=(0.986,-0.163,-0.038) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.68m
+2026-10-18 14:13:27.579 I [present] MOVE apex h=0.418m t=0.203s
+2026-10-18 14:13:27.645 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.03) ladder=-1
+2026-10-18 14:13:27.779 I [present] MOVE land fall_h=16.7in (0.42m) v_impact=163.5 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:27.779 I [present] MOVE state t=171.36 stance=stand frac=1.00 speed_sim=6.1in/s speed_world=0.42m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=15 er_delta=0.030m pushout=1
+2026-10-18 14:13:27.961 I [present] PERF ticks_per_s=60.0 task_us p50=257 p95=334 max=655 fp_us avg=21 max=78 writes=10024 write_us_max=25.6 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=44 move_us_p95=80 move_us_max=443 rays_avg=17.6 rays_max=31 ray_us_max=157.2 move_writes=1204 mantle_checks=29 mantle_rays_max=13 mantle_budget_max=28 mantle_deferred=0 mantle_us_max=49 mantles=0 mantle_refusals=29 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:13:28.062 I [present] FP on eye=(6.62,9.81,27.31) cam_gate=ok er_cam_dist=0.22m eye_to_chest=0.44m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:28.062 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:28.062 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, -0.9269034, 0.0, 0.37530002] new=[0.0, -0.7278011, 0.0, 0.68578833] conv=-z
+2026-10-18 14:13:28.062 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[-0.0, -0.9269034, -0.0, 0.37530002] new=[0.0, -0.7278011, 0.0, 0.68578833]
+2026-10-18 14:13:28.078 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1384 n=12
+2026-10-18 14:13:28.078 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.43,9.72,27.33) new=(6.59,9.80,27.32) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:28.078 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:28.145 I [present] MOVE state t=171.73 stance=stand frac=1.00 speed_sim=0.3in/s speed_world=0.06m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=22 er_delta=0.002m pushout=0
+2026-10-18 14:13:28.161 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:28.411 I [present] MOVE state t=171.99 stance=stand frac=1.00 speed_sim=38.9in/s speed_world=0.79m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=30 er_delta=0.001m pushout=0
+2026-10-18 14:13:28.494 I [present] MOVE state t=172.07 stance=stand frac=1.00 speed_sim=82.8in/s speed_world=1.80m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=30 er_delta=0.001m pushout=0
+2026-10-18 14:13:28.561 I [present] MOVE jump y0=8.215 v0=181.3 land_factor=1.90
+2026-10-18 14:13:28.628 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=1 pos=(5.95,8.53,27.46) fwd=(-0.46,0.89)
+2026-10-18 14:13:28.661 I [present] CAMFRAME tick=3058 src=pers_cam_1 valid=0 why=dist pos=(6.23,9.76,27.38) fwd=(-0.448,-0.262,0.855) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.29m
+2026-10-18 14:13:28.745 I [present] CAMFRAME tick=3063 src=pers_cam_1 valid=1 why=ok pos=(7.24,10.65,25.17) fwd=(-0.448,-0.262,0.855) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=2.74m
+2026-10-18 14:13:28.745 I [present] MOVE state t=172.32 stance=stand frac=1.00 speed_sim=26.0in/s speed_world=0.72m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.2deg slope_er=4.0deg rays=10 er_delta=0.005m pushout=0
+2026-10-18 14:13:28.779 I [present] MOVE apex h=0.522m t=0.227s
+2026-10-18 14:13:28.995 I [present] MOVE land fall_h=19.6in (0.50m) v_impact=177.3 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:28.995 I [present] MOVE state t=172.57 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.17m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=8.2deg rays=28 er_delta=0.009m pushout=0
+2026-10-18 14:13:29.161 I [present] MOVE er_delta p50=0.001 p95=0.065 max=0.065 applied=2 handbacks=1 budget_hits=61 gravity_reasserts=1450 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:13:29.245 I [present] MOVE state t=172.83 stance=stand frac=1.00 speed_sim=18.5in/s speed_world=0.03m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=86.1deg rays=16 er_delta=0.021m pushout=1
+2026-10-18 14:13:29.494 I [present] MOVE state t=173.07 stance=stand frac=1.00 speed_sim=15.0in/s speed_world=0.25m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=86.1deg rays=16 er_delta=0.017m pushout=0
+2026-10-18 14:13:29.545 I [present] MOVE jump y0=8.242 v0=172.3 land_factor=2.10
+2026-10-18 14:13:29.562 I [present] CAMFRAME tick=3112 src=pers_cam_1 valid=0 why=dist pos=(5.82,9.74,27.39) fwd=(-0.870,-0.164,0.465) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.28m
+2026-10-18 14:13:29.594 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=3 pos=(5.63,8.49,27.42) fwd=(-0.88,0.47)
+2026-10-18 14:13:29.680 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.53,10.24,27.45) new=(5.65,9.88,27.43) ok=1 (hook)
+2026-10-18 14:13:29.680 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.53,10.24,27.45) new=(5.65,9.88,27.43) ok=1 (hook)
+2026-10-18 14:13:29.680 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:29.680 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:29.680 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=96 writes=97 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:29.680 I [present] FP off reason=cam_gate why=dist ticks_on=97 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:29.695 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1481 n=8
+2026-10-18 14:13:29.747 I [present] MOVE apex h=0.471m t=0.215s
+2026-10-18 14:13:29.747 I [present] MOVE state t=173.33 stance=stand frac=1.00 speed_sim=26.9in/s speed_world=0.60m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=4.0deg rays=21 er_delta=0.000m pushout=0
+2026-10-18 14:13:29.747 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:29.928 I [present] CAMFRAME tick=3134 src=pers_cam_1 valid=1 why=ok pos=(5.57,10.00,27.31) fwd=(-0.982,-0.028,0.189) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.39m
+2026-10-18 14:13:29.979 I [present] MOVE land fall_h=19.5in (0.50m) v_impact=176.8 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:30.012 I [present] MOVE state t=173.59 stance=stand frac=1.00 speed_sim=32.6in/s speed_world=0.72m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=30 er_delta=0.000m pushout=0
+2026-10-18 14:13:30.229 I [present] MOVE mantle check ok=0 why=too_high rise=0.00m rays=4 n=5 pos=(5.40,8.25,26.82) fwd=(-0.98,-0.18)
+2026-10-18 14:13:30.229 I [present] MOVE jump y0=8.187 v0=162.3 land_factor=2.37
+2026-10-18 14:13:30.279 I [present] CAMFRAME tick=3155 src=pers_cam_1 valid=0 why=dist pos=(5.51,9.75,26.97) fwd=(-0.924,-0.262,-0.279) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.29m
+2026-10-18 14:13:30.279 I [present] MOVE state t=173.86 stance=stand frac=1.00 speed_sim=4.6in/s speed_world=1.03m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=11 er_delta=0.000m pushout=0
+2026-10-18 14:13:30.429 I [present] MOVE apex h=0.418m t=0.203s
+2026-10-18 14:13:30.446 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=4 n=3 pos=(5.42,8.60,26.76) fwd=(-0.80,-0.59)
+2026-10-18 14:13:30.496 I [present] MOVE state t=174.08 stance=stand frac=1.00 speed_sim=2.9in/s speed_world=0.06m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=11 er_delta=0.000m pushout=0
+2026-10-18 14:13:30.612 I [present] CAMFRAME tick=3175 src=pers_cam_1 valid=1 why=ok pos=(5.43,9.89,26.79) fwd=(-0.788,0.097,-0.607) det=+1.000 ortho_err=3.7e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.41m
+2026-10-18 14:13:30.628 I [present] MOVE land fall_h=17.0in (0.43m) v_impact=165.2 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:30.746 I [present] MOVE state t=174.33 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=1.53m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=53.7deg rays=12 er_delta=0.000m pushout=0
+2026-10-18 14:13:31.029 I [present] MOVE state t=174.61 stance=stand frac=1.00 speed_sim=1.8in/s speed_world=0.03m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=53.7deg rays=15 er_delta=0.000m pushout=0
+2026-10-18 14:13:31.096 I [present] FP on eye=(5.56,9.75,26.65) cam_gate=ok er_cam_dist=0.39m eye_to_chest=0.41m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:31.096 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:31.096 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.8258056, 0.0, 0.563955] new=[0.0, 0.5470688, 0.0, 0.8370877] conv=-z
+2026-10-18 14:13:31.096 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.82580554, 0.0, 0.56395507] new=[0.0, 0.5470688, 0.0, 0.8370877]
+2026-10-18 14:13:31.112 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1566 n=12
+2026-10-18 14:13:31.112 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.91,9.71,26.84) new=(5.56,9.75,26.65) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:31.112 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:31.128 I [present] MOVE jump y0=8.151 v0=170.5 land_factor=2.15
+2026-10-18 14:13:31.128 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:31.146 I [t(9)] MOVE mantle check ok=0 why=too_high rise=1.55m rays=7 n=4 pos=(5.65,8.28,26.70) fwd=(-0.92,-0.40)
+2026-10-18 14:13:31.179 I [present] CAMFRAME tick=3209 src=pers_cam_1 valid=0 why=dist pos=(5.84,9.72,26.80) fwd=(-0.888,-0.244,-0.388) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.27m
+2026-10-18 14:13:31.230 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=1 pos=(5.66,8.52,26.70) fwd=(-0.92,-0.40)
+2026-10-18 14:13:31.279 I [present] MOVE state t=174.86 stance=stand frac=1.00 speed_sim=3.0in/s speed_world=0.07m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=11 er_delta=0.000m pushout=0
+2026-10-18 14:13:31.295 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.57,10.19,26.66) new=(5.64,9.85,26.70) ok=1 (hook)
+2026-10-18 14:13:31.295 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.57,10.19,26.66) new=(5.64,9.85,26.70) ok=1 (hook)
+2026-10-18 14:13:31.295 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:31.295 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:31.295 I [present] FP yaw drift p50=0.00deg p95=45.01deg n=11 writes=12 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:31.295 I [present] FP off reason=cam_gate why=dist ticks_on=12 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:31.312 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1578 n=8
+2026-10-18 14:13:31.329 I [present] MOVE apex h=0.461m t=0.213s
+2026-10-18 14:13:31.346 I [present] CAMFRAME tick=3219 src=pers_cam_1 valid=1 why=ok pos=(8.75,10.78,28.06) fwd=(-0.888,-0.244,-0.389) det=+1.000 ortho_err=0.0e0 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.51m
+2026-10-18 14:13:31.496 I [present] MOVE state t=175.08 stance=stand frac=1.00 speed_sim=5.8in/s speed_world=0.15m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=11 er_delta=0.000m pushout=0
+2026-10-18 14:13:31.546 I [present] MOVE land fall_h=18.0in (0.46m) v_impact=169.7 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:31.628 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:31.745 I [present] MOVE state t=175.33 stance=stand frac=1.00 speed_sim=23.0in/s speed_world=0.52m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=15 er_delta=0.000m pushout=0
+2026-10-18 14:13:31.828 I [present] FP on eye=(5.62,9.77,26.91) cam_gate=ok er_cam_dist=0.27m eye_to_chest=0.41m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:31.828 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:31.828 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.99809974, 0.0, 0.061619494] new=[0.0, 0.9015443, 0.0, 0.4326869] conv=-z
+2026-10-18 14:13:31.828 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.99809974, 0.0, 0.061619494] new=[0.0, 0.9015443, 0.0, 0.4326869]
+2026-10-18 14:13:31.845 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1610 n=12
+2026-10-18 14:13:31.845 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.79,9.71,26.71) new=(5.63,9.77,26.92) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:31.845 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:31.962 I [present] MOVE mantle check ok=0 why=no_face rise=0.00m rays=2 n=20 pos=(5.77,8.25,27.06) fwd=(-0.79,0.61)
+2026-10-18 14:13:31.962 I [present] MOVE jump y0=8.185 v0=167.4 land_factor=2.23
+2026-10-18 14:13:32.012 I [present] CAMFRAME tick=3259 src=pers_cam_1 valid=0 why=dist pos=(5.80,9.72,26.91) fwd=(-0.693,-0.482,0.535) det=+1.000 ortho_err=0.0e0 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.27m
+2026-10-18 14:13:32.012 I [present] MOVE state t=175.59 stance=stand frac=1.00 speed_sim=88.7in/s speed_world=2.00m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=22 er_delta=0.014m pushout=0
+2026-10-18 14:13:32.028 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=3 pos=(5.82,8.47,27.20) fwd=(-0.79,0.61)
+2026-10-18 14:13:32.128 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.78,10.21,27.44) new=(5.79,9.85,27.14) ok=1 (hook)
+2026-10-18 14:13:32.128 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.78,10.21,27.44) new=(5.79,9.85,27.14) ok=1 (hook)
+2026-10-18 14:13:32.128 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:32.128 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:32.128 I [present] FP yaw drift p50=0.00deg p95=44.16deg n=17 writes=18 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:32.128 I [present] FP off reason=cam_gate why=dist ticks_on=18 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:32.145 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1628 n=8
+2026-10-18 14:13:32.146 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:32.162 I [present] MOVE apex h=0.445m t=0.209s
+2026-10-18 14:13:32.178 I [present] CAMFRAME tick=3269 src=pers_cam_1 valid=1 why=ok pos=(8.23,11.39,25.16) fwd=(-0.691,-0.423,0.586) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.61m
+2026-10-18 14:13:32.262 I [present] MOVE state t=175.84 stance=stand frac=1.00 speed_sim=0.1in/s speed_world=0.21m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=4.0deg rays=6 er_delta=0.013m pushout=0
+2026-10-18 14:13:32.363 I [present] MOVE land fall_h=16.0in (0.41m) v_impact=160.2 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:32.458 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=1ms gds_kbd=1ms
+2026-10-18 14:13:32.495 I [present] MOVE jump y0=8.222 v0=158.9 land_factor=2.47
+2026-10-18 14:13:32.512 I [present] CAMFRAME tick=3289 src=pers_cam_1 valid=0 why=dist pos=(5.86,9.77,27.36) fwd=(-0.661,-0.510,0.551) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.29m
+2026-10-18 14:13:32.562 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=3 pos=(5.87,8.49,27.39) fwd=(-0.76,0.64)
+2026-10-18 14:13:32.611 I [present] MOVE mantle check ok=0 why=too_high rise=0.00m rays=5 n=2 pos=(5.87,8.58,27.39) fwd=(-0.76,0.65)
+2026-10-18 14:13:32.662 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:32.678 I [present] CAMFRAME tick=3299 src=pers_cam_1 valid=1 why=ok pos=(8.27,11.39,25.33) fwd=(-0.689,-0.427,0.586) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.53m
+2026-10-18 14:13:32.680 I [present] MOVE apex h=0.401m t=0.199s
+2026-10-18 14:13:32.878 I [present] MOVE land fall_h=15.8in (0.40m) v_impact=158.8 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:32.878 I [present] MOVE state t=176.46 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.01m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.9deg slope_er=8.2deg rays=10 er_delta=0.061m pushout=1
+2026-10-18 14:13:32.979 I [present] PERF ticks_per_s=60.0 task_us p50=257 p95=310 max=1770 fp_us avg=22 max=77 writes=11751 write_us_max=1.2 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=44 move_us_p95=78 move_us_max=152 rays_avg=18.2 rays_max=31 ray_us_max=39.8 move_writes=1204 mantle_checks=38 mantle_rays_max=7 mantle_budget_max=28 mantle_deferred=0 mantle_us_max=136 mantles=0 mantle_refusals=38 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:13:33.162 I [present] FP on eye=(5.79,9.84,27.44) cam_gate=ok er_cam_dist=0.14m eye_to_chest=0.43m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:33.162 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:33.162 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.84109426, 0.0, 0.5408886] new=[0.0, 0.83854127, 0.0, 0.5448381] conv=-z
+2026-10-18 14:13:33.162 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.84109426, 0.0, 0.5408886] new=[0.0, 0.83854127, 0.0, 0.5448381]
+2026-10-18 14:13:33.179 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1690 n=12
+2026-10-18 14:13:33.179 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.88,9.74,27.38) new=(5.78,9.82,27.43) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:33.179 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:33.194 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:33.445 I [present] MOVE jump y0=8.221 v0=172.6 land_factor=2.10
+2026-10-18 14:13:33.445 I [present] MOVE state t=177.02 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.9deg slope_er=8.2deg rays=6 er_delta=0.001m pushout=0
+2026-10-18 14:13:33.462 I [present] CAMFRAME tick=3346 src=pers_cam_1 valid=0 why=dist pos=(5.92,9.73,27.37) fwd=(-0.792,-0.522,0.317) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.25m
+2026-10-18 14:13:33.512 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=2 pos=(5.87,8.52,27.39) fwd=(-0.93,0.37)
+2026-10-18 14:13:33.578 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.78,10.23,27.43) new=(8.65,11.71,26.28) ok=1 (hook)
+2026-10-18 14:13:33.578 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.78,10.23,27.43) new=(8.65,11.71,26.28) ok=1 (hook)
+2026-10-18 14:13:33.578 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:33.578 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:33.578 I [present] FP yaw drift p50=0.00deg p95=0.09deg n=24 writes=25 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:33.578 I [present] FP off reason=cam_gate why=settling ticks_on=25 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:33.595 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1715 n=8
+2026-10-18 14:13:33.612 I [present] CAMFRAME tick=3355 src=pers_cam_1 valid=1 why=ok pos=(8.63,11.76,26.29) fwd=(-0.792,-0.522,0.316) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.52m
+2026-10-18 14:13:33.645 I [present] MOVE apex h=0.473m t=0.216s
+2026-10-18 14:13:33.695 I [present] MOVE state t=177.27 stance=stand frac=1.00 speed_sim=22.2in/s speed_world=0.46m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.9deg slope_er=4.0deg rays=10 er_delta=0.003m pushout=0
+2026-10-18 14:13:33.695 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:33.862 I [present] MOVE land fall_h=18.5in (0.47m) v_impact=172.1 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:33.962 I [present] MOVE state t=177.54 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=8.2deg rays=6 er_delta=0.006m pushout=0
+2026-10-18 14:13:34.095 I [present] FP on eye=(5.76,9.84,27.42) cam_gate=ok er_cam_dist=0.15m eye_to_chest=0.43m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:34.095 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:34.095 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.82374334, 0.0, 0.56696284] new=[0.0, 0.8237244, 0.0, 0.5669904] conv=-z
+2026-10-18 14:13:34.095 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.8237433, 0.0, 0.56696284] new=[0.0, 0.8237244, 0.0, 0.5669904]
+2026-10-18 14:13:34.111 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1746 n=12
+2026-10-18 14:13:34.111 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.87,9.74,27.37) new=(5.75,9.82,27.41) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:34.111 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:34.162 I [present] MOVE er_delta p50=0.001 p95=0.061 max=0.061 applied=2 handbacks=1 budget_hits=71 gravity_reasserts=1750 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:13:34.211 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:34.661 I [present] MOVE jump y0=8.222 v0=182.1 land_factor=1.88
+2026-10-18 14:13:34.661 I [present] MOVE state t=178.24 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=8.2deg rays=3 er_delta=0.003m pushout=0
+2026-10-18 14:13:34.678 I [present] CAMFRAME tick=3419 src=pers_cam_1 valid=0 why=dist pos=(5.93,9.73,27.35) fwd=(-0.782,-0.546,0.299) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.25m
+2026-10-18 14:13:34.711 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=3 pos=(5.85,8.48,27.38) fwd=(-0.93,0.36)
+2026-10-18 14:13:34.795 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.75,10.26,27.41) new=(5.85,9.84,27.38) ok=1 (hook)
+2026-10-18 14:13:34.795 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.75,10.26,27.41) new=(5.85,9.84,27.38) ok=1 (hook)
+2026-10-18 14:13:34.795 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:34.795 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:34.795 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=41 writes=42 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:34.795 I [present] FP off reason=cam_gate why=dist ticks_on=42 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:34.811 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1788 n=8
+2026-10-18 14:13:34.861 I [present] CAMFRAME tick=3430 src=pers_cam_1 valid=1 why=ok pos=(8.58,11.84,26.34) fwd=(-0.783,-0.545,0.299) det=+1.000 ortho_err=5.2e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.48m
+2026-10-18 14:13:34.878 I [present] MOVE apex h=0.526m t=0.228s
+2026-10-18 14:13:35.112 I [present] MOVE land fall_h=20.7in (0.53m) v_impact=182.0 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:35.112 I [present] MOVE state t=178.69 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=8.2deg rays=6 er_delta=0.003m pushout=0
+2026-10-18 14:13:35.345 I [present] FP on eye=(5.76,9.84,27.41) cam_gate=ok er_cam_dist=0.12m eye_to_chest=0.43m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:35.345 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:35.345 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.823725, 0.0, 0.5669896] new=[0.0, 0.82371414, 0.0, 0.56700534] conv=-z
+2026-10-18 14:13:35.345 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.823725, 0.0, 0.5669896] new=[0.0, 0.82371414, 0.0, 0.56700534]
+2026-10-18 14:13:35.362 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1821 n=12
+2026-10-18 14:13:35.362 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.85,9.76,27.38) new=(5.75,9.82,27.41) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:35.362 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:35.528 I [present] MOVE jump y0=8.222 v0=167.6 land_factor=2.22
+2026-10-18 14:13:35.528 I [present] MOVE state t=179.11 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=0.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=8.2deg rays=2 er_delta=0.003m pushout=0
+2026-10-18 14:13:35.545 I [present] CAMFRAME tick=3471 src=pers_cam_1 valid=0 why=dist pos=(5.89,9.74,27.36) fwd=(-0.782,-0.546,0.299) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.25m
+2026-10-18 14:13:35.594 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=6 pos=(5.85,8.51,27.38) fwd=(-0.93,0.36)
+2026-10-18 14:13:35.663 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.75,10.21,27.41) new=(5.85,9.83,27.38) ok=1 (hook)
+2026-10-18 14:13:35.663 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.75,10.21,27.41) new=(5.85,9.83,27.38) ok=1 (hook)
+2026-10-18 14:13:35.663 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:35.663 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:35.663 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=18 writes=19 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:35.663 I [present] FP off reason=cam_gate why=dist ticks_on=19 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:35.678 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1840 n=8
+2026-10-18 14:13:35.728 I [present] MOVE apex h=0.446m t=0.210s
+2026-10-18 14:13:35.745 I [present] CAMFRAME tick=3483 src=pers_cam_1 valid=1 why=ok pos=(8.58,11.82,26.34) fwd=(-0.783,-0.545,0.299) det=+1.000 ortho_err=1.2e-7 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.51m
+2026-10-18 14:13:35.945 I [present] MOVE land fall_h=17.5in (0.45m) v_impact=167.5 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:35.945 I [present] MOVE state t=179.52 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=8.2deg rays=5 er_delta=0.003m pushout=0
+2026-10-18 14:13:36.228 I [present] FP on eye=(5.76,9.84,27.42) cam_gate=ok er_cam_dist=0.19m eye_to_chest=0.43m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:36.228 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:36.228 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.8237136, 0.0, 0.5670061] new=[0.0, 0.8313041, 0.0, 0.55581784] conv=-z
+2026-10-18 14:13:36.228 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.82371354, 0.0, 0.56700623] new=[0.0, 0.8313041, 0.0, 0.55581784]
+2026-10-18 14:13:36.245 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1874 n=12
+2026-10-18 14:13:36.245 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.91,9.73,27.35) new=(5.76,9.82,27.42) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:36.245 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:36.462 I [present] MOVE state t=180.04 stance=stand frac=1.00 speed_sim=19.7in/s speed_world=0.00m/s wish=133.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.0deg slope_er=8.2deg rays=14 er_delta=0.003m pushout=0
+2026-10-18 14:13:36.495 I [present] MOVE state t=180.07 stance=stand frac=1.00 speed_sim=20.9in/s speed_world=0.49m/s wish=133.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.8deg slope_er=8.2deg rays=14 er_delta=0.002m pushout=0
+2026-10-18 14:13:36.613 I [present] VM gpu_ms p50=0.0166 p95=0.0181 max=0.0200 n=259
+2026-10-18 14:13:36.745 I [present] MOVE jump y0=8.203 v0=182.1 land_factor=1.88
+2026-10-18 14:13:36.745 I [present] MOVE state t=180.32 stance=stand frac=1.00 speed_sim=46.6in/s speed_world=1.15m/s wish=133.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=10 er_delta=0.000m pushout=0
+2026-10-18 14:13:36.762 I [present] CAMFRAME tick=3544 src=pers_cam_1 valid=0 why=dist pos=(6.03,9.72,27.30) fwd=(-0.771,-0.548,0.326) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.25m
+2026-10-18 14:13:36.795 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=5 n=5 pos=(6.12,8.47,27.27) fwd=(-0.92,0.39)
+2026-10-18 14:13:36.828 I [present] MOVE mantle check ok=0 why=too_high rise=0.00m rays=5 n=2 pos=(6.16,8.56,27.25) fwd=(-0.92,0.39)
+2026-10-18 14:13:36.878 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(6.12,10.24,27.27) new=(6.06,9.84,27.29) ok=1 (hook)
+2026-10-18 14:13:36.878 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.12,10.24,27.27) new=(6.06,9.84,27.29) ok=1 (hook)
+2026-10-18 14:13:36.878 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:36.878 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:36.878 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=38 writes=39 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:36.878 I [present] FP off reason=cam_gate why=dist ticks_on=39 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:36.896 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1913 n=8
+2026-10-18 14:13:36.929 I [present] CAMFRAME tick=3554 src=pers_cam_1 valid=1 why=ok pos=(8.79,11.81,26.14) fwd=(-0.771,-0.548,0.326) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.31m
+2026-10-18 14:13:36.946 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:36.962 I [present] MOVE apex h=0.526m t=0.228s
+2026-10-18 14:13:36.996 I [present] MOVE mantle check ok=0 why=no_face rise=0.00m rays=2 n=17 pos=(6.44,8.71,27.13) fwd=(-0.92,0.39)
+2026-10-18 14:13:37.212 I [present] MOVE land fall_h=23.1in (0.59m) v_impact=192.4 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:37.212 I [present] MOVE state t=180.79 stance=stand frac=1.00 speed_sim=47.3in/s speed_world=2.91m/s wish=133.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=14 er_delta=0.065m pushout=1
+2026-10-18 14:13:37.412 I [present] FP on eye=(7.02,9.75,26.90) cam_gate=ok er_cam_dist=0.20m eye_to_chest=0.42m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:37.412 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:37.412 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, -0.5524916, 0.0, 0.83351856] new=[0.0, 0.8335203, 0.0, 0.55248886] conv=-z
+2026-10-18 14:13:37.412 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[-0.0, -0.5524916, -0.0, 0.83351856] new=[0.0, 0.8335203, 0.0, 0.55248886]
+2026-10-18 14:13:37.429 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1945 n=12
+2026-10-18 14:13:37.429 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.85,9.70,26.96) new=(6.96,9.73,26.91) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:37.429 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:37.460 I [boot] STATE mode=on mag=32/192 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=2ms gds_kbd=2ms
+2026-10-18 14:13:37.462 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:37.495 I [present] MOVE state t=181.07 stance=stand frac=1.00 speed_sim=19.8in/s speed_world=0.49m/s wish=133.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=14 er_delta=0.004m pushout=0
+2026-10-18 14:13:37.578 I [present] MOVE jump y0=8.129 v0=166.0 land_factor=2.26
+2026-10-18 14:13:37.595 I [present] CAMFRAME tick=3594 src=pers_cam_1 valid=0 why=dist pos=(6.97,9.66,26.91) fwd=(-0.771,-0.548,0.326) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.28m
+2026-10-18 14:13:37.646 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=5 n=1 pos=(7.11,8.41,26.85) fwd=(-0.92,0.39)
+2026-10-18 14:13:37.712 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(7.06,10.11,26.87) new=(7.03,9.75,26.88) ok=1 (hook)
+2026-10-18 14:13:37.712 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(7.06,10.11,26.87) new=(7.03,9.75,26.88) ok=1 (hook)
+2026-10-18 14:13:37.712 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:37.712 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:37.712 I [present] FP yaw drift p50=0.00deg p95=180.00deg n=17 writes=18 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:37.712 I [present] FP off reason=cam_gate why=dist ticks_on=18 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:37.729 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=1963 n=8
+2026-10-18 14:13:37.746 I [present] MOVE state t=181.33 stance=stand frac=1.00 speed_sim=44.3in/s speed_world=1.08m/s wish=133.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.2deg slope_er=4.0deg rays=10 er_delta=0.000m pushout=0
+2026-10-18 14:13:37.778 I [present] CAMFRAME tick=3605 src=pers_cam_1 valid=1 why=ok pos=(7.54,10.20,26.56) fwd=(-0.701,-0.545,0.459) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.59m
+2026-10-18 14:13:37.779 I [present] MOVE apex h=0.437m t=0.207s
+2026-10-18 14:13:37.895 I [present] MOVE mantle check ok=0 why=too_high rise=0.00m rays=5 n=3 pos=(7.33,8.41,26.73) fwd=(-0.49,0.87)
+2026-10-18 14:13:37.978 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:37.978 I [present] PERF ticks_per_s=60.0 task_us p50=247 p95=326 max=405 fp_us avg=23 max=122 writes=13548 write_us_max=1.1 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=36 move_us_p95=72 move_us_max=142 rays_avg=8.4 rays_max=31 ray_us_max=55.9 move_writes=1200 mantle_checks=48 mantle_rays_max=5 mantle_budget_max=28 mantle_deferred=0 mantle_us_max=36 mantles=0 mantle_refusals=48 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:13:37.996 I [present] MOVE land fall_h=18.2in (0.46m) v_impact=170.7 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:38.013 I [present] MOVE state t=181.59 stance=stand frac=1.00 speed_sim=7.6in/s speed_world=0.43m/s wish=133.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=93.9deg rays=30 er_delta=0.000m pushout=0
+2026-10-18 14:13:38.246 I [present] MOVE jump y0=8.096 v0=162.4 land_factor=2.37
+2026-10-18 14:13:38.263 I [present] CAMFRAME tick=3634 src=pers_cam_1 valid=0 why=dist pos=(7.32,9.62,26.61) fwd=(-0.411,-0.547,0.729) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.26m
+2026-10-18 14:13:38.263 I [present] MOVE state t=181.84 stance=stand frac=1.00 speed_sim=17.5in/s speed_world=0.42m/s wish=133.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.2deg slope_er=0.0deg rays=11 er_delta=0.000m pushout=0
+2026-10-18 14:13:38.263 I [present] FP on eye=(7.24,9.76,26.69) cam_gate=ok er_cam_dist=0.18m eye_to_chest=0.36m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:38.263 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:38.263 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, -0.25106296, 0.0, 0.9679708] new=[0.0, 0.9672471, 0.0, 0.25383657] conv=-z
+2026-10-18 14:13:38.263 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[-0.0, -0.25106296, -0.0, 0.9679708] new=[0.0, 0.9672471, 0.0, 0.25383657]
+2026-10-18 14:13:38.280 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=1996 n=12
+2026-10-18 14:13:38.280 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(7.31,9.63,26.62) new=(7.24,9.82,26.69) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:38.280 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:38.313 I [present] MOVE mantle check ok=0 why=path_blocked rise=1.46m rays=13 n=2 pos=(7.29,8.37,26.57) fwd=(-0.49,0.87)
+2026-10-18 14:13:38.379 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(7.25,10.06,26.71) new=(7.30,9.73,26.63) ok=1 (hook)
+2026-10-18 14:13:38.379 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(7.25,10.06,26.71) new=(7.30,9.73,26.63) ok=1 (hook)
+2026-10-18 14:13:38.379 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:38.379 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:38.379 I [present] FP yaw drift p50=0.00deg p95=179.67deg n=6 writes=7 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:38.379 I [present] FP off reason=cam_gate why=dist ticks_on=7 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:38.396 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=2003 n=8
+2026-10-18 14:13:38.446 I [present] CAMFRAME tick=3645 src=pers_cam_1 valid=1 why=ok pos=(7.46,10.02,26.34) fwd=(-0.414,-0.545,0.729) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.44m
+2026-10-18 14:13:38.447 I [present] MOVE apex h=0.419m t=0.203s
+2026-10-18 14:13:38.479 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.03) ladder=-1
+2026-10-18 14:13:38.496 I [present] MOVE state t=182.08 stance=stand frac=1.00 speed_sim=20.6in/s speed_world=0.47m/s wish=133.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.2deg slope_er=0.0deg rays=20 er_delta=0.000m pushout=0
+2026-10-18 14:13:38.646 I [present] MOVE land fall_h=16.4in (0.42m) v_impact=162.0 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:38.746 I [present] MOVE state t=182.33 stance=stand frac=1.00 speed_sim=7.3in/s speed_world=0.35m/s wish=133.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=0.0deg rays=30 er_delta=0.000m pushout=0
+2026-10-18 14:13:38.928 I [present] FP on eye=(7.24,9.69,26.67) cam_gate=ok er_cam_dist=0.15m eye_to_chest=0.41m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:38.928 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:38.928 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, -0.26223794, 0.0, 0.96500325] new=[0.0, 0.96630436, 0.0, 0.25740212] conv=-z
+2026-10-18 14:13:38.928 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[-0.0, -0.26223794, -0.0, 0.96500325] new=[0.0, 0.96630436, 0.0, 0.25740212]
+2026-10-18 14:13:38.946 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=2036 n=12
+2026-10-18 14:13:38.946 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(7.31,9.62,26.56) new=(7.24,9.69,26.67) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:38.946 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:38.995 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:39.162 I [present] MOVE er_delta p50=0.003 p95=0.065 max=0.066 applied=5 handbacks=1 budget_hits=71 gravity_reasserts=2050 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:13:39.346 I [present] MOVE jump y0=8.155 v0=178.0 land_factor=1.97
+2026-10-18 14:13:39.346 I [present] MOVE state t=182.93 stance=stand frac=1.00 speed_sim=56.9in/s speed_world=1.41m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=22 er_delta=0.007m pushout=0
+2026-10-18 14:13:39.395 I [present] CAMFRAME tick=3702 src=pers_cam_1 valid=0 why=dist pos=(7.00,9.65,26.90) fwd=(-0.240,-0.577,0.780) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.30m
+2026-10-18 14:13:39.412 I [present] MOVE mantle check ok=0 why=too_high rise=0.00m rays=5 n=1 pos=(6.72,8.46,27.08) fwd=(-0.29,0.96)
+2026-10-18 14:13:39.495 I [present] MOVE state t=183.07 stance=stand frac=1.00 speed_sim=76.5in/s speed_world=1.86m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.2deg slope_er=4.0deg rays=10 er_delta=0.002m pushout=0
+2026-10-18 14:13:39.512 I [present] CAMFRAME tick=3709 src=pers_cam_1 valid=1 why=ok pos=(7.36,11.31,25.11) fwd=(-0.240,-0.577,0.780) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=2.65m
+2026-10-18 14:13:39.561 I [present] MOVE apex h=0.503m t=0.222s
+2026-10-18 14:13:39.763 I [present] MOVE land fall_h=17.5in (0.44m) v_impact=167.3 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:39.763 I [present] MOVE state t=183.34 stance=stand frac=1.00 speed_sim=39.3in/s speed_world=2.20m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=28 er_delta=0.000m pushout=0
+2026-10-18 14:13:39.962 I [present] MOVE jump y0=8.215 v0=160.6 land_factor=2.42
+2026-10-18 14:13:39.978 I [present] CAMFRAME tick=3737 src=pers_cam_1 valid=0 why=dist pos=(6.10,9.72,27.35) fwd=(-0.240,-0.577,0.780) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.26m
+2026-10-18 14:13:40.029 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=3 n=1 pos=(5.99,8.49,27.39) fwd=(-0.29,0.96)
+2026-10-18 14:13:40.029 I [present] MOVE state t=183.61 stance=stand frac=1.00 speed_sim=19.1in/s speed_world=0.46m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.4deg slope_er=7.2deg rays=24 er_delta=0.001m pushout=0
+2026-10-18 14:13:40.096 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.94,10.18,27.49) new=(6.66,11.40,25.33) ok=1 (hook)
+2026-10-18 14:13:40.096 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.94,10.18,27.49) new=(6.66,11.40,25.33) ok=1 (hook)
+2026-10-18 14:13:40.096 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:40.096 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:40.096 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=69 writes=70 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:40.096 I [present] FP off reason=cam_gate why=settling ticks_on=70 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:40.113 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=2106 n=8
+2026-10-18 14:13:40.129 I [present] CAMFRAME tick=3746 src=pers_cam_1 valid=1 why=ok pos=(6.67,11.45,25.32) fwd=(-0.251,-0.577,0.778) det=+1.000 ortho_err=0.0e0 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=2.74m
+2026-10-18 14:13:40.163 I [present] MOVE apex h=0.409m t=0.201s
+2026-10-18 14:13:40.163 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:40.279 I [present] MOVE state t=183.86 stance=stand frac=1.00 speed_sim=0.1in/s speed_world=1.03m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=7.4deg slope_er=4.0deg rays=24 er_delta=0.044m pushout=1
+2026-10-18 14:13:40.363 I [present] MOVE land fall_h=16.1in (0.41m) v_impact=160.4 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:40.512 I [present] MOVE jump y0=8.215 v0=159.4 land_factor=2.46
+2026-10-18 14:13:40.529 I [present] CAMFRAME tick=3770 src=pers_cam_1 valid=0 why=dist pos=(5.95,9.74,27.38) fwd=(-0.487,-0.639,0.596) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.26m
+2026-10-18 14:13:40.546 I [present] MOVE state t=184.13 stance=stand frac=1.00 speed_sim=4.1in/s speed_world=0.61m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=6.7deg slope_er=8.2deg rays=24 er_delta=0.066m pushout=1
+2026-10-18 14:13:40.579 I [present] MOVE mantle check ok=0 why=too_high rise=0.00m rays=5 n=4 pos=(5.93,8.48,27.38) fwd=(-0.76,0.65)
+2026-10-18 14:13:40.612 I [present] FP on eye=(5.84,10.09,27.47) cam_gate=ok er_cam_dist=0.30m eye_to_chest=0.36m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:40.612 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:40.612 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.89845186, 0.0, 0.43907204] new=[0.0, 0.8908707, 0.0, 0.454257] conv=-z
+2026-10-18 14:13:40.612 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.89845186, 0.0, 0.43907204] new=[0.0, 0.8908707, 0.0, 0.454257]
+2026-10-18 14:13:40.629 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=2137 n=12
+2026-10-18 14:13:40.629 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.94,9.84,27.38) new=(5.84,10.15,27.44) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:40.629 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:40.646 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.83,10.17,27.44) new=(5.93,9.86,27.38) ok=1 (hook)
+2026-10-18 14:13:40.646 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.83,10.17,27.44) new=(5.93,9.86,27.38) ok=1 (hook)
+2026-10-18 14:13:40.646 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:40.646 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:40.646 I [present] FP yaw drift p50=1.94deg p95=1.94deg n=1 writes=2 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:40.646 I [present] FP off reason=cam_gate why=dist ticks_on=2 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:40.662 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=2139 n=8
+2026-10-18 14:13:40.662 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:40.695 I [present] CAMFRAME tick=3780 src=pers_cam_1 valid=1 why=ok pos=(8.49,11.59,25.70) fwd=(-0.734,-0.480,0.481) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.55m
+2026-10-18 14:13:40.695 I [present] MOVE apex h=0.403m t=0.199s
+2026-10-18 14:13:40.812 I [present] MOVE state t=184.39 stance=stand frac=1.00 speed_sim=0.1in/s speed_world=0.03m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=6.7deg slope_er=4.0deg rays=12 er_delta=0.014m pushout=0
+2026-10-18 14:13:40.896 I [present] MOVE land fall_h=15.7in (0.40m) v_impact=158.7 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:41.063 I [present] MOVE state t=184.64 stance=stand frac=1.00 speed_sim=1.2in/s speed_world=3.01m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.0deg slope_er=8.2deg rays=16 er_delta=0.020m pushout=0
+2026-10-18 14:13:41.179 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:41.179 I [present] FP on eye=(5.80,9.84,27.38) cam_gate=ok er_cam_dist=0.18m eye_to_chest=0.43m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:41.179 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:41.179 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.762344, 0.0, 0.64717203] new=[0.0, 0.74753684, 0.0, 0.6642204] conv=-z
+2026-10-18 14:13:41.179 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.762344, 0.0, 0.64717203] new=[0.0, 0.74753684, 0.0, 0.6642204]
+2026-10-18 14:13:41.196 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=2171 n=12
+2026-10-18 14:13:41.196 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.95,9.73,27.38) new=(5.81,9.82,27.38) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:41.196 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:41.496 I [present] MOVE state t=185.08 stance=stand frac=1.00 speed_sim=65.4in/s speed_world=1.37m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.0deg slope_er=8.2deg rays=15 er_delta=0.002m pushout=0
+2026-10-18 14:13:41.563 I [present] MOVE jump y0=8.191 v0=176.6 land_factor=2.00
+2026-10-18 14:13:41.612 I [present] CAMFRAME tick=3835 src=pers_cam_1 valid=0 why=dist pos=(5.91,9.73,27.23) fwd=(-0.838,-0.534,-0.112) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.29m
+2026-10-18 14:13:41.612 I [present] MOVE mantle check ok=0 why=path_blocked rise=0.00m rays=4 n=2 pos=(5.78,8.45,26.97) fwd=(-0.99,-0.13)
+2026-10-18 14:13:41.679 I [present] MOVE mantle check ok=0 why=too_high rise=0.00m rays=5 n=2 pos=(5.80,8.61,27.03) fwd=(-0.99,-0.13)
+2026-10-18 14:13:41.695 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:41.730 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.69,10.26,27.00) new=(8.75,11.78,27.49) ok=1 (hook)
+2026-10-18 14:13:41.730 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.69,10.26,27.00) new=(8.75,11.78,27.49) ok=1 (hook)
+2026-10-18 14:13:41.730 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:41.730 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:41.730 I [present] FP yaw drift p50=0.00deg p95=0.34deg n=32 writes=33 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:41.730 I [present] FP off reason=cam_gate why=settling ticks_on=33 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:41.745 I [present] CAMFRAME tick=3843 src=pers_cam_1 valid=1 why=ok pos=(8.74,11.81,27.48) fwd=(-0.838,-0.534,-0.113) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.57m
+2026-10-18 14:13:41.746 I [present] MOVE state t=185.33 stance=stand frac=1.00 speed_sim=24.1in/s speed_world=0.53m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.0deg slope_er=4.0deg rays=10 er_delta=0.000m pushout=0
+2026-10-18 14:13:41.746 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=2204 n=8
+2026-10-18 14:13:41.779 I [present] MOVE apex h=0.495m t=0.221s
+2026-10-18 14:13:41.996 I [present] MOVE land fall_h=20.5in (0.52m) v_impact=181.3 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:41.996 I [present] MOVE state t=185.58 stance=stand frac=1.00 speed_sim=5.2in/s speed_world=0.22m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=15 er_delta=0.000m pushout=0
+2026-10-18 14:13:42.015 I [present] MOVE mantle check ok=0 why=no_face rise=0.00m rays=2 n=31 pos=(5.71,8.16,26.83) fwd=(-0.99,-0.15)
+2026-10-18 14:13:42.196 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,-0.07) ladder=-1
+2026-10-18 14:13:42.213 I [present] MOVE sprint start meter=4.00s stance_from=stand
+2026-10-18 14:13:42.213 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=13
+2026-10-18 14:13:42.231 I [t(8)] FP on eye=(5.58,9.75,26.71) cam_gate=ok er_cam_dist=0.22m eye_to_chest=0.41m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:42.231 I [t(8)] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:42.231 I [t(8)] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.6172318, 0.0, 0.7867814] new=[0.0, 0.6137336, 0.0, 0.78951323] conv=-z
+2026-10-18 14:13:42.231 I [t(8)] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.6172318, 0.0, 0.7867814] new=[0.0, 0.6137336, 0.0, 0.78951323]
+2026-10-18 14:13:42.247 I [present] MOVE state t=185.83 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.65m/s wish=285.0 sprint=1 meter=3.95s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=53.7deg rays=22 er_delta=0.000m pushout=0
+2026-10-18 14:13:42.247 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=2234 n=12
+2026-10-18 14:13:42.247 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.78,9.72,26.81) new=(5.58,9.75,26.70) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:42.247 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:42.463 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.01 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=5ms gds_kbd=5ms
+2026-10-18 14:13:42.463 I [present] MOVE sprint end why=jump dur=0.25s meter=3.75s
+2026-10-18 14:13:42.463 I [present] MOVE jump y0=8.145 v0=169.3 land_factor=2.18
+2026-10-18 14:13:42.463 I [present] VM state sprint_in->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=14
+2026-10-18 14:13:42.496 I [present] CAMFRAME tick=3888 src=pers_cam_1 valid=0 why=dist pos=(5.84,9.71,26.75) fwd=(-0.819,-0.534,-0.209) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.26m
+2026-10-18 14:13:42.496 I [present] MOVE mantle check ok=0 why=path_blocked rise=1.52m rays=13 n=2 pos=(5.73,8.33,26.69) fwd=(-0.97,-0.25)
+2026-10-18 14:13:42.496 I [present] MOVE state t=186.08 stance=stand frac=1.00 speed_sim=6.4in/s speed_world=0.08m/s wish=190.0 sprint=0 meter=3.80s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=53.7deg rays=26 er_delta=0.000m pushout=0
+2026-10-18 14:13:42.578 I [t(10)] MOVE mantle check ok=0 why=too_high rise=0.00m rays=5 n=2 pos=(5.70,8.54,26.69) fwd=(-0.97,-0.25)
+2026-10-18 14:13:42.613 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.60,10.16,26.66) new=(5.72,9.79,26.70) ok=1 (hook)
+2026-10-18 14:13:42.613 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.60,10.16,26.66) new=(5.72,9.79,26.70) ok=1 (hook)
+2026-10-18 14:13:42.613 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:42.613 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=cam_gate
+2026-10-18 14:13:42.613 I [present] FP yaw drift p50=0.00deg p95=0.51deg n=22 writes=23 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:42.613 I [present] FP off reason=cam_gate why=dist ticks_on=23 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:42.629 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=8 blanked_reads=2257 n=8
+2026-10-18 14:13:42.663 I [present] MOVE apex h=0.455m t=0.212s
+2026-10-18 14:13:42.712 I [present] CAMFRAME tick=3901 src=pers_cam_1 valid=1 why=ok pos=(8.64,11.61,27.51) fwd=(-0.840,-0.491,-0.232) det=+1.000 ortho_err=7.5e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.56m
+2026-10-18 14:13:42.746 I [present] MOVE state t=186.33 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=190.0 sprint=0 meter=4.00s ground=0 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=6 er_delta=0.000m pushout=0
+2026-10-18 14:13:42.763 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=15
+2026-10-18 14:13:42.879 I [present] MOVE land fall_h=17.8in (0.45m) v_impact=168.7 slow=0.67*0.65 dmg_pct=0.0 hp=476->476 max_hp=476 land_ms=0
+2026-10-18 14:13:42.980 I [present] PERF ticks_per_s=60.0 task_us p50=260 p95=343 max=500 fp_us avg=23 max=86 writes=15313 write_us_max=65.7 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=47 move_us_p95=86 move_us_max=221 rays_avg=18.5 rays_max=31 ray_us_max=166.4 move_writes=1200 mantle_checks=38 mantle_rays_max=13 mantle_budget_max=28 mantle_deferred=0 mantle_us_max=52 mantles=0 mantle_refusals=38 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:13:43.013 I [present] MOVE state t=186.59 stance=stand frac=1.00 speed_sim=4.0in/s speed_world=0.02m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=53.7deg rays=31 er_delta=0.000m pushout=0
+2026-10-18 14:13:43.196 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000040000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:43.196 I [present] FP on eye=(5.64,9.74,26.66) cam_gate=ok er_cam_dist=0.23m eye_to_chest=0.41m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:43.196 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:43.196 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.58391744, 0.0, 0.81181306] new=[0.0, 0.5838758, 0.0, 0.81184304] conv=-z
+2026-10-18 14:13:43.196 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.58391744, 0.0, 0.81181306] new=[0.0, 0.5838758, 0.0, 0.81184304]
+2026-10-18 14:13:43.213 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=2292 n=12
+2026-10-18 14:13:43.213 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.86,9.71,26.74) new=(5.64,9.74,26.66) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:43.213 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:43.263 I [t(7)] MOVE state t=186.84 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=53.7deg rays=1 er_delta=0.000m pushout=0
+2026-10-18 14:13:43.429 I [present] MENU idx=28 0->1
+2026-10-18 14:13:43.429 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-18 14:13:43.429 I [present] MOVE restore field=gravity_multiplier addr=0x7ff223db74cc skipped=changed (ER set 1.000; saved 1.000)
+2026-10-18 14:13:43.429 I [present] MOVE restore field=gravity_disabled addr=0x7ff223db74d5 skipped=changed (ER set 0; saved 0)
+2026-10-18 14:13:43.429 I [present] MOVE suspend reason=menu cursor ticks=2275 pos=(5.74,8.14,26.70)
+2026-10-18 14:13:43.429 I [present] MOVE keys blank=none wasd=none (fp) latched=8 blanked_reads=2305 n=0
+2026-10-18 14:13:43.429 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(5.64,9.74,26.66) new=(5.88,9.71,26.74) ok=1 (hook)
+2026-10-18 14:13:43.429 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.64,9.74,26.66) new=(5.88,9.71,26.74) ok=1 (hook)
+2026-10-18 14:13:43.429 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:13:43.429 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=menu
+2026-10-18 14:13:43.429 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=13 writes=14 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:13:43.429 I [present] FP off reason=menu  ticks_on=14 cam_writes=0 (re-arms when clear)
+2026-10-18 14:13:43.447 I [present] MENU idx=23 0->1
+2026-10-18 14:13:43.696 I [present] MOVE probe movement_limit=Some(0) anim_flags=0x11 mod_flags=0x40000 motion_mult=1.00 root_motion=(0.00,0.00,0.00) ladder=-1
+2026-10-18 14:13:44.960 I [t(8)] MENU idx=28 1->0
+2026-10-18 14:13:44.960 I [t(8)] MENU idx=37 0->1
+2026-10-18 14:13:44.977 I [present] MENU idx=7 1->0
+2026-10-18 14:13:45.193 I [present] MENU idx=23 1->0
+2026-10-18 14:13:47.465 I [boot] STATE mode=on mag=32/192 reloading=0 spread=2.00 menu=1 fg=1 chars=64 shots=0 hits=0 gds_mouse=9ms gds_kbd=9ms
+2026-10-18 14:13:47.727 I [t(7)] CAMFRAME tick=4200 src=pers_cam_1 valid=1 why=ok pos=(5.89,9.71,26.74) fwd=(-0.773,-0.580,-0.255) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.39m
+2026-10-18 14:13:47.994 I [present] PERF ticks_per_s=59.6 task_us p50=215 p95=270 max=447 fp_us avg=19 max=46 writes=15478 write_us_max=1.0 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=10 move_us_p95=48 move_us_max=172 rays_avg=13.7 rays_max=31 ray_us_max=10.4 move_writes=104 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=0 proj_live=0 spawns_world=0
+2026-10-18 14:13:48.377 I [present] MENU idx=37 1->0
+2026-10-18 14:13:48.377 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-18 14:13:48.394 I [present] MENU idx=7 0->1
+2026-10-18 14:13:48.528 I [present] MOVE resync why=handback d=0.00m chunk_d=0.00m
+2026-10-18 14:13:48.528 I [present] MOVE on pos=(5.74,8.14,26.70) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.50 fp=0
+2026-10-18 14:13:48.528 I [present] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x7ff223db74cc old=1.000 new=0.000 ok=1
+2026-10-18 14:13:48.528 I [present] MOVE write field=CSChrPhysicsModule.gravity_disabled(+0x1d5) addr=0x7ff223db74d5 old=0 new=1 ok=1
+2026-10-18 14:13:48.528 I [present] MOVE write field=CSChrPhysicsModule.position(+0x70) addr=0x7ff223db7370 old=(5.74,8.14,26.70) new=(5.74,8.14,26.70)
+2026-10-18 14:13:48.528 I [present] MOVE write field=CSChrPhysicsModule.chr_proxy_pos_update_requested(+0x91) addr=0x7ff223db7391 old=? new=1
+2026-10-18 14:13:48.528 I [present] MOVE er_delta p50=0.000 p95=0.066 max=0.077 applied=21 handbacks=2 budget_hits=93 gravity_reasserts=2306 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:13:48.528 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=0 blanked_reads=2305 n=8
+2026-10-18 14:13:48.862 I [present] FP on eye=(5.64,9.74,26.66) cam_gate=ok er_cam_dist=0.26m eye_to_chest=0.41m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:13:48.862 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:13:48.862 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, 0.5856459, 0.0, 0.81056696] new=[0.0, 0.5830937, 0.0, 0.81240493] conv=-z
+2026-10-18 14:13:48.862 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[0.0, 0.5856459, 0.0, 0.81056696] new=[0.0, 0.5830937, 0.0, 0.81240493]
+2026-10-18 14:13:48.864 I [present] VM gpu_ms p50=0.0164 p95=0.0187 max=0.0196 n=183
+2026-10-18 14:13:48.877 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=2326 n=12
+2026-10-18 14:13:48.877 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(5.88,9.71,26.74) new=(5.64,9.74,26.66) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:13:48.877 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:13:49.481 I [present] SPAWN try id=79112000 owner=0xffffffff16f00000 origin=(5.16,9.01,25.99) w=1 dir=(-0.475,-0.687,-0.550) (first spawn of the session)
+2026-10-18 14:13:49.481 I [present] SPAWN ok (first spawn)
+2026-10-18 14:13:49.481 I [present] SHOT n=1 mag=31/192 id=79112000 mw2=40 d=1.4m src=map spread=2.00 origin=(5.16,9.01,25.99) dir=(-0.475,-0.687,-0.550) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=2.00 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:49.481 I [present] VM state idle->fire clip=fire rate=1.481 ads=0.00 seq=16
+2026-10-18 14:13:49.497 I [present] BULLET id=79112000 pos=(5.16,9.01,25.99) origin=(5.16,9.01,25.99) speed=999.0 m/s alive=0.000s
+2026-10-18 14:13:49.530 I [present] IMPACT pos=(4.54,8.09,25.29) dist_from_origin=1.3m t=0.050s kind=hit
+2026-10-18 14:13:49.564 I [present] SHOT n=2 mag=30/192 id=79112000 mw2=40 d=1.4m src=map spread=2.56 origin=(5.16,9.00,25.99) dir=(-0.471,-0.687,-0.553) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=2.56 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:49.564 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=17
+2026-10-18 14:13:49.614 I [present] IMPACT pos=(4.56,8.09,25.28) dist_from_origin=1.3m t=0.050s kind=hit
+2026-10-18 14:13:49.648 I [present] SHOT n=3 mag=29/192 id=79112000 mw2=40 d=1.4m src=map spread=3.12 origin=(5.16,9.00,25.99) dir=(-0.435,-0.688,-0.580) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=3.12 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:49.648 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=18
+2026-10-18 14:13:49.698 I [present] IMPACT pos=(4.60,8.08,25.24) dist_from_origin=1.3m t=0.050s kind=hit
+2026-10-18 14:13:49.747 I [present] SHOT n=4 mag=28/192 id=79112000 mw2=40 d=1.6m src=map spread=3.48 origin=(5.02,9.08,26.04) dir=(-0.590,-0.590,-0.551) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=3.48 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:49.748 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=19
+2026-10-18 14:13:49.798 I [present] IMPACT pos=(4.10,8.12,25.18) dist_from_origin=1.6m t=0.050s kind=hit
+2026-10-18 14:13:49.831 I [present] SHOT n=5 mag=27/192 id=79112000 mw2=40 d=0.7m src=map spread=4.00 origin=(4.87,9.12,26.18) dir=(-0.707,-0.572,-0.416) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=4.00 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:49.831 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=20
+2026-10-18 14:13:49.847 I [present] MOVE state t=193.43 stance=stand frac=1.00 speed_sim=19.8in/s speed_world=0.00m/s wish=133.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=53.7deg rays=14 er_delta=0.000m pushout=0
+2026-10-18 14:13:49.881 I [present] IMPACT pos=(4.42,8.79,25.94) dist_from_origin=0.6m t=0.050s kind=hit
+2026-10-18 14:13:49.931 I [present] SHOT n=6 mag=26/192 id=79112000 mw2=40 d=0.6m src=map spread=5.00 origin=(4.91,9.16,26.32) dir=(-0.776,-0.524,-0.352) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=5.00 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:49.931 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=21
+2026-10-18 14:13:49.981 I [present] IMPACT pos=(4.49,8.91,26.15) dist_from_origin=0.5m t=0.050s kind=hit
+2026-10-18 14:13:50.014 I [present] SHOT n=7 mag=25/192 id=79112000 mw2=40 d=0.6m src=map spread=5.00 origin=(5.04,9.20,26.51) dir=(-0.778,-0.558,-0.290) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=5.00 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:50.014 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=22
+2026-10-18 14:13:50.064 I [present] IMPACT pos=(4.55,8.88,26.35) dist_from_origin=0.6m t=0.050s kind=hit
+2026-10-18 14:13:50.097 I [present] SHOT n=8 mag=24/192 id=79112000 mw2=40 d=0.7m src=map spread=5.00 origin=(5.30,9.21,26.62) dir=(-0.828,-0.492,-0.267) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=5.00 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:50.097 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=23
+2026-10-18 14:13:50.147 I [present] IMPACT pos=(4.75,8.85,26.44) dist_from_origin=0.7m t=0.050s kind=hit
+2026-10-18 14:13:50.197 I [present] SHOT n=9 mag=23/192 id=79112000 mw2=40 d=0.9m src=map spread=5.00 origin=(5.62,9.22,26.74) dir=(-0.838,-0.485,-0.250) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=5.00 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:50.197 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=24
+2026-10-18 14:13:50.248 I [present] IMPACT pos=(4.87,8.79,26.48) dist_from_origin=0.9m t=0.051s kind=hit
+2026-10-18 14:13:50.281 I [present] SHOT n=10 mag=22/192 id=79112000 mw2=40 d=1.1m src=map spread=5.00 origin=(5.83,9.22,26.73) dir=(-0.859,-0.462,-0.222) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=5.00 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:50.281 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=25
+2026-10-18 14:13:50.330 I [present] IMPACT pos=(4.92,8.73,26.47) dist_from_origin=1.1m t=0.050s kind=hit
+2026-10-18 14:13:50.381 I [present] SHOT n=11 mag=21/192 id=79112000 mw2=40 d=1.1m src=map spread=5.00 origin=(6.06,9.23,26.68) dir=(-0.821,-0.501,-0.273) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=5.00 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:50.381 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=26
+2026-10-18 14:13:50.430 I [present] IMPACT pos=(5.24,8.74,26.37) dist_from_origin=1.0m t=0.050s kind=hit
+2026-10-18 14:13:50.463 I [present] MOVE state t=194.04 stance=stand frac=1.00 speed_sim=0.2in/s speed_world=2.30m/s wish=133.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=93.9deg rays=12 er_delta=0.007m pushout=0
+2026-10-18 14:13:50.464 I [present] SHOT n=12 mag=20/192 id=79112000 mw2=40 d=1.1m src=map spread=4.60 origin=(6.21,9.25,26.63) dir=(-0.854,-0.441,-0.276) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=4.60 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:50.464 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=27
+2026-10-18 14:13:50.513 I [present] IMPACT pos=(5.37,8.81,26.33) dist_from_origin=1.0m t=0.050s kind=hit
+2026-10-18 14:13:50.547 I [present] SHOT n=13 mag=19/192 id=79112000 mw2=40 d=1.3m src=map spread=4.21 origin=(6.18,9.27,26.67) dir=(-0.885,-0.397,-0.242) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=4.21 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:50.547 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=28
+2026-10-18 14:13:50.597 I [present] IMPACT pos=(5.21,8.82,26.38) dist_from_origin=1.1m t=0.050s kind=hit
+2026-10-18 14:13:50.648 I [present] SHOT n=14 mag=18/192 id=79112000 mw2=40 d=1.7m src=map spread=4.68 origin=(6.16,9.28,26.80) dir=(-0.905,-0.419,-0.077) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=4.68 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:50.648 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=29
+2026-10-18 14:13:50.698 I [present] IMPACT pos=(4.62,8.58,26.68) dist_from_origin=1.7m t=0.050s kind=hit
+2026-10-18 14:13:50.713 I [present] MOVE state t=194.29 stance=stand frac=1.00 speed_sim=10.1in/s speed_world=0.63m/s wish=133.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=93.9deg rays=30 er_delta=0.007m pushout=0
+2026-10-18 14:13:50.730 I [present] SHOT n=15 mag=17/192 id=79112000 mw2=40 d=1.6m src=map spread=4.61 origin=(6.16,9.27,26.88) dir=(-0.923,-0.377,-0.073) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=4.61 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:50.730 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=30
+2026-10-18 14:13:50.781 I [present] IMPACT pos=(4.66,8.67,26.77) dist_from_origin=1.6m t=0.051s kind=hit
+2026-10-18 14:13:50.831 I [present] SHOT n=16 mag=16/192 id=79112000 mw2=40 d=1.6m src=map spread=4.23 origin=(6.15,9.28,26.86) dir=(-0.910,-0.413,-0.029) gun=ump45_mp pellets=1 spawned=1 dropped=0 bands=79112000x1 ads=0.00 cone=4.23 kick=(0.00,0.00) capped=0
+2026-10-18 14:13:50.831 I [present] VM state fire->fire clip=fire rate=1.481 ads=0.00 seq=31
+2026-10-18 14:13:50.880 I [present] IMPACT pos=(4.67,8.62,26.82) dist_from_origin=1.6m t=0.050s kind=hit
+2026-10-18 14:13:50.931 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=32
+2026-10-18 14:13:50.980 I [present] MOVE state t=194.56 stance=stand frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=93.9deg rays=2 er_delta=0.007m pushout=0
+2026-10-18 14:13:51.230 I [present] MOVE state t=194.81 stance=stand frac=1.00 speed_sim=105.8in/s speed_world=2.06m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=28 er_delta=0.008m pushout=0
+2026-10-18 14:13:51.514 I [present] MOVE state t=195.09 stance=stand frac=1.00 speed_sim=14.4in/s speed_world=4.83m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.0deg slope_er=0.0deg rays=30 er_delta=0.010m pushout=0
+2026-10-18 14:13:51.713 I [present] MOVE stance from=stand to=crouch dur_ms=200
+2026-10-18 14:13:51.764 I [present] MOVE state t=195.34 stance=crouch frac=0.34 speed_sim=0.0in/s speed_world=0.00m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=2 er_delta=0.011m pushout=0
+2026-10-18 14:13:51.898 I [present] MOVE stance from=crouch to=prone dur_ms=400
+2026-10-18 14:13:52.031 I [present] MOVE state t=195.61 stance=prone frac=0.33 speed_sim=0.0in/s speed_world=0.00m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=2 er_delta=0.011m pushout=0
+2026-10-18 14:13:52.281 I [present] MOVE state t=195.86 stance=prone frac=0.96 speed_sim=1.3in/s speed_world=0.02m/s wish=32.3 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=15 er_delta=0.011m pushout=0
+2026-10-18 14:13:52.468 I [boot] STATE mode=on mag=16/192 reloading=0 spread=1.50 menu=0 fg=1 chars=64 shots=16 hits=0 gds_mouse=8ms gds_kbd=8ms
+2026-10-18 14:13:52.514 I [present] MOVE state t=196.09 stance=prone frac=1.00 speed_sim=2.5in/s speed_world=0.05m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.6deg slope_er=0.0deg rays=28 er_delta=0.011m pushout=0
+2026-10-18 14:13:52.731 I [present] CAMFRAME tick=4500 src=pers_cam_1 valid=1 why=ok pos=(6.12,9.71,27.07) fwd=(-0.850,-0.227,0.476) det=+1.000 ortho_err=1.9e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=1.64m
+2026-10-18 14:13:52.781 I [present] MOVE state t=196.36 stance=prone frac=1.00 speed_sim=0.5in/s speed_world=0.28m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.0deg slope_er=8.2deg rays=12 er_delta=0.001m pushout=0
+2026-10-18 14:13:52.997 I [present] PERF ticks_per_s=60.0 task_us p50=249 p95=322 max=365 fp_us avg=22 max=120 writes=17601 write_us_max=5.9 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=33 move_us_p95=62 move_us_max=92 rays_avg=11.4 rays_max=31 ray_us_max=16.2 move_writes=1078 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=51 proj_live=0 spawns_world=32
+2026-10-18 14:13:53.164 I [present] MOVE state t=196.74 stance=prone frac=1.00 speed_sim=1.0in/s speed_world=0.01m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.0deg slope_er=8.2deg rays=16 er_delta=0.002m pushout=0
+2026-10-18 14:13:53.431 I [present] MOVE state t=197.01 stance=prone frac=1.00 speed_sim=0.6in/s speed_world=0.02m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=6.9deg slope_er=8.2deg rays=28 er_delta=0.002m pushout=0
+2026-10-18 14:13:53.531 I [present] MOVE er_delta p50=0.006 p95=0.012 max=0.042 applied=21 handbacks=2 budget_hits=96 gravity_reasserts=2606 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:13:53.697 I [present] MOVE state t=197.28 stance=prone frac=1.00 speed_sim=35.7in/s speed_world=0.77m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.0deg slope_er=8.2deg rays=30 er_delta=0.006m pushout=0
+2026-10-18 14:13:53.848 I [present] FPCAM tick=300 eye_to_er_cam=1.98m eye_to_chest=0.41m pitch=3.2deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=1840 hook_skips=0 hide_reasserts=0 chr_cam_writes=1840 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=1840 follow_skips=0 autorot_clears=1840 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-18 14:13:53.864 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=300 writes=301 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0)
+2026-10-18 14:13:53.948 I [present] MOVE state t=197.53 stance=prone frac=1.00 speed_sim=0.7in/s speed_world=0.07m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=22 er_delta=0.019m pushout=0
+2026-10-18 14:13:54.213 I [present] MOVE state t=197.79 stance=prone frac=1.00 speed_sim=28.3in/s speed_world=0.59m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=8.2deg slope_er=0.0deg rays=15 er_delta=0.017m pushout=0
+2026-10-18 14:13:54.514 I [present] MOVE state t=198.09 stance=prone frac=1.00 speed_sim=28.5in/s speed_world=0.69m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=28 er_delta=0.004m pushout=0
+2026-10-18 14:13:55.514 I [present] MOVE state t=199.09 stance=prone frac=1.00 speed_sim=28.5in/s speed_world=0.21m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=0.0deg rays=28 er_delta=0.013m pushout=0
+2026-10-18 14:13:56.515 I [present] MOVE state t=200.09 stance=prone frac=1.00 speed_sim=28.5in/s speed_world=0.72m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=28 er_delta=0.039m pushout=1
+2026-10-18 14:13:57.470 I [boot] STATE mode=on mag=16/192 reloading=0 spread=4.00 menu=0 fg=1 chars=64 shots=16 hits=0 gds_mouse=9ms gds_kbd=9ms
+2026-10-18 14:13:57.515 I [present] MOVE state t=201.09 stance=prone frac=1.00 speed_sim=27.2in/s speed_world=1.08m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=93.9deg rays=28 er_delta=0.052m pushout=1
+2026-10-18 14:13:57.731 I [present] CAMFRAME tick=4800 src=pers_cam_1 valid=1 why=ok pos=(5.67,9.13,27.45) fwd=(0.924,0.268,-0.274) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=2.00m
+2026-10-18 14:13:57.998 I [present] PERF ticks_per_s=60.0 task_us p50=253 p95=284 max=316 fp_us avg=23 max=70 writes=20001 write_us_max=12.1 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=42 move_us_p95=57 move_us_max=85 rays_avg=20.0 rays_max=30 ray_us_max=11.3 move_writes=1200 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=51 proj_live=0 spawns_world=32
+2026-10-18 14:13:58.082 I [present] MOVE sprint refused why=headroom meter=4.00s
+2026-10-18 14:13:58.399 I [present] MOVE stance blocked to=stand why=headroom
+2026-10-18 14:13:58.515 I [present] MOVE state t=202.09 stance=prone frac=1.00 speed_sim=28.5in/s speed_world=0.69m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=93.9deg rays=14 er_delta=0.022m pushout=1
+2026-10-18 14:13:58.531 I [present] MOVE er_delta p50=0.024 p95=0.049 max=0.052 applied=67 handbacks=2 budget_hits=96 gravity_reasserts=2906 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:13:58.849 I [present] FPCAM tick=600 eye_to_er_cam=1.78m eye_to_chest=0.41m pitch=4.4deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=2140 hook_skips=0 hide_reasserts=0 chr_cam_writes=2140 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=2140 follow_skips=0 autorot_clears=2140 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-18 14:13:58.865 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=300 writes=601 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0)
+2026-10-18 14:13:58.868 I [present] VM gpu_ms p50=0.0054 p95=0.0177 max=0.0198 n=600
+2026-10-18 14:13:59.082 I [present] MOVE state t=202.66 stance=prone frac=1.00 speed_sim=0.0in/s speed_world=0.78m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=93.9deg rays=10 er_delta=0.021m pushout=1
+2026-10-18 14:13:59.349 I [present] MOVE state t=202.93 stance=prone frac=1.00 speed_sim=19.9in/s speed_world=0.46m/s wish=20.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=93.9deg rays=28 er_delta=0.015m pushout=0
+2026-10-18 14:13:59.515 I [present] MOVE state t=203.09 stance=prone frac=1.00 speed_sim=20.0in/s speed_world=0.47m/s wish=20.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=93.9deg rays=14 er_delta=0.010m pushout=0
+2026-10-18 14:13:59.549 I [t(8)] MOVE stance blocked to=stand why=headroom
+2026-10-18 14:14:00.282 I [present] MOVE state t=203.86 stance=prone frac=1.00 speed_sim=0.0in/s speed_world=0.10m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=1 er_delta=0.040m pushout=1
+2026-10-18 14:14:00.516 I [present] MOVE state t=204.09 stance=prone frac=1.00 speed_sim=20.0in/s speed_world=0.49m/s wish=20.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=28 er_delta=0.040m pushout=1
+2026-10-18 14:14:01.216 I [present] MOVE stance blocked to=crouch why=headroom
+2026-10-18 14:14:01.516 I [present] MOVE state t=205.09 stance=prone frac=1.00 speed_sim=20.0in/s speed_world=0.50m/s wish=20.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=28 er_delta=0.042m pushout=1
+2026-10-18 14:14:01.767 I [present] MOVE state t=205.35 stance=prone frac=1.00 speed_sim=0.0in/s speed_world=0.00m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=2 er_delta=0.042m pushout=1
+2026-10-18 14:14:02.299 I [present] MOVE state t=205.88 stance=prone frac=1.00 speed_sim=20.0in/s speed_world=0.00m/s wish=20.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=28 er_delta=0.042m pushout=1
+2026-10-18 14:14:02.473 I [boot] STATE mode=on mag=16/192 reloading=0 spread=1.65 menu=0 fg=1 chars=64 shots=16 hits=0 gds_mouse=12ms gds_kbd=12ms
+2026-10-18 14:14:02.516 I [present] MOVE state t=206.09 stance=prone frac=1.00 speed_sim=20.0in/s speed_world=0.50m/s wish=20.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=28 er_delta=0.043m pushout=1
+2026-10-18 14:14:02.732 I [present] CAMFRAME tick=5100 src=pers_cam_1 valid=1 why=ok pos=(5.69,9.59,27.76) fwd=(0.854,0.081,-0.515) det=+1.000 ortho_err=5.6e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=1.64m
+2026-10-18 14:14:02.999 I [present] PERF ticks_per_s=60.0 task_us p50=250 p95=289 max=378 fp_us avg=24 max=152 writes=22401 write_us_max=1.8 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=38 move_us_p95=63 move_us_max=83 rays_avg=16.7 rays_max=29 ray_us_max=10.8 move_writes=1200 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=51 proj_live=0 spawns_world=32
+2026-10-18 14:14:03.515 I [present] MOVE state t=207.09 stance=prone frac=1.00 speed_sim=22.8in/s speed_world=0.05m/s wish=22.8 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=0.0deg rays=28 er_delta=0.020m pushout=0
+2026-10-18 14:14:03.532 I [present] MOVE er_delta p50=0.040 p95=0.043 max=0.043 applied=96 handbacks=2 budget_hits=96 gravity_reasserts=3206 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:14:03.849 I [present] FPCAM tick=900 eye_to_er_cam=1.29m eye_to_chest=0.41m pitch=2.6deg clamp=0 near=0.0501 world_fov=48.0deg writes=0 mode=hook hook_writes=2440 hook_skips=0 hide_reasserts=0 chr_cam_writes=2440 chr_cam_skips=0 chr_cam_persisted=0 follow_hook=1 follow_calls=2440 follow_skips=0 autorot_clears=2440 autorot=0 wall_clears=0 wall_recovery=? wall_addr=none
+2026-10-18 14:14:03.883 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=301 writes=902 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0)
+2026-10-18 14:14:03.982 I [present] MOVE state t=207.56 stance=prone frac=1.00 speed_sim=0.0in/s speed_world=0.06m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=0.0deg rays=10 er_delta=0.026m pushout=1
+2026-10-18 14:14:04.266 I [present] MOVE state t=207.84 stance=prone frac=1.00 speed_sim=27.6in/s speed_world=0.00m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=0.0deg rays=28 er_delta=0.006m pushout=0
+2026-10-18 14:14:04.515 I [present] MOVE state t=208.09 stance=prone frac=1.00 speed_sim=28.5in/s speed_world=0.57m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=0.0deg rays=28 er_delta=0.025m pushout=1
+2026-10-18 14:14:05.499 I [present] MOVE sprint refused why=headroom meter=4.00s
+2026-10-18 14:14:05.516 I [present] MOVE state t=209.09 stance=prone frac=1.00 speed_sim=28.6in/s speed_world=0.73m/s wish=28.5 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=7.2deg rays=14 er_delta=0.048m pushout=1
+2026-10-18 14:14:05.532 I [present] MOVE stance blocked to=stand why=headroom
+2026-10-18 14:14:06.016 I [present] MOVE sprint refused why=headroom meter=4.00s
+2026-10-18 14:14:06.465 I [present] MOVE state t=210.04 stance=prone frac=1.00 speed_sim=0.0in/s speed_world=0.03m/s wish=0.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/0 slope_rays=7.2deg slope_er=0.0deg rays=1 er_delta=0.020m pushout=1
+2026-10-18 14:14:06.718 I [present] MENU idx=28 0->1
+2026-10-18 14:14:06.718 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-18 14:14:06.718 I [present] MOVE restore field=gravity_multiplier addr=0x7ff223db74cc skipped=changed (ER set 1.000; saved 1.000)
+2026-10-18 14:14:06.718 I [present] MOVE restore field=gravity_disabled addr=0x7ff223db74d5 skipped=changed (ER set 0; saved 0)
+2026-10-18 14:14:06.718 I [present] MOVE suspend reason=menu cursor ticks=1091 pos=(6.87,8.12,26.73)
+2026-10-18 14:14:06.718 I [present] MOVE keys blank=none wasd=none (fp) latched=8 blanked_reads=3396 n=0
+2026-10-18 14:14:06.718 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(6.93,8.41,26.63) new=(6.53,9.68,27.16) ok=1 (hook)
+2026-10-18 14:14:06.718 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.93,8.41,26.63) new=(6.53,9.68,27.16) ok=1 (hook)
+2026-10-18 14:14:06.718 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:14:06.718 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=menu
+2026-10-18 14:14:06.718 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=169 writes=1071 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:14:06.718 I [present] FP off reason=menu  ticks_on=1071 cam_writes=0 (re-arms when clear)
+2026-10-18 14:14:06.734 I [present] MENU idx=23 0->1
+2026-10-18 14:14:07.475 I [boot] STATE mode=on mag=16/192 reloading=0 spread=2.00 menu=1 fg=1 chars=64 shots=16 hits=0 gds_mouse=13ms gds_kbd=13ms
+2026-10-18 14:14:07.734 I [present] CAMFRAME tick=5400 src=pers_cam_1 valid=1 why=ok pos=(6.57,9.69,27.25) fwd=(0.674,-0.214,-0.707) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.36m
+2026-10-18 14:14:08.000 I [present] PERF ticks_per_s=60.0 task_us p50=247 p95=285 max=374 fp_us avg=22 max=60 writes=24184 write_us_max=1.2 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=36 move_us_p95=50 move_us_max=101 rays_avg=17.1 rays_max=29 ray_us_max=68.8 move_writes=888 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=51 proj_live=0 spawns_world=32
+2026-10-18 14:14:09.880 I [present] MENU idx=28 1->0
+2026-10-18 14:14:09.880 I [present] MENU idx=37 0->1
+2026-10-18 14:14:09.896 I [present] MENU idx=7 1->0
+2026-10-18 14:14:10.097 I [present] MENU idx=23 1->0
+2026-10-18 14:14:12.478 I [boot] STATE mode=on mag=16/192 reloading=0 spread=2.00 menu=1 fg=1 chars=64 shots=16 hits=0 gds_mouse=2ms gds_kbd=2ms
+2026-10-18 14:14:12.746 I [present] CAMFRAME tick=5699 src=pers_cam_1 valid=1 why=ok pos=(6.14,9.72,27.51) fwd=(0.333,-0.214,-0.918) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.44m
+2026-10-18 14:14:13.013 I [present] PERF ticks_per_s=59.6 task_us p50=216 p95=280 max=404 fp_us avg=19 max=61 writes=24184 write_us_max=0.0 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=0 move_us_p50=10 move_us_p95=10 move_us_max=36 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=51 proj_live=0 spawns_world=32
+2026-10-18 14:14:15.964 I [present] MENU idx=37 1->0
+2026-10-18 14:14:15.964 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-18 14:14:15.981 I [present] MENU idx=7 0->1
+2026-10-18 14:14:16.116 I [present] MOVE resync why=handback d=0.00m chunk_d=0.00m
+2026-10-18 14:14:16.116 I [present] MOVE on pos=(6.23,8.21,27.23) vel0=0.7 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.50 fp=0
+2026-10-18 14:14:16.116 I [present] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x7ff223db74cc old=1.000 new=0.000 ok=1
+2026-10-18 14:14:16.116 I [present] MOVE write field=CSChrPhysicsModule.gravity_disabled(+0x1d5) addr=0x7ff223db74d5 old=0 new=1 ok=1
+2026-10-18 14:14:16.116 I [present] MOVE write field=CSChrPhysicsModule.position(+0x70) addr=0x7ff223db7370 old=(6.23,8.21,27.23) new=(6.23,8.19,27.23)
+2026-10-18 14:14:16.116 I [present] MOVE write field=CSChrPhysicsModule.chr_proxy_pos_update_requested(+0x91) addr=0x7ff223db7391 old=? new=1
+2026-10-18 14:14:16.116 I [present] MOVE er_delta p50=0.021 p95=0.047 max=0.048 applied=119 handbacks=3 budget_hits=96 gravity_reasserts=3397 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:14:16.116 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=0 blanked_reads=3398 n=8
+2026-10-18 14:14:16.448 I [present] FP on eye=(6.25,9.81,27.14) cam_gate=ok er_cam_dist=0.46m eye_to_chest=1.73m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:14:16.448 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:14:16.448 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, -0.32525957, 0.0, 0.94562477] new=[0.0, -0.11924537, 0.0, 0.9928648] conv=-z
+2026-10-18 14:14:16.448 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[-0.0, -0.32525957, -0.0, 0.94562477] new=[0.0, -0.11924537, 0.0, 0.9928648]
+2026-10-18 14:14:16.450 I [present] VM gpu_ms p50=0.0044 p95=0.0170 max=0.0188 n=471
+2026-10-18 14:14:16.466 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=3419 n=12
+2026-10-18 14:14:16.466 I [present] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.15,9.73,27.58) new=(6.25,8.48,27.14) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:14:16.466 I [present] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:14:17.480 I [boot] STATE mode=on mag=16/192 reloading=0 spread=1.50 menu=0 fg=1 chars=64 shots=16 hits=0 gds_mouse=16ms gds_kbd=16ms
+2026-10-18 14:14:17.752 I [present] CAMFRAME tick=5999 src=pers_cam_1 valid=1 why=ok pos=(6.14,9.73,27.61) fwd=(0.235,-0.214,-0.948) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=1.69m
+2026-10-18 14:14:17.768 I [present] MENU idx=28 0->1
+2026-10-18 14:14:17.768 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-18 14:14:17.769 I [present] MOVE restore field=gravity_multiplier addr=0x7ff223db74cc skipped=changed (ER set 1.000; saved 1.000)
+2026-10-18 14:14:17.769 I [present] MOVE restore field=gravity_disabled addr=0x7ff223db74d5 skipped=changed (ER set 0; saved 0)
+2026-10-18 14:14:17.769 I [present] MOVE suspend reason=menu cursor ticks=99 pos=(6.23,8.21,27.23)
+2026-10-18 14:14:17.769 I [present] MOVE keys blank=none wasd=none (fp) latched=8 blanked_reads=3497 n=0
+2026-10-18 14:14:17.769 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(6.25,8.48,27.14) new=(6.14,9.73,27.61) ok=1 (hook)
+2026-10-18 14:14:17.769 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.25,8.48,27.14) new=(6.14,9.73,27.61) ok=1 (hook)
+2026-10-18 14:14:17.769 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:14:17.769 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=menu
+2026-10-18 14:14:17.769 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=78 writes=79 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:14:17.769 I [present] FP off reason=menu  ticks_on=79 cam_writes=0 (re-arms when clear)
+2026-10-18 14:14:17.786 I [present] MENU idx=23 0->1
+2026-10-18 14:14:18.019 I [present] PERF ticks_per_s=59.9 task_us p50=220 p95=280 max=405 fp_us avg=20 max=66 writes=24903 write_us_max=1.4 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=10 move_us_p95=28 move_us_max=89 rays_avg=1.5 rays_max=5 ray_us_max=8.7 move_writes=398 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=51 proj_live=0 spawns_world=32
+2026-10-18 14:14:22.483 I [boot] STATE mode=on mag=16/192 reloading=0 spread=2.00 menu=1 fg=1 chars=64 shots=16 hits=0 gds_mouse=2ms gds_kbd=2ms
+2026-10-18 14:14:22.519 I [present] MENU idx=28 1->0
+2026-10-18 14:14:22.519 I [present] MENU idx=33 0->1
+2026-10-18 14:14:22.535 I [present] MENU idx=7 1->0
+2026-10-18 14:14:22.753 I [present] CAMFRAME tick=6298 src=pers_cam_1 valid=1 why=ok pos=(6.15,9.72,27.52) fwd=(0.228,-0.214,-0.950) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.43m
+2026-10-18 14:14:22.753 I [present] MENU idx=23 1->0
+2026-10-18 14:14:22.834 I [present] MENU idx=65 0->1
+2026-10-18 14:14:23.035 I [present] PERF ticks_per_s=59.8 task_us p50=215 p95=236 max=357 fp_us avg=18 max=39 writes=24903 write_us_max=0.0 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=0 move_us_p50=10 move_us_p95=10 move_us_max=11 rays_avg=0.0 rays_max=0 ray_us_max=0.0 move_writes=0 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=51 proj_live=0 spawns_world=32
+2026-10-18 14:14:24.670 I [present] MENU idx=65 1->0
+2026-10-18 14:14:24.836 I [present] MENU idx=33 1->0
+2026-10-18 14:14:24.836 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-18 14:14:24.853 I [present] MENU idx=7 0->1
+2026-10-18 14:14:24.993 I [present] MOVE resync why=handback d=0.00m chunk_d=0.00m
+2026-10-18 14:14:24.993 I [present] MOVE on pos=(6.22,8.21,27.24) vel0=0.1 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.50 fp=0
+2026-10-18 14:14:24.993 I [present] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x7ff223db74cc old=1.000 new=0.000 ok=1
+2026-10-18 14:14:24.993 I [present] MOVE write field=CSChrPhysicsModule.gravity_disabled(+0x1d5) addr=0x7ff223db74d5 old=0 new=1 ok=1
+2026-10-18 14:14:24.993 I [present] MOVE write field=CSChrPhysicsModule.position(+0x70) addr=0x7ff223db7370 old=(6.22,8.21,27.24) new=(6.22,8.19,27.24)
+2026-10-18 14:14:24.993 I [present] MOVE write field=CSChrPhysicsModule.chr_proxy_pos_update_requested(+0x91) addr=0x7ff223db7391 old=? new=1
+2026-10-18 14:14:24.993 I [present] MOVE er_delta p50=0.000 p95=0.000 max=0.000 applied=119 handbacks=4 budget_hits=96 gravity_reasserts=3496 ground_disagree_streaks=0 ground_held_ticks=0
+2026-10-18 14:14:24.993 I [present] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=none (tp) latched=0 blanked_reads=3497 n=8
+2026-10-18 14:14:25.326 I [present] FP on eye=(6.24,9.81,27.14) cam_gate=ok er_cam_dist=0.46m eye_to_chest=1.73m hp=476 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(1000) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=hook hide=render_flag player=0x7ff210954000
+2026-10-18 14:14:25.326 I [present] FP hide write player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff2109541c5 old=0x08 new=0x00
+2026-10-18 14:14:25.326 I [present] FP yaw write field=CSChrPhysicsModule.orientation addr=0x7ff223db7350 old=[0.0, -0.12097793, 0.0, 0.9926552] new=[0.0, -0.114380136, 0.0, 0.99343705] conv=-z
+2026-10-18 14:14:25.326 I [present] FP yaw write field=CSChrPhysicsModule.interpolated_orientation addr=0x7ff223db7360 old=[-0.0, -0.12097793, -0.0, 0.9926552] new=[0.0, -0.114380136, 0.0, 0.99343705]
+2026-10-18 14:14:25.343 I [t(7)] MOVE keys blank=Q,LCTRL,F,LSHIFT,X,C,LALT,SPACE wasd=W,A,S,D (fp) latched=8 blanked_reads=3518 n=12
+2026-10-18 14:14:25.343 I [t(7)] FPCAM write field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.14,9.73,27.58) new=(6.24,8.49,27.14) (camera-step hook; erfps2: eye in both cameras)
+2026-10-18 14:14:25.343 I [t(7)] FPCAM write field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=1 new=0 (follow-cam hook; restored on handback)
+2026-10-18 14:14:25.526 I [present] MENU idx=28 0->1
+2026-10-18 14:14:25.526 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-18 14:14:25.526 I [present] MOVE restore field=gravity_multiplier addr=0x7ff223db74cc skipped=changed (ER set 1.000; saved 1.000)
+2026-10-18 14:14:25.526 I [present] MOVE restore field=gravity_disabled addr=0x7ff223db74d5 skipped=changed (ER set 0; saved 0)
+2026-10-18 14:14:25.526 I [present] MOVE suspend reason=menu cursor ticks=32 pos=(6.22,8.21,27.24)
+2026-10-18 14:14:25.526 I [present] MOVE keys blank=none wasd=none (fp) latched=8 blanked_reads=3529 n=0
+2026-10-18 14:14:25.526 I [present] FP restore field=CSCamera.pers_cam_1+0x40 old=(6.24,8.49,27.14) new=(6.13,9.73,27.60) ok=1 (hook)
+2026-10-18 14:14:25.526 I [present] FP restore field=ChrCam.pers_cam+0x40 addr=0x7ff20dff7840 old=(6.24,8.49,27.14) new=(6.13,9.73,27.60) ok=1 (hook)
+2026-10-18 14:14:25.526 I [present] FP restore field=ChrExFollowCam.camera_auto_rotation(+0x240) addr=0x7ff20dbb2a40 old=0 new=1 ok=1 (hook)
+2026-10-18 14:14:25.526 I [present] FP hide restore player=0x7ff210954000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=menu
+2026-10-18 14:14:25.526 I [present] FP yaw drift p50=0.00deg p95=0.00deg n=11 writes=12 paused=0 (lateral=0 dodge=0 turn_lock=0 lockon=0 throw=0 off_heading=0) (episode end; release: facing not written back)
+2026-10-18 14:14:25.526 I [present] FP off reason=menu  ticks_on=12 cam_writes=0 (re-arms when clear)
+2026-10-18 14:14:25.543 I [present] MENU idx=23 0->1
+2026-10-18 14:14:27.485 I [boot] STATE mode=on mag=16/192 reloading=0 spread=2.00 menu=1 fg=1 chars=64 shots=16 hits=0 gds_mouse=14ms gds_kbd=14ms
+2026-10-18 14:14:27.759 I [present] CAMFRAME tick=6598 src=pers_cam_1 valid=1 why=ok pos=(6.15,9.72,27.52) fwd=(0.218,-0.215,-0.952) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=0.43m
+2026-10-18 14:14:28.042 I [present] PERF ticks_per_s=59.9 task_us p50=216 p95=250 max=381 fp_us avg=19 max=77 writes=25086 write_us_max=1.1 slow_writes=0 page_checks=5 page_check_ms_max=0.00 page_check_ms_total=85.4 cached_pages=5 ac130=0 move=1 move_us_p50=10 move_us_p95=27 move_us_max=102 rays_avg=1.6 rays_max=6 ray_us_max=9.2 move_writes=130 mantle_checks=0 mantle_rays_max=0 mantle_budget_max=0 mantle_deferred=0 mantle_us_max=0 mantles=0 mantle_refusals=0 ladder_trips=0 kick_stale=0 viewfx_writes=51 proj_live=0 spawns_world=32
+2026-10-18 14:14:28.456 I [present] MENU idx=28 1->0
+2026-10-18 14:14:28.456 I [present] MENU idx=37 0->1
+2026-10-18 14:14:28.474 I [present] MENU idx=7 1->0
+2026-10-18 14:14:28.691 I [present] MENU idx=23 1->0

@@ -1,0 +1,8 @@
+﻿# Static CRT: mw2er.dll must not import VCRUNTIME140 / api-ms-win-crt-* (checked by m2_static_checks.py pe).
+# The release builds (build.ps1) also remap the cargo registry and repository paths so no local path is baked into the
+# binaries; a plain `cargo build` works without them.
+[target.x86_64-pc-windows-msvc]
+rustflags = [
+    "-C", "target-feature=+crt-static",
+    "-C", "link-arg=/PDBALTPATH:%_PDB%",
+]

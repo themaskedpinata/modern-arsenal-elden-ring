@@ -1,0 +1,120 @@
+diff --git a/crates/eldenring/src/cs/bullet_manager.rs b/crates/eldenring/src/cs/bullet_manager.rs
+index 72a1d32..a38fa65 100644
+--- a/crates/eldenring/src/cs/bullet_manager.rs
++++ b/crates/eldenring/src/cs/bullet_manager.rs
+@@ -169,15 +169,15 @@ pub struct BufferAndAllocLinkedList<T, const BUFFER_SIZE: usize, const MAX_ALLOC
+ 
+ #[repr(C)]
+ pub struct BulletSpawnData {
+-    owner: FieldInsHandle,
+-    behavior_id: i32,
+-    magic_id: i32,
++    pub owner: FieldInsHandle,
++    pub behavior_id: i32,
++    pub magic_id: i32,
+     unk10: u32,
+-    bullet_id: i32,
+-    goods_id: i32,
+-    dummy_poly_id: i32,
++    pub bullet_id: i32,
++    pub goods_id: i32,
++    pub dummy_poly_id: i32,
+     /// Replaces owner's target if not -1
+-    target: FieldInsHandle,
++    pub target: FieldInsHandle,
+     unk28: u32,
+     unk2c: u32,
+     unk30: F32Vector4,
+@@ -185,11 +185,11 @@ pub struct BulletSpawnData {
+     unk44: u32,
+     pad48: [u8; 8],
+     /// Forward vector, only applies if angle vec is 0?
+-    acceleration_angle: F32Vector4,
++    pub acceleration_angle: F32Vector4,
+     unk60: F32Vector4,
+     /// Forward vector
+-    angle: F32Vector4,
+-    position: F32Vector4,
++    pub angle: F32Vector4,
++    pub position: F32Vector4,
+     unk90: u64,
+     unk98: u64,
+     unka0: u64,
+@@ -199,12 +199,39 @@ pub struct BulletSpawnData {
+     pad101: [u8; 15],
+ }
+ 
++impl BulletSpawnData {
++    /// Spawn data for one bullet: `owner` fires `bullet_id` from `position` along the forward
++    /// vector `angle`. Behavior/magic/goods/dummy-poly ids are -1, the target override is the
++    /// empty handle and every unknown field is zero.
++    pub fn new(
++        owner: FieldInsHandle,
++        bullet_id: i32,
++        position: F32Vector4,
++        angle: F32Vector4,
++    ) -> Self {
++        // SAFETY: every field is plain old data (integers, floats, byte arrays and bitfield
++        // newtypes over integers), so the all-zero bit pattern is a valid value.
++        let mut d: Self = unsafe { core::mem::zeroed() };
++        d.owner = owner;
++        d.bullet_id = bullet_id;
++        d.behavior_id = -1;
++        d.magic_id = -1;
++        d.goods_id = -1;
++        d.dummy_poly_id = -1;
++        d.target = FieldInsHandle::none();
++        d.position = position;
++        d.angle = angle;
++        d
++    }
++}
++
+ #[cfg(test)]
+ mod test {
+-    use crate::cs::CSBulletManager;
++    use crate::cs::{BulletSpawnData, CSBulletManager};
+ 
+     #[test]
+     fn proper_sizes() {
+         assert_eq!(0x280, size_of::<CSBulletManager>());
++        assert_eq!(0x110, size_of::<BulletSpawnData>());
+     }
+ }
+diff --git a/crates/eldenring/src/cs/field_ins.rs b/crates/eldenring/src/cs/field_ins.rs
+index 2575dfa..9db4846 100644
+--- a/crates/eldenring/src/cs/field_ins.rs
++++ b/crates/eldenring/src/cs/field_ins.rs
+@@ -75,6 +75,14 @@ pub struct FieldInsHandle {
+ }
+ 
+ impl FieldInsHandle {
++    /// The empty handle (selector `u32::MAX`, block `-1`), as the game uses for "no FieldIns".
++    pub const fn none() -> Self {
++        Self {
++            selector: FieldInsSelector(u32::MAX),
++            block_id: BlockId::none(),
++        }
++    }
++
+     pub fn is_empty(&self) -> bool {
+         self.selector.0 == u32::MAX
+     }
+@@ -124,3 +132,17 @@ pub trait FieldInsBaseVmt {
+     /// Obfuscated beyond recognition
+     fn unk38(&self);
+ }
++
++#[cfg(test)]
++mod test {
++    use super::FieldInsHandle;
++
++    #[test]
++    fn none_is_empty_and_all_ones() {
++        let none = FieldInsHandle::none();
++        assert!(none.is_empty());
++        assert_eq!(8, size_of::<FieldInsHandle>());
++        let raw = unsafe { std::mem::transmute::<FieldInsHandle, u64>(none) };
++        assert_eq!(u64::MAX, raw);
++    }
++}

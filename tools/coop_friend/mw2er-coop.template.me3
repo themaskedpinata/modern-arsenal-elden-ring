@@ -1,0 +1,24 @@
+profileVersion = "v1"
+# MW2 in Elden Ring - co-op profile (written by setup.ps1 from profiles\mw2er-coop.template.me3).
+# Launch ONLY with: me3 launch -g eldenring -p <this file> --no-mem-patch   (or launch_coop.ps1)
+# --no-mem-patch: me3's allocator patch crashes Seamless Co-op 2.0.1 (~8 s after start).
+# Seamless names the co-op save itself (ersc_settings.ini save_file_extension = mw2co2 -> ER0000.mw2co2);
+# this savefile is only a safety net if Seamless fails to start, keeping the game off your normal ER0000.sl2.
+savefile = "ER0000.mw2coop.sl2"
+# start_online and disable_arxan are deliberately absent: official matchmaking stays blocked; Seamless uses Steam P2P.
+
+[[supports]]
+game = "eldenring"
+
+# Seamless first, then the MW2 mod.
+[[natives]]
+path = '@@ERSC@@'
+
+[[natives]]
+path = '@@DLL@@'
+
+[[packages]]
+enabled = true
+path = '@@PACKAGE@@'
+load_after = []
+load_before = []

@@ -1,0 +1,12 @@
+[package]
+name = "sndconv"
+description = "MW2 in Elden Ring (M4): offline MP3 -> PCM16 WAV decoder for the AC-130 ambient loop. Never linked into mw2er.dll."
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[dependencies]
+# docs/M4_DESIGN.md section 10: symphonia is used ONLY by this offline tool (check_m4 wiring check 11 and the DLL
+# string check assert it never reaches mw2er.dll). Exact version from crates.io, MP3 support only.
+symphonia = { version = "=0.5.5", default-features = false, features = ["mp3"] }

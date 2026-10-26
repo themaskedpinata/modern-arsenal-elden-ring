@@ -1,0 +1,77 @@
+2026-10-18 12:00:00.000 I [boot] BOOT mw2er 0.3.0
+2026-10-18 12:00:00.000 I [task] BOOT mw2er 0.3.0 dll=D:\Mods\MW2inER\build\natives\mw2er.dll
+2026-10-18 12:00:00.100 I [task] ARSENAL data n=34 ok=34 disabled=0
+2026-10-18 12:00:00.200 I [task] NUKE cfg enabled=1 always_available=0 cost=25 radius_m=200 spare_friendly=1 spare_teams=[0, 2, 8, 10, 12, 20, 26, 28, 30, 47] dry_run=0 kill_mode=speffect kills_per_tick=16 retry_s=[0.5, 1.5, 3.0, 5.0] player_dies=1 player_delay_s=3 flash=1 shake=0.6x10s horizon=3 key=4 data=1
+2026-10-18 12:00:01.000 I [task] TASK world entered (player handle 0x1 owner_check=ok)
+2026-10-18 12:00:01.100 I [task] SPAWN pool bullets=0/128 sfx=0/192 sfx_empty_spot=1 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=0
+2026-10-18 12:00:01.100 I [task] SPAWN emitters live=3 ours=0 persistent=0 max=3 cap=256
+2026-10-18 12:00:01.200 I [task] NUKE rows ok speffect=79000960 endurance=0 hp_rate=100 no_dead=0 bullet=79000961 horizon=79000962 sfx=524028
+2026-10-18 12:00:03.000 I [task] NUKE streak n=1/25 src=gun
+2026-10-18 12:00:04.000 I [task] NUKE streak n=2/25 src=gun
+2026-10-18 12:00:05.000 I [task] NUKE streak n=3/25 src=gun
+2026-10-18 12:00:06.000 I [task] NUKE streak n=4/25 src=gun
+2026-10-18 12:00:07.000 I [task] NUKE streak n=5/25 src=launcher
+2026-10-18 12:00:08.000 I [task] NUKE streak n=6/25 src=gun
+2026-10-18 12:00:09.000 I [task] NUKE streak n=7/25 src=ac130
+2026-10-18 12:00:10.000 I [task] NUKE streak n=8/25 src=gun
+2026-10-18 12:00:11.000 I [task] NUKE streak n=9/25 src=gun
+2026-10-18 12:00:12.000 I [task] NUKE streak n=10/25 src=launcher
+2026-10-18 12:00:13.000 I [task] NUKE streak n=11/25 src=gun
+2026-10-18 12:00:14.000 I [task] NUKE streak n=12/25 src=gun
+2026-10-18 12:00:15.000 I [task] NUKE streak n=13/25 src=gun
+2026-10-18 12:00:16.000 I [task] NUKE streak n=14/25 src=ac130
+2026-10-18 12:00:17.000 I [task] NUKE streak n=15/25 src=launcher
+2026-10-18 12:00:18.000 I [task] NUKE streak n=16/25 src=gun
+2026-10-18 12:00:19.000 I [task] NUKE streak n=17/25 src=gun
+2026-10-18 12:00:20.000 I [task] NUKE streak n=18/25 src=gun
+2026-10-18 12:00:21.000 I [task] NUKE streak n=19/25 src=gun
+2026-10-18 12:00:22.000 I [task] NUKE streak n=20/25 src=launcher
+2026-10-18 12:00:23.000 I [task] NUKE streak n=21/25 src=ac130
+2026-10-18 12:00:24.000 I [task] NUKE streak n=22/25 src=gun
+2026-10-18 12:00:25.000 I [task] NUKE streak n=23/25 src=gun
+2026-10-18 12:00:26.000 I [task] NUKE streak n=24/25 src=gun
+2026-10-18 12:00:27.000 I [task] NUKE streak n=25/25 src=launcher
+2026-10-18 12:00:27.000 I [task] NUKE earned streak=25 life=0
+2026-10-18 12:00:27.500 I [task] SPAWN pool bullets=0/128 sfx=0/192 sfx_empty_spot=1 unk40=0/28 counter=0 live_ours=1 live_all=1 spawns_world=500
+2026-10-18 12:00:27.500 I [task] SPAWN emitters live=12 ours=2 persistent=0 max=31 cap=256
+2026-10-18 12:00:28.000 I [task] RELOAD start empty=1 dur=3 mag=0 gun=stinger_mp
+2026-10-18 12:00:29.000 I [task] SWITCH start from=stinger_mp to=rpg_mp via=wheel drop_s=0.70
+2026-10-18 12:00:29.000 I [task] RELOAD cancelled (switch)
+2026-10-18 12:00:30.000 I [task] RECHAMBER start gun=model1887_mp t=1.000 ads=0
+2026-10-18 12:00:30.500 I [task] RECHAMBER cancelled gun=model1887_mp reason=switch
+2026-10-18 12:00:31.000 I [task] AC130 EXPLODE gun=105 ids=79000201+79000202 pos=(1.00,2.00,3.00) dist_m=135.9 late_ms=0
+2026-10-18 12:00:31.200 I [task] HIT chr=c4311 hp=219->0 dmg=219 src=ac130 gun=105 tier=core kill=1
+2026-10-18 12:00:31.200 I [task] AC130 KILL chr=c4311 gun=105
+2026-10-18 12:00:37.000 I [task] NUKE activate test=0 streak=25 life=0
+2026-10-18 12:00:37.000 I [task] NUKE countdown t=10.0
+2026-10-18 12:00:43.700 I [task] NUKE incoming t=6.70
+2026-10-18 12:00:47.000 I [task] NUKE detonate t=10.00 test=0
+2026-10-18 12:00:47.000 I [task] NUKE horizon spawned=1 k=0 at=(1.0,30.0,127.0) dist_m=127
+2026-10-18 12:00:47.150 I [task] NUKE horizon spawned=2 k=1 at=(1.0,30.0,127.0) dist_m=127
+2026-10-18 12:00:47.300 I [task] NUKE horizon skipped k=2 why=emitters live=170
+2026-10-18 12:00:48.500 I [task] NUKE census pass=0 by_distance=40 chrsets=55 union=60 in_radius=12 kill=4 deferred=1 skipped=7 other_frame=2 by_team={6:3,26:1} radius_m=200 spare_friendly=1 census_us=1800
+2026-10-18 12:00:48.500 I [task] NUKE skip reason=team n=2
+2026-10-18 12:00:48.500 I [task] NUKE skip reason=set n=2
+2026-10-18 12:00:48.500 I [task] NUKE skip reason=other_frame n=2 (another havok frame: distance unknown, not killed)
+2026-10-18 12:00:48.500 I [task] NUKE kill armed pass=0 (dry_run=0, teams plausible)
+2026-10-18 12:00:48.500 I [task] NUKE kill deferred handle=0x20 npc=21000000 chr=c2120 team=33 why=invincible pass=0
+2026-10-18 12:00:48.500 I [task] NUKE kill apply handle=0xa npc=43110000 chr=c4311 team=6 hp=219 max_hp=219 via=speffect try=1 t_ms=0
+2026-10-18 12:00:48.550 I [task] NUKE kill handle=0xa npc=43110000 chr=c4311 team=6 hp=219->0 max_hp=219 t_ms=50
+2026-10-18 12:00:48.500 I [task] NUKE kill apply handle=0xb npc=43110000 chr=c4311 team=6 hp=219 max_hp=219 via=speffect try=1 t_ms=0
+2026-10-18 12:00:48.550 I [task] NUKE kill handle=0xb npc=43110000 chr=c4311 team=6 hp=219->0 max_hp=219 t_ms=50
+2026-10-18 12:00:48.500 I [task] NUKE kill apply handle=0xc npc=43110000 chr=c4311 team=6 hp=219 max_hp=219 via=speffect try=1 t_ms=0
+2026-10-18 12:00:48.550 I [task] NUKE kill handle=0xc npc=43110000 chr=c4311 team=6 hp=219->0 max_hp=219 t_ms=50
+2026-10-18 12:00:48.500 I [task] NUKE kill apply handle=0xd npc=43110000 chr=c4311 team=6 hp=219 max_hp=219 via=speffect try=1 t_ms=0
+2026-10-18 12:00:48.550 I [task] NUKE kill handle=0xd npc=43110000 chr=c4311 team=6 hp=219->0 max_hp=219 t_ms=50
+2026-10-18 12:00:50.500 I [task] NUKE player prep fp=off move=off fire=off protect_present=0
+2026-10-18 12:00:51.500 I [task] NUKE player lethal ok=1 try=1 id=79000960 protect_present=0
+2026-10-18 12:00:52.400 I [task] NUKE player dead t_ms=900
+2026-10-18 12:00:53.500 I [task] NUKE survivor handle=0x20 npc=21000000 chr=c2120 team=33 hp=1 max_hp=9999 applied=0 why=invincible
+2026-10-18 12:00:53.600 I [task] NUKE kills total=5 killed=4 survivors=1 skipped=7 in_radius=12 would_apply=0 armed=1 other_frame=2 census_us_max=1800 horizon=2/3 t_ms=5100
+2026-10-18 12:00:54.000 I [task] TASK world left (loading / title)
+2026-10-18 12:00:54.000 I [task] NUKE end reason=loading t=17.0s
+2026-10-18 12:00:54.500 I [task] NUKE post gpu_ms=0.0700 (max of the sequence) frames=300
+2026-10-18 12:01:17.000 I [task] NUKE activate test=0 streak=0 life=1
+2026-10-18 12:01:17.000 I [task] NUKE countdown t=10.0
+2026-10-18 12:01:20.000 I [task] NUKE cancel reason=loading refund=1
+2026-10-18 12:01:22.000 I [task] MODE toggle blocked reason=nuke

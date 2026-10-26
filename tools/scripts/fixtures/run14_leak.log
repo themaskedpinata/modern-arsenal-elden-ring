@@ -1,0 +1,1312 @@
+2026-10-17 23:18:28.877 I [boot] BOOT mw2er 0.2.0 dll=D:\Mods\MW2inER\build\natives\mw2er.dll size=5749760 mtime=2026-10-18 06:01:48Z built=2026-10-18 06:01:25Z pid=21888 root=D:\Mods\MW2inER root_valid=true log_ok=true
+2026-10-17 23:18:28.878 I [boot] VERSION PASS file=2.7.1.0 product=2.7.1.0 lang=0x0409 timedatestamp=0x6a96b418 sizeofimage=0x5e0da00
+2026-10-17 23:18:28.894 I [boot] ARSENAL data n=34 ok=34 disabled=0 sound_aliases=196 sound_files=224 rows mode=flat_inv s=1.225 d_ref=85 ms=7
+2026-10-17 23:18:29.707 I [boot] BOOTGATE waiting for the game window, then reflection names [CSTask,WorldChrMan,CSBulletManager,CSCamera,CSMenuMan,CSHavokMan,SoloParamRepository]
+2026-10-17 23:18:29.958 I [boot] BOOTGATE window hwnd=0x343040 after 251 ms
+2026-10-17 23:18:29.968 I [boot] BOOTGATE PASS after 9 ms names=[CSTask,WorldChrMan,CSBulletManager,CSCamera,CSMenuMan,CSHavokMan,SoloParamRepository] optional=[CSMouseMan:yes,FD4PadManager:yes] scanned=223
+2026-10-17 23:18:29.978 I [boot] ARSENAL cfg guns=34 start=ump45_mp reserve_source=Max flight=dll lock=1 pellet_bands=shot wheel=1 keys=1/2 rechamber_mode=after_fire both_barrels=0
+2026-10-17 23:18:29.978 I [boot] TASK registered group=ChrIns_PostPhysics
+2026-10-17 23:18:29.993 I [task] TASK first tick on the game's main thread
+2026-10-17 23:18:29.993 I [task] AC130 cfg enabled=1 key=F7 cooldown_s=120 cooldown=0 duration_s=40 R=116.0 H=107.0 period_s=70 arc=35 base=center fov=45/20/5(v=34.5/15.1/3.75deg) vision=sp tiers=2 hook=0 thermal=1 data=1
+2026-10-17 23:18:30.098 I [task] AC130 cfg enabled=1 key=F7 cooldown_s=120 cooldown=0 duration_s=40 R=116.0 H=107.0 period_s=70 arc=35 base=center fov=45/20/5(v=34.5/15.1/3.75deg) vision=sp tiers=2 hook=1 thermal=1 data=1
+2026-10-17 23:18:30.143 I [boot] BOOT DONE in 1267 ms (hud=1 input=1 audio_thread=1 data=1 task=1)
+2026-10-17 23:18:30.339 I [thload] AC130 tracers ready ms=2 max_instances=64 fmt=R10G10B10A2_UNORM frames=3 (shaders d0eeb8d18d6f..)
+2026-10-17 23:18:30.460 I [thload] AC130 thermal ready ms=120 overlays=4 bytes=1048576 fmt=R10G10B10A2_UNORM 3840x2160 ts_freq=1000000000 (shaders 39e0dbc9820d..)
+2026-10-17 23:18:32.942 I [vmload] ARSENAL scope overlay ready srv=60 file=D:\Mods\MW2inER\converted\guns\_overlay\scope_overlay_m40a3.vmtex
+2026-10-17 23:18:32.942 I [vmload] ARSENAL loaded n=34 ok=34 ms=2604 vram_mb=61.5 gun_bytes=63468032 textures_shared=60 uploads=34 fmt=R10G10B10A2_UNORM
+2026-10-17 23:21:13.461 I [present] TASK world entered (player handle 0xffffffff16f00000 owner_check=ok)
+2026-10-17 23:21:13.461 I [present] AC130 rows ok bullet=7 atk=7 speffect=1 protect_id=79000950 obj=201:200b,202:100b,203:200b,401:40,301:100b,302:60,303:100b sfx=201:524028,202:530123,203:524028,401:530133,301:300602,302:530133,303:300602
+2026-10-17 23:21:13.461 I [present] PARAMS OK guns=34 rows=533 mode=flat_inv s=1.225 d_ref=85 bullet_sfx=none
+2026-10-17 23:21:13.462 I [present] SPAWN pool bullets=0/128 sfx=0/192 sfx_empty_spot=1 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=0
+2026-10-17 23:21:45.854 I [present] MODE on weapon=ump45_mp mag=32/192 menu_baseline=[5, 7, 8] show_cursor=0
+2026-10-17 23:21:45.854 I [present] AC130 ready
+2026-10-17 23:21:45.854 I [present] VM state hidden->raise clip=pullout rate=1.096 ads=0.00 seq=1
+2026-10-17 23:21:46.624 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=2
+2026-10-17 23:21:48.243 I [present] SWITCH start from=ump45_mp to=mp5k_mp via=wheel drop_s=0.80
+2026-10-17 23:21:48.243 I [present] VM state idle->drop clip=putaway rate=0.958 ads=0.00 seq=3
+2026-10-17 23:21:49.043 I [present] SWITCH raise gun=mp5k_mp first=1 raise_s=1.10
+2026-10-17 23:21:49.043 I [present] VM state drop->raise clip=first_raise rate=1.212 ads=0.00 seq=4
+2026-10-17 23:21:50.142 I [present] SWITCH raised gun=mp5k_mp t=1.10 first=1
+2026-10-17 23:21:50.142 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=5
+2026-10-17 23:21:50.742 I [present] SPAWN try id=79111015 owner=0xffffffff16f00000 origin=(8.02,8.07,5.65) w=1 dir=(0.127,-0.096,-0.987) (first spawn of the session)
+2026-10-17 23:21:50.742 I [present] SPAWN ok (first spawn)
+2026-10-17 23:21:50.742 I [present] SHOT n=1 mag=29/180 id=79111015 mw2=20 d=66.5m src=map spread=0.00 origin=(8.02,8.07,5.65) dir=(0.127,-0.096,-0.987) gun=mp5k_mp pellets=1 spawned=1 dropped=0 bands=79111015x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:50.742 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=6
+2026-10-17 23:21:50.826 I [present] SHOT n=2 mag=28/180 id=79111015 mw2=20 d=66.6m src=map spread=0.00 origin=(8.02,8.07,5.65) dir=(0.127,-0.096,-0.987) gun=mp5k_mp pellets=1 spawned=1 dropped=0 bands=79111015x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:50.826 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=7
+2026-10-17 23:21:50.892 I [present] SHOT n=3 mag=27/180 id=79111015 mw2=20 d=66.6m src=map spread=0.00 origin=(8.02,8.07,5.65) dir=(0.127,-0.096,-0.987) gun=mp5k_mp pellets=1 spawned=1 dropped=0 bands=79111015x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:50.892 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=8
+2026-10-17 23:21:50.960 I [present] SHOT n=4 mag=26/180 id=79111015 mw2=20 d=66.6m src=map spread=0.00 origin=(8.02,8.07,5.65) dir=(0.127,-0.096,-0.987) gun=mp5k_mp pellets=1 spawned=1 dropped=0 bands=79111015x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:50.960 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=9
+2026-10-17 23:21:51.059 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=10
+2026-10-17 23:21:51.893 I [present] SWITCH start from=mp5k_mp to=ak47_mp via=wheel drop_s=0.50
+2026-10-17 23:21:51.893 I [present] VM state idle->drop clip=putaway rate=1.667 ads=0.00 seq=11
+2026-10-17 23:21:52.393 I [t(7)] SWITCH raise gun=ak47_mp first=1 raise_s=1.40
+2026-10-17 23:21:52.393 I [t(7)] VM state drop->raise clip=first_raise rate=1.071 ads=0.00 seq=12
+2026-10-17 23:21:53.793 I [present] SWITCH raised gun=ak47_mp t=1.40 first=1
+2026-10-17 23:21:53.810 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=13
+2026-10-17 23:21:54.794 I [present] SHOT n=5 mag=29/180 id=79109000 mw2=40 d=28.5m src=map spread=0.87 origin=(7.79,7.89,5.61) dir=(0.912,-0.277,-0.302) gun=ak47_mp pellets=1 spawned=1 dropped=0 bands=79109000x1 ads=0.73 cone=0.87 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:54.794 I [present] VM state idle->fire clip=fire_ads rate=1.961 ads=0.73 seq=14
+2026-10-17 23:21:54.893 I [present] SHOT n=6 mag=28/180 id=79109000 mw2=40 d=27.6m src=map spread=0.00 origin=(7.79,7.88,5.61) dir=(0.914,-0.285,-0.289) gun=ak47_mp pellets=1 spawned=1 dropped=0 bands=79109000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:54.893 I [present] VM state fire->fire clip=fire_ads rate=1.961 ads=1.00 seq=15
+2026-10-17 23:21:54.977 I [present] SHOT n=7 mag=27/180 id=79109000 mw2=40 d=27.6m src=map spread=0.00 origin=(7.79,7.88,5.61) dir=(0.914,-0.285,-0.289) gun=ak47_mp pellets=1 spawned=1 dropped=0 bands=79109000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:54.977 I [present] VM state fire->fire clip=fire_ads rate=1.961 ads=1.00 seq=16
+2026-10-17 23:21:55.060 I [present] SHOT n=8 mag=26/180 id=79109000 mw2=40 d=27.6m src=map spread=0.00 origin=(7.79,7.88,5.61) dir=(0.914,-0.285,-0.290) gun=ak47_mp pellets=1 spawned=1 dropped=0 bands=79109000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:55.060 I [present] VM state fire->fire clip=fire_ads rate=1.961 ads=1.00 seq=17
+2026-10-17 23:21:55.160 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=18
+2026-10-17 23:21:56.593 I [present] SWITCH start from=ak47_mp to=fn2000_mp via=wheel drop_s=0.60
+2026-10-17 23:21:56.593 I [present] VM state idle->drop clip=putaway rate=1.389 ads=0.00 seq=19
+2026-10-17 23:21:57.210 I [present] SWITCH raise gun=fn2000_mp first=1 raise_s=1.16
+2026-10-17 23:21:57.210 I [present] VM state drop->raise clip=first_raise rate=1.006 ads=0.00 seq=20
+2026-10-17 23:21:58.360 I [present] SWITCH raised gun=fn2000_mp t=1.17 first=1
+2026-10-17 23:21:58.376 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=21
+2026-10-17 23:21:59.659 I [present] SHOT n=9 mag=29/180 id=79108010 mw2=20 d=150.0m src=none spread=3.64 origin=(9.79,8.62,5.93) dir=(0.802,0.597,-0.011) gun=fn2000_mp pellets=1 spawned=1 dropped=0 bands=79108010x1 ads=0.33 cone=3.64 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:59.660 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.33 seq=22
+2026-10-17 23:21:59.726 I [present] SHOT n=10 mag=28/180 id=79108010 mw2=20 d=150.0m src=none spread=2.81 origin=(9.62,8.65,5.92) dir=(0.843,0.538,-0.019) gun=fn2000_mp pellets=1 spawned=1 dropped=0 bands=79108010x1 ads=0.60 cone=2.81 kick=(0.00,0.64) capped=0
+2026-10-17 23:21:59.726 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=0.60 seq=23
+2026-10-17 23:21:59.793 I [present] SHOT n=11 mag=27/180 id=79108010 mw2=20 d=150.0m src=none spread=0.94 origin=(9.44,8.68,5.93) dir=(0.830,0.558,0.013) gun=fn2000_mp pellets=1 spawned=1 dropped=0 bands=79108010x1 ads=0.87 cone=0.94 kick=(1.33,0.00) capped=0
+2026-10-17 23:21:59.793 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=0.87 seq=24
+2026-10-17 23:21:59.860 I [present] SHOT n=12 mag=26/180 id=79108010 mw2=20 d=150.0m src=none spread=0.00 origin=(9.30,8.68,5.94) dir=(0.853,0.522,0.011) gun=fn2000_mp pellets=1 spawned=1 dropped=0 bands=79108010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:59.860 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=25
+2026-10-17 23:21:59.927 I [present] SHOT n=13 mag=25/180 id=79108010 mw2=20 d=150.0m src=none spread=0.00 origin=(9.12,8.71,5.94) dir=(0.853,0.522,0.011) gun=fn2000_mp pellets=1 spawned=1 dropped=0 bands=79108010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:59.927 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=26
+2026-10-17 23:21:59.993 I [present] SHOT n=14 mag=24/180 id=79108010 mw2=20 d=150.0m src=none spread=0.00 origin=(8.95,8.75,5.94) dir=(0.854,0.521,0.011) gun=fn2000_mp pellets=1 spawned=1 dropped=0 bands=79108010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:21:59.993 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=27
+2026-10-17 23:22:00.060 I [present] SHOT n=15 mag=23/180 id=79108010 mw2=20 d=150.0m src=none spread=0.00 origin=(8.78,8.75,5.94) dir=(0.856,0.517,0.011) gun=fn2000_mp pellets=1 spawned=1 dropped=0 bands=79108010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:00.060 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=28
+2026-10-17 23:22:00.159 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.73 seq=29
+2026-10-17 23:22:01.527 I [present] SWITCH start from=fn2000_mp to=masada_mp via=wheel drop_s=0.83
+2026-10-17 23:22:01.527 I [present] VM state idle->drop clip=putaway rate=1.004 ads=0.00 seq=30
+2026-10-17 23:22:02.360 I [present] SWITCH raise gun=masada_mp first=1 raise_s=0.85
+2026-10-17 23:22:02.360 I [present] VM state drop->raise clip=first_raise rate=1.412 ads=0.00 seq=31
+2026-10-17 23:22:03.211 I [present] SWITCH raised gun=masada_mp t=0.85 first=1
+2026-10-17 23:22:03.227 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=32
+2026-10-17 23:22:03.677 I [present] SHOT n=16 mag=29/180 id=79107000 mw2=30 d=12.3m src=map spread=5.14 origin=(4.17,7.87,1.04) dir=(-0.643,-0.101,-0.759) gun=masada_mp pellets=1 spawned=1 dropped=0 bands=79107000x1 ads=0.00 cone=5.14 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:03.677 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.00 seq=33
+2026-10-17 23:22:03.760 I [present] SHOT n=17 mag=28/180 id=79107000 mw2=30 d=12.3m src=map spread=5.67 origin=(4.17,7.87,1.04) dir=(-0.683,-0.069,-0.728) gun=masada_mp pellets=1 spawned=1 dropped=0 bands=79107000x1 ads=0.00 cone=5.67 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:03.760 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=34
+2026-10-17 23:22:03.844 I [present] SHOT n=18 mag=27/180 id=79107000 mw2=30 d=12.3m src=map spread=5.66 origin=(4.17,7.87,1.04) dir=(-0.664,-0.130,-0.736) gun=masada_mp pellets=1 spawned=1 dropped=0 bands=79107000x1 ads=0.00 cone=5.66 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:03.844 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=35
+2026-10-17 23:22:03.944 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=36
+2026-10-17 23:22:04.261 I [present] SWITCH start from=masada_mp to=m16_mp via=wheel drop_s=0.45
+2026-10-17 23:22:04.261 I [present] VM state idle->drop clip=putaway rate=1.481 ads=0.00 seq=37
+2026-10-17 23:22:04.727 I [present] SWITCH raise gun=m16_mp first=1 raise_s=0.85
+2026-10-17 23:22:04.727 I [present] VM state drop->raise clip=first_raise rate=1.294 ads=0.00 seq=38
+2026-10-17 23:22:05.577 I [present] SWITCH raised gun=m16_mp t=0.87 first=1
+2026-10-17 23:22:05.578 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=39
+2026-10-17 23:22:06.127 I [present] SHOT n=19 mag=29/180 id=79106000 mw2=40 d=2.3m src=map spread=3.00 origin=(2.45,7.72,0.75) dir=(-0.945,-0.314,0.089) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=3.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:06.127 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.00 seq=40
+2026-10-17 23:22:06.194 I [present] SHOT n=20 mag=28/180 id=79106000 mw2=40 d=2.3m src=map spread=4.33 origin=(2.44,7.72,0.75) dir=(-0.947,-0.322,0.015) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=4.33 kick=(0.05,0.00) capped=0
+2026-10-17 23:22:06.194 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=41
+2026-10-17 23:22:06.261 I [present] SHOT n=21 mag=27/180 id=79106000 mw2=40 d=2.3m src=map spread=5.66 origin=(2.45,7.72,0.75) dir=(-0.968,-0.242,0.073) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=5.66 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:06.261 I [present] BURST gun=m16_mp n=3 t_ms=133
+2026-10-17 23:22:06.261 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=42
+2026-10-17 23:22:06.327 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=43
+2026-10-17 23:22:06.511 I [present] SHOT n=22 mag=26/180 id=79106000 mw2=40 d=2.4m src=map spread=3.00 origin=(2.44,7.73,0.75) dir=(-0.959,-0.279,0.054) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=3.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:06.511 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.00 seq=44
+2026-10-17 23:22:06.578 I [present] SHOT n=23 mag=25/180 id=79106000 mw2=40 d=2.3m src=map spread=4.33 origin=(2.44,7.73,0.76) dir=(-0.962,-0.269,0.049) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=4.33 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:06.578 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=45
+2026-10-17 23:22:06.644 I [present] SHOT n=24 mag=24/180 id=79106000 mw2=40 d=2.2m src=map spread=5.67 origin=(2.45,7.72,0.81) dir=(-0.948,-0.300,0.104) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=5.67 kick=(0.49,0.00) capped=0
+2026-10-17 23:22:06.644 I [present] BURST gun=m16_mp n=3 t_ms=133
+2026-10-17 23:22:06.644 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=46
+2026-10-17 23:22:06.727 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=47
+2026-10-17 23:22:07.294 I [present] SHOT n=25 mag=23/180 id=79106000 mw2=40 d=1.7m src=map spread=3.00 origin=(2.54,7.66,1.10) dir=(-0.866,-0.348,0.360) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=3.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:07.294 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.00 seq=48
+2026-10-17 23:22:07.294 I [present] SPAWN pool bullets=0/128 sfx=0/192 sfx_empty_spot=1 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=50
+2026-10-17 23:22:07.361 I [present] SHOT n=26 mag=22/180 id=79106000 mw2=40 d=1.7m src=map spread=4.33 origin=(2.54,7.66,1.10) dir=(-0.879,-0.331,0.344) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=4.33 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:07.361 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=49
+2026-10-17 23:22:07.428 I [present] SHOT n=27 mag=21/180 id=79106000 mw2=40 d=1.7m src=map spread=5.66 origin=(2.55,7.65,1.10) dir=(-0.865,-0.361,0.349) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=5.66 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:07.428 I [present] BURST gun=m16_mp n=3 t_ms=133
+2026-10-17 23:22:07.428 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=50
+2026-10-17 23:22:07.495 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=51
+2026-10-17 23:22:08.244 I [present] SHOT n=28 mag=20/180 id=79106000 mw2=40 d=1.6m src=map spread=3.00 origin=(2.63,7.63,1.25) dir=(-0.819,-0.336,0.464) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=3.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:08.244 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.00 seq=52
+2026-10-17 23:22:08.311 I [present] SHOT n=29 mag=19/180 id=79106000 mw2=40 d=1.6m src=map spread=4.33 origin=(2.65,7.62,1.29) dir=(-0.741,-0.391,0.547) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=4.33 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:08.311 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=53
+2026-10-17 23:22:08.377 I [present] SHOT n=30 mag=18/180 id=79106000 mw2=40 d=1.6m src=map spread=5.66 origin=(2.67,7.61,1.30) dir=(-0.760,-0.396,0.516) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=5.66 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:08.377 I [present] BURST gun=m16_mp n=3 t_ms=134
+2026-10-17 23:22:08.377 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=54
+2026-10-17 23:22:08.445 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=55
+2026-10-17 23:22:08.911 I [present] SHOT n=31 mag=17/180 id=79106000 mw2=40 d=2.8m src=map spread=3.19 origin=(2.41,7.85,1.04) dir=(-0.955,-0.136,0.265) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=3.19 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:08.911 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.00 seq=56
+2026-10-17 23:22:08.977 I [present] SHOT n=32 mag=16/180 id=79106000 mw2=40 d=2.8m src=map spread=6.20 origin=(2.24,7.88,1.07) dir=(-0.950,-0.220,0.222) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=6.20 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:08.977 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=57
+2026-10-17 23:22:09.044 I [present] SHOT n=33 mag=15/180 id=79106000 mw2=40 d=2.6m src=map spread=7.00 origin=(1.97,7.91,1.13) dir=(-0.947,-0.243,0.210) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=7.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:09.044 I [present] BURST gun=m16_mp n=3 t_ms=133
+2026-10-17 23:22:09.044 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=58
+2026-10-17 23:22:09.128 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=59
+2026-10-17 23:22:09.561 I [present] SHOT n=34 mag=14/180 id=79106000 mw2=40 d=4.3m src=map spread=7.00 origin=(1.12,8.33,2.88) dir=(-0.967,-0.084,0.242) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=7.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:09.561 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.00 seq=60
+2026-10-17 23:22:09.628 I [present] SHOT n=35 mag=13/180 id=79106000 mw2=40 d=4.7m src=map spread=7.00 origin=(1.29,8.35,3.13) dir=(-0.958,-0.136,0.253) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=7.00 kick=(0.54,0.00) capped=0
+2026-10-17 23:22:09.628 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=61
+2026-10-17 23:22:09.694 I [present] SHOT n=36 mag=12/180 id=79106000 mw2=40 d=4.6m src=map spread=7.00 origin=(1.48,8.33,3.32) dir=(-0.963,0.005,0.270) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=7.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:09.694 I [present] BURST gun=m16_mp n=3 t_ms=133
+2026-10-17 23:22:09.694 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=62
+2026-10-17 23:22:09.761 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=63
+2026-10-17 23:22:10.078 I [present] SHOT n=37 mag=11/180 id=79106000 mw2=40 d=6.2m src=map spread=7.00 origin=(3.07,8.27,4.60) dir=(-0.667,0.023,0.745) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=7.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:10.078 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.00 seq=64
+2026-10-17 23:22:10.144 I [present] SHOT n=38 mag=10/180 id=79106000 mw2=40 d=6.4m src=map spread=7.00 origin=(3.48,8.23,4.78) dir=(-0.550,-0.090,0.830) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=7.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:10.144 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=65
+2026-10-17 23:22:10.211 I [present] SHOT n=39 mag=9/180 id=79106000 mw2=40 d=6.5m src=map spread=7.00 origin=(3.85,8.20,4.92) dir=(-0.509,-0.019,0.861) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=7.00 kick=(0.09,0.00) capped=0
+2026-10-17 23:22:10.211 I [present] BURST gun=m16_mp n=3 t_ms=133
+2026-10-17 23:22:10.211 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=66
+2026-10-17 23:22:10.294 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=67
+2026-10-17 23:22:10.694 I [present] SHOT n=40 mag=8/180 id=79106000 mw2=40 d=6.9m src=map spread=7.00 origin=(4.83,8.13,5.24) dir=(-0.258,-0.075,0.963) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=7.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:10.694 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.00 seq=68
+2026-10-17 23:22:10.761 I [present] SHOT n=41 mag=7/180 id=79106000 mw2=40 d=7.1m src=map spread=7.00 origin=(4.81,8.12,5.15) dir=(-0.127,-0.030,0.991) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=7.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:10.761 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=69
+2026-10-17 23:22:10.828 I [present] SHOT n=42 mag=6/180 id=79106000 mw2=40 d=6.9m src=map spread=7.00 origin=(4.79,8.09,4.96) dir=(-0.131,-0.111,0.985) gun=m16_mp pellets=1 spawned=1 dropped=0 bands=79106000x1 ads=0.00 cone=7.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:10.828 I [present] BURST gun=m16_mp n=3 t_ms=134
+2026-10-17 23:22:10.828 I [present] VM state fire->fire clip=fire rate=2.500 ads=0.00 seq=70
+2026-10-17 23:22:10.911 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=71
+2026-10-17 23:22:11.194 I [present] SWITCH start from=m16_mp to=fal_mp via=wheel drop_s=0.45
+2026-10-17 23:22:11.194 I [present] VM state idle->drop clip=putaway rate=1.481 ads=0.00 seq=72
+2026-10-17 23:22:11.660 I [present] SWITCH raise gun=fal_mp first=1 raise_s=0.95
+2026-10-17 23:22:11.660 I [present] VM state drop->raise clip=first_raise rate=1.228 ads=0.00 seq=73
+2026-10-17 23:22:12.595 I [present] SWITCH raised gun=fal_mp t=0.95 first=1
+2026-10-17 23:22:12.612 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=74
+2026-10-17 23:22:13.429 I [present] SHOT n=43 mag=19/120 id=79105015 mw2=35 d=150.0m src=none spread=0.00 origin=(7.13,7.04,-3.11) dir=(0.941,-0.097,-0.324) gun=fal_mp pellets=1 spawned=1 dropped=0 bands=79105015x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:13.429 I [present] VM state idle->fire clip=fire_ads rate=2.083 ads=1.00 seq=75
+2026-10-17 23:22:13.512 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=76
+2026-10-17 23:22:13.645 I [present] SHOT n=44 mag=18/120 id=79105015 mw2=35 d=150.0m src=none spread=0.00 origin=(7.87,6.87,-3.37) dir=(0.941,-0.097,-0.325) gun=fal_mp pellets=1 spawned=1 dropped=0 bands=79105015x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:13.645 I [present] VM state idle->fire clip=fire_ads rate=2.083 ads=1.00 seq=77
+2026-10-17 23:22:13.729 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=78
+2026-10-17 23:22:13.878 I [present] SHOT n=45 mag=17/120 id=79105015 mw2=35 d=150.0m src=none spread=0.00 origin=(8.68,6.69,-3.66) dir=(0.940,-0.098,-0.328) gun=fal_mp pellets=1 spawned=1 dropped=0 bands=79105015x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:13.878 I [present] VM state idle->fire clip=fire_ads rate=2.083 ads=1.00 seq=79
+2026-10-17 23:22:13.963 I [t(8)] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=80
+2026-10-17 23:22:14.079 I [present] SHOT n=46 mag=16/120 id=79105015 mw2=35 d=150.0m src=none spread=0.00 origin=(9.37,6.60,-3.91) dir=(0.939,-0.100,-0.330) gun=fal_mp pellets=1 spawned=1 dropped=0 bands=79105015x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:14.079 I [present] VM state idle->fire clip=fire_ads rate=2.083 ads=1.00 seq=81
+2026-10-17 23:22:14.162 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=82
+2026-10-17 23:22:14.479 I [present] SWITCH start from=fal_mp to=tavor_mp via=wheel drop_s=0.60
+2026-10-17 23:22:14.479 I [present] VM state idle->drop clip=putaway rate=1.389 ads=0.00 seq=83
+2026-10-17 23:22:15.079 I [present] SWITCH raise gun=tavor_mp first=1 raise_s=1.10
+2026-10-17 23:22:15.079 I [present] VM state drop->raise clip=first_raise rate=1.000 ads=0.00 seq=84
+2026-10-17 23:22:16.196 I [present] SWITCH raised gun=tavor_mp t=1.12 first=1
+2026-10-17 23:22:16.196 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=85
+2026-10-17 23:22:16.412 I [present] SHOT n=47 mag=29/180 id=79104000 mw2=40 d=37.2m src=map spread=3.37 origin=(8.31,6.66,-3.57) dir=(0.050,-0.121,-0.991) gun=tavor_mp pellets=1 spawned=1 dropped=0 bands=79104000x1 ads=0.27 cone=3.37 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:16.412 I [present] VM state idle->fire clip=fire rate=2.500 ads=0.27 seq=86
+2026-10-17 23:22:16.496 I [present] SHOT n=48 mag=28/180 id=79104000 mw2=40 d=37.0m src=map spread=2.81 origin=(8.32,6.62,-3.88) dir=(0.049,-0.126,-0.991) gun=tavor_mp pellets=1 spawned=1 dropped=0 bands=79104000x1 ads=0.60 cone=2.81 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:16.496 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=0.60 seq=87
+2026-10-17 23:22:16.579 I [present] SHOT n=49 mag=27/180 id=79104000 mw2=40 d=36.4m src=map spread=0.47 origin=(8.34,6.54,-4.19) dir=(0.047,-0.122,-0.991) gun=tavor_mp pellets=1 spawned=1 dropped=0 bands=79104000x1 ads=0.93 cone=0.47 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:16.579 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=0.93 seq=88
+2026-10-17 23:22:16.663 I [present] SHOT n=50 mag=26/180 id=79104000 mw2=40 d=36.1m src=map spread=0.00 origin=(8.35,6.51,-4.49) dir=(0.049,-0.126,-0.991) gun=tavor_mp pellets=1 spawned=1 dropped=0 bands=79104000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:16.663 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=89
+2026-10-17 23:22:16.663 I [present] SPAWN pool bullets=0/128 sfx=0/192 sfx_empty_spot=1 unk40=0/28 counter=0 live_ours=2 live_all=2 spawns_world=100
+2026-10-17 23:22:16.747 I [present] SHOT n=51 mag=25/180 id=79104000 mw2=40 d=35.9m src=map spread=0.00 origin=(8.36,6.54,-4.80) dir=(0.044,-0.126,-0.991) gun=tavor_mp pellets=1 spawned=1 dropped=0 bands=79104000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:16.747 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=90
+2026-10-17 23:22:16.812 I [present] SHOT n=52 mag=24/180 id=79104000 mw2=40 d=35.2m src=map spread=0.00 origin=(8.37,6.45,-5.04) dir=(0.043,-0.126,-0.991) gun=tavor_mp pellets=1 spawned=1 dropped=0 bands=79104000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:16.812 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=91
+2026-10-17 23:22:16.896 I [present] SHOT n=53 mag=23/180 id=79104000 mw2=40 d=34.6m src=map spread=0.00 origin=(8.39,6.42,-5.34) dir=(0.041,-0.127,-0.991) gun=tavor_mp pellets=1 spawned=1 dropped=0 bands=79104000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:16.896 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=92
+2026-10-17 23:22:16.979 I [present] SHOT n=54 mag=22/180 id=79104000 mw2=40 d=34.3m src=map spread=0.00 origin=(8.40,6.39,-5.65) dir=(0.041,-0.127,-0.991) gun=tavor_mp pellets=1 spawned=1 dropped=0 bands=79104000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:16.979 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=93
+2026-10-17 23:22:17.064 I [present] SHOT n=55 mag=21/180 id=79104000 mw2=40 d=33.7m src=map spread=0.00 origin=(8.41,6.36,-5.96) dir=(0.039,-0.128,-0.991) gun=tavor_mp pellets=1 spawned=1 dropped=0 bands=79104000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:17.064 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=94
+2026-10-17 23:22:17.146 I [present] SHOT n=56 mag=20/180 id=79104000 mw2=40 d=33.0m src=map spread=0.00 origin=(8.42,6.32,-6.26) dir=(0.037,-0.129,-0.991) gun=tavor_mp pellets=1 spawned=1 dropped=0 bands=79104000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:17.146 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=95
+2026-10-17 23:22:17.229 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.80 seq=96
+2026-10-17 23:22:17.530 I [present] SWITCH start from=tavor_mp to=scar_mp via=wheel drop_s=0.55
+2026-10-17 23:22:17.530 I [present] VM state idle->drop clip=putaway rate=1.515 ads=0.00 seq=97
+2026-10-17 23:22:18.096 I [present] SWITCH raise gun=scar_mp first=1 raise_s=1.43
+2026-10-17 23:22:18.096 I [present] VM state drop->raise clip=first_raise rate=0.861 ads=0.00 seq=98
+2026-10-17 23:22:19.513 I [present] SWITCH raised gun=scar_mp t=1.43 first=1
+2026-10-17 23:22:19.529 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=99
+2026-10-17 23:22:19.747 I [present] SHOT n=57 mag=19/120 id=79103000 mw2=40 d=23.4m src=map spread=1.40 origin=(9.52,4.96,-17.85) dir=(0.085,-0.142,-0.986) gun=scar_mp pellets=1 spawned=1 dropped=0 bands=79103000x1 ads=0.80 cone=1.40 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:19.747 I [present] VM state idle->fire clip=fire_ads rate=1.792 ads=0.80 seq=100
+2026-10-17 23:22:19.847 I [present] SHOT n=58 mag=18/120 id=79103000 mw2=40 d=23.0m src=map spread=0.00 origin=(9.55,4.91,-18.22) dir=(0.071,-0.142,-0.987) gun=scar_mp pellets=1 spawned=1 dropped=0 bands=79103000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:19.847 I [present] VM state fire->fire clip=fire_ads rate=1.792 ads=1.00 seq=101
+2026-10-17 23:22:19.947 I [present] SHOT n=59 mag=17/120 id=79103000 mw2=40 d=22.7m src=map spread=0.00 origin=(9.57,4.87,-18.58) dir=(0.070,-0.142,-0.987) gun=scar_mp pellets=1 spawned=1 dropped=0 bands=79103000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:19.947 I [present] VM state fire->fire clip=fire_ads rate=1.792 ads=1.00 seq=102
+2026-10-17 23:22:20.030 I [present] SHOT n=60 mag=16/120 id=79103000 mw2=40 d=22.4m src=map spread=0.00 origin=(9.59,4.83,-18.89) dir=(0.070,-0.142,-0.987) gun=scar_mp pellets=1 spawned=1 dropped=0 bands=79103000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:20.030 I [present] VM state fire->fire clip=fire_ads rate=1.792 ads=1.00 seq=103
+2026-10-17 23:22:20.129 I [present] SHOT n=61 mag=15/120 id=79103000 mw2=40 d=22.1m src=map spread=0.00 origin=(9.62,4.79,-19.25) dir=(0.070,-0.142,-0.987) gun=scar_mp pellets=1 spawned=1 dropped=0 bands=79103000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:20.129 I [present] VM state fire->fire clip=fire_ads rate=1.792 ads=1.00 seq=104
+2026-10-17 23:22:20.213 I [present] SHOT n=62 mag=14/120 id=79103000 mw2=40 d=21.8m src=map spread=0.00 origin=(9.64,4.75,-19.56) dir=(0.070,-0.142,-0.987) gun=scar_mp pellets=1 spawned=1 dropped=0 bands=79103000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:22:20.213 I [present] VM state fire->fire clip=fire_ads rate=1.792 ads=1.00 seq=105
+2026-10-17 23:22:20.314 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=106
+2026-10-17 23:22:20.813 I [present] SWITCH start from=scar_mp to=famas_mp via=wheel drop_s=0.66
+2026-10-17 23:22:20.813 I [present] VM state idle->drop clip=putaway rate=1.010 ads=0.00 seq=107
+2026-10-17 23:22:21.479 I [present] SWITCH raise gun=famas_mp first=1 raise_s=0.83
+2026-10-17 23:22:21.479 I [present] VM state drop->raise clip=first_raise rate=1.004 ads=0.00 seq=108
+2026-10-17 23:22:22.314 I [present] SWITCH raised gun=famas_mp t=0.84 first=1
+2026-10-17 23:22:22.314 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=109
+2026-10-17 23:22:24.413 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=110
+2026-10-17 23:22:24.730 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=111
+2026-10-17 23:22:26.317 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=112
+2026-10-17 23:22:26.364 I [present] AC130 ready
+2026-10-17 23:22:26.630 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=113
+2026-10-17 23:22:28.247 I [present] SWITCH start from=famas_mp to=m4_mp via=wheel drop_s=0.83
+2026-10-17 23:22:28.247 I [present] VM state idle->drop clip=putaway rate=1.004 ads=0.00 seq=114
+2026-10-17 23:22:29.080 I [present] SWITCH raise gun=m4_mp first=1 raise_s=0.85
+2026-10-17 23:22:29.080 I [present] VM state drop->raise clip=first_raise rate=1.451 ads=0.00 seq=115
+2026-10-17 23:22:29.930 I [present] SWITCH raised gun=m4_mp t=0.85 first=1
+2026-10-17 23:22:29.947 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=116
+2026-10-17 23:22:30.814 I [present] SWITCH start from=m4_mp to=javelin_mp via=wheel drop_s=0.45
+2026-10-17 23:22:30.814 I [present] VM state idle->drop clip=putaway rate=1.481 ads=0.00 seq=117
+2026-10-17 23:22:31.281 I [present] SWITCH raise gun=javelin_mp first=1 raise_s=2.30
+2026-10-17 23:22:31.281 I [present] VM state drop->raise clip=first_raise rate=0.986 ads=0.00 seq=118
+2026-10-17 23:22:33.580 I [present] SWITCH raised gun=javelin_mp t=2.32 first=1
+2026-10-17 23:22:33.580 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=119
+2026-10-17 23:22:40.198 I [present] LAUNCH refused gun=javelin_mp why=no_lock
+2026-10-17 23:22:47.648 I [present] LAUNCH gun=javelin_mp id=1 v=15.2 v0=1.5 cruise=60.0 lock=point mag=0/1 origin=(6.74,4.70,-4.16) dir=(0.532,-0.096,-0.841)
+2026-10-17 23:22:47.648 I [present] RELOAD start empty=1 dur=3 mag=0
+2026-10-17 23:22:47.648 I [present] VM state idle->reload_empty clip=reload_empty rate=1.500 ads=1.00 seq=121
+2026-10-17 23:22:47.715 I [present] LAUNCH refused gun=javelin_mp why=no_lock
+2026-10-17 23:22:49.798 I [present] PROJ hit kind=map gun=javelin_mp id=1 d=58.5 t=2.17 armed=1
+2026-10-17 23:22:49.798 I [present] PROJ explode gun=javelin_mp tiers=core+ring ids=79155601+79155602 at=(37.47,-0.52,-53.64)
+2026-10-17 23:22:50.400 I [present] PROJ selfcheck gun=javelin_mp id=1 hp_before=476 hp_after=476 lost=0
+2026-10-17 23:22:50.649 I [present] RELOAD done mag=1 reserve=0 added=1
+2026-10-17 23:22:50.649 I [present] VM state reload_empty->idle clip=empty_idle rate=1.000 ads=0.00 seq=122
+2026-10-17 23:22:50.666 I [present] VM state idle->idle clip=idle rate=1.000 ads=0.00 seq=123
+2026-10-17 23:22:52.199 I [present] SWITCH start from=javelin_mp to=stinger_mp via=wheel drop_s=0.75
+2026-10-17 23:22:52.199 I [present] VM state idle->drop clip=putaway rate=1.022 ads=0.00 seq=124
+2026-10-17 23:22:52.950 I [t(8)] SWITCH raise gun=stinger_mp first=1 raise_s=1.50
+2026-10-17 23:22:52.950 I [t(8)] VM state drop->raise clip=first_raise rate=0.978 ads=0.00 seq=125
+2026-10-17 23:22:54.450 I [present] SWITCH raised gun=stinger_mp t=1.50 first=1
+2026-10-17 23:22:54.450 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=126
+2026-10-17 23:23:00.751 I [present] LAUNCH gun=stinger_mp id=2 v=101.6 v0=10.2 cruise=101.6 lock=chr mag=0/1 origin=(0.59,7.41,-10.32) dir=(0.838,-0.154,-0.523)
+2026-10-17 23:23:00.751 I [present] RELOAD start empty=1 dur=3 mag=0
+2026-10-17 23:23:00.751 I [present] VM state idle->reload_empty clip=reload_empty rate=1.111 ads=1.00 seq=128
+2026-10-17 23:23:00.817 I [present] LAUNCH refused gun=stinger_mp why=no_lock
+2026-10-17 23:23:01.819 I [present] PROJ hit kind=map gun=stinger_mp id=2 d=64.3 t=1.08 armed=1
+2026-10-17 23:23:01.819 I [present] PROJ explode gun=stinger_mp tiers=core+ring ids=79154601+79154602 at=(53.44,-3.90,-45.16)
+2026-10-17 23:23:02.434 I [present] PROJ selfcheck gun=stinger_mp id=2 hp_before=476 hp_after=476 lost=0
+2026-10-17 23:23:03.585 I [present] SWITCH start from=stinger_mp to=rpg_mp via=wheel drop_s=0.70
+2026-10-17 23:23:03.585 I [present] RELOAD cancelled (switch)
+2026-10-17 23:23:03.585 I [present] RELOAD start empty=1 dur=3 mag=0
+2026-10-17 23:23:03.585 I [present] VM state reload_empty->drop clip=putaway rate=0.952 ads=0.00 seq=129
+2026-10-17 23:23:04.285 I [present] SWITCH raise gun=rpg_mp first=1 raise_s=0.73
+2026-10-17 23:23:04.285 I [present] VM state drop->raise clip=first_raise rate=1.199 ads=0.00 seq=130
+2026-10-17 23:23:05.018 I [present] SWITCH raised gun=rpg_mp t=0.73 first=1
+2026-10-17 23:23:05.018 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=131
+2026-10-17 23:23:06.902 I [present] LAUNCH gun=rpg_mp id=3 v=38.1 v0=38.1 cruise=38.1 lock=none mag=0/1 origin=(4.66,7.14,-21.83) dir=(0.931,-0.364,0.001)
+2026-10-17 23:23:06.902 I [present] RELOAD start empty=1 dur=3.292 mag=0
+2026-10-17 23:23:06.902 I [present] VM state idle->reload_empty clip=reload_empty rate=1.000 ads=1.00 seq=133
+2026-10-17 23:23:07.402 I [present] PROJ hit kind=chr gun=rpg_mp id=3 d=19.2 t=0.52 armed=1
+2026-10-17 23:23:07.402 I [present] PROJ explode gun=rpg_mp tiers=core+ring ids=79153601+79153602 at=(22.56,0.14,-21.81)
+2026-10-17 23:23:07.535 I [present] HIT chr=4311 hp=38->0 dmg=38 src=launcher gun=rpg_mp tier=ring kill=1
+2026-10-17 23:23:07.535 I [present] KILL chr=c4311
+2026-10-17 23:23:08.002 I [present] PROJ selfcheck gun=rpg_mp id=3 hp_before=476 hp_after=476 lost=0
+2026-10-17 23:23:09.486 I [present] SWITCH start from=rpg_mp to=m79_mp via=wheel drop_s=0.47
+2026-10-17 23:23:09.486 I [present] RELOAD cancelled (switch)
+2026-10-17 23:23:09.486 I [present] RELOAD start empty=1 dur=3.292 mag=0
+2026-10-17 23:23:09.486 I [present] VM state reload_empty->drop clip=putaway rate=1.249 ads=0.00 seq=134
+2026-10-17 23:23:09.969 I [present] SWITCH raise gun=m79_mp first=1 raise_s=0.83
+2026-10-17 23:23:09.969 I [present] VM state drop->raise clip=first_raise rate=1.004 ads=0.00 seq=135
+2026-10-17 23:23:10.671 I [present] AC130 ready
+2026-10-17 23:23:10.788 I [present] SWITCH raised gun=m79_mp t=0.83 first=1
+2026-10-17 23:23:10.805 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=136
+2026-10-17 23:23:15.305 I [present] LAUNCH gun=m79_mp id=4 v=61.0 v0=61.0 cruise=61.0 lock=none mag=0/1 origin=(7.33,0.70,-5.72) dir=(0.382,-0.014,0.924)
+2026-10-17 23:23:15.305 I [present] RELOAD start empty=1 dur=2.6 mag=0
+2026-10-17 23:23:15.305 I [present] VM state idle->reload_empty clip=reload_empty rate=1.192 ads=1.00 seq=138
+2026-10-17 23:23:16.189 I [present] PROJ hit kind=map gun=m79_mp id=4 d=55.5 t=0.90 armed=1
+2026-10-17 23:23:16.189 I [present] PROJ explode gun=m79_mp tiers=core+ring ids=79152601+79152602 at=(28.27,-8.09,44.88)
+2026-10-17 23:23:16.805 I [present] PROJ selfcheck gun=m79_mp id=4 hp_before=476 hp_after=476 lost=0
+2026-10-17 23:23:17.871 I [present] SWITCH start from=m79_mp to=rpg_mp via=wheel drop_s=0.83
+2026-10-17 23:23:17.871 I [present] RELOAD cancelled (switch)
+2026-10-17 23:23:17.871 I [present] RELOAD start empty=1 dur=2.6 mag=0
+2026-10-17 23:23:17.871 I [present] VM state reload_empty->drop clip=putaway rate=1.004 ads=0.00 seq=139
+2026-10-17 23:23:18.705 I [t(7)] SWITCH raise gun=rpg_mp first=0 raise_s=0.73
+2026-10-17 23:23:18.705 I [t(7)] RELOAD done mag=1 reserve=0 added=1
+2026-10-17 23:23:18.705 I [t(7)] VM state drop->raise clip=pullout rate=1.199 ads=0.00 seq=140
+2026-10-17 23:23:19.438 I [present] SWITCH raised gun=rpg_mp t=0.74 first=0
+2026-10-17 23:23:19.438 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=141
+2026-10-17 23:23:19.488 I [present] SWITCH start from=rpg_mp to=m79_mp via=wheel drop_s=0.47
+2026-10-17 23:23:19.489 I [present] VM state idle->drop clip=putaway rate=1.249 ads=0.00 seq=142
+2026-10-17 23:23:19.971 I [present] SWITCH raise gun=m79_mp first=0 raise_s=0.83
+2026-10-17 23:23:19.971 I [present] VM state drop->raise clip=pullout rate=1.004 ads=0.00 seq=143
+2026-10-17 23:23:20.489 I [present] RELOAD done mag=1 reserve=0 added=1
+2026-10-17 23:23:20.655 I [present] SWITCH start from=m79_mp to=at4_mp via=retarget drop_s=0.70 (reversed raise)
+2026-10-17 23:23:20.655 I [present] VM state raise->drop clip=putaway rate=1.004 ads=0.00 seq=144
+2026-10-17 23:23:21.355 I [present] SWITCH raise gun=at4_mp first=1 raise_s=1.85
+2026-10-17 23:23:21.355 I [present] VM state drop->raise clip=first_raise rate=1.117 ads=0.00 seq=145
+2026-10-17 23:23:23.205 I [present] SWITCH raised gun=at4_mp t=1.85 first=1
+2026-10-17 23:23:23.221 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=146
+2026-10-17 23:23:25.539 I [present] LAUNCH gun=at4_mp id=5 v=63.5 v0=63.5 cruise=63.5 lock=none mag=0/1 origin=(4.89,1.05,-1.90) dir=(0.734,-0.205,0.648)
+2026-10-17 23:23:25.539 I [present] RELOAD start empty=1 dur=3 mag=0
+2026-10-17 23:23:25.539 I [present] VM state idle->reload_empty clip=reload_empty rate=1.000 ads=1.00 seq=148
+2026-10-17 23:23:26.223 I [present] PROJ hit kind=chr gun=at4_mp id=5 d=43.6 t=0.70 armed=1
+2026-10-17 23:23:26.223 I [present] PROJ explode gun=at4_mp tiers=core+ring ids=79151601+79151602 at=(36.90,-7.89,26.37)
+2026-10-17 23:23:26.824 I [present] PROJ selfcheck gun=at4_mp id=5 hp_before=476 hp_after=476 lost=0
+2026-10-17 23:23:27.823 I [present] SWITCH start from=at4_mp to=model1887_mp via=wheel drop_s=0.66
+2026-10-17 23:23:27.823 I [present] RELOAD cancelled (switch)
+2026-10-17 23:23:27.823 I [present] RELOAD start empty=1 dur=3 mag=0
+2026-10-17 23:23:27.823 I [present] VM state reload_empty->drop clip=putaway rate=1.010 ads=0.00 seq=149
+2026-10-17 23:23:28.490 I [present] SWITCH raise gun=model1887_mp first=1 raise_s=1.56
+2026-10-17 23:23:28.491 I [present] VM state drop->raise clip=first_raise rate=1.004 ads=0.00 seq=150
+2026-10-17 23:23:30.057 I [present] SWITCH raised gun=model1887_mp t=1.57 first=1
+2026-10-17 23:23:30.057 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=151
+2026-10-17 23:23:31.324 I [present] SHOT n=68 mag=6/56 id=79146015 mw2=20 d=34.5m src=map spread=5.50 origin=(2.69,1.46,1.71) dir=(0.865,-0.319,0.388) gun=model1887_mp pellets=8 spawned=0 dropped=0 bands=- ads=1.00 cone=5.50 kick=(0.00,0.00) capped=1
+2026-10-17 23:23:31.324 I [present] VM state idle->fire clip=fire_ads rate=0.930 ads=1.00 seq=152
+2026-10-17 23:23:31.757 I [present] RECHAMBER start gun=model1887_mp t=1.000 ads=1
+2026-10-17 23:23:31.757 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.167 ads=1.00 seq=153
+2026-10-17 23:23:32.758 I [present] RECHAMBER done gun=model1887_mp
+2026-10-17 23:23:32.758 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.00 seq=154
+2026-10-17 23:23:33.573 I [present] SHOT n=69 mag=5/56 id=79146015 mw2=20 d=21.0m src=map spread=5.50 origin=(7.55,-1.08,3.43) dir=(0.922,-0.285,0.262) gun=model1887_mp pellets=8 spawned=0 dropped=0 bands=- ads=1.00 cone=5.50 kick=(0.00,0.00) capped=1
+2026-10-17 23:23:33.573 I [present] VM state idle->fire clip=fire_ads rate=0.930 ads=1.00 seq=155
+2026-10-17 23:23:34.007 I [present] RECHAMBER start gun=model1887_mp t=1.000 ads=1
+2026-10-17 23:23:34.007 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.167 ads=0.67 seq=156
+2026-10-17 23:23:35.007 I [present] RECHAMBER done gun=model1887_mp
+2026-10-17 23:23:35.007 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.00 seq=157
+2026-10-17 23:23:35.524 I [present] SHOT n=70 mag=4/56 id=79146001 mw2=34 d=5.9m src=map spread=5.50 origin=(14.24,-4.38,7.65) dir=(0.967,-0.240,0.084) gun=model1887_mp pellets=8 spawned=8 dropped=0 bands=79146001x8 ads=1.00 cone=5.50 kick=(0.00,0.00) capped=0
+2026-10-17 23:23:35.524 I [present] VM state idle->fire clip=fire_ads rate=0.930 ads=1.00 seq=158
+2026-10-17 23:23:35.524 I [present] SPAWN pool bullets=0/128 sfx=16/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=150
+2026-10-17 23:23:35.674 I [present] HIT chr=c4311 hp 86->74 dmg=12 band=79146001 mw2=34 d=5.9m via=impact n=3 kill=0 gun=model1887_mp
+2026-10-17 23:23:35.957 I [present] RECHAMBER start gun=model1887_mp t=1.000 ads=0
+2026-10-17 23:23:35.957 I [present] VM state fire->rechamber clip=rechamber rate=1.167 ads=0.00 seq=159
+2026-10-17 23:23:36.957 I [present] RECHAMBER done gun=model1887_mp
+2026-10-17 23:23:36.974 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=1.00 seq=160
+2026-10-17 23:23:37.458 I [present] SHOT n=71 mag=3/56 id=79146000 mw2=35 d=2.8m src=chr spread=5.50 origin=(15.72,-5.05,9.07) dir=(0.954,-0.160,-0.254) gun=model1887_mp pellets=8 spawned=8 dropped=0 bands=79146000x8 ads=1.00 cone=5.50 kick=(0.00,0.00) capped=0
+2026-10-17 23:23:37.458 I [present] VM state idle->fire clip=fire_ads rate=0.930 ads=1.00 seq=161
+2026-10-17 23:23:37.608 I [present] HIT chr=c4311 hp 74->0 dmg=74 band=79146000 mw2=35 d=2.8m via=last_hit_by n=5 kill=1 gun=model1887_mp
+2026-10-17 23:23:37.608 I [present] KILL chr=c4311
+2026-10-17 23:23:37.891 I [present] RECHAMBER start gun=model1887_mp t=1.000 ads=0
+2026-10-17 23:23:37.891 I [present] VM state fire->rechamber clip=rechamber rate=1.167 ads=0.00 seq=162
+2026-10-17 23:23:38.824 I [t(7)] SWITCH start from=model1887_mp to=m1014_mp via=wheel drop_s=0.75
+2026-10-17 23:23:38.824 I [t(7)] VM state rechamber->drop clip=putaway rate=1.111 ads=0.00 seq=163
+2026-10-17 23:23:39.575 I [present] SWITCH raise gun=m1014_mp first=1 raise_s=1.00
+2026-10-17 23:23:39.575 I [present] VM state drop->raise clip=first_raise rate=1.067 ads=0.00 seq=164
+2026-10-17 23:23:40.575 I [present] SWITCH raised gun=m1014_mp t=1.00 first=1
+2026-10-17 23:23:40.592 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=165
+2026-10-17 23:23:40.925 I [present] SWITCH start from=m1014_mp to=ranger_mp via=wheel drop_s=0.83
+2026-10-17 23:23:40.925 I [present] VM state idle->drop clip=putaway rate=1.165 ads=0.00 seq=166
+2026-10-17 23:23:41.758 I [present] SWITCH raise gun=ranger_mp first=1 raise_s=0.62
+2026-10-17 23:23:41.758 I [present] VM state drop->raise clip=first_raise rate=1.600 ads=0.00 seq=167
+2026-10-17 23:23:42.392 I [present] SWITCH raised gun=ranger_mp t=0.64 first=1
+2026-10-17 23:23:42.392 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=168
+2026-10-17 23:23:43.576 I [present] VM state idle->sprint_in clip=sprint_in rate=1.389 ads=0.00 seq=169
+2026-10-17 23:23:43.892 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.786 ads=0.00 seq=170
+2026-10-17 23:23:44.992 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.389 ads=0.00 seq=171
+2026-10-17 23:23:45.309 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=172
+2026-10-17 23:23:46.559 I [present] SHOT n=72 mag=1/40 id=79144000 mw2=75 d=4.7m src=chr spread=5.50 origin=(15.62,-6.85,14.75) dir=(0.618,-0.170,0.767) gun=ranger_mp pellets=6 spawned=6 dropped=0 bands=79144000x6 ads=1.00 cone=5.50 kick=(0.00,0.00) capped=0
+2026-10-17 23:23:46.559 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=173
+2026-10-17 23:23:46.709 I [present] HIT chr=c4311 hp 1->0 dmg=1 band=79144000 mw2=75 d=4.7m via=last_hit_by n=3 kill=1 gun=ranger_mp
+2026-10-17 23:23:46.709 I [present] KILL chr=c4311
+2026-10-17 23:23:46.793 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=174
+2026-10-17 23:23:49.042 I [present] SWITCH start from=ranger_mp to=m1014_mp via=wheel drop_s=0.33
+2026-10-17 23:23:49.042 I [present] VM state idle->drop clip=putaway rate=2.146 ads=0.00 seq=175
+2026-10-17 23:23:49.376 I [present] SWITCH raise gun=m1014_mp first=0 raise_s=1.00
+2026-10-17 23:23:49.376 I [present] VM state drop->raise clip=pullout rate=1.067 ads=0.00 seq=176
+2026-10-17 23:23:49.576 I [present] SWITCH start from=m1014_mp to=ranger_mp via=retarget drop_s=0.17 (reversed raise)
+2026-10-17 23:23:49.576 I [present] VM state raise->drop clip=putaway rate=1.165 ads=0.00 seq=177
+2026-10-17 23:23:49.759 I [present] SWITCH raise gun=ranger_mp first=0 raise_s=0.62
+2026-10-17 23:23:49.759 I [present] VM state drop->raise clip=pullout rate=1.600 ads=0.00 seq=178
+2026-10-17 23:23:49.825 I [present] SWITCH start from=ranger_mp to=striker_mp via=retarget drop_s=0.04 (reversed raise)
+2026-10-17 23:23:49.825 I [present] VM state raise->drop clip=putaway rate=2.146 ads=0.00 seq=179
+2026-10-17 23:23:49.876 I [present] SWITCH raise gun=striker_mp first=1 raise_s=1.00
+2026-10-17 23:23:49.876 I [present] VM state drop->raise clip=first_raise rate=0.867 ads=0.00 seq=180
+2026-10-17 23:23:50.876 I [present] SWITCH raised gun=striker_mp t=1.01 first=1
+2026-10-17 23:23:50.893 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=181
+2026-10-17 23:23:51.259 I [present] SHOT n=73 mag=11/60 id=79143010 mw2=15 d=15.6m src=map spread=5.42 origin=(13.38,-5.20,11.81) dir=(0.543,-0.249,0.802) gun=striker_mp pellets=6 spawned=0 dropped=0 bands=- ads=0.83 cone=5.42 kick=(0.00,0.00) capped=1
+2026-10-17 23:23:51.259 I [present] VM state idle->fire clip=fire_ads rate=1.961 ads=0.83 seq=182
+2026-10-17 23:23:51.443 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=183
+2026-10-17 23:23:51.609 I [present] SHOT n=74 mag=10/60 id=79143010 mw2=15 d=15.2m src=map spread=5.50 origin=(13.38,-5.20,11.80) dir=(0.565,-0.205,0.799) gun=striker_mp pellets=6 spawned=6 dropped=0 bands=79143010x6 ads=1.00 cone=5.50 kick=(0.00,0.00) capped=0
+2026-10-17 23:23:51.609 I [present] VM state idle->fire clip=fire_ads rate=1.961 ads=1.00 seq=184
+2026-10-17 23:23:51.793 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=185
+2026-10-17 23:23:51.942 I [present] SHOT n=75 mag=9/60 id=79143004 mw2=21 d=10.4m src=map spread=5.50 origin=(12.71,-5.08,11.61) dir=(0.147,-0.204,0.968) gun=striker_mp pellets=6 spawned=6 dropped=0 bands=79143004x6 ads=1.00 cone=5.50 kick=(0.00,0.00) capped=0
+2026-10-17 23:23:51.942 I [present] VM state idle->fire clip=fire_ads rate=1.961 ads=1.00 seq=186
+2026-10-17 23:23:51.943 I [present] SPAWN pool bullets=0/128 sfx=42/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=202
+2026-10-17 23:23:52.126 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=187
+2026-10-17 23:23:52.260 I [present] SHOT n=76 mag=8/60 id=79143002 mw2=23 d=9.0m src=map spread=5.50 origin=(12.39,-4.95,11.13) dir=(0.046,-0.206,0.977) gun=striker_mp pellets=6 spawned=6 dropped=0 bands=79143002x6 ads=1.00 cone=5.50 kick=(0.00,0.00) capped=0
+2026-10-17 23:23:52.260 I [present] VM state idle->fire clip=fire_ads rate=1.961 ads=1.00 seq=188
+2026-10-17 23:23:52.443 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=189
+2026-10-17 23:23:52.743 I [present] SWITCH start from=striker_mp to=aa12_mp via=wheel drop_s=0.83
+2026-10-17 23:23:52.743 I [present] VM state idle->drop clip=putaway rate=1.004 ads=0.00 seq=190
+2026-10-17 23:23:53.577 I [present] SWITCH raise gun=aa12_mp first=1 raise_s=1.00
+2026-10-17 23:23:53.577 I [present] VM state drop->raise clip=first_raise rate=1.000 ads=0.00 seq=191
+2026-10-17 23:23:54.577 I [present] SWITCH raised gun=aa12_mp t=1.00 first=1
+2026-10-17 23:23:54.577 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=192
+2026-10-17 23:23:54.860 I [present] SWITCH start from=aa12_mp to=spas12_mp via=wheel drop_s=0.60
+2026-10-17 23:23:54.860 I [present] VM state idle->drop clip=putaway rate=1.806 ads=0.00 seq=193
+2026-10-17 23:23:55.461 I [present] SWITCH raise gun=spas12_mp first=1 raise_s=1.07
+2026-10-17 23:23:55.461 I [present] VM state drop->raise clip=first_raise rate=0.992 ads=0.00 seq=194
+2026-10-17 23:23:56.543 I [present] SWITCH raised gun=spas12_mp t=1.08 first=1
+2026-10-17 23:23:56.543 I [present] SHOT n=77 mag=7/64 id=79141015 mw2=20 d=26.4m src=map spread=5.00 origin=(7.28,-2.68,11.43) dir=(0.401,-0.166,0.901) gun=spas12_mp pellets=8 spawned=0 dropped=0 bands=- ads=0.00 cone=5.00 kick=(0.00,0.00) capped=1
+2026-10-17 23:23:56.543 I [present] VM state raise->fire clip=fire rate=0.851 ads=0.00 seq=195
+2026-10-17 23:23:57.027 I [present] RECHAMBER start gun=spas12_mp t=0.467 ads=0
+2026-10-17 23:23:57.027 I [present] VM state fire->rechamber clip=rechamber rate=1.999 ads=0.00 seq=196
+2026-10-17 23:23:57.146 I [present] SWITCH start from=spas12_mp to=m21_mp via=wheel drop_s=0.83
+2026-10-17 23:23:57.146 I [present] VM state rechamber->drop clip=putaway rate=1.044 ads=0.00 seq=197
+2026-10-17 23:23:57.977 I [present] SWITCH raise gun=m21_mp first=1 raise_s=1.40
+2026-10-17 23:23:57.977 I [present] VM state drop->raise clip=first_raise rate=1.071 ads=0.00 seq=198
+2026-10-17 23:23:59.377 I [present] SWITCH raised gun=m21_mp t=1.40 first=1
+2026-10-17 23:23:59.377 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=199
+2026-10-17 23:24:00.910 I [present] SHOT n=78 mag=9/60 id=79134000 mw2=77 d=36.5m src=map spread=0.00 origin=(4.31,-2.09,17.71) dir=(0.334,-0.091,0.938) gun=m21_mp pellets=1 spawned=1 dropped=0 bands=79134000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:00.910 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=200
+2026-10-17 23:24:01.011 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=201
+2026-10-17 23:24:01.578 I [present] SWITCH start from=m21_mp to=wa2000_mp via=wheel drop_s=0.60
+2026-10-17 23:24:01.578 I [present] VM state idle->drop clip=putaway rate=1.389 ads=0.00 seq=202
+2026-10-17 23:24:02.195 I [present] SWITCH raise gun=wa2000_mp first=1 raise_s=1.70
+2026-10-17 23:24:02.195 I [present] VM state drop->raise clip=first_raise rate=0.980 ads=0.00 seq=203
+2026-10-17 23:24:03.878 I [present] SWITCH raised gun=wa2000_mp t=1.70 first=1
+2026-10-17 23:24:03.895 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=204
+2026-10-17 23:24:03.994 I [present] SWITCH start from=wa2000_mp to=barrett_mp via=wheel drop_s=1.25
+2026-10-17 23:24:03.994 I [present] VM state idle->drop clip=putaway rate=1.067 ads=0.00 seq=205
+2026-10-17 23:24:05.244 I [present] SWITCH raise gun=barrett_mp first=1 raise_s=1.00
+2026-10-17 23:24:05.244 I [present] VM state drop->raise clip=first_raise rate=1.625 ads=0.00 seq=206
+2026-10-17 23:24:06.244 I [present] SWITCH raised gun=barrett_mp t=1.00 first=1
+2026-10-17 23:24:06.261 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=207
+2026-10-17 23:24:16.363 I [present] SHOT n=79 mag=9/60 id=79132000 mw2=105 d=51.0m src=map spread=0.00 origin=(2.81,-1.64,20.06) dir=(0.642,-0.096,0.760) gun=barrett_mp pellets=1 spawned=1 dropped=0 bands=79132000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:16.363 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=208
+2026-10-17 23:24:16.564 I [present] HIT chr=c4311 hp 219->49 dmg=170 band=79132000 mw2=105 d=51.0m via=impact n=1 kill=0 gun=barrett_mp
+2026-10-17 23:24:18.031 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=209
+2026-10-17 23:24:18.213 I [present] SWITCH start from=barrett_mp to=cheytac_mp via=wheel drop_s=0.70
+2026-10-17 23:24:18.213 I [present] VM state idle->drop clip=putaway rate=1.667 ads=0.00 seq=210
+2026-10-17 23:24:18.930 I [present] SWITCH raise gun=cheytac_mp first=1 raise_s=1.00
+2026-10-17 23:24:18.930 I [present] VM state drop->raise clip=first_raise rate=1.300 ads=0.00 seq=211
+2026-10-17 23:24:19.931 I [present] SWITCH raised gun=cheytac_mp t=1.02 first=1
+2026-10-17 23:24:19.931 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=212
+2026-10-17 23:24:22.198 I [present] SHOT n=80 mag=4/40 id=79131000 mw2=105 d=37.4m src=map spread=0.00 origin=(2.74,-1.64,20.12) dir=(0.584,-0.097,0.806) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:22.198 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=213
+2026-10-17 23:24:22.264 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:24:22.264 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=214
+2026-10-17 23:24:22.364 I [present] HIT chr=c4311 hp 49->36 dmg=13 band=79131000 mw2=105 d=37.4m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:24:23.114 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:24:23.131 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.06 seq=215
+2026-10-17 23:24:24.397 I [present] SHOT n=81 mag=3/40 id=79131000 mw2=105 d=32.4m src=map spread=0.00 origin=(2.73,-1.66,20.12) dir=(0.577,-0.108,0.810) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:24.397 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=216
+2026-10-17 23:24:24.448 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:24:24.448 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=217
+2026-10-17 23:24:24.564 I [present] HIT chr=c4311 hp 36->23 dmg=13 band=79131000 mw2=105 d=32.4m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:24:25.314 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:24:25.314 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.06 seq=218
+2026-10-17 23:24:26.898 I [t(7)] SHOT n=82 mag=2/40 id=79131000 mw2=105 d=26.2m src=map spread=0.00 origin=(2.73,-1.68,20.12) dir=(0.575,-0.129,0.808) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:26.898 I [t(7)] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=219
+2026-10-17 23:24:26.948 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:24:26.948 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=220
+2026-10-17 23:24:27.065 I [t(8)] HIT chr=c4311 hp 23->10 dmg=13 band=79131000 mw2=105 d=26.2m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:24:27.815 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:24:27.815 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.10 seq=221
+2026-10-17 23:24:29.132 I [present] SHOT n=83 mag=1/40 id=79131000 mw2=105 d=21.0m src=map spread=0.00 origin=(2.73,-1.71,20.12) dir=(0.572,-0.154,0.806) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:29.132 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=222
+2026-10-17 23:24:29.181 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:24:29.181 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=223
+2026-10-17 23:24:29.282 I [present] HIT chr=c4311 hp 10->0 dmg=10 band=79131000 mw2=105 d=21.0m via=last_hit_by n=1 kill=1 gun=cheytac_mp
+2026-10-17 23:24:29.282 I [present] KILL chr=c4311
+2026-10-17 23:24:30.049 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:24:30.049 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.00 seq=224
+2026-10-17 23:24:30.449 I [t(8)] RELOAD start empty=0 dur=2.268 mag=1
+2026-10-17 23:24:30.449 I [t(8)] VM state idle->reload clip=reload rate=0.999 ads=0.00 seq=225
+2026-10-17 23:24:32.734 I [present] RELOAD done mag=5 reserve=36 added=4
+2026-10-17 23:24:32.734 I [present] VM state reload->idle clip=idle rate=1.000 ads=0.00 seq=226
+2026-10-17 23:24:34.483 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=227
+2026-10-17 23:24:34.785 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.381 ads=0.00 seq=228
+2026-10-17 23:24:36.024 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.000 ads=0.00 seq=229
+2026-10-17 23:24:36.068 I [present] AC130 ready
+2026-10-17 23:24:36.334 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=230
+2026-10-17 23:24:44.903 I [present] SHOT n=84 mag=4/36 id=79131000 mw2=105 d=77.7m src=map spread=0.00 origin=(20.03,-4.77,16.34) dir=(0.973,-0.131,-0.190) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:44.903 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=231
+2026-10-17 23:24:44.954 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:24:44.954 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=232
+2026-10-17 23:24:45.119 I [present] HIT chr=c4351 hp 657->504 dmg=153 band=79131000 mw2=105 d=77.7m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:24:45.821 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:24:45.821 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.08 seq=233
+2026-10-17 23:24:47.186 I [present] SHOT n=85 mag=3/36 id=79131000 mw2=105 d=68.1m src=map spread=0.00 origin=(20.03,-4.77,16.33) dir=(0.971,-0.138,-0.194) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:47.186 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=234
+2026-10-17 23:24:47.237 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:24:47.237 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=235
+2026-10-17 23:24:47.403 I [present] HIT chr=c4351 hp 504->498 dmg=6 band=79131000 mw2=105 d=68.1m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:24:48.104 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:24:48.104 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.38 seq=236
+2026-10-17 23:24:49.670 I [present] SHOT n=86 mag=2/36 id=79131000 mw2=105 d=65.0m src=map spread=0.00 origin=(20.03,-4.78,16.31) dir=(0.968,-0.142,-0.208) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:49.670 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=237
+2026-10-17 23:24:49.737 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:24:49.737 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=238
+2026-10-17 23:24:49.854 I [present] HIT chr=c4311 hp 219->49 dmg=170 band=79131000 mw2=105 d=65.0m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:24:50.588 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:24:50.605 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.42 seq=239
+2026-10-17 23:24:52.037 I [present] SHOT n=87 mag=1/36 id=79131000 mw2=105 d=65.3m src=map spread=0.00 origin=(20.03,-4.78,16.31) dir=(0.967,-0.142,-0.211) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:52.037 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=240
+2026-10-17 23:24:52.089 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:24:52.089 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=241
+2026-10-17 23:24:52.238 I [present] HIT chr=c4311 hp 49->0 dmg=49 band=79131000 mw2=105 d=65.3m via=last_hit_by n=1 kill=1 gun=cheytac_mp
+2026-10-17 23:24:52.238 I [present] KILL chr=c4311
+2026-10-17 23:24:52.955 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:24:52.955 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.49 seq=242
+2026-10-17 23:24:54.488 I [present] SHOT n=88 mag=0/36 id=79131000 mw2=105 d=35.3m src=map spread=0.00 origin=(20.02,-4.80,16.30) dir=(0.962,-0.164,-0.218) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:54.488 I [present] RELOAD start empty=1 dur=3.867 mag=0
+2026-10-17 23:24:54.488 I [present] VM state idle->reload_empty clip=reload_empty rate=1.000 ads=1.00 seq=244
+2026-10-17 23:24:54.655 I [present] HIT chr=c4351 hp 498->492 dmg=6 band=79131000 mw2=105 d=35.3m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:24:58.371 I [present] RELOAD done mag=5 reserve=31 added=5
+2026-10-17 23:24:58.371 I [present] VM state reload_empty->idle clip=empty_idle rate=1.000 ads=0.00 seq=245
+2026-10-17 23:24:58.388 I [present] VM state idle->idle clip=idle rate=1.000 ads=0.00 seq=246
+2026-10-17 23:24:59.338 I [present] SHOT n=89 mag=4/31 id=79131000 mw2=105 d=41.9m src=chr spread=0.00 origin=(15.22,-3.24,22.45) dir=(0.957,-0.173,-0.232) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:24:59.338 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=247
+2026-10-17 23:24:59.404 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:24:59.405 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=248
+2026-10-17 23:25:00.255 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:25:00.272 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.19 seq=249
+2026-10-17 23:25:01.256 I [present] SHOT n=90 mag=3/31 id=79131000 mw2=105 d=41.2m src=map spread=0.00 origin=(15.20,-3.24,22.38) dir=(0.942,-0.175,-0.285) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:01.256 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=250
+2026-10-17 23:25:01.322 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:25:01.322 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=251
+2026-10-17 23:25:01.439 I [present] HIT chr=c4351 hp 492->486 dmg=6 band=79131000 mw2=105 d=41.2m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:25:02.172 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:25:02.189 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.42 seq=252
+2026-10-17 23:25:04.122 I [present] SHOT n=91 mag=2/31 id=79131000 mw2=105 d=43.8m src=map spread=0.00 origin=(15.88,-3.17,24.37) dir=(0.927,-0.174,-0.333) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:04.122 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=253
+2026-10-17 23:25:04.189 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:25:04.189 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=254
+2026-10-17 23:25:04.305 I [present] HIT chr=c4351 hp 486->480 dmg=6 band=79131000 mw2=105 d=43.8m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:25:05.039 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:25:05.056 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.08 seq=255
+2026-10-17 23:25:06.639 I [present] SHOT n=92 mag=1/31 id=79131000 mw2=105 d=46.0m src=map spread=0.00 origin=(15.88,-3.17,24.37) dir=(0.929,-0.169,-0.329) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:06.639 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=256
+2026-10-17 23:25:06.689 I [present] RECHAMBER start gun=cheytac_mp t=0.866 ads=1
+2026-10-17 23:25:06.689 I [present] VM state fire->rechamber clip=ads_rechamber rate=1.078 ads=1.00 seq=257
+2026-10-17 23:25:06.822 I [present] HIT chr=c4351 hp 480->474 dmg=6 band=79131000 mw2=105 d=46.0m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:25:07.556 I [present] RECHAMBER done gun=cheytac_mp
+2026-10-17 23:25:07.556 I [present] VM state rechamber->idle clip=idle rate=1.000 ads=0.33 seq=258
+2026-10-17 23:25:08.356 I [present] SHOT n=93 mag=0/31 id=79131000 mw2=105 d=48.0m src=map spread=0.00 origin=(16.68,-3.14,26.57) dir=(0.906,-0.199,-0.372) gun=cheytac_mp pellets=1 spawned=1 dropped=0 bands=79131000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:08.356 I [present] RELOAD start empty=1 dur=3.867 mag=0
+2026-10-17 23:25:08.356 I [present] VM state idle->reload_empty clip=reload_empty rate=1.000 ads=1.00 seq=260
+2026-10-17 23:25:08.524 I [present] HIT chr=c4351 hp 474->468 dmg=6 band=79131000 mw2=105 d=48.0m via=impact n=1 kill=0 gun=cheytac_mp
+2026-10-17 23:25:11.773 I [present] SWITCH start from=cheytac_mp to=m240_mp via=wheel drop_s=1.20
+2026-10-17 23:25:11.773 I [present] RELOAD cancelled (switch)
+2026-10-17 23:25:11.773 I [present] RELOAD start empty=1 dur=3.867 mag=0
+2026-10-17 23:25:11.773 I [present] VM state reload_empty->drop clip=putaway rate=0.972 ads=0.00 seq=261
+2026-10-17 23:25:12.973 I [present] SWITCH raise gun=m240_mp first=1 raise_s=1.25
+2026-10-17 23:25:12.973 I [present] VM state drop->raise clip=first_raise rate=1.093 ads=0.00 seq=262
+2026-10-17 23:25:14.223 I [present] SWITCH raised gun=m240_mp t=1.25 first=1
+2026-10-17 23:25:14.240 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=263
+2026-10-17 23:25:14.874 I [present] SHOT n=94 mag=99/300 id=79125000 mw2=30 d=76.2m src=map spread=0.00 origin=(12.51,-2.29,26.86) dir=(0.918,-0.174,-0.356) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:14.874 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=264
+2026-10-17 23:25:14.940 I [present] SHOT n=95 mag=98/300 id=79125000 mw2=30 d=73.5m src=map spread=0.00 origin=(12.52,-2.29,26.86) dir=(0.919,-0.177,-0.352) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:14.940 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=265
+2026-10-17 23:25:15.007 I [present] SHOT n=96 mag=97/300 id=79125000 mw2=30 d=58.2m src=map spread=0.00 origin=(12.52,-2.29,26.89) dir=(0.926,-0.180,-0.333) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,-0.80) capped=0
+2026-10-17 23:25:15.007 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=266
+2026-10-17 23:25:15.007 I [present] SPAWN pool bullets=0/128 sfx=68/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=2 live_all=2 spawns_world=252
+2026-10-17 23:25:15.073 I [present] SHOT n=97 mag=96/300 id=79125000 mw2=30 d=58.4m src=chr spread=0.00 origin=(12.52,-2.30,26.88) dir=(0.923,-0.181,-0.340) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.073 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=267
+2026-10-17 23:25:15.140 I [present] SHOT n=98 mag=95/300 id=79125000 mw2=30 d=58.5m src=chr spread=0.00 origin=(12.52,-2.30,26.88) dir=(0.923,-0.182,-0.339) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.140 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=268
+2026-10-17 23:25:15.207 I [present] SHOT n=99 mag=94/300 id=79125000 mw2=30 d=58.5m src=chr spread=0.00 origin=(12.52,-2.30,26.88) dir=(0.922,-0.185,-0.341) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.207 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=269
+2026-10-17 23:25:15.207 I [present] HIT chr=c4351 hp 468->467 dmg=1 band=79125000 mw2=30 d=58.4m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:15.273 I [present] SHOT n=100 mag=93/300 id=79125000 mw2=30 d=65.2m src=map spread=0.00 origin=(12.52,-2.30,26.87) dir=(0.921,-0.187,-0.342) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.273 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=270
+2026-10-17 23:25:15.340 I [present] SHOT n=101 mag=92/300 id=79125000 mw2=30 d=58.6m src=chr spread=0.00 origin=(12.52,-2.30,26.87) dir=(0.921,-0.184,-0.342) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.20,0.00) capped=0
+2026-10-17 23:25:15.340 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=271
+2026-10-17 23:25:15.406 I [present] SHOT n=102 mag=91/300 id=79125000 mw2=30 d=63.3m src=map spread=0.00 origin=(12.52,-2.30,26.88) dir=(0.921,-0.189,-0.340) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.406 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=272
+2026-10-17 23:25:15.473 I [present] SHOT n=103 mag=90/300 id=79125000 mw2=30 d=61.9m src=map spread=0.00 origin=(12.52,-2.31,26.88) dir=(0.921,-0.191,-0.338) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.473 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=273
+2026-10-17 23:25:15.524 I [present] SHOT n=104 mag=89/300 id=79125000 mw2=30 d=61.9m src=map spread=0.00 origin=(12.57,-2.32,26.86) dir=(0.921,-0.191,-0.338) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.524 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=274
+2026-10-17 23:25:15.591 I [present] SHOT n=105 mag=88/300 id=79125000 mw2=30 d=61.7m src=map spread=0.00 origin=(12.68,-2.34,26.82) dir=(0.921,-0.191,-0.338) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.591 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=275
+2026-10-17 23:25:15.657 I [present] SHOT n=106 mag=87/300 id=79125000 mw2=30 d=58.0m src=map spread=0.00 origin=(12.87,-2.38,26.75) dir=(0.922,-0.191,-0.338) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.657 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=276
+2026-10-17 23:25:15.657 I [present] HIT chr=c4351 hp 467->466 dmg=1 band=79125000 mw2=30 d=61.9m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:15.723 I [present] SHOT n=107 mag=86/300 id=79125000 mw2=30 d=63.1m src=map spread=0.00 origin=(13.08,-2.43,26.67) dir=(0.921,-0.188,-0.341) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.48) capped=0
+2026-10-17 23:25:15.723 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=277
+2026-10-17 23:25:15.791 I [present] SHOT n=108 mag=85/300 id=79125000 mw2=30 d=63.7m src=map spread=0.00 origin=(13.29,-2.48,26.60) dir=(0.925,-0.187,-0.331) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.791 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=278
+2026-10-17 23:25:15.791 I [present] HIT chr=c4351 hp 466->465 dmg=1 band=79125000 mw2=30 d=58.0m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:15.857 I [present] SHOT n=109 mag=84/300 id=79125000 mw2=30 d=63.4m src=map spread=0.00 origin=(13.50,-2.54,26.52) dir=(0.925,-0.187,-0.331) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.857 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=279
+2026-10-17 23:25:15.857 I [present] HIT chr=c4351 hp 465->464 dmg=1 band=79125000 mw2=30 d=63.1m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:15.923 I [present] SHOT n=110 mag=83/300 id=79125000 mw2=30 d=63.1m src=map spread=0.00 origin=(13.72,-2.59,26.45) dir=(0.925,-0.187,-0.330) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.923 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=280
+2026-10-17 23:25:15.990 I [present] SHOT n=111 mag=82/300 id=79125000 mw2=30 d=65.0m src=map spread=0.00 origin=(13.93,-2.63,26.38) dir=(0.928,-0.185,-0.325) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:15.990 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=281
+2026-10-17 23:25:16.056 I [t(6)] SHOT n=112 mag=81/300 id=79125000 mw2=30 d=64.8m src=map spread=0.00 origin=(14.14,-2.68,26.30) dir=(0.928,-0.185,-0.322) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.056 I [t(6)] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=282
+2026-10-17 23:25:16.123 I [present] SHOT n=113 mag=80/300 id=79125000 mw2=30 d=63.8m src=map spread=0.00 origin=(14.36,-2.73,26.23) dir=(0.928,-0.186,-0.322) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.123 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=283
+2026-10-17 23:25:16.190 I [present] SHOT n=114 mag=79/300 id=79125000 mw2=30 d=62.1m src=map spread=0.00 origin=(14.57,-2.78,26.15) dir=(0.927,-0.187,-0.326) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.190 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=284
+2026-10-17 23:25:16.240 I [present] SHOT n=115 mag=78/300 id=79125000 mw2=30 d=61.2m src=map spread=0.00 origin=(14.72,-2.82,26.09) dir=(0.926,-0.188,-0.329) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.240 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=285
+2026-10-17 23:25:16.306 I [present] SHOT n=116 mag=77/300 id=79125000 mw2=30 d=56.4m src=map spread=0.00 origin=(14.94,-2.87,26.01) dir=(0.925,-0.189,-0.331) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.306 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=286
+2026-10-17 23:25:16.374 I [present] SHOT n=117 mag=76/300 id=79125000 mw2=30 d=56.1m src=map spread=0.00 origin=(15.15,-2.92,25.93) dir=(0.925,-0.188,-0.331) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.02,0.00) capped=0
+2026-10-17 23:25:16.374 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=287
+2026-10-17 23:25:16.439 I [present] SHOT n=118 mag=75/300 id=79125000 mw2=30 d=59.8m src=map spread=0.00 origin=(15.36,-2.97,25.86) dir=(0.925,-0.189,-0.331) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.440 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=288
+2026-10-17 23:25:16.491 I [present] HIT chr=c4351 hp 464->463 dmg=1 band=79125000 mw2=30 d=56.1m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:16.507 I [present] SHOT n=119 mag=74/300 id=79125000 mw2=30 d=59.5m src=map spread=0.00 origin=(15.57,-3.01,25.78) dir=(0.924,-0.189,-0.332) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.507 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=289
+2026-10-17 23:25:16.573 I [present] SHOT n=120 mag=73/300 id=79125000 mw2=30 d=55.3m src=chr spread=0.00 origin=(15.78,-3.06,25.70) dir=(0.924,-0.185,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.19,0.00) capped=0
+2026-10-17 23:25:16.573 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=290
+2026-10-17 23:25:16.573 I [present] HIT chr=c4351 hp 463->462 dmg=1 band=79125000 mw2=30 d=59.8m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:16.623 I [present] HIT chr=c4351 hp 462->461 dmg=1 band=79125000 mw2=30 d=59.5m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:16.640 I [present] SHOT n=121 mag=72/300 id=79125000 mw2=30 d=59.0m src=map spread=0.00 origin=(16.00,-3.10,25.63) dir=(0.923,-0.189,-0.334) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,-0.07) capped=0
+2026-10-17 23:25:16.640 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=291
+2026-10-17 23:25:16.640 I [present] SPAWN pool bullets=0/128 sfx=94/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=3 live_all=3 spawns_world=302
+2026-10-17 23:25:16.707 I [present] SHOT n=122 mag=71/300 id=79125000 mw2=30 d=58.7m src=map spread=0.00 origin=(16.21,-3.15,25.55) dir=(0.923,-0.189,-0.336) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.707 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=292
+2026-10-17 23:25:16.774 I [present] SHOT n=123 mag=70/300 id=79125000 mw2=30 d=58.5m src=map spread=0.00 origin=(16.42,-3.20,25.48) dir=(0.923,-0.189,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.774 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=293
+2026-10-17 23:25:16.840 I [present] SHOT n=124 mag=69/300 id=79125000 mw2=30 d=58.2m src=map spread=0.00 origin=(16.63,-3.24,25.40) dir=(0.923,-0.189,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.840 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=294
+2026-10-17 23:25:16.891 I [present] SHOT n=125 mag=68/300 id=79125000 mw2=30 d=58.0m src=map spread=0.00 origin=(16.79,-3.28,25.34) dir=(0.923,-0.189,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.891 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=295
+2026-10-17 23:25:16.957 I [present] SHOT n=126 mag=67/300 id=79125000 mw2=30 d=57.7m src=map spread=0.00 origin=(17.00,-3.32,25.27) dir=(0.923,-0.189,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:16.957 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=296
+2026-10-17 23:25:17.023 I [t(8)] SHOT n=127 mag=66/300 id=79125000 mw2=30 d=56.9m src=map spread=0.00 origin=(17.21,-3.37,25.19) dir=(0.923,-0.189,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.023 I [t(8)] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=297
+2026-10-17 23:25:17.091 I [present] SHOT n=128 mag=65/300 id=79125000 mw2=30 d=58.3m src=map spread=0.00 origin=(17.43,-3.42,25.11) dir=(0.924,-0.187,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.091 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=298
+2026-10-17 23:25:17.157 I [present] SHOT n=129 mag=64/300 id=79125000 mw2=30 d=53.4m src=chr spread=0.00 origin=(17.64,-3.46,25.04) dir=(0.925,-0.181,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.157 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=299
+2026-10-17 23:25:17.223 I [present] SHOT n=130 mag=63/300 id=79125000 mw2=30 d=53.2m src=chr spread=0.00 origin=(17.85,-3.51,24.96) dir=(0.925,-0.180,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.223 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=300
+2026-10-17 23:25:17.290 I [present] SHOT n=131 mag=62/300 id=79125000 mw2=30 d=52.7m src=map spread=0.00 origin=(18.06,-3.56,24.88) dir=(0.923,-0.180,-0.339) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.23) capped=0
+2026-10-17 23:25:17.290 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=301
+2026-10-17 23:25:17.357 I [present] SHOT n=132 mag=61/300 id=79125000 mw2=30 d=52.9m src=chr spread=0.00 origin=(18.27,-3.61,24.81) dir=(0.925,-0.179,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.357 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=302
+2026-10-17 23:25:17.423 I [present] SHOT n=133 mag=60/300 id=79125000 mw2=30 d=52.5m src=map spread=0.00 origin=(18.49,-3.66,24.73) dir=(0.925,-0.177,-0.336) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.423 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=303
+2026-10-17 23:25:17.491 I [present] SHOT n=134 mag=59/300 id=79125000 mw2=30 d=52.2m src=map spread=0.00 origin=(18.70,-3.71,24.65) dir=(0.925,-0.177,-0.336) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.491 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=304
+2026-10-17 23:25:17.491 I [present] HIT chr=c4351 hp 461->460 dmg=1 band=79125000 mw2=30 d=52.9m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:17.540 I [present] SHOT n=135 mag=58/300 id=79125000 mw2=30 d=52.3m src=chr spread=0.00 origin=(18.86,-3.75,24.60) dir=(0.926,-0.175,-0.334) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.540 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=305
+2026-10-17 23:25:17.607 I [present] SHOT n=136 mag=57/300 id=79125000 mw2=30 d=52.1m src=chr spread=0.00 origin=(19.07,-3.79,24.52) dir=(0.926,-0.175,-0.334) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.607 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=306
+2026-10-17 23:25:17.623 I [present] HIT chr=c4351 hp 460->459 dmg=1 band=79125000 mw2=30 d=52.2m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:17.673 I [present] SHOT n=137 mag=56/300 id=79125000 mw2=30 d=51.9m src=chr spread=0.00 origin=(19.28,-3.84,24.43) dir=(0.923,-0.175,-0.343) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.59) capped=0
+2026-10-17 23:25:17.673 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=307
+2026-10-17 23:25:17.690 I [present] HIT chr=c4351 hp 459->458 dmg=1 band=79125000 mw2=30 d=52.3m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:17.741 I [present] SHOT n=138 mag=55/300 id=79125000 mw2=30 d=51.7m src=chr spread=0.00 origin=(19.49,-3.89,24.37) dir=(0.926,-0.175,-0.334) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.741 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=308
+2026-10-17 23:25:17.807 I [present] SHOT n=139 mag=54/300 id=79125000 mw2=30 d=51.4m src=map spread=0.00 origin=(19.70,-3.94,24.29) dir=(0.926,-0.175,-0.334) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.807 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=309
+2026-10-17 23:25:17.807 I [present] HIT chr=c4351 hp 458->457 dmg=1 band=79125000 mw2=30 d=51.9m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:17.873 I [present] SHOT n=140 mag=53/300 id=79125000 mw2=30 d=51.2m src=map spread=0.00 origin=(19.92,-3.99,24.21) dir=(0.926,-0.174,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.873 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=310
+2026-10-17 23:25:17.940 I [present] SHOT n=141 mag=52/300 id=79125000 mw2=30 d=51.0m src=map spread=0.00 origin=(20.13,-4.04,24.13) dir=(0.926,-0.172,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:17.940 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=311
+2026-10-17 23:25:17.940 I [present] HIT chr=c4351 hp 457->456 dmg=1 band=79125000 mw2=30 d=51.4m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:17.991 I [present] HIT chr=c4351 hp 456->455 dmg=1 band=79125000 mw2=30 d=51.2m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:18.007 I [present] SHOT n=142 mag=51/300 id=79125000 mw2=30 d=50.8m src=map spread=0.00 origin=(20.34,-4.09,24.06) dir=(0.926,-0.172,-0.335) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:18.007 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=312
+2026-10-17 23:25:18.073 I [present] SHOT n=143 mag=50/300 id=79125000 mw2=30 d=50.7m src=chr spread=0.00 origin=(20.55,-4.14,23.97) dir=(0.923,-0.172,-0.344) gun=m240_mp pellets=1 spawned=1 dropped=0 bands=79125000x1 ads=1.00 cone=0.00 kick=(0.00,0.51) capped=0
+2026-10-17 23:25:18.073 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=313
+2026-10-17 23:25:18.073 I [present] HIT chr=c4351 hp 455->454 dmg=1 band=79125000 mw2=30 d=51.0m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:18.141 I [present] HIT chr=c4351 hp 454->453 dmg=1 band=79125000 mw2=30 d=50.8m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:18.206 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.86 seq=314
+2026-10-17 23:25:18.206 I [present] HIT chr=c4351 hp 453->452 dmg=1 band=79125000 mw2=30 d=50.7m via=impact n=1 kill=0 gun=m240_mp
+2026-10-17 23:25:18.907 I [present] SWITCH start from=m240_mp to=aug_mp via=wheel drop_s=0.60
+2026-10-17 23:25:18.907 I [present] VM state idle->drop clip=putaway rate=1.000 ads=0.00 seq=315
+2026-10-17 23:25:19.507 I [present] SWITCH raise gun=aug_mp first=1 raise_s=1.17
+2026-10-17 23:25:19.507 I [present] VM state drop->raise clip=first_raise rate=1.000 ads=0.00 seq=316
+2026-10-17 23:25:20.691 I [present] SWITCH raised gun=aug_mp t=1.18 first=1
+2026-10-17 23:25:20.691 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=317
+2026-10-17 23:25:20.908 I [present] SWITCH start from=aug_mp to=mg4_mp via=wheel drop_s=0.53
+2026-10-17 23:25:20.908 I [present] VM state idle->drop clip=putaway rate=1.001 ads=0.00 seq=318
+2026-10-17 23:25:21.393 I [present] AC130 ready
+2026-10-17 23:25:21.443 I [present] SWITCH raise gun=mg4_mp first=1 raise_s=1.25
+2026-10-17 23:25:21.443 I [present] VM state drop->raise clip=first_raise rate=1.093 ads=0.00 seq=319
+2026-10-17 23:25:22.693 I [present] SWITCH raised gun=mg4_mp t=1.25 first=1
+2026-10-17 23:25:22.693 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=320
+2026-10-17 23:25:23.327 I [present] SWITCH start from=mg4_mp to=rpd_mp via=wheel drop_s=0.60
+2026-10-17 23:25:23.327 I [present] VM state idle->drop clip=putaway rate=1.000 ads=0.00 seq=321
+2026-10-17 23:25:23.927 I [present] SWITCH raise gun=rpd_mp first=1 raise_s=1.25
+2026-10-17 23:25:23.927 I [present] VM state drop->raise clip=first_raise rate=1.093 ads=0.00 seq=322
+2026-10-17 23:25:25.177 I [present] SWITCH raised gun=rpd_mp t=1.25 first=1
+2026-10-17 23:25:25.194 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=323
+2026-10-17 23:25:25.577 I [present] SHOT n=144 mag=99/300 id=79122000 mw2=40 d=23.3m src=map spread=0.00 origin=(7.84,-0.31,0.21) dir=(0.938,-0.154,-0.309) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:25.577 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=324
+2026-10-17 23:25:25.677 I [t(8)] SHOT n=145 mag=98/300 id=79122000 mw2=40 d=23.5m src=map spread=0.00 origin=(7.61,-0.27,0.28) dir=(0.937,-0.155,-0.312) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:25.677 I [t(8)] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=325
+2026-10-17 23:25:25.744 I [present] HIT chr=c4351 hp 452->450 dmg=2 band=79122000 mw2=40 d=23.3m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:25.760 I [present] SHOT n=146 mag=97/300 id=79122000 mw2=40 d=23.7m src=map spread=0.00 origin=(7.42,-0.16,0.35) dir=(0.937,-0.155,-0.312) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:25.760 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=326
+2026-10-17 23:25:25.760 I [present] SPAWN pool bullets=0/128 sfx=119/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=1 live_all=1 spawns_world=352
+2026-10-17 23:25:25.843 I [present] SHOT n=147 mag=96/300 id=79122000 mw2=40 d=23.7m src=map spread=0.00 origin=(7.24,-0.19,0.41) dir=(0.937,-0.155,-0.312) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:25.843 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=327
+2026-10-17 23:25:25.843 I [present] HIT chr=c4351 hp 450->448 dmg=2 band=79122000 mw2=40 d=23.5m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:25.927 I [present] SHOT n=148 mag=95/300 id=79122000 mw2=40 d=24.2m src=map spread=0.00 origin=(7.05,-0.09,0.47) dir=(0.938,-0.156,-0.310) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:25.927 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=328
+2026-10-17 23:25:25.927 I [present] HIT chr=c4351 hp 448->446 dmg=2 band=79122000 mw2=40 d=23.7m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:25.994 I [present] HIT chr=c4351 hp 446->444 dmg=2 band=79122000 mw2=40 d=23.7m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.010 I [present] SHOT n=149 mag=94/300 id=79122000 mw2=40 d=24.4m src=map spread=0.00 origin=(6.86,-0.06,0.54) dir=(0.938,-0.156,-0.309) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.010 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=329
+2026-10-17 23:25:26.093 I [present] SHOT n=150 mag=93/300 id=79122000 mw2=40 d=24.7m src=map spread=0.00 origin=(6.68,-0.03,0.60) dir=(0.938,-0.156,-0.309) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.093 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=330
+2026-10-17 23:25:26.093 I [present] HIT chr=c4351 hp 444->442 dmg=2 band=79122000 mw2=40 d=24.2m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.177 I [present] SHOT n=151 mag=92/300 id=79122000 mw2=40 d=24.5m src=map spread=0.00 origin=(6.49,-0.05,0.66) dir=(0.938,-0.156,-0.309) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.177 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=331
+2026-10-17 23:25:26.177 I [present] HIT chr=c4351 hp 442->440 dmg=2 band=79122000 mw2=40 d=24.4m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.261 I [present] SHOT n=152 mag=91/300 id=79122000 mw2=40 d=25.1m src=map spread=0.00 origin=(6.30,0.04,0.72) dir=(0.938,-0.156,-0.309) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.261 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=332
+2026-10-17 23:25:26.261 I [present] HIT chr=c4351 hp 440->438 dmg=2 band=79122000 mw2=40 d=24.7m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.343 I [present] SHOT n=153 mag=90/300 id=79122000 mw2=40 d=25.4m src=map spread=0.00 origin=(6.12,0.08,0.78) dir=(0.938,-0.156,-0.309) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.343 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=333
+2026-10-17 23:25:26.343 I [present] HIT chr=c4351 hp 438->436 dmg=2 band=79122000 mw2=40 d=24.5m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.427 I [t(8)] SHOT n=154 mag=89/300 id=79122000 mw2=40 d=25.5m src=map spread=0.00 origin=(5.93,0.12,0.85) dir=(0.939,-0.152,-0.308) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.427 I [t(8)] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=334
+2026-10-17 23:25:26.427 I [t(8)] HIT chr=c4351 hp 436->434 dmg=2 band=79122000 mw2=40 d=25.1m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.494 I [present] HIT chr=c4351 hp 434->432 dmg=2 band=79122000 mw2=40 d=25.4m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.527 I [present] SHOT n=155 mag=88/300 id=79122000 mw2=40 d=25.8m src=map spread=0.00 origin=(5.70,0.17,0.92) dir=(0.939,-0.150,-0.308) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.528 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=335
+2026-10-17 23:25:26.594 I [present] HIT chr=c4351 hp 432->430 dmg=2 band=79122000 mw2=40 d=25.5m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.610 I [present] SHOT n=156 mag=87/300 id=79122000 mw2=40 d=26.0m src=map spread=0.00 origin=(5.52,0.20,0.98) dir=(0.939,-0.150,-0.311) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.610 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=336
+2026-10-17 23:25:26.694 I [present] SHOT n=157 mag=86/300 id=79122000 mw2=40 d=26.2m src=map spread=0.00 origin=(5.33,0.24,1.04) dir=(0.937,-0.152,-0.313) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.694 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=337
+2026-10-17 23:25:26.694 I [present] HIT chr=c4351 hp 430->428 dmg=2 band=79122000 mw2=40 d=25.8m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.777 I [present] SHOT n=158 mag=85/300 id=79122000 mw2=40 d=26.4m src=map spread=0.00 origin=(5.14,0.28,1.10) dir=(0.938,-0.152,-0.313) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.777 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=338
+2026-10-17 23:25:26.777 I [present] HIT chr=c4351 hp 428->426 dmg=2 band=79122000 mw2=40 d=26.0m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.860 I [present] SHOT n=159 mag=84/300 id=79122000 mw2=40 d=26.7m src=map spread=0.00 origin=(4.95,0.32,1.16) dir=(0.938,-0.151,-0.313) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.860 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=339
+2026-10-17 23:25:26.860 I [present] HIT chr=c4351 hp 426->424 dmg=2 band=79122000 mw2=40 d=26.2m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.927 I [t(8)] HIT chr=c4351 hp 424->422 dmg=2 band=79122000 mw2=40 d=26.4m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:26.944 I [present] SHOT n=160 mag=83/300 id=79122000 mw2=40 d=26.9m src=map spread=0.00 origin=(4.77,0.33,1.22) dir=(0.938,-0.150,-0.312) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:26.944 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=340
+2026-10-17 23:25:27.027 I [present] SHOT n=161 mag=82/300 id=79122000 mw2=40 d=27.1m src=map spread=0.00 origin=(4.58,0.37,1.29) dir=(0.938,-0.150,-0.312) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:27.027 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=341
+2026-10-17 23:25:27.027 I [present] HIT chr=c4351 hp 422->420 dmg=2 band=79122000 mw2=40 d=26.7m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:27.110 I [present] SHOT n=162 mag=81/300 id=79122000 mw2=40 d=27.4m src=map spread=0.00 origin=(4.39,0.36,1.35) dir=(0.938,-0.150,-0.312) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:27.110 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=342
+2026-10-17 23:25:27.110 I [present] HIT chr=c4351 hp 420->418 dmg=2 band=79122000 mw2=40 d=26.9m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:27.193 I [present] SHOT n=163 mag=80/300 id=79122000 mw2=40 d=27.6m src=map spread=0.00 origin=(4.21,0.40,1.41) dir=(0.938,-0.150,-0.312) gun=rpd_mp pellets=1 spawned=1 dropped=0 bands=79122000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:27.193 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=343
+2026-10-17 23:25:27.193 I [present] HIT chr=c4351 hp 418->416 dmg=2 band=79122000 mw2=40 d=27.1m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:27.277 I [present] HIT chr=c4351 hp 416->414 dmg=2 band=79122000 mw2=40 d=27.4m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:27.359 I [present] HIT chr=c4351 hp 414->412 dmg=2 band=79122000 mw2=40 d=27.6m via=impact n=1 kill=0 gun=rpd_mp
+2026-10-17 23:25:27.377 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.71 seq=344
+2026-10-17 23:25:27.561 I [present] SWITCH start from=rpd_mp to=sa80_mp via=wheel drop_s=0.60
+2026-10-17 23:25:27.561 I [present] VM state idle->drop clip=putaway rate=1.000 ads=0.00 seq=345
+2026-10-17 23:25:28.161 I [present] SWITCH raise gun=sa80_mp first=1 raise_s=1.46
+2026-10-17 23:25:28.161 I [present] VM state drop->raise clip=first_raise rate=0.982 ads=0.00 seq=346
+2026-10-17 23:25:29.628 I [present] SWITCH raised gun=sa80_mp t=1.47 first=1
+2026-10-17 23:25:29.628 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=347
+2026-10-17 23:25:29.811 I [present] SHOT n=164 mag=99/300 id=79121000 mw2=40 d=33.0m src=chr spread=6.40 origin=(-2.42,1.78,3.63) dir=(0.932,-0.080,-0.354) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.00 cone=6.40 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:29.811 I [present] VM state idle->fire clip=fire rate=2.222 ads=0.00 seq=348
+2026-10-17 23:25:29.893 I [present] SHOT n=165 mag=98/300 id=79121000 mw2=40 d=32.6m src=chr spread=8.00 origin=(-2.42,1.78,3.63) dir=(0.963,-0.113,-0.246) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.00 cone=8.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:29.893 I [present] VM state fire->fire clip=fire rate=2.222 ads=0.00 seq=349
+2026-10-17 23:25:29.960 I [present] SHOT n=166 mag=97/300 id=79121000 mw2=40 d=32.2m src=chr spread=8.39 origin=(-2.42,1.78,3.63) dir=(0.963,-0.197,-0.184) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.00 cone=8.39 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:29.960 I [present] VM state fire->fire clip=fire rate=2.222 ads=0.00 seq=350
+2026-10-17 23:25:30.044 I [present] SHOT n=167 mag=96/300 id=79121000 mw2=40 d=31.7m src=chr spread=10.00 origin=(-2.31,1.77,3.59) dir=(0.948,-0.231,-0.217) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.00 cone=10.00 kick=(0.00,0.26) capped=0
+2026-10-17 23:25:30.044 I [present] VM state fire->fire clip=fire rate=2.222 ads=0.00 seq=351
+2026-10-17 23:25:30.127 I [present] SHOT n=168 mag=95/300 id=79121000 mw2=40 d=31.0m src=chr spread=10.00 origin=(-2.05,1.71,3.50) dir=(0.865,-0.167,-0.474) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.00 cone=10.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:30.127 I [present] VM state fire->fire clip=fire rate=2.222 ads=0.00 seq=352
+2026-10-17 23:25:30.194 I [present] SHOT n=169 mag=94/300 id=79121000 mw2=40 d=29.8m src=map spread=10.00 origin=(-1.78,1.64,3.41) dir=(0.933,-0.171,-0.317) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.00 cone=10.00 kick=(0.00,-0.10) capped=0
+2026-10-17 23:25:30.194 I [present] VM state fire->fire clip=fire rate=2.222 ads=0.00 seq=353
+2026-10-17 23:25:30.260 I [present] SHOT n=170 mag=93/300 id=79121000 mw2=40 d=29.2m src=map spread=9.04 origin=(-1.55,1.59,3.34) dir=(0.967,-0.147,-0.211) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.10 cone=9.04 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:30.260 I [present] VM state fire->fire clip=fire rate=2.222 ads=0.10 seq=354
+2026-10-17 23:25:30.344 I [present] SHOT n=171 mag=92/300 id=79121000 mw2=40 d=29.4m src=map spread=6.67 origin=(-1.28,1.54,3.25) dir=(0.894,-0.200,-0.400) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.33 cone=6.67 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:30.344 I [present] VM state fire->fire clip=fire rate=2.222 ads=0.33 seq=355
+2026-10-17 23:25:30.344 I [present] SPAWN pool bullets=0/128 sfx=143/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=2 live_all=2 spawns_world=402
+2026-10-17 23:25:30.361 I [present] HIT chr=c4351 hp 412->410 dmg=2 band=79121000 mw2=40 d=29.8m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:30.427 I [present] SHOT n=172 mag=91/300 id=79121000 mw2=40 d=29.1m src=map spread=4.29 origin=(-1.01,1.49,3.16) dir=(0.935,-0.204,-0.292) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.57 cone=4.29 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:30.427 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=0.57 seq=356
+2026-10-17 23:25:30.494 I [present] SHOT n=173 mag=90/300 id=79121000 mw2=40 d=28.9m src=map spread=2.37 origin=(-0.80,1.39,3.09) dir=(0.944,-0.149,-0.294) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.76 cone=2.37 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:30.494 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=0.76 seq=357
+2026-10-17 23:25:30.560 I [present] SHOT n=174 mag=89/300 id=79121000 mw2=40 d=28.7m src=map spread=0.47 origin=(-0.58,1.37,3.02) dir=(0.933,-0.176,-0.313) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=0.95 cone=0.47 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:30.560 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=0.95 seq=358
+2026-10-17 23:25:30.644 I [present] SHOT n=175 mag=88/300 id=79121000 mw2=40 d=28.5m src=chr spread=0.00 origin=(-0.32,1.32,2.93) dir=(0.935,-0.177,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:30.644 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=359
+2026-10-17 23:25:30.727 I [present] SHOT n=176 mag=87/300 id=79121000 mw2=40 d=28.3m src=chr spread=0.00 origin=(-0.05,1.26,2.84) dir=(0.935,-0.177,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:30.727 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=360
+2026-10-17 23:25:30.727 I [present] HIT chr=c4351 hp 410->408 dmg=2 band=79121000 mw2=40 d=28.7m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:30.794 I [present] SHOT n=177 mag=86/300 id=79121000 mw2=40 d=28.0m src=map spread=0.00 origin=(0.17,1.19,2.77) dir=(0.936,-0.172,-0.307) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.29,-0.11) capped=0
+2026-10-17 23:25:30.794 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=361
+2026-10-17 23:25:30.794 I [present] HIT chr=c4351 hp 408->406 dmg=2 band=79121000 mw2=40 d=28.5m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:30.860 I [present] SHOT n=178 mag=85/300 id=79121000 mw2=40 d=27.8m src=map spread=0.00 origin=(0.38,1.19,2.70) dir=(0.935,-0.177,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:30.860 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=362
+2026-10-17 23:25:30.877 I [present] HIT chr=c4351 hp 406->404 dmg=2 band=79121000 mw2=40 d=28.3m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:30.944 I [present] SHOT n=179 mag=84/300 id=79121000 mw2=40 d=27.6m src=map spread=0.00 origin=(0.65,1.12,2.61) dir=(0.935,-0.175,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:30.944 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=363
+2026-10-17 23:25:30.961 I [present] HIT chr=c4351 hp 404->402 dmg=2 band=79121000 mw2=40 d=28.0m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.011 I [present] SHOT n=180 mag=83/300 id=79121000 mw2=40 d=27.3m src=map spread=0.00 origin=(0.86,1.08,2.54) dir=(0.936,-0.170,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.30,0.00) capped=0
+2026-10-17 23:25:31.011 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=364
+2026-10-17 23:25:31.027 I [present] HIT chr=c4351 hp 402->400 dmg=2 band=79121000 mw2=40 d=27.8m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.094 I [present] SHOT n=181 mag=82/300 id=79121000 mw2=40 d=27.1m src=map spread=0.00 origin=(1.13,1.05,2.46) dir=(0.935,-0.175,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:31.094 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=365
+2026-10-17 23:25:31.094 I [present] HIT chr=c4351 hp 400->398 dmg=2 band=79121000 mw2=40 d=27.6m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.161 I [present] SHOT n=182 mag=81/300 id=79121000 mw2=40 d=26.9m src=map spread=0.00 origin=(1.34,0.96,2.39) dir=(0.935,-0.175,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:31.161 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=366
+2026-10-17 23:25:31.177 I [present] HIT chr=c4351 hp 398->396 dmg=2 band=79121000 mw2=40 d=27.3m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.244 I [present] SHOT n=183 mag=80/300 id=79121000 mw2=40 d=26.6m src=map spread=0.00 origin=(1.61,0.90,2.30) dir=(0.936,-0.171,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:31.244 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=367
+2026-10-17 23:25:31.261 I [present] HIT chr=c4351 hp 396->394 dmg=2 band=79121000 mw2=40 d=27.1m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.327 I [present] SHOT n=184 mag=79/300 id=79121000 mw2=40 d=26.4m src=map spread=0.00 origin=(1.88,0.89,2.21) dir=(0.936,-0.169,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:31.327 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=368
+2026-10-17 23:25:31.327 I [present] HIT chr=c4351 hp 394->392 dmg=2 band=79121000 mw2=40 d=26.9m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.394 I [present] SHOT n=185 mag=78/300 id=79121000 mw2=40 d=25.7m src=map spread=0.00 origin=(2.09,0.85,2.14) dir=(0.936,-0.169,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:31.394 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=369
+2026-10-17 23:25:31.394 I [present] HIT chr=c4351 hp 392->390 dmg=2 band=79121000 mw2=40 d=26.6m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.461 I [present] SHOT n=186 mag=77/300 id=79121000 mw2=40 d=25.5m src=map spread=0.00 origin=(2.31,0.82,2.07) dir=(0.936,-0.169,-0.308) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:31.461 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=370
+2026-10-17 23:25:31.494 I [present] HIT chr=c4351 hp 390->388 dmg=2 band=79121000 mw2=40 d=26.4m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.543 I [present] SHOT n=187 mag=76/300 id=79121000 mw2=40 d=25.8m src=chr spread=0.00 origin=(2.58,0.75,2.00) dir=(0.940,-0.168,-0.297) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,-0.72) capped=0
+2026-10-17 23:25:31.544 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=371
+2026-10-17 23:25:31.561 I [present] HIT chr=c4351 hp 388->386 dmg=2 band=79121000 mw2=40 d=25.7m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.610 I [present] SHOT n=188 mag=75/300 id=79121000 mw2=40 d=25.4m src=map spread=0.00 origin=(2.79,0.71,1.91) dir=(0.936,-0.164,-0.311) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.13,0.00) capped=0
+2026-10-17 23:25:31.610 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=372
+2026-10-17 23:25:31.610 I [present] HIT chr=c4351 hp 386->384 dmg=2 band=79121000 mw2=40 d=25.5m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.694 I [present] SHOT n=189 mag=74/300 id=79121000 mw2=40 d=25.0m src=map spread=0.00 origin=(3.06,0.66,1.82) dir=(0.936,-0.160,-0.313) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:31.694 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=373
+2026-10-17 23:25:31.711 I [present] HIT chr=c4351 hp 384->382 dmg=2 band=79121000 mw2=40 d=25.8m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.760 I [present] SHOT n=190 mag=73/300 id=79121000 mw2=40 d=24.8m src=map spread=0.00 origin=(3.27,0.65,1.75) dir=(0.936,-0.160,-0.313) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:31.760 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=374
+2026-10-17 23:25:31.777 I [present] HIT chr=c4351 hp 382->380 dmg=2 band=79121000 mw2=40 d=25.4m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.844 I [present] SHOT n=191 mag=72/300 id=79121000 mw2=40 d=24.6m src=map spread=0.00 origin=(3.54,0.59,1.67) dir=(0.936,-0.159,-0.313) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:31.844 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=375
+2026-10-17 23:25:31.861 I [present] HIT chr=c4351 hp 380->378 dmg=2 band=79121000 mw2=40 d=25.0m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.927 I [present] SHOT n=192 mag=71/300 id=79121000 mw2=40 d=24.3m src=map spread=0.00 origin=(3.80,0.52,1.58) dir=(0.937,-0.159,-0.313) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:31.927 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=376
+2026-10-17 23:25:31.927 I [present] HIT chr=c4351 hp 378->376 dmg=2 band=79121000 mw2=40 d=24.8m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:31.995 I [present] SHOT n=193 mag=70/300 id=79121000 mw2=40 d=24.1m src=map spread=0.00 origin=(4.02,0.44,1.51) dir=(0.938,-0.149,-0.313) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.51,0.00) capped=0
+2026-10-17 23:25:31.995 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=377
+2026-10-17 23:25:31.995 I [present] HIT chr=c4351 hp 376->374 dmg=2 band=79121000 mw2=40 d=24.6m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.061 I [present] SHOT n=194 mag=69/300 id=79121000 mw2=40 d=23.9m src=map spread=0.00 origin=(4.22,0.39,1.44) dir=(0.937,-0.156,-0.313) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:32.061 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=378
+2026-10-17 23:25:32.095 I [present] HIT chr=c4351 hp 374->372 dmg=2 band=79121000 mw2=40 d=24.3m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.144 I [present] SHOT n=195 mag=68/300 id=79121000 mw2=40 d=23.7m src=map spread=0.00 origin=(4.39,0.36,1.38) dir=(0.937,-0.154,-0.313) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:32.144 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=379
+2026-10-17 23:25:32.161 I [present] HIT chr=c4351 hp 372->370 dmg=2 band=79121000 mw2=40 d=24.1m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.211 I [present] SHOT n=196 mag=67/300 id=79121000 mw2=40 d=23.7m src=map spread=0.00 origin=(4.42,0.36,1.37) dir=(0.937,-0.154,-0.313) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:32.211 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=380
+2026-10-17 23:25:32.211 I [present] SPAWN pool bullets=0/128 sfx=169/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=2 live_all=2 spawns_world=452
+2026-10-17 23:25:32.227 I [present] HIT chr=c4351 hp 370->368 dmg=2 band=79121000 mw2=40 d=23.9m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.294 I [present] SHOT n=197 mag=66/300 id=79121000 mw2=40 d=23.8m src=map spread=0.00 origin=(4.35,0.37,1.39) dir=(0.937,-0.154,-0.313) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:32.294 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=381
+2026-10-17 23:25:32.311 I [present] HIT chr=c4351 hp 368->366 dmg=2 band=79121000 mw2=40 d=23.7m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.377 I [present] SHOT n=198 mag=65/300 id=79121000 mw2=40 d=24.0m src=map spread=0.00 origin=(4.23,0.39,1.44) dir=(0.938,-0.152,-0.311) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:32.377 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=382
+2026-10-17 23:25:32.377 I [present] HIT chr=c4351 hp 366->364 dmg=2 band=79121000 mw2=40 d=23.7m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.444 I [present] SHOT n=199 mag=64/300 id=79121000 mw2=40 d=24.1m src=map spread=0.00 origin=(4.10,0.43,1.48) dir=(0.939,-0.146,-0.311) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.28,0.00) capped=0
+2026-10-17 23:25:32.444 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=383
+2026-10-17 23:25:32.461 I [present] HIT chr=c4351 hp 364->362 dmg=2 band=79121000 mw2=40 d=23.8m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.511 I [present] SHOT n=200 mag=63/300 id=79121000 mw2=40 d=24.8m src=chr spread=0.00 origin=(3.94,0.50,1.52) dir=(0.934,-0.149,-0.324) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.88) capped=0
+2026-10-17 23:25:32.511 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=384
+2026-10-17 23:25:32.527 I [present] HIT chr=c4351 hp 362->360 dmg=2 band=79121000 mw2=40 d=24.0m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.595 I [present] SHOT n=201 mag=62/300 id=79121000 mw2=40 d=24.5m src=map spread=0.00 origin=(3.76,0.55,1.60) dir=(0.940,-0.147,-0.309) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:32.595 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=385
+2026-10-17 23:25:32.595 I [present] HIT chr=c4351 hp 360->358 dmg=2 band=79121000 mw2=40 d=24.1m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.661 I [present] SHOT n=202 mag=61/300 id=79121000 mw2=40 d=25.2m src=chr spread=0.00 origin=(3.61,0.58,1.66) dir=(0.943,-0.147,-0.298) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,-0.62) capped=0
+2026-10-17 23:25:32.661 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=386
+2026-10-17 23:25:32.744 I [present] SHOT n=203 mag=60/300 id=79121000 mw2=40 d=24.9m src=map spread=0.00 origin=(3.42,0.63,1.71) dir=(0.940,-0.147,-0.309) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:32.744 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=387
+2026-10-17 23:25:32.760 I [present] HIT chr=c4351 hp 358->356 dmg=2 band=79121000 mw2=40 d=24.5m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.811 I [present] SHOT n=204 mag=59/300 id=79121000 mw2=40 d=25.6m src=chr spread=0.00 origin=(3.27,0.66,1.74) dir=(0.934,-0.147,-0.325) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.96) capped=0
+2026-10-17 23:25:32.811 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=388
+2026-10-17 23:25:32.894 I [present] SHOT n=205 mag=58/300 id=79121000 mw2=40 d=25.3m src=map spread=0.00 origin=(3.09,0.67,1.83) dir=(0.940,-0.147,-0.309) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:32.894 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=389
+2026-10-17 23:25:32.910 I [present] HIT chr=c4351 hp 356->354 dmg=2 band=79121000 mw2=40 d=24.9m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:32.961 I [present] SHOT n=206 mag=57/300 id=79121000 mw2=40 d=25.6m src=map spread=0.00 origin=(2.94,0.70,1.88) dir=(0.940,-0.147,-0.309) gun=sa80_mp pellets=1 spawned=1 dropped=0 bands=79121000x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:32.961 I [present] VM state fire->fire clip=fire_ads rate=2.222 ads=1.00 seq=390
+2026-10-17 23:25:33.044 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=391
+2026-10-17 23:25:33.044 I [present] HIT chr=c4351 hp 354->352 dmg=2 band=79121000 mw2=40 d=25.3m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:33.111 I [present] HIT chr=c4351 hp 352->350 dmg=2 band=79121000 mw2=40 d=25.6m via=impact n=1 kill=0 gun=sa80_mp
+2026-10-17 23:25:33.461 I [present] SWITCH start from=sa80_mp to=uzi_mp via=wheel drop_s=0.75
+2026-10-17 23:25:33.461 I [present] VM state idle->drop clip=putaway rate=1.111 ads=0.00 seq=392
+2026-10-17 23:25:34.226 I [present] SWITCH raise gun=uzi_mp first=1 raise_s=0.80
+2026-10-17 23:25:34.226 I [present] VM state drop->raise clip=first_raise rate=1.042 ads=0.00 seq=393
+2026-10-17 23:25:35.028 I [present] SWITCH raised gun=uzi_mp t=0.82 first=1
+2026-10-17 23:25:35.028 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=394
+2026-10-17 23:25:35.462 I [present] SHOT n=207 mag=31/192 id=79115010 mw2=20 d=78.6m src=map spread=0.00 origin=(-4.31,2.24,4.28) dir=(0.940,-0.148,-0.306) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:35.462 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=395
+2026-10-17 23:25:35.529 I [present] SHOT n=208 mag=30/192 id=79115010 mw2=20 d=76.7m src=map spread=0.00 origin=(-4.49,2.27,4.33) dir=(0.939,-0.149,-0.309) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:35.529 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=396
+2026-10-17 23:25:35.595 I [present] SHOT n=209 mag=29/192 id=79115010 mw2=20 d=74.6m src=map spread=0.00 origin=(-4.66,2.23,4.38) dir=(0.937,-0.151,-0.314) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:35.595 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=397
+2026-10-17 23:25:35.661 I [present] SHOT n=210 mag=28/192 id=79115010 mw2=20 d=69.7m src=map spread=0.00 origin=(-4.83,2.26,4.44) dir=(0.935,-0.155,-0.318) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:35.661 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=398
+2026-10-17 23:25:35.728 I [present] SHOT n=211 mag=27/192 id=79115010 mw2=20 d=65.5m src=map spread=0.00 origin=(-5.01,2.34,4.48) dir=(0.932,-0.159,-0.327) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:35.728 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=399
+2026-10-17 23:25:35.777 I [present] SHOT n=212 mag=26/192 id=79115010 mw2=20 d=63.0m src=map spread=0.00 origin=(-5.14,2.36,4.52) dir=(0.929,-0.162,-0.334) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:35.777 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=400
+2026-10-17 23:25:35.845 I [present] SHOT n=213 mag=25/192 id=79115010 mw2=20 d=35.5m src=chr spread=0.00 origin=(-5.31,2.39,4.57) dir=(0.925,-0.165,-0.341) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:35.845 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=401
+2026-10-17 23:25:35.911 I [present] SHOT n=214 mag=24/192 id=79115010 mw2=20 d=35.7m src=chr spread=0.00 origin=(-5.49,2.42,4.62) dir=(0.922,-0.171,-0.347) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.01,0.00) capped=0
+2026-10-17 23:25:35.911 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=402
+2026-10-17 23:25:35.978 I [present] SHOT n=215 mag=23/192 id=79115010 mw2=20 d=35.9m src=chr spread=0.00 origin=(-5.65,2.42,4.67) dir=(0.920,-0.174,-0.351) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:35.978 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=403
+2026-10-17 23:25:36.044 I [present] SHOT n=216 mag=22/192 id=79115010 mw2=20 d=36.0m src=chr spread=0.00 origin=(-5.76,2.44,4.71) dir=(0.919,-0.177,-0.353) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.044 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=404
+2026-10-17 23:25:36.095 I [present] SHOT n=217 mag=21/192 id=79115010 mw2=20 d=36.0m src=chr spread=0.00 origin=(-5.80,2.44,4.72) dir=(0.918,-0.180,-0.354) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.095 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=405
+2026-10-17 23:25:36.162 I [present] SHOT n=218 mag=20/192 id=79115010 mw2=20 d=36.0m src=chr spread=0.00 origin=(-5.79,2.43,4.71) dir=(0.915,-0.185,-0.358) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.162 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=406
+2026-10-17 23:25:36.227 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=2 live_all=2 spawns_world=496 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:36.227 I [present] SHOT n=219 mag=19/192 id=79115010 mw2=20 d=35.5m src=map spread=0.00 origin=(-5.68,2.41,4.66) dir=(0.914,-0.186,-0.360) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.06,0.00) capped=0
+2026-10-17 23:25:36.227 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=407
+2026-10-17 23:25:36.295 I [present] SHOT n=220 mag=18/192 id=79115010 mw2=20 d=35.4m src=map spread=0.00 origin=(-5.49,2.40,4.58) dir=(0.912,-0.186,-0.365) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.295 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=408
+2026-10-17 23:25:36.344 I [present] SHOT n=221 mag=17/192 id=79115010 mw2=20 d=35.2m src=map spread=0.00 origin=(-5.31,2.37,4.51) dir=(0.913,-0.179,-0.366) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.30,0.00) capped=0
+2026-10-17 23:25:36.344 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=409
+2026-10-17 23:25:36.411 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=2 live_all=2 spawns_world=500 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:36.411 I [present] SHOT n=222 mag=16/192 id=79115010 mw2=20 d=35.1m src=map spread=0.00 origin=(-5.07,2.32,4.41) dir=(0.912,-0.184,-0.367) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.411 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=410
+2026-10-17 23:25:36.461 I [present] HIT chr=c4351 hp 350->349 dmg=1 band=79115010 mw2=20 d=35.2m via=impact n=1 kill=0 gun=uzi_mp
+2026-10-17 23:25:36.478 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=1 live_all=1 spawns_world=500 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:36.478 I [present] SHOT n=223 mag=15/192 id=79115010 mw2=20 d=34.6m src=map spread=0.00 origin=(-4.83,2.22,4.32) dir=(0.911,-0.182,-0.369) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.478 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=411
+2026-10-17 23:25:36.544 I [present] SHOT n=224 mag=14/192 id=79115010 mw2=20 d=34.3m src=map spread=0.00 origin=(-4.59,2.26,4.22) dir=(0.912,-0.175,-0.371) gun=uzi_mp pellets=1 spawned=1 dropped=0 bands=79115010x1 ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.544 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=412
+2026-10-17 23:25:36.544 I [present] SPAWN pool bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502
+2026-10-17 23:25:36.611 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=1 live_all=1 spawns_world=502 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:36.611 I [present] SHOT n=225 mag=13/192 id=79115010 mw2=20 d=34.0m src=map spread=0.00 origin=(-4.35,2.21,4.12) dir=(0.912,-0.173,-0.371) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.611 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=413
+2026-10-17 23:25:36.661 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:36.661 I [present] SHOT n=226 mag=12/192 id=79115010 mw2=20 d=33.9m src=map spread=0.00 origin=(-4.17,2.18,4.05) dir=(0.913,-0.171,-0.371) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,-0.08) capped=0
+2026-10-17 23:25:36.661 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=414
+2026-10-17 23:25:36.728 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:36.728 I [present] SHOT n=227 mag=11/192 id=79115010 mw2=20 d=34.1m src=chr spread=0.00 origin=(-3.94,2.09,3.95) dir=(0.912,-0.167,-0.373) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.728 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=415
+2026-10-17 23:25:36.794 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:36.794 I [present] SHOT n=228 mag=10/192 id=79115010 mw2=20 d=33.9m src=chr spread=0.00 origin=(-3.70,2.05,3.86) dir=(0.912,-0.167,-0.373) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.794 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=416
+2026-10-17 23:25:36.861 E [t(8)] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:36.861 I [t(8)] SHOT n=229 mag=9/192 id=79115010 mw2=20 d=33.2m src=map spread=0.00 origin=(-3.46,2.00,3.76) dir=(0.913,-0.167,-0.372) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.861 I [t(8)] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=417
+2026-10-17 23:25:36.910 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:36.910 I [present] SHOT n=230 mag=8/192 id=79115010 mw2=20 d=33.2m src=map spread=0.00 origin=(-3.28,1.90,3.69) dir=(0.914,-0.167,-0.369) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.910 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=418
+2026-10-17 23:25:36.978 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:36.978 I [present] SHOT n=231 mag=7/192 id=79115010 mw2=20 d=32.9m src=map spread=0.00 origin=(-3.04,1.90,3.60) dir=(0.915,-0.167,-0.366) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:36.978 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=419
+2026-10-17 23:25:37.044 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=- id=79115010 gun=uzi_mp
+2026-10-17 23:25:37.044 E [present] SPAWN breaker open fails=8 cause=pool_sfx_full marker_probe=fail bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502
+2026-10-17 23:25:37.044 I [present] SHOT n=232 mag=6/192 id=79115010 mw2=20 d=32.7m src=map spread=0.00 origin=(-2.80,1.84,3.50) dir=(0.916,-0.167,-0.364) gun=uzi_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:37.044 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=420
+2026-10-17 23:25:37.128 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=421
+2026-10-17 23:25:38.011 I [present] SWITCH start from=uzi_mp to=p90_mp via=wheel drop_s=0.42
+2026-10-17 23:25:38.011 I [present] VM state idle->drop clip=putaway rate=1.032 ads=0.00 seq=422
+2026-10-17 23:25:38.444 I [present] SWITCH raise gun=p90_mp first=1 raise_s=1.10
+2026-10-17 23:25:38.444 I [present] VM state drop->raise clip=first_raise rate=1.030 ads=0.00 seq=423
+2026-10-17 23:25:39.545 I [present] SWITCH raised gun=p90_mp t=1.11 first=1
+2026-10-17 23:25:39.545 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=424
+2026-10-17 23:25:40.045 I [present] SPAWN breaker closed after 3 s; firing retries
+2026-10-17 23:25:40.112 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:40.112 I [present] SHOT n=233 mag=49/300 id=79114010 mw2=20 d=33.6m src=chr spread=0.00 origin=(-3.33,1.99,3.84) dir=(0.887,-0.162,-0.433) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:40.112 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=425
+2026-10-17 23:25:40.178 E [t(8)] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:40.178 I [t(8)] SHOT n=234 mag=48/300 id=79114010 mw2=20 d=33.7m src=chr spread=0.00 origin=(-3.49,2.02,3.92) dir=(0.889,-0.162,-0.429) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,-0.25) capped=0
+2026-10-17 23:25:40.178 I [t(8)] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=426
+2026-10-17 23:25:40.262 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=427
+2026-10-17 23:25:40.295 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:40.295 I [present] SHOT n=235 mag=47/300 id=79114010 mw2=20 d=34.1m src=chr spread=0.00 origin=(-3.77,2.08,4.07) dir=(0.891,-0.162,-0.423) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:40.295 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=428
+2026-10-17 23:25:40.312 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:40.312 I [present] SHOT n=236 mag=46/300 id=79114010 mw2=20 d=34.1m src=chr spread=0.00 origin=(-3.82,2.09,4.08) dir=(0.887,-0.164,-0.431) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(-0.07,0.52) capped=0
+2026-10-17 23:25:40.312 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=429
+2026-10-17 23:25:40.378 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:40.378 I [present] SHOT n=237 mag=45/300 id=79114010 mw2=20 d=34.3m src=chr spread=0.00 origin=(-3.97,2.07,4.16) dir=(0.891,-0.162,-0.423) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:40.378 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=430
+2026-10-17 23:25:40.445 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:40.445 I [present] SHOT n=238 mag=44/300 id=79114010 mw2=20 d=34.5m src=chr spread=0.00 origin=(-4.14,2.18,4.24) dir=(0.891,-0.162,-0.424) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.05) capped=0
+2026-10-17 23:25:40.445 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=431
+2026-10-17 23:25:40.512 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:40.512 I [present] SHOT n=239 mag=43/300 id=79114010 mw2=20 d=34.7m src=chr spread=0.00 origin=(-4.30,2.21,4.32) dir=(0.891,-0.162,-0.423) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:40.512 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=432
+2026-10-17 23:25:40.579 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:40.579 E [present] SPAWN breaker open fails=8 cause=pool_sfx_full marker_probe=fail bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502
+2026-10-17 23:25:40.579 I [present] SHOT n=240 mag=42/300 id=79114010 mw2=20 d=34.8m src=chr spread=0.00 origin=(-4.46,2.24,4.40) dir=(0.891,-0.162,-0.423) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:40.579 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=433
+2026-10-17 23:25:40.645 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=434
+2026-10-17 23:25:41.079 I [present] RELOAD start empty=0 dur=2.76 mag=42
+2026-10-17 23:25:41.079 I [present] VM state idle->reload clip=reload rate=1.123 ads=1.00 seq=435
+2026-10-17 23:25:43.579 I [present] SPAWN breaker closed after 3 s; firing retries
+2026-10-17 23:25:43.846 I [present] RELOAD done mag=50 reserve=292 added=8
+2026-10-17 23:25:43.846 I [present] VM state reload->idle clip=idle rate=1.000 ads=0.00 seq=436
+2026-10-17 23:25:44.229 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:44.229 I [present] SHOT n=241 mag=49/292 id=79114010 mw2=20 d=72.3m src=map spread=0.00 origin=(-4.81,2.69,11.48) dir=(0.898,-0.154,-0.413) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:44.229 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=437
+2026-10-17 23:25:44.297 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:44.297 I [present] SHOT n=242 mag=48/292 id=79114010 mw2=20 d=73.2m src=map spread=0.00 origin=(-4.81,2.69,11.49) dir=(0.900,-0.154,-0.407) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,-0.38) capped=0
+2026-10-17 23:25:44.297 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=438
+2026-10-17 23:25:44.363 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:44.363 I [present] SHOT n=243 mag=47/292 id=79114010 mw2=20 d=72.4m src=map spread=0.00 origin=(-4.81,2.69,11.48) dir=(0.898,-0.154,-0.413) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:44.363 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=439
+2026-10-17 23:25:44.430 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:44.430 I [present] SHOT n=244 mag=46/292 id=79114010 mw2=20 d=72.4m src=map spread=0.00 origin=(-4.81,2.69,11.48) dir=(0.898,-0.154,-0.413) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:44.430 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=440
+2026-10-17 23:25:44.496 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:44.496 I [present] SHOT n=245 mag=45/292 id=79114010 mw2=20 d=74.1m src=map spread=0.00 origin=(-4.81,2.69,11.50) dir=(0.902,-0.154,-0.403) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,-0.65) capped=0
+2026-10-17 23:25:44.496 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=441
+2026-10-17 23:25:44.563 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:44.563 I [present] SHOT n=246 mag=44/292 id=79114010 mw2=20 d=72.5m src=map spread=0.00 origin=(-4.81,2.69,11.48) dir=(0.897,-0.154,-0.413) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:44.563 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=442
+2026-10-17 23:25:44.629 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:44.629 I [present] SHOT n=247 mag=43/292 id=79114010 mw2=20 d=74.0m src=map spread=0.00 origin=(-4.81,2.69,11.48) dir=(0.897,-0.154,-0.413) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:44.629 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=443
+2026-10-17 23:25:44.697 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79114010 gun=p90_mp
+2026-10-17 23:25:44.697 E [present] SPAWN breaker open fails=8 cause=pool_sfx_full marker_probe=fail bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502
+2026-10-17 23:25:44.697 I [present] SHOT n=248 mag=42/292 id=79114010 mw2=20 d=74.1m src=map spread=0.00 origin=(-4.81,2.69,11.48) dir=(0.897,-0.154,-0.413) gun=p90_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:44.697 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=444
+2026-10-17 23:25:44.779 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=445
+2026-10-17 23:25:45.363 I [present] SWITCH start from=p90_mp to=kriss_mp via=wheel drop_s=0.80
+2026-10-17 23:25:45.363 I [present] VM state idle->drop clip=putaway rate=0.958 ads=0.00 seq=446
+2026-10-17 23:25:46.163 I [present] SWITCH raise gun=kriss_mp first=1 raise_s=1.15
+2026-10-17 23:25:46.163 I [present] VM state drop->raise clip=first_raise rate=0.899 ads=0.00 seq=447
+2026-10-17 23:25:47.313 I [present] SWITCH raised gun=kriss_mp t=1.15 first=1
+2026-10-17 23:25:47.313 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=448
+2026-10-17 23:25:47.698 I [present] SPAWN breaker closed after 3 s; firing retries
+2026-10-17 23:25:47.831 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79113005 gun=kriss_mp
+2026-10-17 23:25:47.831 I [present] SHOT n=249 mag=29/180 id=79113005 mw2=20 d=35.5m src=map spread=0.00 origin=(-1.29,1.75,6.12) dir=(0.909,-0.153,-0.388) gun=kriss_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:47.831 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=449
+2026-10-17 23:25:47.898 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79113005 gun=kriss_mp
+2026-10-17 23:25:47.898 I [present] SHOT n=250 mag=28/180 id=79113005 mw2=20 d=35.4m src=map spread=0.00 origin=(-1.29,1.75,6.12) dir=(0.909,-0.153,-0.388) gun=kriss_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:47.898 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=450
+2026-10-17 23:25:47.946 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79113005 gun=kriss_mp
+2026-10-17 23:25:47.946 I [present] SHOT n=251 mag=27/180 id=79113005 mw2=20 d=35.3m src=map spread=0.00 origin=(-1.29,1.75,6.12) dir=(0.909,-0.153,-0.389) gun=kriss_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.04) capped=0
+2026-10-17 23:25:47.948 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=451
+2026-10-17 23:25:47.997 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79113005 gun=kriss_mp
+2026-10-17 23:25:47.997 I [present] SHOT n=252 mag=26/180 id=79113005 mw2=20 d=35.2m src=map spread=0.00 origin=(-1.29,1.75,6.12) dir=(0.909,-0.153,-0.388) gun=kriss_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:47.997 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=452
+2026-10-17 23:25:48.064 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79113005 gun=kriss_mp
+2026-10-17 23:25:48.064 I [present] SHOT n=253 mag=25/180 id=79113005 mw2=20 d=35.1m src=map spread=0.00 origin=(-1.29,1.75,6.12) dir=(0.909,-0.153,-0.388) gun=kriss_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:48.064 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=453
+2026-10-17 23:25:48.114 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79113005 gun=kriss_mp
+2026-10-17 23:25:48.114 I [present] SHOT n=254 mag=24/180 id=79113005 mw2=20 d=35.0m src=map spread=0.00 origin=(-1.29,1.75,6.12) dir=(0.909,-0.153,-0.388) gun=kriss_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:48.114 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=454
+2026-10-17 23:25:48.164 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79113005 gun=kriss_mp
+2026-10-17 23:25:48.164 I [present] SHOT n=255 mag=23/180 id=79113005 mw2=20 d=34.9m src=map spread=0.00 origin=(-1.29,1.75,6.12) dir=(0.909,-0.154,-0.388) gun=kriss_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.02) capped=0
+2026-10-17 23:25:48.164 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=455
+2026-10-17 23:25:48.230 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79113005 gun=kriss_mp
+2026-10-17 23:25:48.230 E [present] SPAWN breaker open fails=8 cause=pool_sfx_full marker_probe=fail bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502
+2026-10-17 23:25:48.230 I [present] SHOT n=256 mag=22/180 id=79113005 mw2=20 d=34.9m src=map spread=0.00 origin=(-1.29,1.74,6.12) dir=(0.909,-0.156,-0.387) gun=kriss_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:48.230 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=456
+2026-10-17 23:25:48.330 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=457
+2026-10-17 23:25:50.649 I [present] SWITCH start from=kriss_mp to=ump45_mp via=wheel drop_s=0.50
+2026-10-17 23:25:50.649 I [present] VM state idle->drop clip=putaway rate=0.933 ads=0.00 seq=458
+2026-10-17 23:25:51.165 I [present] SWITCH raise gun=ump45_mp first=0 raise_s=0.76
+2026-10-17 23:25:51.165 I [present] VM state drop->raise clip=pullout rate=1.096 ads=0.00 seq=459
+2026-10-17 23:25:51.231 I [present] SPAWN breaker closed after 3 s; firing retries
+2026-10-17 23:25:51.915 I [present] SWITCH raised gun=ump45_mp t=0.77 first=0
+2026-10-17 23:25:51.931 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=460
+2026-10-17 23:25:52.282 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79112005 gun=ump45_mp
+2026-10-17 23:25:52.282 I [present] SHOT n=257 mag=31/192 id=79112005 mw2=35 d=24.1m src=chr spread=0.00 origin=(3.93,0.43,1.09) dir=(0.941,-0.157,-0.299) gun=ump45_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:52.282 I [present] VM state idle->fire clip=fire_ads rate=1.852 ads=1.00 seq=461
+2026-10-17 23:25:52.381 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79112005 gun=ump45_mp
+2026-10-17 23:25:52.381 I [present] SHOT n=258 mag=30/192 id=79112005 mw2=35 d=24.1m src=chr spread=0.00 origin=(3.93,0.43,1.09) dir=(0.941,-0.154,-0.301) gun=ump45_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:52.381 I [present] VM state fire->fire clip=fire_ads rate=1.852 ads=1.00 seq=462
+2026-10-17 23:25:52.465 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79112005 gun=ump45_mp
+2026-10-17 23:25:52.465 I [present] SHOT n=259 mag=29/192 id=79112005 mw2=35 d=23.8m src=map spread=0.00 origin=(3.93,0.44,1.08) dir=(0.938,-0.152,-0.310) gun=ump45_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:52.465 I [present] VM state fire->fire clip=fire_ads rate=1.852 ads=1.00 seq=463
+2026-10-17 23:25:52.565 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79112005 gun=ump45_mp
+2026-10-17 23:25:52.565 I [present] SHOT n=260 mag=28/192 id=79112005 mw2=35 d=23.6m src=map spread=0.00 origin=(3.92,0.44,1.07) dir=(0.936,-0.151,-0.317) gun=ump45_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:52.565 I [present] VM state fire->fire clip=fire_ads rate=1.852 ads=1.00 seq=464
+2026-10-17 23:25:52.649 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79112005 gun=ump45_mp
+2026-10-17 23:25:52.649 I [present] SHOT n=261 mag=27/192 id=79112005 mw2=35 d=23.5m src=map spread=0.00 origin=(3.92,0.45,1.07) dir=(0.937,-0.142,-0.319) gun=ump45_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.49,0.00) capped=0
+2026-10-17 23:25:52.649 I [present] VM state fire->fire clip=fire_ads rate=1.852 ads=1.00 seq=465
+2026-10-17 23:25:52.749 E [t(8)] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79112005 gun=ump45_mp
+2026-10-17 23:25:52.749 I [t(8)] SHOT n=262 mag=26/192 id=79112005 mw2=35 d=23.7m src=map spread=0.00 origin=(3.92,0.44,1.07) dir=(0.936,-0.151,-0.319) gun=ump45_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:52.749 I [t(8)] VM state fire->fire clip=fire_ads rate=1.852 ads=1.00 seq=466
+2026-10-17 23:25:52.832 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79112005 gun=ump45_mp
+2026-10-17 23:25:52.832 I [present] SHOT n=263 mag=25/192 id=79112005 mw2=35 d=24.0m src=chr spread=0.00 origin=(3.92,0.44,1.07) dir=(0.936,-0.151,-0.319) gun=ump45_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:52.832 I [present] VM state fire->fire clip=fire_ads rate=1.852 ads=1.00 seq=467
+2026-10-17 23:25:52.915 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79112005 gun=ump45_mp
+2026-10-17 23:25:52.915 E [present] SPAWN breaker open fails=8 cause=pool_sfx_full marker_probe=fail bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502
+2026-10-17 23:25:52.915 I [present] SHOT n=264 mag=24/192 id=79112005 mw2=35 d=24.0m src=chr spread=0.00 origin=(3.92,0.44,1.06) dir=(0.935,-0.149,-0.322) gun=ump45_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:52.915 I [present] VM state fire->fire clip=fire_ads rate=1.852 ads=1.00 seq=468
+2026-10-17 23:25:53.015 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=469
+2026-10-17 23:25:53.716 I [present] SWITCH start from=ump45_mp to=mp5k_mp via=wheel drop_s=0.80
+2026-10-17 23:25:53.716 I [present] VM state idle->drop clip=putaway rate=0.958 ads=0.00 seq=470
+2026-10-17 23:25:54.516 I [present] SWITCH raise gun=mp5k_mp first=0 raise_s=0.83
+2026-10-17 23:25:54.516 I [present] VM state drop->raise clip=pullout rate=1.004 ads=0.00 seq=471
+2026-10-17 23:25:55.349 I [present] SWITCH raised gun=mp5k_mp t=0.83 first=0
+2026-10-17 23:25:55.349 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=472
+2026-10-17 23:25:55.916 I [present] SPAWN breaker closed after 3 s; firing retries
+2026-10-17 23:25:56.399 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79111002 gun=mp5k_mp
+2026-10-17 23:25:56.399 I [present] SHOT n=265 mag=25/180 id=79111002 mw2=37 d=19.9m src=chr spread=0.00 origin=(7.83,-0.25,-0.21) dir=(0.931,-0.144,-0.336) gun=mp5k_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:56.399 I [present] VM state idle->fire clip=fire_ads rate=2.500 ads=1.00 seq=473
+2026-10-17 23:25:56.483 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79111015 gun=mp5k_mp
+2026-10-17 23:25:56.483 I [present] SHOT n=266 mag=24/180 id=79111015 mw2=20 d=53.4m src=map spread=0.00 origin=(7.60,-0.21,-0.17) dir=(0.917,-0.142,-0.372) gun=mp5k_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:56.483 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=474
+2026-10-17 23:25:56.549 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79111015 gun=mp5k_mp
+2026-10-17 23:25:56.549 I [present] SHOT n=267 mag=23/180 id=79111015 mw2=20 d=53.6m src=map spread=0.00 origin=(7.43,-0.18,-0.10) dir=(0.916,-0.143,-0.374) gun=mp5k_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:56.549 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=475
+2026-10-17 23:25:56.616 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79111015 gun=mp5k_mp
+2026-10-17 23:25:56.616 I [present] SHOT n=268 mag=22/180 id=79111015 mw2=20 d=51.9m src=map spread=0.00 origin=(7.27,-0.16,-0.03) dir=(0.918,-0.149,-0.369) gun=mp5k_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:56.616 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=476
+2026-10-17 23:25:56.682 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79111015 gun=mp5k_mp
+2026-10-17 23:25:56.682 I [present] SHOT n=269 mag=21/180 id=79111015 mw2=20 d=48.5m src=map spread=0.00 origin=(7.11,-0.18,0.06) dir=(0.925,-0.155,-0.347) gun=mp5k_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:56.682 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=477
+2026-10-17 23:25:56.749 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79111004 gun=mp5k_mp
+2026-10-17 23:25:56.749 I [present] SHOT n=270 mag=20/180 id=79111004 mw2=34 d=20.9m src=chr spread=0.00 origin=(6.95,-0.11,0.15) dir=(0.931,-0.156,-0.330) gun=mp5k_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.76) capped=0
+2026-10-17 23:25:56.749 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=478
+2026-10-17 23:25:56.816 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79111005 gun=mp5k_mp
+2026-10-17 23:25:56.816 I [present] SHOT n=271 mag=19/180 id=79111005 mw2=33 d=21.1m src=chr spread=0.00 origin=(6.79,-0.06,0.25) dir=(0.943,-0.141,-0.301) gun=mp5k_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.84,0.00) capped=0
+2026-10-17 23:25:56.816 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=479
+2026-10-17 23:25:56.882 E [present] SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed) cause=pool_sfx_full bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502 marker_probe=fail id=79111004 gun=mp5k_mp
+2026-10-17 23:25:56.882 E [present] SPAWN breaker open fails=8 cause=pool_sfx_full marker_probe=fail bullets=0/128 sfx=192/192 sfx_empty_spot=0 unk40=0/28 counter=0 live_ours=0 live_all=0 spawns_world=502
+2026-10-17 23:25:56.882 I [present] SHOT n=272 mag=18/180 id=79111004 mw2=34 d=21.0m src=map spread=0.00 origin=(6.62,-0.04,0.31) dir=(0.942,-0.155,-0.296) gun=mp5k_mp pellets=1 spawned=0 dropped=0 bands=- ads=1.00 cone=0.00 kick=(0.00,0.00) capped=0
+2026-10-17 23:25:56.882 I [present] VM state fire->fire clip=fire_ads rate=2.500 ads=1.00 seq=480
+2026-10-17 23:25:56.982 I [present] VM state fire->idle clip=idle rate=1.000 ads=1.00 seq=481
+2026-10-17 23:25:58.232 I [present] SWITCH start from=mp5k_mp to=ak47_mp via=wheel drop_s=0.50
+2026-10-17 23:25:58.232 I [present] VM state idle->drop clip=putaway rate=1.667 ads=0.00 seq=482
+2026-10-17 23:25:58.632 I [present] SWITCH retarget to=fn2000_mp
+2026-10-17 23:25:58.733 I [t(9)] SWITCH raise gun=fn2000_mp first=0 raise_s=0.83
+2026-10-17 23:25:58.733 I [t(9)] VM state drop->raise clip=pullout rate=1.004 ads=0.00 seq=483
+2026-10-17 23:25:59.566 I [t(6)] SWITCH raised gun=fn2000_mp t=0.83 first=0
+2026-10-17 23:25:59.566 I [t(6)] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=484
+2026-10-17 23:25:59.883 I [present] SPAWN breaker closed after 3 s; firing retries
+2026-10-17 23:26:02.332 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=485
+2026-10-17 23:26:02.633 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=486
+2026-10-17 23:26:03.583 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=487
+2026-10-17 23:26:03.900 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=488
+2026-10-17 23:26:04.583 I [present] AC130 PROTECT apply id=79000950 chr=0x7ff180113800 present_before=0 present=1 ok=1 call=1
+2026-10-17 23:26:04.625 I [present] AC130 write field=CSFeManImp.hud_state(+0x78) addr=0x7ff1a4c14078 old=3 new=0 ok=1
+2026-10-17 23:26:04.625 I [present] AC130 on center=(-6.01,1.29,12.28) theta0_deg=-46.4 gun=105 fp_was_on=1 camtype=Some(0) er_fov=48.0deg gun_fov=34.52deg R=116.0 H=107.0 slant=157.8 listener=render_cam(inferred) hp=476
+2026-10-17 23:26:04.625 I [present] AC130 effects shake=1 scale=1.00 rot_deg=2.00 roll_deg=0.60 pos_m=1.50 freq_hz=11.0 mw2_falloff=0 flash_105=14.0m/0.50s gain=1.60 bloom_105=32.0m
+2026-10-17 23:26:04.629 I [present] AC130 thermal first frame 3840x2160 fmt=R10G10B10A2_UNORM gun=0
+2026-10-17 23:26:04.639 I [present] AC130CAM write field=CSCamera.pers_cam_1+0x10..0x54 addr=0x7ff141800eb0 old_pos=(-3.58,2.85,9.73) new_pos=(74.13,108.29,-71.56) old_fov=0.8378 new_fov=0.6024 (camera-step hook mode 2, one 68-byte write per frame)
+2026-10-17 23:26:07.171 I [present] AC130 SHAKE src=fire gun=105 mw2_scale=0.20 dur_s=1.00 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.200 on=1
+2026-10-17 23:26:07.171 I [present] AC130 SHOT gun=105 n=1 clip=0/1 o=(90.94,108.29,-51.38) dir=(-0.456,-0.835,0.307) impact=(28.92,-5.17,-9.62) dist_m=135.9 via=map flight_s=1.78
+2026-10-17 23:26:07.171 I [present] AC130 RELOAD gun=105 s=4.98
+2026-10-17 23:26:07.207 I [present] AC130 tracers first frame instances=1 3840x2160 fmt=R10G10B10A2_UNORM
+2026-10-17 23:26:08.954 E [present] AC130 EXPLODE gun=105 id=79000201 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:08.954 E [present] AC130 EXPLODE gun=105 id=79000202 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:08.954 I [present] AC130 EXPLODE gun=105 ids= pos=(28.92,-5.17,-9.62) dist_m=135.9 late_ms=0
+2026-10-17 23:26:08.954 I [present] AC130 SHAKE src=impact gun=105 mw2_scale=0.40 dur_s=1.00 radius_m=88.9 dist_m=136.2 gain=1.00 amp=0.400 on=1
+2026-10-17 23:26:09.604 I [present] AC130CAM t=5.0 slant_m=157.7 cam_to_player=157.7 er_cam_to_player=3.8 writes=299 skips=0 persisted=0 fov_persisted=0 fov_deg=34.52 gun=105 aim_yaw=-2.4 aim_pitch=-8.3 mouse_counts=1273 er_yaw=-43.6 last_reject=0
+2026-10-17 23:26:10.337 I [present] AC130 SWITCH gun=25 via=wheel fov=3.75deg
+2026-10-17 23:26:11.671 I [present] AC130 SHOT gun=25 n=1 clip=19/20 o=(108.16,108.29,-8.15) dir=(-0.538,-0.843,-0.024) impact=(36.55,-3.86,-11.28) dist_m=133.1 via=chr flight_s=0.52
+2026-10-17 23:26:11.738 I [present] AC130 SHOT gun=25 n=2 clip=18/20 o=(108.28,108.29,-7.47) dir=(-0.537,-0.843,-0.027) impact=(36.44,-4.48,-11.06) dist_m=133.8 via=chr flight_s=0.53
+2026-10-17 23:26:11.804 I [present] AC130 SHOT gun=25 n=3 clip=17/20 o=(108.40,108.29,-6.78) dir=(-0.535,-0.844,-0.031) impact=(36.47,-5.14,-11.01) dist_m=134.4 via=chr flight_s=0.53
+2026-10-17 23:26:11.871 I [present] AC130 SHOT gun=25 n=4 clip=16/20 o=(108.51,108.29,-6.10) dir=(-0.534,-0.845,-0.038) impact=(36.65,-5.36,-11.16) dist_m=134.6 via=chr flight_s=0.53
+2026-10-17 23:26:11.937 I [present] AC130 SHOT gun=25 n=5 clip=15/20 o=(108.62,108.29,-5.41) dir=(-0.533,-0.845,-0.044) impact=(36.81,-5.58,-11.33) dist_m=134.7 via=chr flight_s=0.53
+2026-10-17 23:26:12.005 I [present] AC130 SHOT gun=25 n=6 clip=14/20 o=(108.72,108.29,-4.73) dir=(-0.532,-0.845,-0.049) impact=(36.91,-5.79,-11.38) dist_m=135.0 via=chr flight_s=0.53
+2026-10-17 23:26:12.171 I [present] AC130 RELOAD done gun=105 clip=1
+2026-10-17 23:26:12.205 E [present] AC130 EXPLODE gun=25 id=79000401 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:12.205 I [present] AC130 EXPLODE gun=25 ids= pos=(36.55,-3.86,-11.28) dist_m=133.1 late_ms=9
+2026-10-17 23:26:12.271 E [present] AC130 EXPLODE gun=25 id=79000401 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:12.271 I [present] AC130 EXPLODE gun=25 ids= pos=(36.44,-4.48,-11.06) dist_m=133.8 late_ms=7
+2026-10-17 23:26:12.338 E [present] AC130 EXPLODE gun=25 id=79000401 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:12.338 I [present] AC130 EXPLODE gun=25 ids= pos=(36.47,-5.14,-11.01) dist_m=134.4 late_ms=5
+2026-10-17 23:26:12.404 E [present] AC130 EXPLODE gun=25 id=79000401 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:12.405 I [present] AC130 EXPLODE gun=25 ids= pos=(36.65,-5.36,-11.16) dist_m=134.6 late_ms=4
+2026-10-17 23:26:12.471 E [present] AC130 EXPLODE gun=25 id=79000401 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:12.471 I [present] AC130 EXPLODE gun=25 ids= pos=(36.81,-5.58,-11.33) dist_m=134.7 late_ms=3
+2026-10-17 23:26:12.537 E [present] AC130 EXPLODE gun=25 id=79000401 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:12.538 E [present] AC130 spawn breaker open after 8 consecutive failures; explosions paused 3 s
+2026-10-17 23:26:12.538 I [present] AC130 EXPLODE gun=25 ids= pos=(36.91,-5.79,-11.38) dist_m=135.0 late_ms=2
+2026-10-17 23:26:13.505 I [present] AC130 SHOT gun=25 n=7 clip=13/20 o=(109.96,108.29,10.83) dir=(-0.528,-0.833,-0.164) impact=(38.42,-4.68,-11.38) dist_m=135.5 via=chr flight_s=0.53
+2026-10-17 23:26:13.571 I [present] AC130 SHOT gun=25 n=8 clip=12/20 o=(109.97,108.29,11.52) dir=(-0.525,-0.834,-0.173) impact=(38.54,-5.17,-11.98) dist_m=136.1 via=chr flight_s=0.54
+2026-10-17 23:26:13.639 I [present] AC130 SHOT gun=25 n=9 clip=11/20 o=(109.97,108.29,12.22) dir=(-0.522,-0.834,-0.180) impact=(38.36,-6.07,-12.43) dist_m=137.2 via=chr flight_s=0.54
+2026-10-17 23:26:13.704 I [present] AC130 SHOT gun=25 n=10 clip=10/20 o=(109.97,108.29,12.91) dir=(-0.521,-0.834,-0.183) impact=(38.67,-5.83,-12.16) dist_m=136.9 via=chr flight_s=0.54
+2026-10-17 23:26:13.771 I [present] AC130 SHOT gun=25 n=11 clip=9/20 o=(109.97,108.29,13.60) dir=(-0.520,-0.834,-0.186) impact=(38.83,-5.82,-11.89) dist_m=136.9 via=chr flight_s=0.54
+2026-10-17 23:26:13.854 I [present] AC130 SHOT gun=25 n=12 clip=8/20 o=(109.95,108.29,14.47) dir=(-0.519,-0.833,-0.192) impact=(38.91,-5.73,-11.80) dist_m=136.9 via=chr flight_s=0.54
+2026-10-17 23:26:13.921 I [present] AC130 SHOT gun=25 n=13 clip=7/20 o=(109.94,108.29,15.17) dir=(-0.519,-0.832,-0.196) impact=(38.98,-5.61,-11.69) dist_m=136.9 via=chr flight_s=0.54
+2026-10-17 23:26:13.988 I [present] AC130 SHOT gun=25 n=14 clip=6/20 o=(109.92,108.29,15.86) dir=(-0.518,-0.832,-0.201) impact=(38.96,-5.63,-11.64) dist_m=137.0 via=chr flight_s=0.54
+2026-10-17 23:26:14.055 I [present] AC130 SHOT gun=25 n=15 clip=5/20 o=(109.90,108.29,16.56) dir=(-0.517,-0.831,-0.205) impact=(38.99,-5.71,-11.50) dist_m=137.2 via=chr flight_s=0.54
+2026-10-17 23:26:14.055 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.121 I [present] AC130 SHOT gun=25 n=16 clip=4/20 o=(109.87,108.29,17.25) dir=(-0.516,-0.831,-0.208) impact=(38.97,-5.90,-11.36) dist_m=137.4 via=chr flight_s=0.54
+2026-10-17 23:26:14.121 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.188 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.205 I [t(7)] AC130 SHOT gun=25 n=17 clip=3/20 o=(109.83,108.29,18.11) dir=(-0.515,-0.831,-0.212) impact=(38.87,-6.29,-11.18) dist_m=137.9 via=map flight_s=0.54
+2026-10-17 23:26:14.254 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.271 I [present] AC130 SHOT gun=25 n=18 clip=2/20 o=(109.79,108.29,18.81) dir=(-0.513,-0.831,-0.216) impact=(38.98,-6.30,-10.95) dist_m=137.9 via=map flight_s=0.54
+2026-10-17 23:26:14.321 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.337 I [present] AC130 SHOT gun=25 n=19 clip=1/20 o=(109.75,108.29,19.50) dir=(-0.512,-0.831,-0.219) impact=(39.09,-6.31,-10.72) dist_m=138.0 via=map flight_s=0.54
+2026-10-17 23:26:14.405 I [t(6)] AC130 SHOT gun=25 n=20 clip=0/20 o=(109.70,108.29,20.19) dir=(-0.511,-0.830,-0.223) impact=(39.18,-6.31,-10.52) dist_m=138.0 via=map flight_s=0.54
+2026-10-17 23:26:14.405 I [t(6)] AC130 RELOAD gun=25 s=1.49
+2026-10-17 23:26:14.405 W [t(6)] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.471 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.538 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.604 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.604 I [present] AC130CAM t=10.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=3.8 writes=599 skips=0 persisted=0 fov_persisted=0 fov_deg=3.75 gun=25 aim_yaw=-20.0 aim_pitch=-13.3 mouse_counts=9139 er_yaw=-43.6 last_reject=0
+2026-10-17 23:26:14.640 I [present] AC130 gpu_ms p50=0.0479 p95=0.0501 max=0.0741 n=599
+2026-10-17 23:26:14.640 I [present] AC130 tracer gpu_ms p50=0.0099 p95=0.0556 max=0.0616 n=260 frames=263 max_instances=11
+2026-10-17 23:26:14.671 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.754 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.822 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.887 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:14.954 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:15.905 I [present] AC130 RELOAD done gun=25 clip=20
+2026-10-17 23:26:15.988 I [present] AC130 SHOT gun=25 n=21 clip=19/20 o=(107.42,108.29,36.50) dir=(-0.466,-0.810,-0.355) impact=(41.30,-6.55,-13.77) dist_m=141.7 via=map flight_s=0.56
+2026-10-17 23:26:16.055 I [present] AC130 SHOT gun=25 n=22 clip=18/20 o=(107.27,108.29,37.18) dir=(-0.465,-0.809,-0.360) impact=(41.28,-6.55,-13.90) dist_m=142.0 via=map flight_s=0.56
+2026-10-17 23:26:16.122 I [present] AC130 SHOT gun=25 n=23 clip=17/20 o=(107.12,108.29,37.86) dir=(-0.463,-0.809,-0.363) impact=(41.38,-6.56,-13.76) dist_m=142.0 via=map flight_s=0.56
+2026-10-17 23:26:16.188 I [present] AC130 SHOT gun=25 n=24 clip=16/20 o=(106.96,108.29,38.54) dir=(-0.461,-0.808,-0.366) impact=(41.52,-6.58,-13.53) dist_m=142.1 via=map flight_s=0.56
+2026-10-17 23:26:16.254 I [present] AC130 SHOT gun=25 n=25 clip=15/20 o=(106.80,108.29,39.21) dir=(-0.458,-0.808,-0.369) impact=(41.68,-6.59,-13.30) dist_m=142.1 via=map flight_s=0.56
+2026-10-17 23:26:16.338 I [present] AC130 SHOT gun=25 n=26 clip=14/20 o=(106.60,108.29,40.05) dir=(-0.455,-0.808,-0.373) impact=(41.87,-6.61,-13.04) dist_m=142.2 via=map flight_s=0.56
+2026-10-17 23:26:16.405 I [present] AC130 SHOT gun=25 n=27 clip=13/20 o=(106.43,108.29,40.72) dir=(-0.453,-0.808,-0.377) impact=(42.01,-6.63,-12.86) dist_m=142.2 via=map flight_s=0.56
+2026-10-17 23:26:16.471 I [t(7)] AC130 SHOT gun=25 n=28 clip=12/20 o=(106.26,108.29,41.40) dir=(-0.451,-0.808,-0.380) impact=(42.15,-6.64,-12.67) dist_m=142.3 via=map flight_s=0.56
+2026-10-17 23:26:16.538 I [present] AC130 SHOT gun=25 n=29 clip=11/20 o=(106.08,108.29,42.07) dir=(-0.448,-0.808,-0.383) impact=(42.28,-6.66,-12.51) dist_m=142.3 via=map flight_s=0.56
+2026-10-17 23:26:16.555 E [present] AC130 EXPLODE gun=25 id=79000401 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:16.555 E [present] AC130 spawn breaker open after 9 consecutive failures; explosions paused 3 s
+2026-10-17 23:26:16.555 I [present] AC130 EXPLODE gun=25 ids= pos=(41.30,-6.55,-13.77) dist_m=141.7 late_ms=9
+2026-10-17 23:26:16.605 I [present] AC130 SHOT gun=25 n=30 clip=10/20 o=(105.90,108.29,42.74) dir=(-0.446,-0.806,-0.388) impact=(42.32,-6.66,-12.64) dist_m=142.6 via=map flight_s=0.56
+2026-10-17 23:26:16.622 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:16.672 I [present] AC130 SHOT gun=25 n=31 clip=9/20 o=(105.72,108.29,43.41) dir=(-0.444,-0.804,-0.396) impact=(42.21,-6.65,-13.22) dist_m=143.0 via=map flight_s=0.56
+2026-10-17 23:26:16.687 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:16.755 I [present] AC130 SHOT gun=25 n=32 clip=8/20 o=(105.48,108.29,44.24) dir=(-0.442,-0.800,-0.406) impact=(42.01,-6.63,-14.11) dist_m=143.7 via=map flight_s=0.57
+2026-10-17 23:26:16.755 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:16.822 I [present] AC130 SHOT gun=25 n=33 clip=7/20 o=(105.29,108.29,44.91) dir=(-0.440,-0.799,-0.411) impact=(42.04,-6.63,-14.28) dist_m=143.9 via=map flight_s=0.57
+2026-10-17 23:26:16.822 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:16.888 I [present] AC130 SHOT gun=25 n=34 clip=6/20 o=(105.09,108.29,45.57) dir=(-0.437,-0.798,-0.414) impact=(42.17,-6.65,-14.05) dist_m=144.0 via=map flight_s=0.57
+2026-10-17 23:26:16.905 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:16.955 I [present] AC130 SHOT gun=25 n=35 clip=5/20 o=(104.89,108.29,46.24) dir=(-0.435,-0.798,-0.417) impact=(42.32,-6.66,-13.77) dist_m=144.0 via=map flight_s=0.57
+2026-10-17 23:26:16.971 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.038 I [present] AC130 SHOT gun=25 n=36 clip=4/20 o=(104.63,108.29,47.07) dir=(-0.431,-0.798,-0.420) impact=(42.51,-6.68,-13.41) dist_m=144.0 via=map flight_s=0.57
+2026-10-17 23:26:17.038 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.105 I [present] AC130 SHOT gun=25 n=37 clip=3/20 o=(104.42,108.29,47.73) dir=(-0.429,-0.798,-0.423) impact=(42.64,-6.70,-13.14) dist_m=144.0 via=map flight_s=0.57
+2026-10-17 23:26:17.106 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.171 I [present] AC130 SHOT gun=25 n=38 clip=2/20 o=(104.21,108.29,48.39) dir=(-0.426,-0.798,-0.426) impact=(42.76,-6.71,-12.94) dist_m=144.1 via=map flight_s=0.57
+2026-10-17 23:26:17.171 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.239 I [present] AC130 SHOT gun=25 n=39 clip=1/20 o=(103.99,108.29,49.05) dir=(-0.424,-0.797,-0.429) impact=(42.82,-6.72,-12.89) dist_m=144.2 via=map flight_s=0.57
+2026-10-17 23:26:17.239 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.305 I [present] AC130 SHOT gun=25 n=40 clip=0/20 o=(103.77,108.29,49.71) dir=(-0.422,-0.797,-0.433) impact=(42.88,-6.73,-12.86) dist_m=144.4 via=map flight_s=0.57
+2026-10-17 23:26:17.305 I [present] AC130 RELOAD gun=25 s=1.50
+2026-10-17 23:26:17.322 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.389 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.471 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.539 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.622 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.688 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.739 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.821 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:17.888 W [present] AC130 EXPLODE gun=25 skipped: spawn breaker open
+2026-10-17 23:26:18.205 I [present] AC130 SWITCH gun=105 via=wheel fov=34.52deg
+2026-10-17 23:26:18.805 I [present] AC130 RELOAD done gun=25 clip=20
+2026-10-17 23:26:19.272 I [present] AC130 SHAKE src=fire gun=105 mw2_scale=0.20 dur_s=1.00 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.200 on=1
+2026-10-17 23:26:19.272 I [present] AC130 SHOT gun=105 n=2 clip=0/1 o=(95.49,108.29,68.40) dir=(-0.289,-0.778,-0.557) impact=(52.36,-7.72,-14.63) dist_m=149.0 via=map flight_s=1.96
+2026-10-17 23:26:19.272 I [present] AC130 RELOAD gun=105 s=4.98
+2026-10-17 23:26:19.605 I [present] AC130CAM t=15.0 slant_m=157.9 cam_to_player=157.9 er_cam_to_player=3.8 writes=899 skips=0 persisted=0 fov_persisted=0 fov_deg=34.52 gun=105 aim_yaw=-33.7 aim_pitch=-8.4 mouse_counts=14276 er_yaw=-43.6 last_reject=0
+2026-10-17 23:26:21.239 E [present] AC130 EXPLODE gun=105 id=79000201 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:21.239 E [present] AC130 spawn breaker open after 10 consecutive failures; explosions paused 3 s
+2026-10-17 23:26:21.239 E [present] AC130 EXPLODE gun=105 id=79000202 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:21.239 E [present] AC130 spawn breaker open after 11 consecutive failures; explosions paused 3 s
+2026-10-17 23:26:21.239 I [present] AC130 EXPLODE gun=105 ids= pos=(52.36,-7.72,-14.63) dist_m=149.0 late_ms=11
+2026-10-17 23:26:21.239 I [present] AC130 SHAKE src=impact gun=105 mw2_scale=0.40 dur_s=1.00 radius_m=88.9 dist_m=156.4 gain=1.00 amp=0.400 on=1
+2026-10-17 23:26:24.256 I [present] AC130 RELOAD done gun=105 clip=1
+2026-10-17 23:26:24.606 I [present] AC130CAM t=20.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=3.8 writes=1199 skips=0 persisted=0 fov_persisted=0 fov_deg=34.52 gun=105 aim_yaw=-35.0 aim_pitch=-6.7 mouse_counts=15318 er_yaw=-43.6 last_reject=0
+2026-10-17 23:26:24.642 I [present] AC130 gpu_ms p50=0.0478 p95=0.0500 max=0.0795 n=600
+2026-10-17 23:26:24.642 I [present] AC130 tracer gpu_ms p50=0.0133 p95=0.0500 max=0.0539 n=307 frames=567 max_instances=11
+2026-10-17 23:26:28.239 I [present] AC130 SHAKE src=fire gun=105 mw2_scale=0.20 dur_s=1.00 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.200 on=1
+2026-10-17 23:26:28.239 I [present] AC130 SHOT gun=105 n=3 clip=0/1 o=(23.90,108.29,124.34) dir=(0.108,-0.639,-0.762) impact=(43.41,-6.79,-12.92) dist_m=180.2 via=map flight_s=2.36
+2026-10-17 23:26:28.239 I [present] AC130 RELOAD gun=105 s=4.98
+2026-10-17 23:26:29.606 I [present] AC130CAM t=25.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=3.8 writes=1499 skips=0 persisted=0 fov_persisted=0 fov_deg=34.52 gun=105 aim_yaw=-22.6 aim_pitch=4.1 mouse_counts=18091 er_yaw=-43.6 last_reject=0
+2026-10-17 23:26:29.757 I [present] AC130 SWITCH gun=25 via=wheel fov=3.75deg
+2026-10-17 23:26:30.607 E [present] AC130 EXPLODE gun=105 id=79000201 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:30.607 E [present] AC130 spawn breaker open after 12 consecutive failures; explosions paused 3 s
+2026-10-17 23:26:30.607 E [present] AC130 EXPLODE gun=105 id=79000202 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:30.607 E [present] AC130 spawn breaker open after 13 consecutive failures; explosions paused 3 s
+2026-10-17 23:26:30.607 I [present] AC130 EXPLODE gun=105 ids= pos=(43.41,-6.79,-12.92) dist_m=180.2 late_ms=2
+2026-10-17 23:26:30.607 I [present] AC130 SHAKE src=impact gun=105 mw2_scale=0.40 dur_s=1.00 radius_m=88.9 dist_m=187.2 gain=1.00 amp=0.400 on=1
+2026-10-17 23:26:33.240 I [present] AC130 RELOAD done gun=105 clip=1
+2026-10-17 23:26:33.907 I [present] AC130 SWITCH gun=40 via=wheel fov=15.07deg
+2026-10-17 23:26:33.957 I [present] AC130 SWITCH gun=105 via=wheel fov=34.52deg
+2026-10-17 23:26:34.008 I [present] AC130 SWITCH gun=25 via=wheel fov=3.75deg
+2026-10-17 23:26:34.108 I [present] AC130 SWITCH gun=40 via=wheel fov=15.07deg
+2026-10-17 23:26:34.507 I [present] AC130 SWITCH gun=25 via=wheel fov=3.75deg
+2026-10-17 23:26:34.608 I [present] AC130CAM t=30.0 slant_m=157.8 cam_to_player=157.8 er_cam_to_player=3.8 writes=1799 skips=0 persisted=0 fov_persisted=0 fov_deg=3.75 gun=25 aim_yaw=-6.2 aim_pitch=5.2 mouse_counts=26432 er_yaw=-43.6 last_reject=0
+2026-10-17 23:26:34.643 I [present] AC130 gpu_ms p50=0.0482 p95=0.0500 max=0.0522 n=600
+2026-10-17 23:26:34.643 I [present] AC130 tracer gpu_ms p50=0.0090 p95=0.0786 max=0.0796 n=171 frames=738 max_instances=11
+2026-10-17 23:26:34.874 I [present] AC130 SWITCH gun=40 via=wheel fov=15.07deg
+2026-10-17 23:26:35.040 I [t(7)] AC130 SWITCH gun=105 via=wheel fov=34.52deg
+2026-10-17 23:26:38.790 I [present] AC130 SHAKE src=fire gun=105 mw2_scale=0.20 dur_s=1.00 radius_m=25.4 dist_m=0.0 gain=1.00 amp=0.200 on=1
+2026-10-17 23:26:38.790 I [present] AC130 SHOT gun=105 n=4 clip=0/1 o=(-79.49,108.29,102.01) dir=(0.049,-0.762,-0.646) impact=(-76.98,68.90,68.64) dist_m=51.7 via=map flight_s=0.68
+2026-10-17 23:26:38.790 I [present] AC130 RELOAD gun=105 s=4.98
+2026-10-17 23:26:39.474 E [present] AC130 EXPLODE gun=105 id=79000201 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:39.474 E [present] AC130 spawn breaker open after 14 consecutive failures; explosions paused 3 s
+2026-10-17 23:26:39.474 E [present] AC130 EXPLODE gun=105 id=79000202 SPAWN FAIL code=4 (3=invalid bullet id, 4=construction failed)
+2026-10-17 23:26:39.474 E [present] AC130 spawn breaker open after 15 consecutive failures; explosions paused 3 s
+2026-10-17 23:26:39.474 I [present] AC130 EXPLODE gun=105 ids= pos=(-76.98,68.90,68.64) dist_m=51.7 late_ms=5
+2026-10-17 23:26:39.474 I [present] AC130 SHAKE src=impact gun=105 mw2_scale=0.40 dur_s=1.00 radius_m=88.9 dist_m=49.4 gain=1.00 amp=0.400 on=1
+2026-10-17 23:26:39.607 I [present] AC130CAM t=35.0 slant_m=157.7 cam_to_player=157.7 er_cam_to_player=3.8 writes=2099 skips=0 persisted=0 fov_persisted=0 fov_deg=34.52 gun=105 aim_yaw=33.4 aim_pitch=-5.1 mouse_counts=32341 er_yaw=-43.6 last_reject=0
+2026-10-17 23:26:41.542 I [present] AC130 esc pressed (raw DIK_ESCAPE edge): ending the ride as menu
+2026-10-17 23:26:41.542 I [present] AC130 restore field=CSCamera.pers_cam_1+0x10..0x54 addr=0x7ff141800eb0 old=<pos=(-99.19,108.29,81.33) fov=0.6024> new=<pos=(-3.60,2.85,9.75) fov=0.8378> floats=12 fov_restored=1 fov_persisted_frames=0 ok=1
+2026-10-17 23:26:41.542 I [present] AC130 restore field=CSFeManImp.hud_state old=0 new=3 ok=1
+2026-10-17 23:26:41.542 I [present] AC130 off reason=menu t_s=36.9 shots=105:4/40:0/25:40 explosions=11 hits=0 kills=0 shells_dropped=0 player_hp_start=476 player_hp_min=476 moved_m=0.0 fp_resume=1 cooldown_s=0
+2026-10-17 23:26:41.585 I [present] AC130 PROTECT restore id=79000950 chr=0x7ff180113800 present=0 ok=1 reason=menu
+2026-10-17 23:26:47.139 I [present] TASK world left (loading / title)

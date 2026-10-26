@@ -1,0 +1,876 @@
+2026-10-14 11:57:44.373 I [boot] BOOT mw2er 0.2.0 dll=D:\Mods\MW2inER\build\natives\mw2er.dll size=3568128 mtime=2026-10-14 18:18:01Z built=2026-10-14 18:17:57Z pid=17852 root=D:\Mods\MW2inER root_valid=true log_ok=true
+2026-10-14 11:57:44.373 I [boot] VERSION PASS file=2.7.1.0 product=2.7.1.0 lang=0x0409 timedatestamp=0x6a96b418 sizeofimage=0x5e0da00
+2026-10-14 11:57:44.373 I [boot] CONFIG loaded D:\Mods\MW2inER\mw2er.toml weapon=ump45_mp k=4 toggle=F5 reload=R camera=pers_cam_1
+2026-10-14 11:57:44.373 I [boot] DATA weapons.json ok (3 guns) weapon=ump45_mp mode=Full Auto damage=40/35 range=15.24/21.59m fireTime=0.09 clip=32 maxAmmo=192 reload=2.5/3.03 spread=2/5
+2026-10-14 11:57:44.373 I [boot] DATA rows.json ok k=4 bands=6 ids=79000100..79000105 marker=79000900 speed=999m/s life=0.15s built=20261014T183206Z
+2026-10-14 11:57:44.379 I [boot] DATA sounds.json ok 5 sounds for ump45_mp
+2026-10-14 11:57:44.379 I [boot] VM pre-ImGui callback registered; assets D:\Mods\MW2inER\converted\viewmodel
+2026-10-14 11:57:44.379 D [boot] HUDHOOK hudhook::hooks: WNDCLASSEXW { cbSize: 80, style: WNDCLASS_STYLES(3), lpfnWndProc: Some(0x7ff8356caec0), cbClsExtra: 0, cbWndExtra: 0, hInstance: HINSTANCE(0x7ff7852f0000), hIcon: HICON(0x0), hCursor: HCURSOR(0x0), hbrBackground: HBRUSH(0x0), lpszMenuName: PCWSTR(0x0), lpszClassName: PCWSTR(0x7ff83586bde0), hIconSm: HICON(0x0) }
+2026-10-14 11:57:44.382 D [boot] HUDHOOK hudhook::hooks: HWND(0x15097e)
+2026-10-14 11:57:44.890 I [boot] HUD applied (DX12 hooks enabled; waiting for the first Present)
+2026-10-14 11:57:45.029 I [boot] INPUT PASS hooked=2 addrs=[0x7ff835ae75f0,0x7ff835aeaaa0]
+2026-10-14 11:57:45.030 I [boot] AUDIO thread started
+2026-10-14 11:57:45.030 I [boot] BOOTGATE waiting for the game window, then reflection names [CSTask,WorldChrMan,CSBulletManager,CSCamera,CSMenuMan,CSHavokMan,SoloParamRepository]
+2026-10-14 11:57:45.098 I [audio] AUDIO ready: 5/5 sounds loaded (fire truncated to 600 ms)
+2026-10-14 11:57:45.282 I [boot] BOOTGATE window hwnd=0x2209ce after 251 ms
+2026-10-14 11:57:45.291 I [boot] BOOTGATE PASS after 8 ms names=[CSTask,WorldChrMan,CSBulletManager,CSCamera,CSMenuMan,CSHavokMan,SoloParamRepository] optional=[CSMouseMan:yes,FD4PadManager:yes] scanned=223
+2026-10-14 11:57:45.299 I [boot] TASK registered group=ChrIns_PostPhysics
+2026-10-14 11:57:45.299 I [boot] BOOT DONE in 928 ms (hud=1 input=1 audio_thread=1 data=1 task=1)
+2026-10-14 11:57:45.310 I [task] TASK first tick on the game's main thread
+2026-10-14 11:57:45.538 I [present] HUD initialize display=3840x2160 font=built-in 26px
+2026-10-14 11:57:45.540 I [present] VM target fmt=R10G10B10A2_UNORM 3840x2160 colorspace=none frames=3
+2026-10-14 11:57:45.681 I [vmload] VM assets ready ms=139 bytes=3254272 bones=91 verts=7489 clips=12 fmt=R10G10B10A2_UNORM ts_freq=1000000000
+2026-10-14 11:57:45.692 I [present] VM animation ready (12 clips)
+2026-10-14 11:57:45.692 I [present] VM output Srgb for fmt=R10G10B10A2_UNORM colorspace=-1 (viewmodel.output=Auto)
+2026-10-14 11:57:49.104 I [present] MENU cursor None -> Some(true)
+2026-10-14 11:57:49.476 I [present] MENU idx=5 0->1
+2026-10-14 11:58:01.951 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-14 11:58:16.835 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-14 11:58:18.488 I [present] MENU idx=0 0->1
+2026-10-14 11:58:19.588 I [present] MENU idx=0 1->0
+2026-10-14 11:58:20.303 I [present] MENU idx=6 0->1
+2026-10-14 11:58:20.599 I [present] MENU idx=25 0->1
+2026-10-14 11:58:20.600 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-14 11:58:20.616 I [present] MENU idx=4 0->1
+2026-10-14 11:58:20.616 I [present] MENU idx=8 0->1
+2026-10-14 11:58:20.616 I [present] MENU idx=9 0->1
+2026-10-14 11:58:20.616 I [present] MENU idx=19 0->1
+2026-10-14 11:58:20.616 I [present] MENU idx=23 0->1
+2026-10-14 11:58:20.616 I [present] MENU idx=26 0->1
+2026-10-14 11:58:20.616 I [present] MENU idx=27 0->1
+2026-10-14 11:58:20.749 I [present] MENU idx=9 1->0
+2026-10-14 11:58:20.749 I [present] MENU idx=19 1->0
+2026-10-14 11:58:20.749 I [present] MENU idx=25 1->0
+2026-10-14 11:58:20.749 I [present] MENU idx=26 1->0
+2026-10-14 11:58:20.749 I [present] MENU idx=27 1->0
+2026-10-14 11:58:22.075 I [present] TASK world entered (player handle 0xffffffff16f00000 owner_check=ok)
+2026-10-14 11:58:22.075 I [present] PARAMS OK n=13
+2026-10-14 11:58:22.075 I [present] CAMERA probe tick=1 pers_cam_1[pos=(0.00,0.00,0.00) row2=(0.000,0.000,1.000) fov=0.75049156] chr_cam[pos=(32.79,106.00,92.25) row2=(0.965,0.000,0.261) fov=0.83775806] player=(36.16,104.55,93.16)
+2026-10-14 11:58:22.075 I [present] CAMFRAME tick=1 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=145.50m
+2026-10-14 11:58:22.075 I [present] CAMERA sign=+1 cam_player_dist=145.50m fov_raw=0.75049156 source=pers_cam_1
+2026-10-14 11:58:22.075 W [present] CAMERA odd cam_player_dist=145.50m (camera and player may be in different spaces); shots are skipped while it lasts
+2026-10-14 11:58:22.095 I [present] CAMERA probe tick=2 pers_cam_1[pos=(0.00,0.00,0.00) row2=(0.000,0.000,1.000) fov=0.75049156] chr_cam[pos=(32.79,106.00,92.25) row2=(0.965,0.000,0.261) fov=0.83775806] player=(36.16,104.55,93.16)
+2026-10-14 11:58:22.095 I [present] CAMFRAME tick=2 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=145.50m
+2026-10-14 11:58:22.095 I [present] MENU idx=7 0->1
+2026-10-14 11:58:22.113 I [present] CAMERA probe tick=3 pers_cam_1[pos=(0.00,0.00,0.00) row2=(0.000,0.000,1.000) fov=0.75049156] chr_cam[pos=(32.79,106.00,92.25) row2=(0.965,0.000,0.261) fov=0.83775806] player=(36.16,104.55,93.16)
+2026-10-14 11:58:22.113 I [present] CAMFRAME tick=3 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=145.50m
+2026-10-14 11:58:22.127 I [present] CAMFRAME tick=4 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=145.50m
+2026-10-14 11:58:22.144 I [present] CAMFRAME tick=5 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=145.50m
+2026-10-14 11:58:22.161 I [present] CAMFRAME tick=6 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=145.50m
+2026-10-14 11:58:22.178 I [present] CAMFRAME tick=7 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=145.50m
+2026-10-14 11:58:22.195 I [present] CAMFRAME tick=8 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=145.50m
+2026-10-14 11:58:22.212 I [present] CAMFRAME tick=9 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=145.50m
+2026-10-14 11:58:22.227 I [present] CAMFRAME tick=10 src=pers_cam_1 valid=0 why=identity pos=(0.00,0.00,0.00) fwd=(0.000,0.000,1.000) det=+1.000 ortho_err=0.0e0 fov=0.7505(43.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=145.50m
+2026-10-14 11:58:22.312 I [present] MENU idx=23 1->0
+2026-10-14 11:58:22.317 I [boot] STATE mode=off mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=0 shots=0 hits=0 gds_mouse=11ms gds_kbd=11ms
+2026-10-14 11:58:25.135 I [present] MENU idx=6 1->0
+2026-10-14 11:58:25.175 I [present] CAMFRAME tick=162 src=pers_cam_1 valid=1 why=ok pos=(0.78,2.00,4.25) fwd=(0.965,0.000,0.261) det=+1.000 ortho_err=0.0e0 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.50m
+2026-10-14 11:58:25.641 I [present] MENU idx=4 1->0
+2026-10-14 11:58:27.320 I [boot] STATE mode=off mag=32/192 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=1ms gds_kbd=1ms
+2026-10-14 11:58:28.407 I [present] MODE on weapon=ump45_mp mag=32/192 menu_baseline=[5, 7, 8] show_cursor=0
+2026-10-14 11:58:28.407 I [present] VM state hidden->raise clip=pullout rate=1.096 ads=0.00 seq=1
+2026-10-14 11:58:28.409 I [present] VM first frame drawn 3840x2160 slot=2 out=Srgb
+2026-10-14 11:58:29.173 I [present] VM state raise->idle clip=idle rate=1.000 ads=0.00 seq=2
+2026-10-14 11:58:30.190 I [present] CAMFRAME tick=463 src=pers_cam_1 valid=1 why=ok pos=(0.65,2.68,5.86) fwd=(0.960,-0.185,-0.212) det=+1.000 ortho_err=1.5e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.69m
+2026-10-14 11:58:32.322 I [boot] STATE mode=on mag=32/192 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=3ms gds_kbd=3ms
+2026-10-14 11:58:35.041 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=3
+2026-10-14 11:58:35.191 I [present] CAMFRAME tick=763 src=pers_cam_1 valid=1 why=ok pos=(7.61,1.61,4.90) fwd=(0.947,-0.259,-0.189) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=5.33m
+2026-10-14 11:58:35.341 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=4
+2026-10-14 11:58:36.209 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=5
+2026-10-14 11:58:36.524 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=6
+2026-10-14 11:58:36.741 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=7
+2026-10-14 11:58:36.859 I [present] VM state sprint_in->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=8
+2026-10-14 11:58:37.174 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=9
+2026-10-14 11:58:37.325 I [boot] STATE mode=on mag=32/192 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=0 hits=0 gds_mouse=5ms gds_kbd=5ms
+2026-10-14 11:58:37.376 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=10
+2026-10-14 11:58:37.691 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=11
+2026-10-14 11:58:38.411 I [present] VM gpu_ms p50=0.0160 p95=0.0177 max=0.0206 n=598
+2026-10-14 11:58:38.962 I [present] CAMFRAME tick=989 src=pers_cam_1 valid=0 why=settling pos=(-3.21,-2.01,-1.38) fwd=(0.517,-0.193,-0.834) det=+1.000 ortho_err=0.0e0 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=5.32m
+2026-10-14 11:58:38.962 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=12
+2026-10-14 11:58:38.991 I [present] CAMFRAME tick=991 src=pers_cam_1 valid=1 why=ok pos=(-2.54,-2.08,-1.21) fwd=(0.381,-0.181,-0.907) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=5.18m
+2026-10-14 11:58:39.275 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=13
+2026-10-14 11:58:39.492 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=14
+2026-10-14 11:58:39.791 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=15
+2026-10-14 11:58:40.058 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=16
+2026-10-14 11:58:40.342 I [present] SPAWN try id=79000105 owner=0xffffffff16f00000 origin=(3.92,-3.55,-10.07) w=1 dir=(-0.269,0.083,-0.960) (first spawn of the session)
+2026-10-14 11:58:40.342 I [present] SPAWN ok (first spawn)
+2026-10-14 11:58:40.342 I [present] SHOT n=1 mag=31/192 id=79000105 mw2=35 d=78.9m src=map spread=5.00 origin=(3.92,-3.55,-10.07) dir=(-0.269,0.083,-0.960)
+2026-10-14 11:58:40.342 I [present] VM state sprint_out->fire clip=fire rate=1.000 ads=0.00 seq=17
+2026-10-14 11:58:40.359 I [t(5)] BULLET id=79000105 pos=(3.92,-3.55,-10.07) origin=(3.92,-3.55,-10.07) speed=999.0 m/s alive=0.000s
+2026-10-14 11:58:40.442 I [present] SHOT n=2 mag=30/192 id=79000105 mw2=35 d=32.0m src=map spread=5.00 origin=(4.02,-3.57,-10.16) dir=(-0.224,-0.001,-0.975)
+2026-10-14 11:58:40.442 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.41 seq=18
+2026-10-14 11:58:40.458 I [present] IMPACT pos=(-17.23,2.96,-85.55) dist_from_origin=78.6m t=0.017s kind=hit
+2026-10-14 11:58:40.509 I [present] IMPACT pos=(-3.16,-3.63,-41.36) dist_from_origin=32.0m t=0.067s kind=hit
+2026-10-14 11:58:40.525 I [present] SHOT n=3 mag=29/192 id=79000105 mw2=35 d=32.5m src=map spread=4.20 origin=(4.08,-3.59,-10.21) dir=(-0.189,0.019,-0.982)
+2026-10-14 11:58:40.525 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=0.83 seq=19
+2026-10-14 11:58:40.592 I [present] IMPACT pos=(-2.07,-2.98,-42.10) dist_from_origin=32.5m t=0.067s kind=hit
+2026-10-14 11:58:40.624 I [present] SHOT n=4 mag=28/192 id=79000105 mw2=35 d=37.0m src=map spread=3.80 origin=(4.14,-3.60,-10.23) dir=(-0.207,0.003,-0.978)
+2026-10-14 11:58:40.626 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=20
+2026-10-14 11:58:40.709 I [present] SHOT n=5 mag=27/192 id=79000105 mw2=35 d=33.6m src=map spread=4.00 origin=(4.19,-3.61,-10.23) dir=(-0.222,-0.040,-0.974)
+2026-10-14 11:58:40.709 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=21
+2026-10-14 11:58:40.709 I [present] IMPACT pos=(-3.46,-3.51,-46.36) dist_from_origin=36.9m t=0.000s kind=hit
+2026-10-14 11:58:40.775 I [present] IMPACT pos=(-3.14,-4.98,-42.42) dist_from_origin=33.0m t=0.067s kind=hit
+2026-10-14 11:58:40.808 I [present] SHOT n=6 mag=26/192 id=79000105 mw2=35 d=27.9m src=map spread=3.80 origin=(4.22,-3.62,-10.23) dir=(-0.176,-0.017,-0.984)
+2026-10-14 11:58:40.808 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=22
+2026-10-14 11:58:40.875 I [present] IMPACT pos=(-0.64,-4.11,-37.63) dist_from_origin=27.8m t=0.067s kind=hit
+2026-10-14 11:58:40.892 I [present] SHOT n=7 mag=25/192 id=79000105 mw2=35 d=29.8m src=map spread=4.00 origin=(4.21,-3.64,-10.22) dir=(-0.217,-0.051,-0.975)
+2026-10-14 11:58:40.892 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=23
+2026-10-14 11:58:40.958 I [present] IMPACT pos=(-2.19,-5.17,-38.91) dist_from_origin=29.4m t=0.067s kind=hit
+2026-10-14 11:58:40.975 I [present] SHOT n=8 mag=24/192 id=79000105 mw2=35 d=61.0m src=map spread=4.00 origin=(4.18,-3.66,-10.21) dir=(-0.327,0.035,-0.945)
+2026-10-14 11:58:40.975 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=24
+2026-10-14 11:58:41.075 I [present] SHOT n=9 mag=23/192 id=79000100 mw2=40 d=10.6m src=map spread=3.80 origin=(4.17,-3.67,-10.20) dir=(-0.376,-0.087,-0.923)
+2026-10-14 11:58:41.075 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=25
+2026-10-14 11:58:41.075 I [present] IMPACT pos=(-15.69,-1.57,-67.67) dist_from_origin=60.8m t=0.000s kind=hit
+2026-10-14 11:58:41.125 I [present] IMPACT pos=(0.23,-4.58,-19.97) dist_from_origin=10.6m t=0.050s kind=hit
+2026-10-14 11:58:41.158 I [present] SHOT n=10 mag=22/192 id=79000100 mw2=40 d=12.8m src=map spread=4.00 origin=(4.18,-3.66,-10.21) dir=(-0.368,-0.058,-0.928)
+2026-10-14 11:58:41.158 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=26
+2026-10-14 11:58:41.208 I [present] IMPACT pos=(0.24,-4.29,-20.09) dist_from_origin=10.7m t=0.050s kind=hit
+2026-10-14 11:58:41.258 I [present] SHOT n=11 mag=21/192 id=79000105 mw2=35 d=44.4m src=map spread=3.80 origin=(4.24,-3.64,-10.22) dir=(-0.317,-0.014,-0.948)
+2026-10-14 11:58:41.258 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=27
+2026-10-14 11:58:41.342 I [present] SHOT n=12 mag=20/192 id=79000105 mw2=35 d=52.7m src=map spread=3.99 origin=(4.26,-3.64,-10.23) dir=(-0.262,0.006,-0.965)
+2026-10-14 11:58:41.342 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=28
+2026-10-14 11:58:41.342 I [present] IMPACT pos=(-9.71,-4.31,-52.00) dist_from_origin=44.1m t=0.000s kind=hit
+2026-10-14 11:58:41.425 I [present] SHOT n=13 mag=19/192 id=79000105 mw2=35 d=45.0m src=map spread=4.00 origin=(4.26,-3.64,-10.23) dir=(-0.257,-0.013,-0.966)
+2026-10-14 11:58:41.425 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=29
+2026-10-14 11:58:41.442 I [present] IMPACT pos=(-9.50,-3.33,-60.86) dist_from_origin=52.5m t=0.017s kind=hit
+2026-10-14 11:58:41.509 I [present] IMPACT pos=(-7.21,-4.24,-53.40) dist_from_origin=44.7m t=0.083s kind=hit
+2026-10-14 11:58:41.525 I [present] SHOT n=14 mag=18/192 id=79000105 mw2=35 d=64.4m src=map spread=3.80 origin=(4.24,-3.65,-10.23) dir=(-0.276,0.044,-0.960)
+2026-10-14 11:58:41.525 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=30
+2026-10-14 11:58:41.608 I [present] SHOT n=15 mag=17/192 id=79000105 mw2=35 d=62.0m src=map spread=4.00 origin=(4.24,-3.65,-10.23) dir=(-0.341,0.040,-0.939)
+2026-10-14 11:58:41.608 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=31
+2026-10-14 11:58:41.625 I [present] IMPACT pos=(-13.47,-0.86,-71.96) dist_from_origin=64.3m t=0.017s kind=hit
+2026-10-14 11:58:41.708 I [present] SHOT n=16 mag=16/192 id=79000105 mw2=35 d=42.0m src=map spread=3.80 origin=(4.24,-3.65,-10.23) dir=(-0.306,-0.002,-0.952)
+2026-10-14 11:58:41.708 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=32
+2026-10-14 11:58:41.708 I [present] IMPACT pos=(-16.87,-1.23,-68.27) dist_from_origin=61.8m t=0.000s kind=hit
+2026-10-14 11:58:41.775 I [present] MENU idx=17 0->1
+2026-10-14 11:58:41.792 I [present] MENU idx=23 0->1
+2026-10-14 11:58:41.792 I [present] SHOT n=17 mag=15/192 id=79000105 mw2=35 d=61.4m src=map spread=4.00 origin=(4.24,-3.65,-10.23) dir=(-0.325,0.036,-0.945)
+2026-10-14 11:58:41.792 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=33
+2026-10-14 11:58:41.792 I [present] IMPACT pos=(-8.56,-3.74,-50.13) dist_from_origin=41.9m t=0.000s kind=hit
+2026-10-14 11:58:41.876 I [present] SHOT n=18 mag=14/192 id=79000105 mw2=35 d=50.9m src=map spread=3.99 origin=(4.25,-3.65,-10.23) dir=(-0.321,0.004,-0.947)
+2026-10-14 11:58:41.876 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=34
+2026-10-14 11:58:41.892 I [present] IMPACT pos=(-15.66,-1.50,-68.11) dist_from_origin=61.2m t=0.016s kind=hit
+2026-10-14 11:58:41.892 I [present] HIT chr=c4311 hp 219->150 dmg=69 band=79000105 mw2=35 d=42.0m via=impact n=1 kill=0
+2026-10-14 11:58:41.975 I [present] SHOT n=19 mag=13/192 id=79000105 mw2=35 d=23.4m src=map spread=5.00 origin=(4.25,-3.67,-10.44) dir=(-0.266,-0.069,-0.961)
+2026-10-14 11:58:41.975 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=35
+2026-10-14 11:58:41.975 I [present] IMPACT pos=(-12.04,-3.48,-58.21) dist_from_origin=50.5m t=0.000s kind=hit
+2026-10-14 11:58:42.042 I [present] IMPACT pos=(-1.87,-5.30,-32.55) dist_from_origin=23.0m t=0.067s kind=hit
+2026-10-14 11:58:42.058 I [present] SHOT n=20 mag=12/192 id=79000105 mw2=35 d=37.8m src=map spread=5.00 origin=(4.29,-3.71,-10.70) dir=(-0.270,-0.027,-0.963)
+2026-10-14 11:58:42.058 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=36
+2026-10-14 11:58:42.142 I [present] IMPACT pos=(-5.78,-4.74,-46.65) dist_from_origin=37.3m t=0.083s kind=hit
+2026-10-14 11:58:42.159 I [present] SHOT n=21 mag=11/192 id=79000102 mw2=38 d=17.4m src=map spread=5.00 origin=(4.38,-3.76,-11.04) dir=(-0.214,-0.094,-0.972)
+2026-10-14 11:58:42.159 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=37
+2026-10-14 11:58:42.225 I [present] IMPACT pos=(0.73,-5.41,-27.65) dist_from_origin=17.1m t=0.066s kind=hit
+2026-10-14 11:58:42.242 I [present] SHOT n=22 mag=10/192 id=79000105 mw2=35 d=25.2m src=map spread=5.00 origin=(4.48,-3.79,-11.30) dir=(-0.233,-0.059,-0.971)
+2026-10-14 11:58:42.242 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=38
+2026-10-14 11:58:42.309 I [present] IMPACT pos=(-1.31,-5.28,-35.38) dist_from_origin=24.8m t=0.067s kind=hit
+2026-10-14 11:58:42.325 I [present] SHOT n=23 mag=9/192 id=79000105 mw2=35 d=26.1m src=map spread=5.00 origin=(4.58,-3.77,-11.55) dir=(-0.190,-0.055,-0.980)
+2026-10-14 11:58:42.325 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=39
+2026-10-14 11:58:42.327 I [boot] STATE mode=on mag=9/192 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=23 hits=1 gds_mouse=7ms gds_kbd=7ms
+2026-10-14 11:58:42.393 I [present] IMPACT pos=(-0.36,-5.21,-37.14) dist_from_origin=26.1m t=0.067s kind=hit
+2026-10-14 11:58:42.425 I [present] SHOT n=24 mag=8/192 id=79000105 mw2=35 d=31.6m src=map spread=5.00 origin=(4.83,-3.77,-11.62) dir=(-0.246,-0.039,-0.968)
+2026-10-14 11:58:42.425 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=40
+2026-10-14 11:58:42.492 I [present] IMPACT pos=(-2.85,-5.01,-41.85) dist_from_origin=31.2m t=0.067s kind=hit
+2026-10-14 11:58:42.509 I [present] SHOT n=25 mag=7/192 id=79000105 mw2=35 d=23.6m src=map spread=5.00 origin=(5.04,-3.78,-11.65) dir=(-0.300,-0.063,-0.952)
+2026-10-14 11:58:42.509 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=41
+2026-10-14 11:58:42.576 I [present] IMPACT pos=(-1.93,-5.28,-33.79) dist_from_origin=23.3m t=0.067s kind=hit
+2026-10-14 11:58:42.592 I [present] SHOT n=26 mag=6/192 id=79000105 mw2=35 d=39.2m src=map spread=4.00 origin=(5.24,-3.79,-11.69) dir=(-0.310,-0.020,-0.950)
+2026-10-14 11:58:42.592 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=42
+2026-10-14 11:58:42.675 I [present] IMPACT pos=(-6.81,-4.62,-48.56) dist_from_origin=38.8m t=0.083s kind=hit
+2026-10-14 11:58:42.692 I [present] SHOT n=27 mag=5/192 id=79000105 mw2=35 d=28.9m src=map spread=3.80 origin=(5.44,-3.82,-11.76) dir=(-0.251,-0.046,-0.967)
+2026-10-14 11:58:42.692 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=43
+2026-10-14 11:58:42.759 I [present] IMPACT pos=(-1.71,-5.17,-39.35) dist_from_origin=28.5m t=0.067s kind=hit
+2026-10-14 11:58:42.876 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.08 seq=44
+2026-10-14 11:58:43.275 I [present] MENU idx=17 1->0
+2026-10-14 11:58:43.992 I [present] CAMFRAME tick=1291 src=pers_cam_1 valid=1 why=ok pos=(6.98,-3.81,-8.79) fwd=(-0.341,-0.006,-0.940) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=4.56m
+2026-10-14 11:58:44.208 I [present] SHOT n=28 mag=4/192 id=79000105 mw2=35 d=54.9m src=map spread=3.80 origin=(5.06,-3.85,-14.07) dir=(-0.326,0.030,-0.945)
+2026-10-14 11:58:44.208 I [present] VM state idle->fire clip=fire rate=1.000 ads=0.00 seq=45
+2026-10-14 11:58:44.309 I [present] SHOT n=29 mag=3/192 id=79000103 mw2=37 d=19.0m src=map spread=3.80 origin=(5.06,-3.85,-14.07) dir=(-0.351,-0.076,-0.933)
+2026-10-14 11:58:44.309 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=46
+2026-10-14 11:58:44.309 I [present] IMPACT pos=(-12.78,-2.25,-65.80) dist_from_origin=54.7m t=0.000s kind=hit
+2026-10-14 11:58:44.376 I [present] IMPACT pos=(-1.46,-5.30,-31.39) dist_from_origin=18.6m t=0.067s kind=hit
+2026-10-14 11:58:44.393 I [present] SHOT n=30 mag=2/192 id=79000105 mw2=35 d=42.1m src=map spread=3.99 origin=(5.06,-3.85,-14.07) dir=(-0.382,-0.006,-0.924)
+2026-10-14 11:58:44.394 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=47
+2026-10-14 11:58:44.475 I [present] IMPACT pos=(-10.92,-4.15,-52.69) dist_from_origin=41.8m t=0.082s kind=hit
+2026-10-14 11:58:44.492 I [present] SHOT n=31 mag=1/192 id=79000105 mw2=35 d=43.5m src=map spread=3.81 origin=(5.06,-3.84,-14.07) dir=(-0.364,-0.004,-0.931)
+2026-10-14 11:58:44.492 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=48
+2026-10-14 11:58:44.575 I [present] SHOT n=32 mag=0/192 id=79000105 mw2=35 d=35.6m src=chr spread=4.00 origin=(5.07,-3.83,-14.07) dir=(-0.343,0.004,-0.939)
+2026-10-14 11:58:44.575 I [present] RELOAD start empty=1 dur=3.03 mag=0
+2026-10-14 11:58:44.575 I [present] VM state fire->reload_empty clip=reload_empty rate=1.000 ads=0.00 seq=50
+2026-10-14 11:58:44.575 I [present] IMPACT pos=(-10.71,-4.04,-54.37) dist_from_origin=43.3m t=0.000s kind=hit
+2026-10-14 11:58:44.659 I [present] IMPACT pos=(-10.67,-3.69,-57.23) dist_from_origin=45.9m t=0.084s kind=hit
+2026-10-14 11:58:47.330 I [boot] STATE mode=on mag=0/192 reloading=1 spread=5.00 menu=0 fg=1 chars=64 shots=32 hits=1 gds_mouse=10ms gds_kbd=10ms
+2026-10-14 11:58:47.609 I [present] RELOAD done mag=32 reserve=160 added=32
+2026-10-14 11:58:47.609 I [present] VM state reload_empty->idle clip=idle rate=1.000 ads=0.00 seq=51
+2026-10-14 11:58:48.428 I [present] VM gpu_ms p50=0.0161 p95=0.0204 max=0.2289 n=601
+2026-10-14 11:58:48.792 I [present] SHOT n=33 mag=31/160 id=79000100 mw2=40 d=14.0m src=map spread=2.00 origin=(3.25,-3.87,-20.26) dir=(-0.364,-0.011,-0.931)
+2026-10-14 11:58:48.792 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=52
+2026-10-14 11:58:48.825 I [present] MENU idx=17 0->1
+2026-10-14 11:58:48.843 I [present] IMPACT pos=(-1.82,-4.03,-33.25) dist_from_origin=13.9m t=0.050s kind=hit
+2026-10-14 11:58:48.892 I [present] SHOT n=34 mag=30/160 id=79000100 mw2=40 d=14.0m src=map spread=2.36 origin=(3.25,-3.87,-20.26) dir=(-0.370,-0.019,-0.929)
+2026-10-14 11:58:48.892 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=53
+2026-10-14 11:58:48.943 I [present] IMPACT pos=(-1.94,-4.14,-33.27) dist_from_origin=14.0m t=0.050s kind=hit
+2026-10-14 11:58:48.943 I [present] HIT chr=c4311 hp 150->146 dmg=4 band=79000100 mw2=40 d=14.0m via=impact n=1 kill=0
+2026-10-14 11:58:48.975 I [present] SHOT n=35 mag=29/160 id=79000100 mw2=40 d=14.5m src=chr spread=2.92 origin=(3.25,-3.87,-20.26) dir=(-0.397,0.005,-0.918)
+2026-10-14 11:58:48.975 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=54
+2026-10-14 11:58:49.009 I [present] CAMFRAME tick=1592 src=pers_cam_1 valid=1 why=ok pos=(4.75,-3.86,-16.46) fwd=(-0.367,-0.002,-0.930) det=+1.000 ortho_err=0.0e0 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.50m
+2026-10-14 11:58:49.042 I [present] HIT chr=c4311 hp 146->142 dmg=4 band=79000100 mw2=40 d=14.0m via=impact n=1 kill=0
+2026-10-14 11:58:49.059 I [present] IMPACT pos=(-12.24,-3.71,-56.05) dist_from_origin=39.0m t=0.083s kind=hit
+2026-10-14 11:58:49.076 I [present] SHOT n=36 mag=28/160 id=79000100 mw2=40 d=14.5m src=chr spread=3.28 origin=(3.25,-3.87,-20.26) dir=(-0.388,0.012,-0.921)
+2026-10-14 11:58:49.076 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=55
+2026-10-14 11:58:49.159 I [present] SHOT n=37 mag=27/160 id=79000100 mw2=40 d=14.2m src=map spread=3.84 origin=(3.25,-3.87,-20.26) dir=(-0.368,0.002,-0.930)
+2026-10-14 11:58:49.159 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=56
+2026-10-14 11:58:49.159 I [present] IMPACT pos=(-12.74,-3.40,-58.20) dist_from_origin=41.2m t=0.000s kind=hit
+2026-10-14 11:58:49.208 I [present] IMPACT pos=(-1.92,-3.84,-33.35) dist_from_origin=14.1m t=0.050s kind=hit
+2026-10-14 11:58:49.242 I [present] SHOT n=38 mag=26/160 id=79000100 mw2=40 d=14.5m src=chr spread=4.00 origin=(3.25,-3.87,-20.26) dir=(-0.342,-0.035,-0.939)
+2026-10-14 11:58:49.242 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=57
+2026-10-14 11:58:49.292 I [present] IMPACT pos=(-1.75,-4.38,-33.97) dist_from_origin=14.6m t=0.050s kind=hit
+2026-10-14 11:58:49.292 I [present] HIT chr=c4311 hp 142->138 dmg=4 band=79000100 mw2=40 d=14.2m via=impact n=1 kill=0
+2026-10-14 11:58:49.343 I [present] SHOT n=39 mag=25/160 id=79000100 mw2=40 d=14.8m src=chr spread=5.00 origin=(3.35,-3.87,-20.02) dir=(-0.357,0.018,-0.934)
+2026-10-14 11:58:49.343 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=58
+2026-10-14 11:58:49.392 I [present] HIT chr=c4311 hp 138->134 dmg=4 band=79000100 mw2=40 d=14.5m via=impact n=1 kill=0
+2026-10-14 11:58:49.426 I [present] SHOT n=40 mag=24/160 id=79000105 mw2=35 d=25.7m src=map spread=5.00 origin=(3.47,-3.87,-19.72) dir=(-0.302,-0.039,-0.953)
+2026-10-14 11:58:49.426 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=59
+2026-10-14 11:58:49.426 I [present] IMPACT pos=(-12.33,-3.11,-61.08) dist_from_origin=44.3m t=0.000s kind=hit
+2026-10-14 11:58:49.492 I [present] IMPACT pos=(-4.17,-4.89,-43.81) dist_from_origin=25.3m t=0.067s kind=hit
+2026-10-14 11:58:49.525 I [present] SHOT n=41 mag=23/160 id=79000105 mw2=35 d=49.1m src=map spread=5.00 origin=(3.61,-3.86,-19.36) dir=(-0.310,0.032,-0.950)
+2026-10-14 11:58:49.525 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=60
+2026-10-14 11:58:49.609 I [present] SHOT n=42 mag=22/160 id=79000101 mw2=39 d=15.9m src=chr spread=5.00 origin=(3.73,-3.86,-19.05) dir=(-0.405,-0.006,-0.914)
+2026-10-14 11:58:49.609 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=61
+2026-10-14 11:58:49.609 I [present] IMPACT pos=(-11.54,-2.36,-65.83) dist_from_origin=49.2m t=0.000s kind=hit
+2026-10-14 11:58:49.692 I [present] SHOT n=43 mag=21/160 id=79000104 mw2=36 d=20.0m src=map spread=5.00 origin=(3.85,-3.85,-18.75) dir=(-0.317,-0.068,-0.946)
+2026-10-14 11:58:49.692 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=62
+2026-10-14 11:58:49.692 I [present] IMPACT pos=(-11.20,-4.12,-52.70) dist_from_origin=37.1m t=0.000s kind=hit
+2026-10-14 11:58:49.759 I [present] IMPACT pos=(-2.36,-5.21,-37.30) dist_from_origin=19.6m t=0.067s kind=hit
+2026-10-14 11:58:49.792 I [present] SHOT n=44 mag=20/160 id=79000101 mw2=39 d=16.2m src=map spread=5.00 origin=(3.99,-3.84,-18.38) dir=(-0.366,-0.004,-0.930)
+2026-10-14 11:58:49.792 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=63
+2026-10-14 11:58:49.843 I [present] IMPACT pos=(-1.95,-3.91,-33.46) dist_from_origin=16.2m t=0.050s kind=hit
+2026-10-14 11:58:49.875 I [present] SHOT n=45 mag=19/160 id=79000101 mw2=39 d=16.9m src=chr spread=5.00 origin=(4.12,-3.84,-18.08) dir=(-0.353,0.018,-0.935)
+2026-10-14 11:58:49.875 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=64
+2026-10-14 11:58:49.943 I [present] HIT chr=c4311 hp 134->130 dmg=4 band=79000101 mw2=39 d=16.2m via=impact n=1 kill=0
+2026-10-14 11:58:49.959 I [present] IMPACT pos=(-12.39,-3.02,-61.75) dist_from_origin=46.7m t=0.083s kind=hit
+2026-10-14 11:58:49.976 I [present] SHOT n=46 mag=18/160 id=79000105 mw2=35 d=22.4m src=map spread=5.00 origin=(4.26,-3.84,-17.72) dir=(-0.347,-0.057,-0.936)
+2026-10-14 11:58:49.976 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=65
+2026-10-14 11:58:50.043 I [present] IMPACT pos=(-3.42,-5.13,-38.40) dist_from_origin=22.1m t=0.067s kind=hit
+2026-10-14 11:58:50.059 I [present] SHOT n=47 mag=17/160 id=79000102 mw2=38 d=17.7m src=map spread=5.00 origin=(4.38,-3.84,-17.41) dir=(-0.369,-0.014,-0.929)
+2026-10-14 11:58:50.059 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=66
+2026-10-14 11:58:50.126 I [present] IMPACT pos=(-2.14,-4.07,-33.80) dist_from_origin=17.6m t=0.067s kind=hit
+2026-10-14 11:58:50.143 I [present] SHOT n=48 mag=16/160 id=79000102 mw2=38 d=17.8m src=map spread=5.00 origin=(4.50,-3.84,-17.10) dir=(-0.369,-0.026,-0.929)
+2026-10-14 11:58:50.143 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=67
+2026-10-14 11:58:50.209 I [present] IMPACT pos=(-2.09,-4.31,-33.68) dist_from_origin=17.8m t=0.066s kind=hit
+2026-10-14 11:58:50.226 I [present] HIT chr=c4311 hp 130->126 dmg=4 band=79000102 mw2=38 d=17.7m via=impact n=1 kill=0
+2026-10-14 11:58:50.243 I [present] SHOT n=49 mag=15/160 id=79000103 mw2=37 d=18.6m src=chr spread=5.00 origin=(4.63,-3.84,-16.73) dir=(-0.342,-0.014,-0.939)
+2026-10-14 11:58:50.243 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=68
+2026-10-14 11:58:50.309 I [present] HIT chr=c4311 hp 126->122 dmg=4 band=79000102 mw2=38 d=17.8m via=impact n=1 kill=0
+2026-10-14 11:58:50.326 I [present] SHOT n=50 mag=14/160 id=79000100 mw2=40 d=5.0m src=chr spread=5.00 origin=(4.59,-3.78,-16.46) dir=(-0.136,-0.137,-0.981)
+2026-10-14 11:58:50.326 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=69
+2026-10-14 11:58:50.326 I [present] IMPACT pos=(-8.09,-4.40,-51.64) dist_from_origin=37.4m t=0.000s kind=hit
+2026-10-14 11:58:50.377 I [present] IMPACT pos=(3.01,-5.37,-27.89) dist_from_origin=11.7m t=0.051s kind=hit
+2026-10-14 11:58:50.427 I [present] SHOT n=51 mag=13/160 id=79000100 mw2=40 d=7.5m src=map spread=5.00 origin=(4.63,-3.79,-16.41) dir=(0.068,-0.185,-0.980)
+2026-10-14 11:58:50.427 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=70
+2026-10-14 11:58:50.476 I [present] IMPACT pos=(5.17,-5.16,-23.72) dist_from_origin=7.5m t=0.049s kind=hit
+2026-10-14 11:58:50.509 I [present] SHOT n=52 mag=12/160 id=79000100 mw2=40 d=5.2m src=chr spread=5.00 origin=(4.72,-3.84,-16.31) dir=(-0.054,-0.117,-0.992)
+2026-10-14 11:58:50.509 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=71
+2026-10-14 11:58:50.559 I [present] IMPACT pos=(4.26,-4.80,-24.48) dist_from_origin=8.2m t=0.050s kind=hit
+2026-10-14 11:58:50.592 I [present] SHOT n=53 mag=11/160 id=79000100 mw2=40 d=1.3m src=chr spread=5.00 origin=(4.77,-3.85,-16.29) dir=(0.244,-0.218,-0.945)
+2026-10-14 11:58:50.592 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=72
+2026-10-14 11:58:50.642 I [present] IMPACT pos=(6.74,-5.65,-23.90) dist_from_origin=8.1m t=0.050s kind=hit
+2026-10-14 11:58:50.692 I [present] SHOT n=54 mag=10/160 id=79000100 mw2=40 d=0.9m src=map spread=5.00 origin=(4.81,-3.89,-16.21) dir=(0.343,-0.269,-0.900)
+2026-10-14 11:58:50.692 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=73
+2026-10-14 11:58:50.743 I [present] IMPACT pos=(5.12,-4.13,-16.97) dist_from_origin=0.9m t=0.050s kind=hit
+2026-10-14 11:58:50.776 I [present] SHOT n=55 mag=9/160 id=79000100 mw2=40 d=1.3m src=map spread=5.00 origin=(4.83,-3.91,-16.11) dir=(0.361,-0.311,-0.879)
+2026-10-14 11:58:50.776 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=74
+2026-10-14 11:58:50.826 I [present] IMPACT pos=(5.32,-4.33,-17.28) dist_from_origin=1.3m t=0.050s kind=hit
+2026-10-14 11:58:50.844 I [present] HIT chr=c4311 hp 219->155 dmg=64 band=79000100 mw2=40 d=0.9m via=impact n=1 kill=0
+2026-10-14 11:58:50.876 I [present] SHOT n=56 mag=8/160 id=79000100 mw2=40 d=1.4m src=map spread=5.00 origin=(4.86,-3.93,-16.02) dir=(0.348,-0.313,-0.884)
+2026-10-14 11:58:50.876 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=75
+2026-10-14 11:58:50.926 I [present] IMPACT pos=(5.35,-4.38,-17.26) dist_from_origin=1.4m t=0.050s kind=hit
+2026-10-14 11:58:50.926 I [present] HIT chr=c4311 hp 155->106 dmg=49 band=79000100 mw2=40 d=1.3m via=impact n=1 kill=0
+2026-10-14 11:58:50.959 I [present] SHOT n=57 mag=7/160 id=79000100 mw2=40 d=1.5m src=map spread=5.00 origin=(4.87,-3.94,-15.96) dir=(0.342,-0.316,-0.885)
+2026-10-14 11:58:50.959 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=76
+2026-10-14 11:58:51.009 I [present] IMPACT pos=(5.37,-4.42,-17.27) dist_from_origin=1.5m t=0.050s kind=hit
+2026-10-14 11:58:51.009 I [present] HIT chr=c4311 hp 106->57 dmg=49 band=79000100 mw2=40 d=1.4m via=impact n=1 kill=0
+2026-10-14 11:58:51.042 I [present] SHOT n=58 mag=6/160 id=79000100 mw2=40 d=1.6m src=map spread=5.00 origin=(4.87,-3.94,-15.90) dir=(0.360,-0.238,-0.902)
+2026-10-14 11:58:51.043 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=77
+2026-10-14 11:58:51.093 I [present] IMPACT pos=(5.44,-4.31,-17.32) dist_from_origin=1.6m t=0.051s kind=hit
+2026-10-14 11:58:51.093 I [present] HIT chr=c4311 hp 57->8 dmg=49 band=79000100 mw2=40 d=1.5m via=impact n=1 kill=0
+2026-10-14 11:58:51.142 I [present] SHOT n=59 mag=5/160 id=79000100 mw2=40 d=1.8m src=map spread=3.80 origin=(4.86,-3.93,-15.85) dir=(0.335,-0.267,-0.903)
+2026-10-14 11:58:51.142 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=78
+2026-10-14 11:58:51.192 I [present] IMPACT pos=(5.44,-4.39,-17.41) dist_from_origin=1.7m t=0.050s kind=hit
+2026-10-14 11:58:51.192 I [present] HIT chr=c4311 hp 8->0 dmg=8 band=79000100 mw2=40 d=1.6m via=last_hit_by n=1 kill=1
+2026-10-14 11:58:51.192 I [present] KILL chr=c4311
+2026-10-14 11:58:51.226 I [present] SHOT n=60 mag=4/160 id=79000100 mw2=40 d=1.6m src=map spread=4.00 origin=(4.86,-3.94,-15.82) dir=(0.353,-0.254,-0.901)
+2026-10-14 11:58:51.226 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=79
+2026-10-14 11:58:51.276 I [present] IMPACT pos=(5.40,-4.33,-17.20) dist_from_origin=1.5m t=0.050s kind=hit
+2026-10-14 11:58:51.326 I [present] SHOT n=61 mag=3/160 id=79000100 mw2=40 d=1.6m src=map spread=4.47 origin=(4.81,-3.91,-15.69) dir=(0.330,-0.282,-0.901)
+2026-10-14 11:58:51.326 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=80
+2026-10-14 11:58:51.376 I [present] IMPACT pos=(5.36,-4.38,-17.16) dist_from_origin=1.6m t=0.050s kind=hit
+2026-10-14 11:58:51.410 I [present] SHOT n=62 mag=2/160 id=79000100 mw2=40 d=2.0m src=map spread=5.00 origin=(4.72,-3.85,-15.37) dir=(0.331,-0.264,-0.906)
+2026-10-14 11:58:51.410 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=81
+2026-10-14 11:58:51.460 I [present] IMPACT pos=(5.38,-4.37,-17.15) dist_from_origin=2.0m t=0.051s kind=hit
+2026-10-14 11:58:51.492 I [present] SHOT n=63 mag=1/160 id=79000100 mw2=40 d=2.3m src=map spread=5.00 origin=(4.63,-3.80,-15.06) dir=(0.301,-0.305,-0.903)
+2026-10-14 11:58:51.492 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=82
+2026-10-14 11:58:51.543 I [present] IMPACT pos=(5.32,-4.52,-17.14) dist_from_origin=2.3m t=0.050s kind=hit
+2026-10-14 11:58:51.593 I [present] SHOT n=64 mag=0/160 id=79000100 mw2=40 d=2.8m src=map spread=5.00 origin=(4.52,-3.75,-14.70) dir=(0.293,-0.242,-0.925)
+2026-10-14 11:58:51.593 I [present] RELOAD start empty=1 dur=3.03 mag=0
+2026-10-14 11:58:51.593 I [present] VM state fire->reload_empty clip=reload_empty rate=1.000 ads=1.00 seq=84
+2026-10-14 11:58:51.643 I [present] IMPACT pos=(5.34,-4.41,-17.27) dist_from_origin=2.8m t=0.050s kind=hit
+2026-10-14 11:58:51.676 I [present] MENU idx=17 1->0
+2026-10-14 11:58:52.333 I [boot] STATE mode=on mag=0/160 reloading=1 spread=5.00 menu=0 fg=1 chars=64 shots=64 hits=13 gds_mouse=12ms gds_kbd=12ms
+2026-10-14 11:58:54.026 I [present] CAMFRAME tick=1893 src=pers_cam_1 valid=1 why=ok pos=(-3.65,-1.85,-8.23) fwd=(0.800,-0.320,-0.507) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.53m
+2026-10-14 11:58:54.626 I [present] RELOAD done mag=32 reserve=128 added=32
+2026-10-14 11:58:54.626 I [present] VM state reload_empty->idle clip=idle rate=1.000 ads=0.00 seq=85
+2026-10-14 11:58:57.335 I [boot] STATE mode=on mag=32/128 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=64 hits=13 gds_mouse=14ms gds_kbd=14ms
+2026-10-14 11:58:58.428 I [present] VM gpu_ms p50=0.0170 p95=0.0207 max=0.2341 n=600
+2026-10-14 11:58:58.826 I [t(5)] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=86
+2026-10-14 11:58:59.026 I [present] CAMFRAME tick=2193 src=pers_cam_1 valid=1 why=ok pos=(3.21,-3.37,-7.58) fwd=(-0.887,0.131,0.442) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=5.32m
+2026-10-14 11:58:59.127 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=87
+2026-10-14 11:58:59.177 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=88
+2026-10-14 11:58:59.410 I [present] SHOT n=65 mag=31/128 id=79000105 mw2=35 d=21.3m src=map spread=5.00 origin=(-2.91,-2.23,-3.28) dir=(-0.503,0.238,0.831)
+2026-10-14 11:58:59.410 I [present] VM state sprint_out->fire clip=fire rate=1.000 ads=0.00 seq=89
+2026-10-14 11:58:59.476 I [present] IMPACT pos=(-13.59,2.82,14.38) dist_from_origin=21.2m t=0.067s kind=hit
+2026-10-14 11:58:59.511 I [present] SHOT n=66 mag=30/128 id=79000105 mw2=35 d=23.3m src=map spread=4.59 origin=(-3.17,-2.22,-3.13) dir=(-0.535,0.230,0.813)
+2026-10-14 11:58:59.511 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.42 seq=90
+2026-10-14 11:58:59.576 I [present] IMPACT pos=(-15.68,3.15,15.81) dist_from_origin=23.3m t=0.066s kind=hit
+2026-10-14 11:58:59.594 I [present] SHOT n=67 mag=29/128 id=79000105 mw2=35 d=25.9m src=map spread=4.01 origin=(-3.31,-2.23,-3.21) dir=(-0.597,0.197,0.778)
+2026-10-14 11:58:59.594 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=0.83 seq=91
+2026-10-14 11:58:59.660 I [present] IMPACT pos=(-18.73,2.83,16.86) dist_from_origin=25.8m t=0.067s kind=hit
+2026-10-14 11:58:59.693 I [present] SHOT n=68 mag=28/128 id=79000105 mw2=35 d=64.0m src=map spread=3.80 origin=(-3.56,-2.16,-3.47) dir=(-0.752,0.331,0.570)
+2026-10-14 11:58:59.693 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=92
+2026-10-14 11:58:59.776 I [present] SHOT n=69 mag=27/128 id=79000105 mw2=35 d=68.3m src=map spread=5.00 origin=(-3.56,-2.17,-3.82) dir=(-0.848,0.380,0.369)
+2026-10-14 11:58:59.776 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=93
+2026-10-14 11:58:59.793 I [present] IMPACT pos=(-51.70,18.99,33.02) dist_from_origin=64.2m t=0.017s kind=hit
+2026-10-14 11:58:59.861 I [present] SHOT n=70 mag=26/128 id=79000105 mw2=35 d=72.4m src=map spread=5.00 origin=(-3.39,-2.28,-4.03) dir=(-0.881,0.451,0.141)
+2026-10-14 11:58:59.861 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=94
+2026-10-14 11:58:59.894 I [present] IMPACT pos=(-61.51,23.81,21.38) dist_from_origin=68.6m t=0.034s kind=hit
+2026-10-14 11:58:59.960 I [present] SHOT n=71 mag=25/128 id=79000105 mw2=35 d=65.7m src=map spread=5.00 origin=(-3.04,-2.44,-4.08) dir=(-0.938,0.313,-0.153)
+2026-10-14 11:58:59.960 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=95
+2026-10-14 11:58:59.976 I [present] IMPACT pos=(-67.20,30.37,6.18) dist_from_origin=72.8m t=0.016s kind=hit
+2026-10-14 11:59:00.043 I [present] SHOT n=72 mag=24/128 id=79000105 mw2=35 d=60.4m src=map spread=5.00 origin=(-2.74,-2.53,-4.02) dir=(-0.903,0.216,-0.371)
+2026-10-14 11:59:00.043 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=96
+2026-10-14 11:59:00.060 I [present] IMPACT pos=(-64.58,18.07,-14.10) dist_from_origin=66.0m t=0.017s kind=hit
+2026-10-14 11:59:00.144 I [present] SHOT n=73 mag=23/128 id=79000100 mw2=40 d=8.7m src=map spread=5.00 origin=(-2.48,-2.56,-3.87) dir=(-0.707,0.049,-0.706)
+2026-10-14 11:59:00.144 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=97
+2026-10-14 11:59:00.144 I [present] IMPACT pos=(-57.27,10.48,-26.37) dist_from_origin=60.6m t=0.000s kind=hit
+2026-10-14 11:59:00.193 I [t(6)] IMPACT pos=(-8.67,-2.13,-10.03) dist_from_origin=8.7m t=0.048s kind=hit
+2026-10-14 11:59:00.226 I [present] SHOT n=74 mag=22/128 id=79000100 mw2=40 d=5.2m src=map spread=5.00 origin=(-2.34,-2.58,-3.78) dir=(-0.433,-0.246,-0.867)
+2026-10-14 11:59:00.226 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=98
+2026-10-14 11:59:00.277 I [present] IMPACT pos=(-4.56,-3.88,-8.22) dist_from_origin=5.1m t=0.050s kind=hit
+2026-10-14 11:59:00.326 I [present] SHOT n=75 mag=21/128 id=79000100 mw2=40 d=3.5m src=map spread=5.00 origin=(-2.17,-2.65,-3.70) dir=(-0.135,-0.426,-0.895)
+2026-10-14 11:59:00.326 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=99
+2026-10-14 11:59:00.376 I [present] IMPACT pos=(-2.64,-4.15,-6.78) dist_from_origin=3.5m t=0.050s kind=hit
+2026-10-14 11:59:00.410 I [present] SHOT n=76 mag=20/128 id=79000100 mw2=40 d=2.4m src=map spread=5.00 origin=(-2.01,-2.75,-3.59) dir=(0.015,-0.596,-0.803)
+2026-10-14 11:59:00.410 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=100
+2026-10-14 11:59:00.459 I [present] IMPACT pos=(-1.98,-4.21,-5.52) dist_from_origin=2.4m t=0.050s kind=hit
+2026-10-14 11:59:00.493 I [present] SHOT n=77 mag=19/128 id=79000100 mw2=40 d=2.0m src=map spread=5.00 origin=(-1.88,-2.81,-3.38) dir=(0.080,-0.689,-0.720)
+2026-10-14 11:59:00.493 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=101
+2026-10-14 11:59:00.543 I [present] IMPACT pos=(-1.73,-4.16,-4.76) dist_from_origin=1.9m t=0.050s kind=hit
+2026-10-14 11:59:00.593 I [present] SHOT n=78 mag=18/128 id=79000100 mw2=40 d=1.9m src=map spread=5.00 origin=(-1.80,-2.78,-3.05) dir=(0.164,-0.755,-0.635)
+2026-10-14 11:59:00.593 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=102
+2026-10-14 11:59:00.645 I [present] IMPACT pos=(-1.50,-4.19,-4.20) dist_from_origin=1.8m t=0.052s kind=hit
+2026-10-14 11:59:00.677 I [present] SHOT n=79 mag=17/128 id=79000100 mw2=40 d=2.0m src=map spread=5.00 origin=(-1.78,-2.73,-2.74) dir=(0.164,-0.742,-0.650)
+2026-10-14 11:59:00.677 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=103
+2026-10-14 11:59:00.726 I [present] IMPACT pos=(-1.47,-4.18,-3.98) dist_from_origin=1.9m t=0.050s kind=hit
+2026-10-14 11:59:00.843 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.33 seq=104
+2026-10-14 11:59:01.559 I [present] SHOT n=80 mag=16/128 id=79000100 mw2=40 d=1.8m src=map spread=2.00 origin=(-1.82,-3.04,-2.25) dir=(-0.119,-0.610,-0.783)
+2026-10-14 11:59:01.559 I [present] VM state idle->fire clip=fire rate=1.000 ads=0.00 seq=105
+2026-10-14 11:59:01.609 I [present] IMPACT pos=(-2.04,-4.15,-3.62) dist_from_origin=1.8m t=0.050s kind=hit
+2026-10-14 11:59:01.660 I [present] SHOT n=81 mag=15/128 id=79000100 mw2=40 d=1.9m src=map spread=2.36 origin=(-1.83,-3.05,-2.24) dir=(-0.135,-0.595,-0.792)
+2026-10-14 11:59:01.660 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=106
+2026-10-14 11:59:01.709 I [present] IMPACT pos=(-2.07,-4.14,-3.65) dist_from_origin=1.8m t=0.050s kind=hit
+2026-10-14 11:59:01.743 I [present] SHOT n=82 mag=14/128 id=79000100 mw2=40 d=1.8m src=map spread=2.92 origin=(-1.83,-3.06,-2.24) dir=(-0.164,-0.600,-0.783)
+2026-10-14 11:59:01.743 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=107
+2026-10-14 11:59:01.792 I [present] IMPACT pos=(-2.11,-4.13,-3.61) dist_from_origin=1.8m t=0.050s kind=hit
+2026-10-14 11:59:01.843 I [present] SHOT n=83 mag=13/128 id=79000100 mw2=40 d=1.7m src=map spread=3.28 origin=(-1.83,-3.06,-2.23) dir=(-0.126,-0.632,-0.765)
+2026-10-14 11:59:01.843 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=108
+2026-10-14 11:59:01.893 I [present] IMPACT pos=(-2.04,-4.15,-3.50) dist_from_origin=1.7m t=0.050s kind=hit
+2026-10-14 11:59:01.926 I [present] SHOT n=84 mag=12/128 id=79000100 mw2=40 d=1.8m src=map spread=3.84 origin=(-1.83,-3.06,-2.23) dir=(-0.132,-0.616,-0.777)
+2026-10-14 11:59:01.926 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=109
+2026-10-14 11:59:01.976 I [present] IMPACT pos=(-2.05,-4.15,-3.55) dist_from_origin=1.7m t=0.050s kind=hit
+2026-10-14 11:59:02.009 I [present] SHOT n=85 mag=11/128 id=79000100 mw2=40 d=1.8m src=map spread=4.00 origin=(-1.83,-3.06,-2.23) dir=(-0.103,-0.602,-0.792)
+2026-10-14 11:59:02.009 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=110
+2026-10-14 11:59:02.060 I [present] IMPACT pos=(-2.01,-4.15,-3.61) dist_from_origin=1.8m t=0.050s kind=hit
+2026-10-14 11:59:02.109 I [present] SHOT n=86 mag=10/128 id=79000100 mw2=40 d=1.7m src=map spread=3.80 origin=(-1.89,-3.09,-2.21) dir=(-0.228,-0.593,-0.772)
+2026-10-14 11:59:02.109 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=111
+2026-10-14 11:59:02.160 I [present] IMPACT pos=(-2.27,-4.12,-3.50) dist_from_origin=1.7m t=0.050s kind=hit
+2026-10-14 11:59:02.260 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=112
+2026-10-14 11:59:02.338 I [boot] STATE mode=on mag=10/128 reloading=0 spread=2.40 menu=0 fg=1 chars=64 shots=86 hits=13 gds_mouse=17ms gds_kbd=17ms
+2026-10-14 11:59:03.511 I [present] SHOT n=87 mag=9/128 id=79000100 mw2=40 d=6.3m src=chr spread=5.00 origin=(-2.13,-2.42,0.74) dir=(0.210,-0.011,-0.978)
+2026-10-14 11:59:03.511 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=113
+2026-10-14 11:59:03.610 I [t(5)] SHOT n=88 mag=8/128 id=79000100 mw2=40 d=6.6m src=chr spread=5.00 origin=(-2.21,-2.35,1.12) dir=(0.226,-0.052,-0.973)
+2026-10-14 11:59:03.610 I [t(5)] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=114
+2026-10-14 11:59:03.643 I [present] IMPACT pos=(15.70,-3.40,-82.40) dist_from_origin=85.4m t=0.033s kind=hit
+2026-10-14 11:59:03.677 I [present] IMPACT pos=(4.21,-3.82,-26.40) dist_from_origin=28.3m t=0.066s kind=hit
+2026-10-14 11:59:03.694 I [present] SHOT n=89 mag=7/128 id=79000100 mw2=40 d=7.0m src=chr spread=5.00 origin=(-2.27,-2.29,1.44) dir=(0.177,-0.111,-0.978)
+2026-10-14 11:59:03.694 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=115
+2026-10-14 11:59:03.727 I [present] MENU idx=17 0->1
+2026-10-14 11:59:03.743 I [present] IMPACT pos=(-1.01,-3.08,-5.50) dist_from_origin=7.1m t=0.050s kind=hit
+2026-10-14 11:59:03.794 I [present] SHOT n=90 mag=6/128 id=79000100 mw2=40 d=7.1m src=map spread=5.00 origin=(-2.34,-2.21,1.82) dir=(0.168,-0.075,-0.983)
+2026-10-14 11:59:03.794 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=116
+2026-10-14 11:59:03.828 I [present] HIT chr=c4311 hp 122->73 dmg=49 band=79000100 mw2=40 d=7.0m via=impact n=1 kill=0
+2026-10-14 11:59:03.844 I [present] IMPACT pos=(-1.15,-2.74,-5.13) dist_from_origin=7.1m t=0.050s kind=hit
+2026-10-14 11:59:03.878 I [present] SHOT n=91 mag=5/128 id=79000100 mw2=40 d=7.7m src=chr spread=5.00 origin=(-2.40,-2.15,2.15) dir=(0.201,-0.082,-0.976)
+2026-10-14 11:59:03.878 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=117
+2026-10-14 11:59:03.944 I [present] IMPACT pos=(3.74,-4.64,-27.60) dist_from_origin=30.5m t=0.066s kind=hit
+2026-10-14 11:59:03.944 I [present] HIT chr=c4311 hp 73->24 dmg=49 band=79000100 mw2=40 d=7.1m via=impact n=1 kill=0
+2026-10-14 11:59:03.960 I [present] SHOT n=92 mag=4/128 id=79000100 mw2=40 d=7.8m src=map spread=5.00 origin=(-2.42,-2.11,2.48) dir=(0.104,-0.089,-0.991)
+2026-10-14 11:59:03.960 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=118
+2026-10-14 11:59:04.010 I [present] IMPACT pos=(-1.61,-2.81,-5.22) dist_from_origin=7.8m t=0.050s kind=hit
+2026-10-14 11:59:04.026 I [present] CAMFRAME tick=2493 src=pers_cam_1 valid=1 why=ok pos=(-2.77,-1.92,5.50) fwd=(0.113,-0.056,-0.992) det=+1.000 ortho_err=7.5e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=2.19m
+2026-10-14 11:59:04.061 I [present] SHOT n=93 mag=3/128 id=79000105 mw2=35 d=23.5m src=map spread=5.00 origin=(-2.48,-2.05,2.87) dir=(0.090,-0.040,-0.995)
+2026-10-14 11:59:04.061 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=119
+2026-10-14 11:59:04.094 I [present] HIT chr=c4311 hp 24->0 dmg=24 band=79000100 mw2=40 d=7.8m via=last_hit_by n=1 kill=1
+2026-10-14 11:59:04.094 I [present] KILL chr=c4311
+2026-10-14 11:59:04.126 I [present] IMPACT pos=(-0.37,-2.96,-20.18) dist_from_origin=23.2m t=0.067s kind=hit
+2026-10-14 11:59:04.144 I [present] SHOT n=94 mag=2/128 id=79000105 mw2=35 d=49.8m src=map spread=5.00 origin=(-2.53,-1.99,3.19) dir=(0.155,-0.063,-0.986)
+2026-10-14 11:59:04.144 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=120
+2026-10-14 11:59:04.227 I [present] IMPACT pos=(2.73,-4.12,-30.14) dist_from_origin=33.8m t=0.083s kind=hit
+2026-10-14 11:59:04.244 I [present] SHOT n=95 mag=1/128 id=79000105 mw2=35 d=49.8m src=map spread=5.00 origin=(-2.60,-1.91,3.58) dir=(0.135,-0.033,-0.990)
+2026-10-14 11:59:04.244 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=121
+2026-10-14 11:59:04.327 I [present] SHOT n=96 mag=0/128 id=79000105 mw2=35 d=48.7m src=map spread=5.00 origin=(-2.64,-1.83,3.90) dir=(0.081,-0.037,-0.996)
+2026-10-14 11:59:04.327 I [present] RELOAD start empty=1 dur=3.03 mag=0
+2026-10-14 11:59:04.327 I [present] VM state fire->reload_empty clip=reload_empty rate=1.000 ads=1.00 seq=123
+2026-10-14 11:59:04.327 I [present] IMPACT pos=(4.12,-3.55,-45.70) dist_from_origin=50.1m t=0.000s kind=hit
+2026-10-14 11:59:04.410 I [present] IMPACT pos=(1.31,-3.66,-44.61) dist_from_origin=48.7m t=0.083s kind=hit
+2026-10-14 11:59:05.493 I [present] MENU idx=17 1->0
+2026-10-14 11:59:07.340 I [boot] STATE mode=on mag=0/128 reloading=1 spread=2.00 menu=0 fg=1 chars=64 shots=96 hits=16 gds_mouse=1ms gds_kbd=1ms
+2026-10-14 11:59:07.361 I [present] RELOAD done mag=32 reserve=96 added=32
+2026-10-14 11:59:07.361 I [present] VM state reload_empty->idle clip=idle rate=1.000 ads=0.00 seq=124
+2026-10-14 11:59:08.429 I [present] VM gpu_ms p50=0.0165 p95=0.0212 max=0.2143 n=600
+2026-10-14 11:59:09.043 I [present] CAMFRAME tick=2794 src=pers_cam_1 valid=1 why=ok pos=(-5.83,0.40,9.81) fwd=(0.360,-0.387,-0.849) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.60m
+2026-10-14 11:59:10.210 I [present] MENU idx=23 1->0
+2026-10-14 11:59:12.343 I [boot] STATE mode=on mag=32/96 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=96 hits=16 gds_mouse=4ms gds_kbd=4ms
+2026-10-14 11:59:13.878 I [present] RELOAD ignored (full)
+2026-10-14 11:59:14.043 I [present] CAMFRAME tick=3094 src=pers_cam_1 valid=1 why=ok pos=(-6.07,-0.60,5.96) fwd=(0.281,-0.310,-0.908) det=+1.000 ortho_err=7.5e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 11:59:14.394 I [present] RELOAD ignored (full)
+2026-10-14 11:59:15.261 I [present] SHOT n=97 mag=31/96 id=79000100 mw2=40 d=6.6m src=map spread=2.00 origin=(-4.87,-1.93,2.13) dir=(0.369,-0.331,-0.868)
+2026-10-14 11:59:15.261 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=0.67 seq=125
+2026-10-14 11:59:15.311 I [present] IMPACT pos=(-2.50,-4.09,-3.45) dist_from_origin=6.4m t=0.050s kind=hit
+2026-10-14 11:59:15.361 I [present] SHOT n=98 mag=30/96 id=79000100 mw2=40 d=5.9m src=map spread=2.35 origin=(-4.87,-1.94,2.13) dir=(0.368,-0.360,-0.858)
+2026-10-14 11:59:15.361 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=126
+2026-10-14 11:59:15.411 I [present] IMPACT pos=(-2.76,-4.03,-2.79) dist_from_origin=5.7m t=0.050s kind=hit
+2026-10-14 11:59:15.444 I [present] SHOT n=99 mag=29/96 id=79000100 mw2=40 d=6.0m src=map spread=2.92 origin=(-4.87,-1.94,2.13) dir=(0.346,-0.350,-0.870)
+2026-10-14 11:59:15.444 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=127
+2026-10-14 11:59:15.494 I [present] IMPACT pos=(-2.83,-4.04,-2.99) dist_from_origin=5.9m t=0.050s kind=hit
+2026-10-14 11:59:15.544 I [present] SHOT n=100 mag=28/96 id=79000100 mw2=40 d=6.5m src=map spread=3.28 origin=(-4.87,-1.94,2.13) dir=(0.322,-0.326,-0.889)
+2026-10-14 11:59:15.544 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=128
+2026-10-14 11:59:15.595 I [present] IMPACT pos=(-2.82,-4.05,-3.54) dist_from_origin=6.4m t=0.050s kind=hit
+2026-10-14 11:59:15.627 I [present] SHOT n=101 mag=27/96 id=79000100 mw2=40 d=6.1m src=map spread=3.84 origin=(-4.87,-1.94,2.13) dir=(0.324,-0.347,-0.880)
+2026-10-14 11:59:15.627 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=129
+2026-10-14 11:59:15.677 I [present] IMPACT pos=(-2.95,-4.03,-3.09) dist_from_origin=5.9m t=0.050s kind=hit
+2026-10-14 11:59:15.794 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.67 seq=130
+2026-10-14 11:59:16.111 I [present] SHOT n=102 mag=26/96 id=79000100 mw2=40 d=6.1m src=map spread=2.00 origin=(-4.89,-1.93,2.12) dir=(0.315,-0.345,-0.884)
+2026-10-14 11:59:16.111 I [present] VM state idle->fire clip=fire rate=1.000 ads=0.00 seq=131
+2026-10-14 11:59:16.160 I [present] IMPACT pos=(-3.01,-4.02,-3.15) dist_from_origin=6.0m t=0.050s kind=hit
+2026-10-14 11:59:16.211 I [present] SHOT n=103 mag=25/96 id=79000100 mw2=40 d=6.4m src=map spread=2.37 origin=(-4.89,-1.94,2.12) dir=(0.295,-0.328,-0.898)
+2026-10-14 11:59:16.211 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=132
+2026-10-14 11:59:16.261 I [present] IMPACT pos=(-3.04,-4.04,-3.53) dist_from_origin=6.3m t=0.050s kind=hit
+2026-10-14 11:59:16.294 I [present] SHOT n=104 mag=24/96 id=79000100 mw2=40 d=5.9m src=map spread=2.93 origin=(-4.89,-1.95,2.12) dir=(0.299,-0.348,-0.889)
+2026-10-14 11:59:16.294 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=133
+2026-10-14 11:59:16.343 I [present] IMPACT pos=(-3.16,-4.00,-3.04) dist_from_origin=5.8m t=0.050s kind=hit
+2026-10-14 11:59:16.394 I [present] SHOT n=105 mag=23/96 id=79000100 mw2=40 d=5.0m src=map spread=3.28 origin=(-4.90,-1.95,2.12) dir=(0.314,-0.395,-0.863)
+2026-10-14 11:59:16.395 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=134
+2026-10-14 11:59:16.443 I [present] IMPACT pos=(-3.35,-3.93,-2.14) dist_from_origin=4.9m t=0.050s kind=hit
+2026-10-14 11:59:16.544 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=135
+2026-10-14 11:59:16.728 I [present] SHOT n=106 mag=22/96 id=79000100 mw2=40 d=6.1m src=map spread=2.00 origin=(-4.93,-1.94,2.11) dir=(0.225,-0.335,-0.915)
+2026-10-14 11:59:16.728 I [present] VM state idle->fire clip=fire rate=1.000 ads=0.00 seq=136
+2026-10-14 11:59:16.777 I [present] IMPACT pos=(-3.59,-3.97,-3.36) dist_from_origin=6.0m t=0.050s kind=hit
+2026-10-14 11:59:16.827 I [present] SHOT n=107 mag=21/96 id=79000100 mw2=40 d=5.1m src=map spread=2.36 origin=(-4.94,-1.94,2.11) dir=(0.247,-0.386,-0.889)
+2026-10-14 11:59:16.827 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=137
+2026-10-14 11:59:16.878 I [present] IMPACT pos=(-3.71,-3.90,-2.33) dist_from_origin=5.0m t=0.050s kind=hit
+2026-10-14 11:59:16.911 I [present] SHOT n=108 mag=20/96 id=79000100 mw2=40 d=5.7m src=map spread=2.92 origin=(-4.94,-1.94,2.11) dir=(0.225,-0.350,-0.909)
+2026-10-14 11:59:16.911 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=138
+2026-10-14 11:59:16.961 I [present] IMPACT pos=(-3.68,-3.94,-2.99) dist_from_origin=5.6m t=0.050s kind=hit
+2026-10-14 11:59:17.028 I [present] RELOAD start empty=0 dur=2.5 mag=20
+2026-10-14 11:59:17.028 I [present] VM state fire->reload clip=reload rate=1.000 ads=0.00 seq=139
+2026-10-14 11:59:17.346 I [boot] STATE mode=on mag=20/96 reloading=1 spread=2.00 menu=0 fg=1 chars=64 shots=108 hits=16 gds_mouse=6ms gds_kbd=6ms
+2026-10-14 11:59:18.446 I [present] VM gpu_ms p50=0.0161 p95=0.0179 max=0.0209 n=601
+2026-10-14 11:59:19.044 I [present] CAMFRAME tick=3394 src=pers_cam_1 valid=1 why=ok pos=(-6.06,-0.46,5.86) fwd=(0.273,-0.354,-0.894) det=+1.000 ortho_err=3.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.60m
+2026-10-14 11:59:19.544 I [present] RELOAD done mag=32 reserve=84 added=12
+2026-10-14 11:59:19.544 I [present] VM state reload->idle clip=idle rate=1.000 ads=0.00 seq=140
+2026-10-14 11:59:20.328 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=141
+2026-10-14 11:59:20.644 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=142
+2026-10-14 11:59:21.811 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=143
+2026-10-14 11:59:22.128 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=144
+2026-10-14 11:59:22.328 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=145
+2026-10-14 11:59:22.348 I [boot] STATE mode=on mag=32/84 reloading=0 spread=5.00 menu=0 fg=1 chars=64 shots=108 hits=16 gds_mouse=9ms gds_kbd=9ms
+2026-10-14 11:59:22.395 I [present] VM state sprint_in->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=146
+2026-10-14 11:59:22.713 I [present] VM state sprint_out->idle clip=idle rate=1.000 ads=0.00 seq=147
+2026-10-14 11:59:22.962 I [present] VM state idle->sprint_in clip=sprint_in rate=1.111 ads=0.00 seq=148
+2026-10-14 11:59:23.278 I [present] VM state sprint_in->sprint_loop clip=sprint_loop rate=1.429 ads=0.00 seq=149
+2026-10-14 11:59:23.695 I [present] VM state sprint_loop->sprint_out clip=sprint_out rate=1.111 ads=0.00 seq=150
+2026-10-14 11:59:23.879 I [present] SHOT n=109 mag=31/84 id=79000105 mw2=35 d=38.7m src=map spread=5.00 origin=(12.44,-4.57,-11.70) dir=(0.984,-0.138,-0.115)
+2026-10-14 11:59:23.879 I [present] VM state sprint_out->fire clip=fire rate=1.000 ads=0.00 seq=151
+2026-10-14 11:59:23.962 I [present] IMPACT pos=(49.28,-9.78,-16.00) dist_from_origin=37.5m t=0.083s kind=hit
+2026-10-14 11:59:23.979 I [present] SHOT n=110 mag=30/84 id=79000105 mw2=35 d=35.7m src=map spread=5.00 origin=(12.95,-4.62,-11.95) dir=(0.984,-0.141,-0.107)
+2026-10-14 11:59:23.979 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.42 seq=152
+2026-10-14 11:59:24.044 I [t(7)] CAMFRAME tick=3694 src=pers_cam_1 valid=1 why=ok pos=(7.42,-3.90,-11.25) fwd=(0.982,-0.128,-0.138) det=+1.000 ortho_err=7.7e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=5.34m
+2026-10-14 11:59:24.062 I [present] SHOT n=111 mag=29/84 id=79000105 mw2=35 d=91.9m src=map spread=5.00 origin=(13.30,-4.67,-12.10) dir=(0.982,-0.104,-0.156)
+2026-10-14 11:59:24.062 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=0.83 seq=153
+2026-10-14 11:59:24.062 I [present] IMPACT pos=(47.51,-9.61,-15.71) dist_from_origin=34.8m t=0.000s kind=hit
+2026-10-14 11:59:24.162 I [present] SHOT n=112 mag=28/84 id=79000105 mw2=35 d=96.5m src=map spread=5.00 origin=(13.69,-4.71,-12.22) dir=(0.973,-0.107,-0.203)
+2026-10-14 11:59:24.162 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=154
+2026-10-14 11:59:24.195 I [present] IMPACT pos=(103.12,-14.24,-26.39) dist_from_origin=91.1m t=0.033s kind=hit
+2026-10-14 11:59:24.245 I [present] SHOT n=113 mag=27/84 id=79000105 mw2=35 d=68.4m src=map spread=5.00 origin=(14.00,-4.75,-12.31) dir=(0.987,-0.114,-0.115)
+2026-10-14 11:59:24.245 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=155
+2026-10-14 11:59:24.295 I [present] IMPACT pos=(107.07,-15.06,-31.67) dist_from_origin=95.6m t=0.049s kind=hit
+2026-10-14 11:59:24.345 I [present] SHOT n=114 mag=26/84 id=79000100 mw2=40 d=12.0m src=map spread=5.00 origin=(14.39,-4.83,-12.34) dir=(0.969,-0.221,-0.111)
+2026-10-14 11:59:24.345 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=156
+2026-10-14 11:59:24.362 I [present] IMPACT pos=(80.82,-12.51,-20.09) dist_from_origin=67.3m t=0.017s kind=hit
+2026-10-14 11:59:24.395 I [present] IMPACT pos=(25.74,-7.45,-13.64) dist_from_origin=11.7m t=0.050s kind=hit
+2026-10-14 11:59:24.428 I [t(6)] SHOT n=115 mag=25/84 id=79000101 mw2=39 d=16.4m src=map spread=5.00 origin=(14.71,-4.87,-12.39) dir=(0.976,-0.189,-0.110)
+2026-10-14 11:59:24.428 I [t(6)] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=157
+2026-10-14 11:59:24.478 I [present] IMPACT pos=(30.15,-7.90,-14.14) dist_from_origin=15.8m t=0.050s kind=hit
+2026-10-14 11:59:24.512 I [present] SHOT n=116 mag=24/84 id=79000105 mw2=35 d=39.9m src=map spread=5.00 origin=(15.04,-4.91,-12.45) dir=(0.991,-0.131,-0.032)
+2026-10-14 11:59:24.512 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=158
+2026-10-14 11:59:24.594 I [present] IMPACT pos=(54.07,-10.11,-13.70) dist_from_origin=39.4m t=0.083s kind=hit
+2026-10-14 11:59:24.612 I [present] SHOT n=117 mag=23/84 id=79000105 mw2=35 d=53.9m src=map spread=5.00 origin=(15.33,-4.94,-12.47) dir=(0.991,-0.120,-0.064)
+2026-10-14 11:59:24.612 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=159
+2026-10-14 11:59:24.712 I [present] IMPACT pos=(68.01,-11.33,-15.86) dist_from_origin=53.2m t=0.100s kind=hit
+2026-10-14 11:59:24.795 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.17 seq=160
+2026-10-14 11:59:25.829 I [present] SHOT n=118 mag=22/84 id=79000100 mw2=40 d=12.1m src=map spread=5.00 origin=(18.11,-5.13,-11.69) dir=(-0.952,-0.030,-0.304)
+2026-10-14 11:59:25.829 I [present] VM state idle->fire clip=fire rate=1.000 ads=0.42 seq=161
+2026-10-14 11:59:25.879 I [present] IMPACT pos=(6.86,-5.51,-15.28) dist_from_origin=11.8m t=0.050s kind=hit
+2026-10-14 11:59:25.928 I [present] SHOT n=119 mag=21/84 id=79000104 mw2=36 d=20.1m src=map spread=5.00 origin=(18.33,-5.16,-11.50) dir=(-0.980,0.028,-0.198)
+2026-10-14 11:59:25.928 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=0.92 seq=162
+2026-10-14 11:59:25.995 I [present] IMPACT pos=(-0.94,-4.65,-15.40) dist_from_origin=19.7m t=0.067s kind=hit
+2026-10-14 11:59:26.012 I [present] SHOT n=120 mag=20/84 id=79000105 mw2=35 d=21.9m src=map spread=5.00 origin=(18.53,-5.18,-11.30) dir=(-0.981,0.038,-0.189)
+2026-10-14 11:59:26.012 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=163
+2026-10-14 11:59:26.078 I [present] IMPACT pos=(-2.71,-4.41,-15.38) dist_from_origin=21.6m t=0.067s kind=hit
+2026-10-14 11:59:26.111 I [present] SHOT n=121 mag=19/84 id=79000100 mw2=40 d=13.6m src=map spread=5.00 origin=(18.77,-5.21,-11.03) dir=(-0.988,-0.006,-0.153)
+2026-10-14 11:59:26.111 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=164
+2026-10-14 11:59:26.162 I [present] IMPACT pos=(5.64,-5.33,-13.07) dist_from_origin=13.3m t=0.050s kind=hit
+2026-10-14 11:59:26.196 I [t(5)] SHOT n=122 mag=18/84 id=79000100 mw2=40 d=11.7m src=map spread=5.00 origin=(19.07,-5.23,-10.83) dir=(-0.989,-0.023,-0.148)
+2026-10-14 11:59:26.196 I [t(5)] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=165
+2026-10-14 11:59:26.246 I [present] IMPACT pos=(7.80,-5.53,-12.52) dist_from_origin=11.4m t=0.050s kind=hit
+2026-10-14 11:59:26.378 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.33 seq=166
+2026-10-14 11:59:26.446 I [present] RELOAD start empty=0 dur=2.5 mag=18
+2026-10-14 11:59:26.446 I [present] VM state idle->reload clip=reload rate=1.000 ads=0.00 seq=167
+2026-10-14 11:59:27.351 I [boot] STATE mode=on mag=18/84 reloading=1 spread=5.00 menu=0 fg=1 chars=64 shots=122 hits=16 gds_mouse=11ms gds_kbd=11ms
+2026-10-14 11:59:28.449 I [present] VM gpu_ms p50=0.0150 p95=0.0194 max=0.2283 n=600
+2026-10-14 11:59:28.961 I [present] RELOAD done mag=32 reserve=70 added=14
+2026-10-14 11:59:28.961 I [present] VM state reload->idle clip=idle rate=1.000 ads=0.00 seq=168
+2026-10-14 11:59:29.062 I [present] CAMFRAME tick=3995 src=pers_cam_1 valid=1 why=ok pos=(23.39,-4.62,-15.16) fwd=(-0.973,-0.221,0.067) det=+1.000 ortho_err=7.5e-9 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=2.79m
+2026-10-14 11:59:30.312 I [present] MENU idx=28 0->1
+2026-10-14 11:59:30.312 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-14 11:59:30.331 I [present] MENU idx=23 0->1
+2026-10-14 11:59:31.562 I [present] MENU idx=28 1->0
+2026-10-14 11:59:31.562 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-14 11:59:31.812 I [present] MENU idx=23 1->0
+2026-10-14 11:59:32.354 I [boot] STATE mode=on mag=32/70 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=122 hits=16 gds_mouse=13ms gds_kbd=13ms
+2026-10-14 11:59:34.062 I [present] CAMFRAME tick=4295 src=pers_cam_1 valid=1 why=ok pos=(22.89,-4.75,-14.05) fwd=(-0.961,-0.165,0.221) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.55m
+2026-10-14 11:59:37.356 I [boot] STATE mode=on mag=32/70 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=122 hits=16 gds_mouse=16ms gds_kbd=16ms
+2026-10-14 11:59:37.545 I [present] MENU idx=28 0->1
+2026-10-14 11:59:37.545 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-14 11:59:37.563 I [present] MENU idx=23 0->1
+2026-10-14 11:59:39.079 I [present] CAMFRAME tick=4596 src=pers_cam_1 valid=1 why=ok pos=(22.89,-4.73,-14.04) fwd=(-0.961,-0.171,0.216) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.55m
+2026-10-14 11:59:40.818 I [present] MENU idx=28 1->0
+2026-10-14 11:59:40.818 I [present] MENU idx=31 0->1
+2026-10-14 11:59:40.818 I [present] MENU idx=32 0->1
+2026-10-14 11:59:40.835 I [present] MENU idx=7 1->0
+2026-10-14 11:59:41.035 I [present] MENU idx=23 1->0
+2026-10-14 11:59:42.218 I [present] MENU idx=31 1->0
+2026-10-14 11:59:42.218 I [present] MENU idx=32 1->0
+2026-10-14 11:59:42.218 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-14 11:59:42.221 I [present] VM gpu_ms p50=0.0169 p95=0.0177 max=0.0206 n=471
+2026-10-14 11:59:42.235 I [present] MENU idx=7 0->1
+2026-10-14 11:59:42.359 I [boot] STATE mode=on mag=32/70 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=122 hits=16 gds_mouse=12ms gds_kbd=12ms
+2026-10-14 11:59:44.085 I [present] CAMFRAME tick=4896 src=pers_cam_1 valid=1 why=ok pos=(20.12,-5.47,-16.72) fwd=(-0.170,0.042,0.984) det=+1.000 ortho_err=0.0e0 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.50m
+2026-10-14 11:59:44.418 I [present] SHOT n=123 mag=31/70 id=79000100 mw2=40 d=9.3m src=chr spread=2.00 origin=(19.36,-5.29,-12.71) dir=(-0.260,0.039,0.965)
+2026-10-14 11:59:44.418 I [present] VM state idle->fire clip=fire_ads rate=1.000 ads=1.00 seq=169
+2026-10-14 11:59:44.485 I [t(6)] IMPACT pos=(14.24,-4.54,6.20) dist_from_origin=19.6m t=0.066s kind=hit
+2026-10-14 11:59:44.519 I [present] SHOT n=124 mag=30/70 id=79000100 mw2=40 d=8.4m src=map spread=2.35 origin=(19.35,-5.28,-12.72) dir=(-0.293,0.068,0.954)
+2026-10-14 11:59:44.519 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=170
+2026-10-14 11:59:44.552 I [present] MENU idx=17 0->1
+2026-10-14 11:59:44.569 I [present] MENU idx=23 0->1
+2026-10-14 11:59:44.569 I [present] IMPACT pos=(16.92,-4.72,-4.83) dist_from_origin=8.3m t=0.050s kind=hit
+2026-10-14 11:59:44.602 I [present] SHOT n=125 mag=29/70 id=79000100 mw2=40 d=8.3m src=map spread=2.92 origin=(19.35,-5.28,-12.72) dir=(-0.286,0.093,0.954)
+2026-10-14 11:59:44.602 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=171
+2026-10-14 11:59:44.652 I [present] IMPACT pos=(16.95,-4.51,-4.80) dist_from_origin=8.3m t=0.050s kind=hit
+2026-10-14 11:59:44.669 I [present] HIT chr=c4311 hp 219->170 dmg=49 band=79000100 mw2=40 d=8.4m via=impact n=1 kill=0
+2026-10-14 11:59:44.702 I [t(5)] SHOT n=126 mag=28/70 id=79000100 mw2=40 d=8.4m src=map spread=3.28 origin=(19.35,-5.28,-12.72) dir=(-0.305,0.074,0.949)
+2026-10-14 11:59:44.702 I [t(5)] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=172
+2026-10-14 11:59:44.752 I [present] IMPACT pos=(16.76,-4.66,-4.67) dist_from_origin=8.5m t=0.050s kind=hit
+2026-10-14 11:59:44.752 I [present] HIT chr=c4311 hp 170->121 dmg=49 band=79000100 mw2=40 d=8.3m via=impact n=1 kill=0
+2026-10-14 11:59:44.786 I [present] SHOT n=127 mag=27/70 id=79000100 mw2=40 d=8.8m src=map spread=3.84 origin=(19.35,-5.29,-12.72) dir=(-0.276,0.037,0.960)
+2026-10-14 11:59:44.786 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=173
+2026-10-14 11:59:44.835 I [present] IMPACT pos=(16.91,-4.97,-4.30) dist_from_origin=8.8m t=0.050s kind=hit
+2026-10-14 11:59:44.852 I [present] HIT chr=c4311 hp 121->72 dmg=49 band=79000100 mw2=40 d=8.4m via=impact n=1 kill=0
+2026-10-14 11:59:44.885 I [present] SHOT n=128 mag=26/70 id=79000100 mw2=40 d=8.8m src=map spread=3.80 origin=(19.35,-5.29,-12.72) dir=(-0.277,0.029,0.960)
+2026-10-14 11:59:44.885 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=174
+2026-10-14 11:59:44.936 I [present] IMPACT pos=(16.89,-5.04,-4.22) dist_from_origin=8.9m t=0.050s kind=hit
+2026-10-14 11:59:44.936 I [present] HIT chr=c4311 hp 72->23 dmg=49 band=79000100 mw2=40 d=8.8m via=impact n=1 kill=0
+2026-10-14 11:59:44.969 I [present] SHOT n=129 mag=25/70 id=79000104 mw2=36 d=20.0m src=map spread=4.00 origin=(19.35,-5.29,-12.72) dir=(-0.262,0.049,0.964)
+2026-10-14 11:59:44.969 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=175
+2026-10-14 11:59:45.036 I [present] IMPACT pos=(14.14,-4.35,6.40) dist_from_origin=19.8m t=0.067s kind=hit
+2026-10-14 11:59:45.036 I [present] HIT chr=c4311 hp 23->0 dmg=23 band=79000100 mw2=40 d=8.8m via=last_hit_by n=1 kill=1
+2026-10-14 11:59:45.036 I [present] KILL chr=c4311
+2026-10-14 11:59:45.052 I [present] SHOT n=130 mag=24/70 id=79000100 mw2=40 d=8.9m src=map spread=4.00 origin=(19.35,-5.29,-12.72) dir=(-0.316,0.038,0.948)
+2026-10-14 11:59:45.052 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=176
+2026-10-14 11:59:45.101 I [present] IMPACT pos=(16.55,-4.95,-4.28) dist_from_origin=8.9m t=0.050s kind=hit
+2026-10-14 11:59:45.152 I [t(6)] SHOT n=131 mag=23/70 id=79000105 mw2=35 d=23.0m src=map spread=3.80 origin=(19.35,-5.29,-12.72) dir=(-0.259,0.099,0.961)
+2026-10-14 11:59:45.152 I [t(6)] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=177
+2026-10-14 11:59:45.218 I [t(5)] IMPACT pos=(13.41,-3.02,9.33) dist_from_origin=23.0m t=0.067s kind=hit
+2026-10-14 11:59:45.235 I [present] SHOT n=132 mag=22/70 id=79000105 mw2=35 d=21.4m src=map spread=4.00 origin=(19.35,-5.29,-12.72) dir=(-0.307,0.067,0.949)
+2026-10-14 11:59:45.235 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=178
+2026-10-14 11:59:45.285 I [present] IMPACT pos=(16.57,-4.69,-4.09) dist_from_origin=9.1m t=0.051s kind=hit
+2026-10-14 11:59:45.336 I [present] SHOT n=133 mag=21/70 id=79000100 mw2=40 d=9.0m src=map spread=3.79 origin=(19.35,-5.29,-12.72) dir=(-0.297,0.050,0.954)
+2026-10-14 11:59:45.336 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=1.00 seq=179
+2026-10-14 11:59:45.386 I [present] IMPACT pos=(16.70,-4.86,-4.19) dist_from_origin=8.9m t=0.050s kind=hit
+2026-10-14 11:59:45.518 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.34 seq=180
+2026-10-14 11:59:46.418 I [present] MENU idx=17 1->0
+2026-10-14 11:59:47.135 I [present] MENU idx=28 0->1
+2026-10-14 11:59:47.135 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-14 11:59:47.362 I [boot] STATE mode=on mag=21/70 reloading=0 spread=2.00 menu=1 fg=1 chars=64 shots=133 hits=21 gds_mouse=14ms gds_kbd=14ms
+2026-10-14 11:59:47.769 I [present] MENU idx=28 1->0
+2026-10-14 11:59:47.769 I [present] MENU cursor Some(true) -> Some(false)
+2026-10-14 11:59:49.102 I [present] CAMFRAME tick=5197 src=pers_cam_1 valid=1 why=ok pos=(22.33,-3.06,-12.45) fwd=(-0.757,-0.653,-0.018) det=+1.000 ortho_err=1.3e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.64m
+2026-10-14 11:59:50.402 I [present] MENU idx=15 0->1
+2026-10-14 11:59:51.685 I [present] SHOT n=134 mag=20/70 id=79000100 mw2=40 d=1.8m src=map spread=2.00 origin=(19.47,-5.74,-11.56) dir=(-0.681,-0.517,-0.519)
+2026-10-14 11:59:51.685 I [present] VM state idle->fire clip=fire rate=1.000 ads=0.00 seq=181
+2026-10-14 11:59:51.735 I [present] IMPACT pos=(18.29,-6.66,-12.45) dist_from_origin=1.7m t=0.049s kind=hit
+2026-10-14 11:59:51.786 I [present] SHOT n=135 mag=19/70 id=79000100 mw2=40 d=1.8m src=map spread=2.36 origin=(19.46,-5.73,-11.55) dir=(-0.692,-0.504,-0.517)
+2026-10-14 11:59:51.786 I [present] VM state fire->fire clip=fire rate=1.000 ads=0.00 seq=182
+2026-10-14 11:59:51.835 I [present] IMPACT pos=(18.24,-6.66,-12.46) dist_from_origin=1.8m t=0.050s kind=hit
+2026-10-14 11:59:51.935 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=183
+2026-10-14 11:59:52.238 I [present] VM gpu_ms p50=0.0166 p95=0.0200 max=0.0206 n=563
+2026-10-14 11:59:52.364 I [boot] STATE mode=on mag=19/70 reloading=0 spread=2.00 menu=0 fg=1 chars=64 shots=135 hits=21 gds_mouse=16ms gds_kbd=16ms
+2026-10-14 11:59:52.486 I [present] SHOT n=136 mag=18/70 id=79000100 mw2=40 d=1.9m src=map spread=2.00 origin=(19.46,-5.73,-11.56) dir=(-0.695,-0.488,-0.527)
+2026-10-14 11:59:52.486 I [present] VM state idle->fire clip=fire rate=1.000 ads=0.08 seq=184
+2026-10-14 11:59:52.536 I [present] IMPACT pos=(18.19,-6.65,-12.52) dist_from_origin=1.8m t=0.050s kind=hit
+2026-10-14 11:59:52.586 I [present] SHOT n=137 mag=17/70 id=79000100 mw2=40 d=1.8m src=map spread=2.36 origin=(19.46,-5.73,-11.56) dir=(-0.692,-0.506,-0.515)
+2026-10-14 11:59:52.586 I [present] VM state fire->fire clip=fire_ads rate=1.000 ads=0.58 seq=185
+2026-10-14 11:59:52.636 I [present] IMPACT pos=(18.24,-6.65,-12.46) dist_from_origin=1.8m t=0.050s kind=hit
+2026-10-14 11:59:52.753 I [present] VM state fire->idle clip=idle rate=1.000 ads=0.00 seq=186
+2026-10-14 11:59:53.169 I [present] MENU idx=15 1->0
+2026-10-14 11:59:54.118 I [present] CAMFRAME tick=5498 src=pers_cam_1 valid=1 why=ok pos=(22.38,-3.61,-9.35) fwd=(-0.690,-0.502,-0.522) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 11:59:54.218 I [present] MODE off
+2026-10-14 11:59:54.218 I [present] VM state idle->drop clip=putaway rate=0.958 ads=0.00 seq=187
+2026-10-14 11:59:55.019 I [present] VM state drop->hidden clip=idle rate=1.000 ads=0.00 seq=188
+2026-10-14 11:59:55.700 I [present] MENU idx=4 0->1
+2026-10-14 11:59:56.217 I [present] MENU idx=7 1->0
+2026-10-14 11:59:56.217 I [present] MENU cursor Some(false) -> Some(true)
+2026-10-14 11:59:56.634 I [present] MENU idx=23 1->0
+2026-10-14 11:59:57.367 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=1 chars=64 shots=137 hits=21 gds_mouse=2ms gds_kbd=2ms
+2026-10-14 11:59:59.150 I [present] CAMFRAME tick=5798 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:02.369 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=20ms gds_kbd=3337ms
+2026-10-14 12:00:04.151 I [present] CAMFRAME tick=5986 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:07.371 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=20ms gds_kbd=8339ms
+2026-10-14 12:00:09.180 I [present] CAMFRAME tick=6110 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:12.373 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=3ms gds_kbd=13341ms
+2026-10-14 12:00:14.192 I [present] CAMFRAME tick=6234 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:17.376 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=37ms gds_kbd=18343ms
+2026-10-14 12:00:19.201 I [present] CAMFRAME tick=6358 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:22.378 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=30ms gds_kbd=23346ms
+2026-10-14 12:00:24.217 I [present] CAMFRAME tick=6482 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:27.381 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=7ms gds_kbd=28348ms
+2026-10-14 12:00:29.244 I [present] CAMFRAME tick=6606 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:32.383 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=11ms gds_kbd=33350ms
+2026-10-14 12:00:35.182 I [present] CAMFRAME tick=6719 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:37.386 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=25ms gds_kbd=38352ms
+2026-10-14 12:00:40.198 I [present] CAMFRAME tick=6839 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:42.388 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=7ms gds_kbd=43354ms
+2026-10-14 12:00:45.225 I [present] CAMFRAME tick=6963 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:47.391 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=24ms gds_kbd=48356ms
+2026-10-14 12:00:50.237 I [present] CAMFRAME tick=7087 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:52.393 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=3ms gds_kbd=53358ms
+2026-10-14 12:00:55.240 I [present] CAMFRAME tick=7210 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:00:57.395 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=36ms gds_kbd=58360ms
+2026-10-14 12:01:00.256 I [present] CAMFRAME tick=7333 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:02.398 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=37ms gds_kbd=63362ms
+2026-10-14 12:01:05.269 I [present] CAMFRAME tick=7457 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:07.400 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=36ms gds_kbd=68364ms
+2026-10-14 12:01:10.276 I [present] CAMFRAME tick=7581 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:12.403 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=30ms gds_kbd=73366ms
+2026-10-14 12:01:15.284 I [present] CAMFRAME tick=7705 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:17.405 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=24ms gds_kbd=78368ms
+2026-10-14 12:01:20.288 I [present] CAMFRAME tick=7829 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:22.407 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=8ms gds_kbd=83370ms
+2026-10-14 12:01:25.312 I [present] CAMFRAME tick=7953 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:27.410 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=35ms gds_kbd=88373ms
+2026-10-14 12:01:30.335 I [present] CAMFRAME tick=8077 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:32.412 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=15ms gds_kbd=93375ms
+2026-10-14 12:01:35.341 I [present] CAMFRAME tick=8200 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:37.415 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=32ms gds_kbd=98377ms
+2026-10-14 12:01:40.377 I [present] CAMFRAME tick=8323 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:42.417 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=38ms gds_kbd=103379ms
+2026-10-14 12:01:45.414 I [present] CAMFRAME tick=8446 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:47.420 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=18ms gds_kbd=108381ms
+2026-10-14 12:01:50.417 I [present] CAMFRAME tick=8569 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:52.422 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=12ms gds_kbd=113383ms
+2026-10-14 12:01:55.421 I [present] CAMFRAME tick=8692 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:01:57.425 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=13ms gds_kbd=118386ms
+2026-10-14 12:02:00.424 I [present] CAMFRAME tick=8815 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:02.427 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=13ms gds_kbd=123388ms
+2026-10-14 12:02:05.461 I [present] CAMFRAME tick=8939 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:07.430 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=19ms gds_kbd=128390ms
+2026-10-14 12:02:10.492 I [present] CAMFRAME tick=9063 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:12.433 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=36ms gds_kbd=133393ms
+2026-10-14 12:02:15.533 I [present] CAMFRAME tick=9187 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:17.436 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=5ms gds_kbd=138395ms
+2026-10-14 12:02:20.568 I [present] CAMFRAME tick=9311 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:22.438 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=32ms gds_kbd=143397ms
+2026-10-14 12:02:25.597 I [present] CAMFRAME tick=9434 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:27.440 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=9ms gds_kbd=148399ms
+2026-10-14 12:02:30.610 I [present] CAMFRAME tick=9557 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:32.443 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=5ms gds_kbd=153401ms
+2026-10-14 12:02:35.623 I [present] CAMFRAME tick=9680 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:37.445 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=28ms gds_kbd=158403ms
+2026-10-14 12:02:40.652 I [present] CAMFRAME tick=9803 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:42.447 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=11ms gds_kbd=163405ms
+2026-10-14 12:02:45.658 I [present] CAMFRAME tick=9926 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:47.450 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=1ms gds_kbd=168407ms
+2026-10-14 12:02:50.663 I [present] CAMFRAME tick=10049 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:52.452 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=39ms gds_kbd=173409ms
+2026-10-14 12:02:55.672 I [present] CAMFRAME tick=10172 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:02:57.455 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=41ms gds_kbd=178412ms
+2026-10-14 12:03:00.710 I [present] CAMFRAME tick=10296 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:02.457 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=7ms gds_kbd=183413ms
+2026-10-14 12:03:05.718 I [present] CAMFRAME tick=10419 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:07.460 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=36ms gds_kbd=188415ms
+2026-10-14 12:03:10.722 I [present] CAMFRAME tick=10542 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:12.462 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=35ms gds_kbd=193418ms
+2026-10-14 12:03:15.728 I [present] CAMFRAME tick=10665 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:17.465 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=32ms gds_kbd=198420ms
+2026-10-14 12:03:20.730 I [present] CAMFRAME tick=10788 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:22.467 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=33ms gds_kbd=203422ms
+2026-10-14 12:03:25.738 I [present] CAMFRAME tick=10911 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:27.469 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=32ms gds_kbd=208424ms
+2026-10-14 12:03:30.769 I [present] CAMFRAME tick=11035 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:32.472 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=2ms gds_kbd=213426ms
+2026-10-14 12:03:35.803 I [present] CAMFRAME tick=11159 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:37.474 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=10ms gds_kbd=218428ms
+2026-10-14 12:03:40.843 I [present] CAMFRAME tick=11283 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:42.476 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=8ms gds_kbd=223430ms
+2026-10-14 12:03:45.847 I [present] CAMFRAME tick=11406 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:47.479 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=3ms gds_kbd=228432ms
+2026-10-14 12:03:50.887 I [present] CAMFRAME tick=11530 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:52.481 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=9ms gds_kbd=233434ms
+2026-10-14 12:03:55.905 I [present] CAMFRAME tick=11653 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:03:57.484 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=42ms gds_kbd=238437ms
+2026-10-14 12:04:00.945 I [present] CAMFRAME tick=11777 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:02.486 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=38ms gds_kbd=243439ms
+2026-10-14 12:04:05.954 I [present] CAMFRAME tick=11900 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:07.489 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=26ms gds_kbd=248441ms
+2026-10-14 12:04:10.957 I [present] CAMFRAME tick=12023 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:12.491 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=30ms gds_kbd=253443ms
+2026-10-14 12:04:15.978 I [present] CAMFRAME tick=12146 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:17.493 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=9ms gds_kbd=258444ms
+2026-10-14 12:04:20.998 I [present] CAMFRAME tick=12269 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:22.496 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=32ms gds_kbd=263447ms
+2026-10-14 12:04:25.999 I [present] CAMFRAME tick=12392 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:27.498 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=33ms gds_kbd=268449ms
+2026-10-14 12:04:31.003 I [present] CAMFRAME tick=12515 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:32.501 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=39ms gds_kbd=273451ms
+2026-10-14 12:04:36.041 I [present] CAMFRAME tick=12639 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:37.503 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=1ms gds_kbd=278452ms
+2026-10-14 12:04:41.046 I [present] CAMFRAME tick=12762 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:42.505 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=35ms gds_kbd=283454ms
+2026-10-14 12:04:46.049 I [present] CAMFRAME tick=12885 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:47.507 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=35ms gds_kbd=288456ms
+2026-10-14 12:04:51.068 I [present] CAMFRAME tick=13008 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:52.509 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=13ms gds_kbd=293458ms
+2026-10-14 12:04:56.082 I [present] CAMFRAME tick=13131 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:04:57.512 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=13ms gds_kbd=298460ms
+2026-10-14 12:05:01.123 I [present] CAMFRAME tick=13255 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:02.514 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=12ms gds_kbd=303462ms
+2026-10-14 12:05:06.126 I [present] CAMFRAME tick=13378 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:07.517 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=15ms gds_kbd=308465ms
+2026-10-14 12:05:11.164 I [present] CAMFRAME tick=13502 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:12.519 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=12ms gds_kbd=313466ms
+2026-10-14 12:05:16.186 I [present] CAMFRAME tick=13625 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:17.521 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=30ms gds_kbd=318468ms
+2026-10-14 12:05:21.203 I [present] CAMFRAME tick=13748 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:22.523 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=20ms gds_kbd=323470ms
+2026-10-14 12:05:26.239 I [present] CAMFRAME tick=13872 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:27.526 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=27ms gds_kbd=328472ms
+2026-10-14 12:05:31.245 I [present] CAMFRAME tick=13995 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:32.528 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=28ms gds_kbd=333474ms
+2026-10-14 12:05:36.272 I [present] CAMFRAME tick=14119 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:37.531 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=4ms gds_kbd=338477ms
+2026-10-14 12:05:41.312 I [present] CAMFRAME tick=14243 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:42.534 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=10ms gds_kbd=343479ms
+2026-10-14 12:05:46.345 I [present] CAMFRAME tick=14367 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:47.536 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=14ms gds_kbd=348481ms
+2026-10-14 12:05:51.375 I [present] CAMFRAME tick=14491 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:52.538 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=32ms gds_kbd=353482ms
+2026-10-14 12:05:56.407 I [present] CAMFRAME tick=14615 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:05:57.540 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=40ms gds_kbd=358485ms
+2026-10-14 12:06:01.409 I [present] CAMFRAME tick=14738 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:02.543 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=38ms gds_kbd=363487ms
+2026-10-14 12:06:06.412 I [present] CAMFRAME tick=14861 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:07.545 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=38ms gds_kbd=368489ms
+2026-10-14 12:06:11.435 I [present] CAMFRAME tick=14984 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:12.547 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=8ms gds_kbd=373490ms
+2026-10-14 12:06:16.456 I [present] CAMFRAME tick=15107 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:17.549 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=37ms gds_kbd=378492ms
+2026-10-14 12:06:21.470 I [present] CAMFRAME tick=15230 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:22.552 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=26ms gds_kbd=383494ms
+2026-10-14 12:06:26.487 I [present] CAMFRAME tick=15353 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:27.553 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=11ms gds_kbd=388496ms
+2026-10-14 12:06:31.490 I [present] CAMFRAME tick=15476 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:32.555 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=12ms gds_kbd=393497ms
+2026-10-14 12:06:36.497 I [present] CAMFRAME tick=15599 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:37.559 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=6ms gds_kbd=398500ms
+2026-10-14 12:06:41.523 I [present] CAMFRAME tick=15722 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:42.561 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=26ms gds_kbd=403502ms
+2026-10-14 12:06:46.532 I [present] CAMFRAME tick=15845 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:47.564 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=20ms gds_kbd=408505ms
+2026-10-14 12:06:51.535 I [present] CAMFRAME tick=15968 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:52.566 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=19ms gds_kbd=413507ms
+2026-10-14 12:06:56.566 I [present] CAMFRAME tick=16092 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:06:57.568 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=34ms gds_kbd=418509ms
+2026-10-14 12:07:01.604 I [present] CAMFRAME tick=16216 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:02.570 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=37ms gds_kbd=423510ms
+2026-10-14 12:07:06.633 I [present] CAMFRAME tick=16340 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:07.573 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=11ms gds_kbd=428512ms
+2026-10-14 12:07:11.668 I [present] CAMFRAME tick=16464 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:12.575 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=15ms gds_kbd=433514ms
+2026-10-14 12:07:16.704 I [present] CAMFRAME tick=16588 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:17.577 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=25ms gds_kbd=438516ms
+2026-10-14 12:07:21.736 I [present] CAMFRAME tick=16712 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:22.579 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=35ms gds_kbd=443518ms
+2026-10-14 12:07:26.761 I [present] CAMFRAME tick=16836 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:27.582 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=14ms gds_kbd=448520ms
+2026-10-14 12:07:31.798 I [present] CAMFRAME tick=16960 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:32.584 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=15ms gds_kbd=453522ms
+2026-10-14 12:07:36.836 I [present] CAMFRAME tick=17084 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:37.587 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=23ms gds_kbd=458525ms
+2026-10-14 12:07:41.866 I [present] CAMFRAME tick=17208 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:42.590 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=37ms gds_kbd=463527ms
+2026-10-14 12:07:46.896 I [present] CAMFRAME tick=17332 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:47.592 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=10ms gds_kbd=468529ms
+2026-10-14 12:07:51.907 I [present] CAMFRAME tick=17455 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:52.595 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=36ms gds_kbd=473531ms
+2026-10-14 12:07:56.909 I [present] CAMFRAME tick=17578 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:07:57.598 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=2ms gds_kbd=478534ms
+2026-10-14 12:08:01.933 I [present] CAMFRAME tick=17702 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:02.599 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=21ms gds_kbd=483535ms
+2026-10-14 12:08:06.951 I [present] CAMFRAME tick=17826 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:07.602 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=1ms gds_kbd=488537ms
+2026-10-14 12:08:11.985 I [present] CAMFRAME tick=17950 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:12.605 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=15ms gds_kbd=493540ms
+2026-10-14 12:08:17.019 I [present] CAMFRAME tick=18074 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:17.607 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=26ms gds_kbd=498542ms
+2026-10-14 12:08:22.041 I [present] CAMFRAME tick=18198 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:22.610 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=4ms gds_kbd=503544ms
+2026-10-14 12:08:27.068 I [present] CAMFRAME tick=18322 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:27.613 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=22ms gds_kbd=508547ms
+2026-10-14 12:08:32.094 I [present] CAMFRAME tick=18446 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:32.615 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=36ms gds_kbd=513549ms
+2026-10-14 12:08:37.120 I [present] CAMFRAME tick=18570 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:37.617 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=13ms gds_kbd=518551ms
+2026-10-14 12:08:42.161 I [present] CAMFRAME tick=18694 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:42.620 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=13ms gds_kbd=523553ms
+2026-10-14 12:08:47.191 I [present] CAMFRAME tick=18817 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:47.622 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=29ms gds_kbd=528555ms
+2026-10-14 12:08:52.195 I [present] CAMFRAME tick=18940 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:52.624 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=26ms gds_kbd=533557ms
+2026-10-14 12:08:57.204 I [present] CAMFRAME tick=19063 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:08:57.627 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=18ms gds_kbd=538559ms
+2026-10-14 12:09:02.222 I [present] CAMFRAME tick=19186 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:09:02.630 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=3ms gds_kbd=543561ms
+2026-10-14 12:09:07.241 I [present] CAMFRAME tick=19309 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:09:07.632 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=25ms gds_kbd=548563ms
+2026-10-14 12:09:12.253 I [present] CAMFRAME tick=19432 src=pers_cam_1 valid=1 why=ok pos=(22.36,-3.57,-9.36) fwd=(-0.684,-0.511,-0.520) det=+1.000 ortho_err=6.0e-8 fov=0.8378(48.0deg) aspect=1.7778 near=0.0501 far=10000.0 cam_chest=3.63m
+2026-10-14 12:09:12.634 I [boot] STATE mode=off mag=17/70 reloading=0 spread=2.00 menu=1 fg=0 chars=64 shots=137 hits=21 gds_mouse=17ms gds_kbd=553565ms

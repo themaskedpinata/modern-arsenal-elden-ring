@@ -1,0 +1,28 @@
+[package]
+name = "regbuild"
+description = "MW2 in Elden Ring: the Rust regulation builder (docs/INSTALLER_DESIGN.md P2). Reads the vanilla regulation.bin (AES-256-CBC, DCX_ZSTD, BND4, PARAM), adds the build_regulation.py rows, writes it back. No WitchyBND, no Oodle. Never linked into mw2er.dll."
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[lib]
+name = "regbuild"
+path = "src/lib.rs"
+
+# dev / equivalence tool: regbuild build|unpack|diff|self-test (the installer calls the library in-process)
+[[bin]]
+name = "regbuild"
+path = "src/main.rs"
+
+[dependencies]
+serde_json.workspace = true
+toml.workspace = true
+sha2.workspace = true
+aes.workspace = true
+cbc.workspace = true
+zstd.workspace = true
+
+[dev-dependencies]
+# cross-checks of the ported math against the DLL's own mirrors (falloff bands, ER damage curve, co-op twin ids)
+mw2er-core.workspace = true

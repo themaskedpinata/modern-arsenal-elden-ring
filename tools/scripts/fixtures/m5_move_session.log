@@ -1,0 +1,123 @@
+2026-10-14 12:00:00.000 I [boot] BOOT mw2er 0.2.0 dll=x
+2026-10-14 12:00:00.000 I [boot] VERSION PASS file=2.7.1.0 product=2.7.1.0 lang=0x0409
+2026-10-14 12:00:00.000 I [boot] INPUT PASS hooked=2 addrs=[0x1,0x2]
+2026-10-14 12:00:01.000 I [present] HUD initialize display=1920x1080 font=built-in 26px
+2026-10-14 12:00:01.000 I [present] VM target fmt=R8G8B8A8_UNORM 1920x1080 colorspace=none frames=3
+2026-10-14 12:00:01.000 I [vmload] VM assets ready ms=120 bytes=3500000 bones=91 verts=7489 clips=12 fmt=R8G8B8A8_UNORM
+2026-10-14 12:00:01.000 I [boot] BOOTGATE PASS after 900 ms names=[CSTask]
+2026-10-14 12:00:01.000 I [boot] TASK registered group=ChrIns_PostPhysics
+2026-10-14 12:00:06.000 I [task] PARAMS OK n=13
+2026-10-14 12:00:06.000 I [task] CAMERA sign=+1 cam_player_dist=3.80m fov_raw=0.84 source=pers_cam_1
+2026-10-14 12:00:06.000 I [task] CAMFRAME tick=4 src=pers_cam_1 valid=1 why=ok pos=(1,2,3) fwd=(0,0,1) det=+1.000 ortho_err=1e-6 fov=0.8378(48.0deg) aspect=1.7778 near=0.1000 far=5000.0 cam_chest=3.50m
+2026-10-14 12:00:06.000 I [task] MODE on weapon=ump45_mp mag=32/192 menu_baseline=[1] show_cursor=0
+2026-10-14 12:00:06.016 I [task] FPCAM cfg enabled=1 mode=task eye_h=1.60 eye_fwd=0.10 eye_smooth_s=0.00 pitch_clamp=85.0 hide=render_flag yaw=1 world_fov=off arm_ticks=30 fade_alpha_max=0.50 signals fade=1 cam_mask=1 talk=1 key=F6
+2026-10-14 12:00:06.032 I [task] FP on eye=(1.00,2.60,3.10) cam_gate=ok er_cam_dist=3.45m eye_to_chest=0.41m hp=500 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=task hide=render_flag player=0x7ff000010000
+2026-10-14 12:00:06.048 I [task] FP hide write player=0x7ff000010000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) addr=0x7ff0000101c5 old=0x08 new=0x00
+2026-10-14 12:00:06.064 I [task] FPCAM write field=CSCamera.pers_cam_1+0x40 addr=0x7ff000020050 old=(1.00,4.00,0.00) new=(1.00,2.60,3.10)
+2026-10-14 12:00:06.080 I [task] FPCAM er_rewrite=1: ER rebuilt pers_cam_1 row 3 between two ticks ((1.00,2.60,3.10) -> (1.02,4.00,0.01)); handback restore is free
+2026-10-14 12:00:06.096 I [task] FP yaw probe conv=+z dot_med=0.981 n=60
+2026-10-14 12:00:06.112 I [task] FP hide restore player=0x7ff000010000 field=ChrIns.chr_flags1c5.enable_render(+0x1c5 b3) old=0x00 new=0x08 saved=0x08 reasserted=0 ok=1 reason=menu
+2026-10-14 12:00:06.128 I [task] FP off reason=menu  ticks_on=120 cam_writes=120 (re-arms when clear)
+2026-10-14 12:00:06.144 I [task] FP on eye=(1.00,2.60,3.10) cam_gate=ok er_cam_dist=3.45m eye_to_chest=0.41m hp=500 ride=Some(0) mounted=0 ladder=-1 camtype=Some(0) mask=0x0 talk=Some(-1) fade_max=0.00 world_fov=48.0deg near=0.0501 mode=task hide=render_flag player=0x7ff000010000
+2026-10-14 12:00:06.160 I [task] TASK world left (loading / title)
+2026-10-14 12:00:06.176 I [task] FP off reason=loading world left ticks_on=300 cam_writes=300 (re-arms when clear)
+2026-10-14 12:00:06.192 I [task] VM state hidden->raise clip=pullout rate=1.096 ads=0.00 seq=1
+2026-10-14 12:00:06.208 I [present] VM first frame drawn 1920x1080 slot=0 out=Srgb
+2026-10-14 12:00:07.208 I [task] SHOT n=1 mag=31/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.224 I [task] BULLET id=79000100 pos=(1,2,3) origin=(1,2,2) speed=999.0 m/s alive=0.016s
+2026-10-14 12:00:07.234 I [task] IMPACT pos=(1,2,14) dist_from_origin=8.0m t=0.030s kind=hit
+2026-10-14 12:00:07.244 I [task] HIT chr=c4311 hp 219->150 dmg=69 band=79000105 mw2=35 d=36.0m via=impact n=1 kill=0
+2026-10-14 12:00:07.334 I [task] SHOT n=2 mag=30/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.344 I [task] IMPACT pos=(1,2,14) dist_from_origin=8.0m t=0.030s kind=hit
+2026-10-14 12:00:07.354 I [task] HIT chr=c4311 hp 150->101 dmg=49 band=79000105 mw2=35 d=36.0m via=impact n=1 kill=0
+2026-10-14 12:00:07.444 I [task] SHOT n=3 mag=29/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.454 I [task] IMPACT pos=(1,2,14) dist_from_origin=8.0m t=0.030s kind=hit
+2026-10-14 12:00:07.464 I [task] HIT chr=c4311 hp 101->52 dmg=49 band=79000105 mw2=35 d=36.0m via=impact n=1 kill=0
+2026-10-14 12:00:07.554 I [task] SHOT n=4 mag=28/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.564 I [task] IMPACT pos=(1,2,14) dist_from_origin=8.0m t=0.030s kind=hit
+2026-10-14 12:00:07.574 I [task] HIT chr=c4311 hp 52->3 dmg=49 band=79000105 mw2=35 d=36.0m via=impact n=1 kill=0
+2026-10-14 12:00:07.664 I [task] SHOT n=5 mag=27/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.674 I [task] IMPACT pos=(1,2,14) dist_from_origin=8.0m t=0.030s kind=hit
+2026-10-14 12:00:07.684 I [task] HIT chr=c4311 hp 3->0 dmg=3 band=79000105 mw2=35 d=36.0m via=impact n=1 kill=1
+2026-10-14 12:00:07.774 I [task] SHOT n=6 mag=26/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.864 I [task] SHOT n=7 mag=25/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:07.954 I [task] SHOT n=8 mag=24/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.044 I [task] SHOT n=9 mag=23/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.134 I [task] SHOT n=10 mag=22/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.224 I [task] SHOT n=11 mag=21/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.314 I [task] SHOT n=12 mag=20/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.404 I [task] SHOT n=13 mag=19/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.494 I [task] SHOT n=14 mag=18/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.584 I [task] SHOT n=15 mag=17/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.674 I [task] SHOT n=16 mag=16/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.764 I [task] SHOT n=17 mag=15/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.854 I [task] SHOT n=18 mag=14/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:08.944 I [task] SHOT n=19 mag=13/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.034 I [task] SHOT n=20 mag=12/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.124 I [task] SHOT n=21 mag=11/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.214 I [task] SHOT n=22 mag=10/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.304 I [task] SHOT n=23 mag=9/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.394 I [task] SHOT n=24 mag=8/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:09.484 I [task] SHOT n=25 mag=7/192 id=79000100 mw2=40 d=8.0m src=chr
+2026-10-14 12:00:10.484 I [task] RELOAD start empty=0 dur=2.5 mag=7
+2026-10-14 12:00:10.500 I [task] VM state idle->reload clip=reload rate=1.000 ads=0.00 seq=9
+2026-10-14 12:00:13.000 I [task] RELOAD done mag=32 reserve=167 added=25
+2026-10-14 12:00:13.100 I [task] MOVE cfg enabled=1 tp_anim=hybrid sprint=press crouch=toggle jump_slowdown=1 fall=mw2 eye=1.600/1.067/0.293 hull=1.867/1.333/0.800 r=er rays_max=32 data=converted\movement.json sha=2f8c9cfda1b8
+2026-10-14 12:00:13.100 I [task] MOVE data g_speed=190 sprint=1.5x4.0s min=1.0 jump=39in grav=800 accel=9/12/19 air=1 fric=5.5/100 step=18/10 fall=200/350 ump45 move=1 ads=2 dur=1 src_exe_sha=2f8c9cfda1b8
+2026-10-14 12:00:13.600 I [task] MOVE keyprobe key=SPACE er_bits=backstep|rolling
+2026-10-14 12:00:14.100 I [task] MOVE resync why=world_enter d=0.00m chunk_d=0.00m
+2026-10-14 12:00:14.100 I [task] MOVE on pos=(1.00,2.00,3.00) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.80 fp=1
+2026-10-14 12:00:14.100 I [task] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x1000 old=1.000 new=0.000 ok=1
+2026-10-14 12:00:14.100 I [task] MOVE write field=CSChrPhysicsModule.gravity_disabled(+0x1d5) addr=0x1009 old=0 new=1 ok=1
+2026-10-14 12:00:14.100 I [task] MOVE write field=CSChrPhysicsModule.position(+0x70) addr=0x1070 old=(1.00,2.00,3.00) new=(1.00,2.00,3.01)
+2026-10-14 12:00:14.100 I [task] MOVE write field=CSChrPhysicsModule.chr_proxy_pos_update_requested(+0x91) addr=0x1091 old=? new=1
+2026-10-14 12:00:14.350 I [task] MOVE state t=10.00 stance=stand frac=1.00 speed_sim=190.0in/s speed_world=4.83m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:14.600 I [task] MOVE state t=11.00 stance=stand frac=1.00 speed_sim=190.0in/s speed_world=4.83m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:14.850 I [task] MOVE state t=12.00 stance=stand frac=1.00 speed_sim=190.0in/s speed_world=4.83m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:15.100 I [task] MOVE state t=13.00 stance=stand frac=1.00 speed_sim=190.0in/s speed_world=4.83m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:15.350 I [task] MOVE state t=14.00 stance=stand frac=1.00 speed_sim=190.0in/s speed_world=4.83m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:15.600 I [task] MOVE state t=15.00 stance=stand frac=1.00 speed_sim=190.0in/s speed_world=4.83m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:15.850 I [task] MOVE state t=16.00 stance=stand frac=1.00 speed_sim=190.0in/s speed_world=4.83m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:16.100 I [task] MOVE state t=17.00 stance=stand frac=1.00 speed_sim=190.0in/s speed_world=4.83m/s wish=190.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:16.350 I [task] MOVE state t=20.00 stance=stand frac=1.00 speed_sim=152.0in/s speed_world=3.86m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:16.600 I [task] MOVE state t=21.00 stance=stand frac=1.00 speed_sim=152.0in/s speed_world=3.86m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:16.850 I [task] MOVE state t=22.00 stance=stand frac=1.00 speed_sim=152.0in/s speed_world=3.86m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:17.100 I [task] MOVE state t=23.00 stance=stand frac=1.00 speed_sim=152.0in/s speed_world=3.86m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:17.350 I [task] MOVE state t=24.00 stance=stand frac=1.00 speed_sim=152.0in/s speed_world=3.86m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:17.600 I [task] MOVE state t=25.00 stance=stand frac=1.00 speed_sim=152.0in/s speed_world=3.86m/s wish=152.0 sprint=0 meter=4.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:18.100 I [task] MOVE sprint start meter=4.00s stance_from=stand
+2026-10-14 12:00:18.600 I [task] MOVE state t=30.00 stance=stand frac=1.00 speed_sim=285.0in/s speed_world=7.24m/s wish=285.0 sprint=1 meter=3.50s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:19.100 I [task] MOVE state t=31.00 stance=stand frac=1.00 speed_sim=285.0in/s speed_world=7.24m/s wish=285.0 sprint=1 meter=3.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:19.600 I [task] MOVE state t=32.00 stance=stand frac=1.00 speed_sim=285.0in/s speed_world=7.24m/s wish=285.0 sprint=1 meter=2.50s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:20.100 I [task] MOVE state t=33.00 stance=stand frac=1.00 speed_sim=285.0in/s speed_world=7.24m/s wish=285.0 sprint=1 meter=2.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:20.600 I [task] MOVE state t=34.00 stance=stand frac=1.00 speed_sim=285.0in/s speed_world=7.24m/s wish=285.0 sprint=1 meter=1.50s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:21.100 I [task] MOVE state t=35.00 stance=stand frac=1.00 speed_sim=285.0in/s speed_world=7.24m/s wish=285.0 sprint=1 meter=1.00s ground=1 er_ground=1/1/1 slope_rays=0.0deg slope_er=0.0deg rays=12 er_delta=0.010m pushout=0
+2026-10-14 12:00:22.100 I [task] MOVE sprint end why=time dur=4.00s meter=0.00s
+2026-10-14 12:00:22.600 I [task] MOVE sprint refused why=meter meter=0.48s
+2026-10-14 12:00:23.200 I [task] MOVE sprint start meter=1.05s stance_from=stand
+2026-10-14 12:00:23.600 I [task] MOVE sprint end why=fire dur=0.40s meter=0.65s
+2026-10-14 12:00:24.600 I [task] MOVE jump y0=2.000 v0=249.8 land_factor=1.00
+2026-10-14 12:00:24.910 I [task] MOVE apex h=0.991m t=0.312s
+2026-10-14 12:00:25.220 I [task] MOVE land fall_h=39.0in (0.99m) v_impact=249.8 slow=0.67*0.65 dmg_pct=0.0 hp=1000->1000 max_hp=1000 land_ms=0
+2026-10-14 12:00:27.220 I [task] MOVE land fall_h=236.2in (6.00m) v_impact=614.8 slow=0.37*1.00 dmg_pct=24.1 hp=1000->759 max_hp=1000 land_ms=1344
+2026-10-14 12:00:29.220 I [task] MOVE land fall_h=275.6in (7.00m) v_impact=664.0 slow=0.33*1.00 dmg_pct=50.4 hp=759->759 max_hp=1000 fall_damage=skipped_er_ground er_ground_ticks=12 land_ms=2000
+2026-10-14 12:00:30.220 I [task] MOVE ground_disagree ray_miss_ticks=30 er_ground=1 pos=(1.00,2.00,3.00) (ER stands on something our map rays miss; ER drives 3 s)
+2026-10-14 12:00:30.240 I [task] MOVE suspend reason=ground_disagree ground ray missed 30 ticks while ER reported ground (hold 3 s, held_ticks=30) ticks=4000
+2026-10-14 12:00:30.240 I [task] MOVE restore field=gravity_multiplier addr=0x1000 old=0.000 new=1.000 ok=1
+2026-10-14 12:00:30.240 I [task] MOVE restore field=gravity_disabled addr=0x1009 old=1 new=0 ok=1
+2026-10-14 12:00:33.440 I [task] MOVE on pos=(1.00,2.00,3.00) vel0=0.0 er_ground=1/1/1 falling=0 grav_mult=1.000 grav_dis=0 r=0.40 h=1.80 fp=1
+2026-10-14 12:00:33.440 I [task] MOVE write field=CSChrPhysicsModule.gravity_multiplier(+0x1cc) addr=0x1000 old=1.000 new=0.000 ok=1
+2026-10-14 12:00:33.440 I [task] MOVE write field=CSChrPhysicsModule.gravity_disabled(+0x1d5) addr=0x1009 old=0 new=1 ok=1
+2026-10-14 12:00:34.440 I [task] MOVE stance from=stand to=crouch dur_ms=200
+2026-10-14 12:00:35.440 I [task] MOVE stance from=crouch to=stand dur_ms=200
+2026-10-14 12:00:36.440 I [task] PERF ticks_per_s=59.8 task_us p50=600 p95=900 max=2000 fp_us avg=100 max=300 writes=9000 write_us_max=2.0 slow_writes=0 page_checks=12 page_check_ms_max=4.00 page_check_ms_total=20.0 cached_pages=30 ac130=0 move=1 move_us_p50=60 move_us_p95=120 move_us_max=400 rays_avg=13.0 rays_max=24 ray_us_max=8.0 move_writes=600
+2026-10-14 12:00:36.540 I [task] MOVE er_delta p50=0.010 p95=0.030 max=0.120 applied=3 handbacks=0 budget_hits=0 gravity_reasserts=2 ground_disagree_streaks=0
+2026-10-14 12:00:36.540 I [task] MOVE order detour_before_task=600/600 (camera-step detour calls between task ticks; feet used=600 rejected=0)
+2026-10-14 12:00:37.540 I [task] MOVE suspend reason=menu cursor ticks=1500
+2026-10-14 12:00:37.540 I [task] MOVE restore field=gravity_multiplier addr=0x1000 old=0.000 new=1.000 ok=1
+2026-10-14 12:00:37.540 I [task] MOVE restore field=gravity_disabled addr=0x1009 old=1 new=0 ok=1
+2026-10-14 12:00:38.540 I [task] MENU idx=12 0->1
+2026-10-14 12:00:39.540 I [task] MENU idx=12 1->0
+2026-10-14 12:00:39.540 I [present] VM gpu_ms p50=0.0130 p95=0.0150 max=0.0200 n=600
+2026-10-14 12:00:40.540 I [task] MODE off
+2026-10-14 12:00:40.556 I [task] VM state idle->drop clip=putaway rate=0.958 ads=0.00 seq=12

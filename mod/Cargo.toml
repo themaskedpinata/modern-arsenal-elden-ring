@@ -1,0 +1,81 @@
+# MW2 in Elden Ring - Rust workspace (milestones M2 + M3).
+#
+# mw2er-core:   pure logic, no game memory, no Win32, all unit tests (`cargo test -p mw2er-core`).
+# mw2er-render: the D3D12 viewmodel renderer (M3), shared by the DLL and vmtest; no hudhook, no game types.
+# mw2er:        the cdylib loaded by me3 (mw2er.dll); the only crate that touches the game process.
+# vmtest:       offscreen harness of mw2er-render (docs/M3_DESIGN.md section 12.2; M4 thermal cases T1-T9 + perf).
+# sndconv:      M4 offline tool: decodes the MW2 AC-130 ambient MP3 to WAV (symphonia; never linked into the DLL).
+# movebench:    M5 headless bench of the MW2 movement controller (docs/M5_DESIGN.md 13.2; never linked into the DLL).
+# installer:    the installer / launcher / updater / uninstaller (docs/INSTALLER_DESIGN.md P1; never linked into the DLL).
+# regbuild:     P2 regulation builder (AES / DCX_ZSTD / BND4 / PARAM + the build_regulation.py row plan; no WitchyBND).
+#
+# Design: docs/M2_DESIGN.md. Dependency choices are fixed by that document (section 3).
+
+[workspace]
+members = ["mw2er-core", "mw2er-render", "mw2er", "vmtest", "sndconv", "movebench", "installer", "regbuild"]
+resolver = "3"
+
+[workspace.package]
+# 0.3.0 = the first public release (P4); 0.2.0 installs update in place (the setup shows "Update 0.2.0 -> 0.3.0")
+version = "0.3.1"
+edition = "2024"
+publish = false
+# the mod's own code (LICENSE at the repository root: MIT, maskedpinata 2026); third-party parts keep their licences
+license = "MIT"
+
+[workspace.dependencies]
+mw2er-core = { path = "mw2er-core" }
+mw2er-render = { path = "mw2er-render" }
+regbuild = { path = "regbuild" }
+
+# Vendored fromsoftware-rs at 59fbd3b3b7daaf14aca47c9f73530493dba6bc79 + tools/patches/fromsoftware-rs-0001.
+eldenring = { path = "../vendor/fromsoftware-rs/crates/eldenring" }
+fromsoftware-shared = { path = "../vendor/fromsoftware-rs/crates/shared" }
+from-singleton = "=3.0.1"
+pelite = "=0.10.0"
+
+hudhook = { version = "=0.9.3", default-features = false, features = ["dx12"] }
+windows = { version = "=0.62.2", features = [
+    "Win32_Foundation",
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Memory",
+    "Win32_System_SystemInformation",
+    "Win32_System_Threading",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Devices_HumanInterfaceDevice",
+] }
+rodio = { version = "=0.23.0", default-features = false, features = ["playback", "hound"] }
+tracing = "=0.1.44"
+tracing-subscriber = { version = "=0.3.23", default-features = false, features = ["fmt", "std", "env-filter"] }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "1"
+png = "=0.17.16"
+
+# installer only (docs/INSTALLER_DESIGN.md 3.7; never linked into mw2er.dll): streaming sha256, zip reading (Seamless /
+# WitchyBND zips), the pinned WitchyBND download (Windows TLS through native-tls / schannel).
+sha2 = "=0.10.9"
+zip = { version = "=9.0.5", default-features = false, features = ["deflate-flate2-zlib-rs", "deflate64"] }
+ureq = { version = "=3.5.0", default-features = false, features = ["native-tls-no-default"] }
+# regbuild only (docs/INSTALLER_DESIGN.md P2): AES-256-CBC (pure Rust RustCrypto) and libzstd 1.5.7 (zstd-sys builds the C
+# sources with cc; pinned: the compressed bytes, so the package sha256, change with the libzstd version).
+aes = "=0.8.4"
+cbc = "=0.1.2"
+zstd = { version = "=0.13.3", default-features = false }
+# installer wizard only (docs/INSTALLER_DESIGN.md 2.7, decision D3): eframe/egui with the OpenGL (glow) backend, no wgpu.
+eframe = { version = "=0.37.0", default-features = false, features = ["glow", "default_fonts"] }
+
+# M3: hudhook 0.9.3 from the cargo registry, vendored with exactly one patch (tools/patches/
+# hudhook-0001-pre-imgui-hook.patch: pre-ImGui callback + SetColorSpace1 hook). The dependency stays =0.9.3.
+[patch.crates-io]
+hudhook = { path = "../vendor/hudhook-0.9.3" }
+
+[profile.release]
+panic = "unwind"      # never "abort" in a game mod: a panic must be caught and logged, not kill the game
+debug = 1             # line tables for backtraces in the log
+incremental = false
+
+[profile.dev]
+panic = "unwind"

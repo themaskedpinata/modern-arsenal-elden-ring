@@ -1,0 +1,14 @@
+# Static, read-only x86-64 scan of the user's eldenring.exe (docs/M8_DESIGN.md section 18): it reads the file's bytes
+# and prints call sites + the instructions before them. It never starts, loads or attaches to the exe. Its own project
+# (not in the mod workspace, never linked into mw2er.dll); build with a short CARGO_TARGET_DIR (work\m8\erscan_target).
+[package]
+name = "erscan"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+iced-x86 = { version = "=1.21.0", default-features = false, features = ["std", "decoder", "intel"] }
+
+[workspace]
