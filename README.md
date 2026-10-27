@@ -5,6 +5,7 @@ Source code of **Modern Arsenal for Elden Ring**, an unofficial fan mod that bri
 nuke, solo or in private Seamless Co-op.
 
 - **Download and install:** https://www.nexusmods.com/eldenring/mods/11487
+- **Showcase video:** https://www.youtube.com/watch?v=yhb4IFz8X7o
 - **Discord** (help, bug reports, co-op partners): https://discord.gg/BHSB9S2ZmK
 
 **No game files are in this repository or in the release.** The setup builds the mod's data on each player's PC from
