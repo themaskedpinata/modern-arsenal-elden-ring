@@ -2,8 +2,10 @@
 
 Source code of **Modern Arsenal for Elden Ring**, an unofficial fan mod that brings modern firearms to Elden Ring:
 34 guns with aim-down-sights and scopes, first or third person, sprint and mantling, an AC-130 gunship and a tactical
-nuke, solo or in private Seamless Co-op. The download and install instructions are on the mod's Nexus Mods page
-(Elden Ring > Modern Arsenal for Elden Ring, by maskedpinata).
+nuke, solo or in private Seamless Co-op.
+
+- **Download and install:** https://www.nexusmods.com/eldenring/mods/11487
+- **Discord** (help, bug reports, co-op partners): https://discord.gg/BHSB9S2ZmK
 
 **No game files are in this repository or in the release.** The setup builds the mod's data on each player's PC from
 their own Steam copies of Elden Ring and Call of Duty: Modern Warfare 2 (2009).
