@@ -256,7 +256,7 @@ if (-not $SeamlessDll -and $Interactive) {
         if ($imp.Ok) { $SeamlessDll = $imp.Dll; Say 'INFO' "Seamless Co-op $($Pins.seamless_version) unpacked from your download $($auto.Zip) into $SeamlessImport" }
     }
     for ($i = 0; $i -lt 4 -and -not $SeamlessDll; $i++) {
-        $a = Ui-Ask 'Seamless Co-op 2.0.1 needed' ("Seamless Co-op $($Pins.seamless_version) (the co-op mod; both players need exactly the same version) was not found.`n`n" +
+        $a = Ui-Ask "Seamless Co-op $($Pins.seamless_version) needed" ("Seamless Co-op $($Pins.seamless_version) (the co-op mod; both players need exactly the same version) was not found.`n`n" +
             "Yes: I have it - choose its ersc.dll or the zip I downloaded from Nexus Mods.`n" +
             "No: I don't have it - open its Nexus Mods page so I can download it.`nCancel: stop setup.") 'YesNoCancel' 'Question'
         if ($a -eq 'Cancel') { break }

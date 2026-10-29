@@ -1193,7 +1193,7 @@ dependencies = [
 
 [[package]]
 name = "installer"
-version = "0.3.1"
+version = "0.3.2"
 dependencies = [
  "eframe",
  "pelite",
@@ -1442,7 +1442,7 @@ checksum = "e53debba6bda7a793e5f99b8dacf19e626084f525f7829104ba9898f367d85ff"
 
 [[package]]
 name = "movebench"
-version = "0.3.1"
+version = "0.3.2"
 dependencies = [
  "mw2er-core",
  "serde_json",
@@ -1466,7 +1466,7 @@ checksum = "743fb55ba31b18fb1ecef6bdc9aa2743314978ac084044301a7eee33fb99a20d"
 
 [[package]]
 name = "mw2er"
-version = "0.3.1"
+version = "0.3.2"
 dependencies = [
  "eldenring",
  "from-singleton",
@@ -1483,7 +1483,7 @@ dependencies = [
 
 [[package]]
 name = "mw2er-core"
-version = "0.3.1"
+version = "0.3.2"
 dependencies = [
  "serde",
  "serde_json",
@@ -1492,7 +1492,7 @@ dependencies = [
 
 [[package]]
 name = "mw2er-render"
-version = "0.3.1"
+version = "0.3.2"
 dependencies = [
  "mw2er-core",
  "windows 0.62.2",
@@ -2266,7 +2266,7 @@ dependencies = [
 
 [[package]]
 name = "regbuild"
-version = "0.3.1"
+version = "0.3.2"
 dependencies = [
  "aes",
  "cbc",
@@ -2564,7 +2564,7 @@ dependencies = [
 
 [[package]]
 name = "sndconv"
-version = "0.3.1"
+version = "0.3.2"
 dependencies = [
  "symphonia",
 ]
@@ -2946,7 +2946,7 @@ checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
 
 [[package]]
 name = "vmtest"
-version = "0.3.1"
+version = "0.3.2"
 dependencies = [
  "mw2er-core",
  "mw2er-render",

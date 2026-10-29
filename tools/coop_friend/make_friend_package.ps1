@@ -52,7 +52,10 @@ $oat = Join-Path $Root 'tools\oat'
 Copy-Item -LiteralPath (Join-Path $oat 'build\bin\Release_x64\Unlinker.exe') -Destination (Join-Path $Pkg 'tools\oat\bin\Unlinker.exe')
 Copy-Item -LiteralPath (Join-Path $oat 'LICENSE') -Destination (Join-Path $Pkg 'tools\oat\LICENSE')
 $commit = (& git -C $oat rev-parse HEAD).Trim()
-$diff = (& git -C $oat diff --no-color) -join "`n"
+# git prints CRLF warnings on stderr, which Windows PowerShell 5.1 turns into a terminating error under 'Stop'
+$eap = $ErrorActionPreference; $ErrorActionPreference = 'Continue'
+$diff = (& git -C $oat diff --no-color 2>$null) -join "`n"
+$ErrorActionPreference = $eap
 [IO.File]::WriteAllText((Join-Path $Pkg 'tools\oat\local-build-fixes.patch'), $diff + "`n")
 Copy-Item -LiteralPath (Join-Path $Root 'mod\target\release\sndconv.exe') -Destination (Join-Path $Pkg 'tools\bin\sndconv.exe')
 $srcmd = @"
@@ -130,8 +133,10 @@ $pins = [ordered]@{
     mw2_buildid = '25374375'
     iw4sp_sha256 = (Sha 'D:\SteamLibrary\steamapps\common\Call of Duty Modern Warfare 2\iw4sp.exe')
     me3_version = (Get-Item (Join-Path $env:LOCALAPPDATA 'Programs\garyttierney\me3\bin\me3.exe')).VersionInfo.ProductVersion
-    seamless_version = '2.0.1'
-    ersc_sha256 = (Sha 'C:\Users\Player\Documents\seamless\SeamlessCoop\ersc.dll')
+    # 0.3.2: Seamless 2.0.2 (2026-10-27; 2.0.1 now refuses to start, "update required"). Pinned literally: the ersc.dll
+    # of the official Nexus zip "Seamless Co-op v2.0.2 510 2.0.2" (only ersc.dll differs from 2.0.1; same ini keys).
+    seamless_version = '2.0.2'
+    ersc_sha256 = '0a093d8490967bf19c62f895fdf1fda21840282d2b2b371b9b4fc24a0cfe146e'
     witchybnd_zip_sha256 = $(if ($haveWitchy) { Sha $wzip } else { '' })
     witchybnd_exe_sha256 = $(if ($haveWitchy) { Sha $wexe } else { '' })
     paramdex_version = $paramdex   # the host's own bumped upgrader version (port 2.7.2.0: 1_17_3_0034L)

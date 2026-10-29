@@ -22,9 +22,9 @@
 - **Tactical Nuke** after a 25-kill streak.
 - **Elden Ring stays readable**: item pickups, messages and prompts are drawn over the gun.
 - **Controller support**: Xbox pads directly, PlayStation pads through Steam Input.
-- **Seamless Co-op**: play with a friend in a private session, both with the mod's guns and movement. Also built in,
-  but **not yet played in a two-player session**: seeing and hearing the other player's gun, tracers, shots and
-  explosions, and a nuke either player can call for both worlds (see Compatibility).
+- **Seamless Co-op**: play with friends in a private session (tested with three players), all with the mod's guns
+  and movement. You see each other's tracers and explosions and hear the shots, and a nuke called by any player
+  clears the enemies in every player's world.
 - **One-file setup**: finds your games, installs the mod loader, builds and checks every file, makes shortcuts and
   registers in Apps & Features. Updates rerun only what changed and can be rolled back.
 
@@ -109,10 +109,10 @@ the box. The mod's own save files stay in your Elden Ring save folder. me3 has i
   that replace the regulation or change weapons and movement will conflict; other me3 or DLL mods are untested. Do
   not install other mods into the game folder.
 - **Shadow of the Erdtree** works; in co-op, both players need the same DLC.
-- **Not yet played with two players in this release**: the co-op visuals and sounds (the other player's gun,
-  tracers, shot sounds and explosions), the shared co-op nuke, and third person in co-op. They are built and checked
-  offline; the last two-player session was with an earlier build (both players with MW2 guns; the nuke then cleared
-  only the caller's own enemies). Please report what you see, with the logs folder.
+- **Co-op was tested with three players** on this release: the shared nuke (enemies cleared in every world), the
+  other players' tracers and explosions, and no shooting while dead. Third person in co-op has had less play; please
+  report what you see, with the logs folder.
+- A few enemies that the game itself protects can survive the nuke.
 - The gun model is not hidden behind walls in third person.
 - Steam Deck and Linux are untested.
 

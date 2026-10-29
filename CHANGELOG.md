@@ -2,6 +2,13 @@
 
 Versions follow the Rust workspace (`mod\Cargo.toml`). Details of every step are in `MODLOG.md`.
 
+## 0.3.2 - 2026-10-28 (Seamless Co-op 2.0.2)
+
+- Co-op now uses Seamless Co-op 2.0.2: 2.0.1 refuses to start since the 2.0.2 release ("Update required"), which broke
+  0.3.1's co-op shortcut (solo was unaffected). The setup pins 2.0.2's `ersc.dll` (sha256 0a093d849096...) and finds the
+  official Nexus zip in Downloads by itself. Only `ersc.dll` differs from 2.0.1; `ersc_settings.ini` keys are unchanged.
+- Gameplay unchanged from 0.3.1 (same `mw2er.dll` code); both players must install 0.3.2 (the co-op id changes).
+
 ## 0.3.1 - 2026-10-24 (co-op fixes from the first two-player test of 0.3.0)
 
 - Tactical Nuke in co-op: the host's game now kills every enemy in range; the joining player's game waits

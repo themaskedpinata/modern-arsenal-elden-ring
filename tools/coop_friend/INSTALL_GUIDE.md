@@ -32,7 +32,7 @@ You must own both games on Steam and have them installed. Steam can stay running
 5. **No other tools.** The setup builds the game settings file (the regulation) itself; WitchyBND is no longer
    needed and nothing is downloaded. (Only if the host asks for it: **Advanced** on the Install page has a WitchyBND
    fallback; see "Advanced: the WitchyBND fallback" below.)
-6. **For co-op only: Seamless Co-op 2.0.1**, from Nexus Mods (Elden Ring, mod "Seamless Co-op"). Just download the zip
+6. **For co-op only: Seamless Co-op 2.0.2**, from Nexus Mods (Elden Ring, mod "Seamless Co-op"). Just download the zip
    and leave it in your **Downloads** folder; the setup finds it and copies it into its own folder. If you have not
    downloaded it, the setup opens the Nexus page for you. It must be **exactly the same version as the host's** (the
    setup checks the file).
@@ -77,7 +77,7 @@ Fix it and click that button (or run the setup again):
 | `eldenring.exe ...` is not 2.7.2.0 | Update Elden Ring in Steam (**Show the game in Steam**) |
 | `vanilla regulation.bin` differs | Steam > Elden Ring > Properties > Installed Files > **Verify integrity of game files**, then **Check again** |
 | `me3 not found` / an older me3 | **Install me3 0.13.0 (official installer)** on the me3 page |
-| Seamless not found / not 2.0.1 | Download the same Seamless version as the host into Downloads; never use a copy inside the game folder |
+| Seamless not found / not 2.0.2 | Download the same Seamless version as the host into Downloads; never use a copy inside the game folder |
 | WitchyBND not found (only with the Advanced fallback) | Untick the fallback, or tick its download box, or choose `WitchyBND-3.0.1.0-win-x64.zip` |
 | `Visual C++ ... runtime missing` | **Get the Microsoft VC++ runtime** (opens https://aka.ms/vs/17/release/vc_redist.x64.exe) |
 | `only ... GB free` | Free some disk space |
@@ -269,7 +269,7 @@ folder of the setup program, as a fallback.
 
 | Box | What to click |
 |---|---|
-| **Seamless Co-op 2.0.1 needed** | **Yes**: choose the zip (or `ersc.dll`). **No**: the Nexus page opens; download "Seamless Co-op" 2.0.1, leave it in Downloads, then OK |
+| **Seamless Co-op 2.0.2 needed** | **Yes**: choose the zip (or `ersc.dll`). **No**: the Nexus page opens; download "Seamless Co-op" 2.0.2, leave it in Downloads, then OK |
 | **Seamless settings** (your own unzipped Seamless folder only) | **Yes**: sets `allow_invaders = 0` and `save_file_extension = mw2co2` |
 | **Co-op password** | **OK**: Notepad opens `ersc_settings.ini`. Type the host's password after `cooppassword =`, save, close Notepad. Setup never shows, logs or copies the password |
 | **WitchyBND 3.0.1.0 needed** | **Yes** to download the official file (checked by sha256), or **No** to choose the zip you have |

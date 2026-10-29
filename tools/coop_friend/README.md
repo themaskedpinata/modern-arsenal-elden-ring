@@ -90,7 +90,7 @@ alone; nobody has played it in a co-op session yet. Report anything odd with `lo
 | Elden Ring (Steam) | the current Steam build 25827938 (eldenring.exe 2.7.2.0, the 2026-10-20 update). If the host owns Shadow of the Erdtree, you need it too | Steam |
 | Call of Duty: Modern Warfare 2 (2009, Steam) | the September 2026 x64 build (Steam build 25374375). A different build gives a warning; setup step 7 decides | Steam |
 | me3 | 0.13.0 | https://github.com/garyttierney/me3/releases (installer) |
-| Seamless Co-op | 2.0.1, **the same file as the host** (setup checks ersc.dll by sha256). Leave the zip in Downloads: setup unpacks it into `seamless\` here | Nexus Mods, Elden Ring mod "Seamless Co-op" (https://www.nexusmods.com/eldenring/mods/510; setup opens it) |
+| Seamless Co-op | 2.0.2, **the same file as the host** (setup checks ersc.dll by sha256). Leave the zip in Downloads: setup unpacks it into `seamless\` here | Nexus Mods, Elden Ring mod "Seamless Co-op" (https://www.nexusmods.com/eldenring/mods/510; setup opens it) |
 | Python | 3.14 (3.11 or newer works) from python.org; tick "Add python.exe to PATH" | https://www.python.org/downloads/windows/ |
 | WitchyBND | 3.0.1.0, the file `WitchyBND-3.0.1.0-win-x64.zip` (setup checks it by sha256). Setup offers to download it from the official release (kept only if the sha256 matches), or you choose the zip | https://github.com/ividyon/WitchyBND/releases/tag/v3.0.1.0 |
 | Visual C++ 2015-2022 x64 runtime | any recent version (Steam games usually install it) | https://aka.ms/vs/17/release/vc_redist.x64.exe |

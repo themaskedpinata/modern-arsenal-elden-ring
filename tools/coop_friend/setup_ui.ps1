@@ -199,7 +199,7 @@ function Import-SeamlessZip([string]$ZipPath, [string]$ImportDir, [string]$Pin) 
         $e = Get-SeamlessZipEntry $z
         if (-not $e) { $res.Error = 'this zip has no SeamlessCoop\ersc.dll'; return $res }
         $s = $e.Open(); try { $h = Get-StreamSha $s } finally { $s.Dispose() }
-        if ($h -ne $Pin) { $res.Error = ("the ersc.dll in this zip has sha256 {0}, not Seamless Co-op 2.0.1 ({1})" -f $h.Substring(0, 12), $Pin.Substring(0, 12)); return $res }
+        if ($h -ne $Pin) { $res.Error = ("the ersc.dll in this zip has sha256 {0}, not the pinned Seamless Co-op ({1})" -f $h.Substring(0, 12), $Pin.Substring(0, 12)); return $res }
         $prefix = ($e.FullName -replace '\\', '/').Substring(0, ($e.FullName.Length - 'ersc.dll'.Length))
         if (Test-Path -LiteralPath $target) { Remove-Item -LiteralPath $target -Recurse -Force }
         New-Item -ItemType Directory -Force -Path $target | Out-Null
